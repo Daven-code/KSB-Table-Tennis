@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KSB Table Tennis Club - KSB B</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body { color: #f0f0f0; background-color: #121212; }
+  body::before { content:""; position:fixed; top:0; left:0; right:0; bottom:0; background-color: rgba(18,18,18,0.85); z-index:-1; }
+  .card { background-color: #1e1e1e; border: none; }
+  .tab-content { color: #f8f8f8; }
+  iframe { width:100%; height:600px; border:none; }
+  table { width: 100%; }
+  th, td { text-align: center; vertical-align: middle; }
+  .past-fixture td { color: #888; } /* Optional: dim past fixtures */
+</style>
+</head>
+<body>
+
+<div class="container my-5">
+  <h1 class="mb-4">KSB B</h1>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs" id="teamTabs" role="tablist">
+    <li class="nav-item">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#fixtures" type="button">Fixtures</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#members" type="button">Team Members</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#league" type="button">League Table</button>
+    </li>
+  </ul>
+
+  <div class="tab-content card p-3 mt-3">
+    <!-- Fixtures Tab -->
+    <div class="tab-pane fade show active" id="fixtures">
+      <h4>Upcoming Fixtures</h4>
+      <div class="table-responsive">
+        <table id="upcomingTable" class="table table-dark table-striped table-hover text-center align-middle"></table>
+      </div>
+
+      <h4 class="mt-4">Past Fixtures</h4>
+      <div class="table-responsive">
+        <table id="pastTable" class="table table-dark table-striped text-center align-middle"></table>
+      </div>
+    </div>
+
+    <!-- Team Members Tab -->
+    <div class="tab-pane fade" id="members">
+      <h4>Team Members</h4>
+      <iframe id="membersIframe"></iframe>
+      <p class="text-muted mt-2">If the content does not load, <a id="membersLink" href="" target="_blank">open it here</a>.</p>
+    </div>
+
+    <!-- League Table Tab -->
+    <div class="tab-pane fade" id="league">
+      <h4>League Table</h4>
+      <iframe src="https://eastlancstt.org.uk/result/2025/premier/league"></iframe>
+      <p class="text-muted mt-2">If the table does not display, <a href="https://eastlancstt.org.uk" target="_blank">view on website</a>.</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Team name -->
+<script>
+  const teamName = "KSB B"; // Change for each team
+</script>
+
+<!-- CSV fixtures loader and tables -->
+<script>
+function parseCSV(text) {
+  const rows = text.trim().split("\n");
+  const headers = rows.shift().split(",");
+  return rows.map(row => {
+    const values = row.split(",");
+    const obj = {};
+    headers.forEach((h, i) => obj[h.trim()] = values[i]?.trim());
+    return obj;
+  });
+}
+
+function buildTable(fixtures, past=false) {
+  if (fixtures.length === 0) {
+    return `<tr><td colspan="6"><em>No fixtures available.</em></td></tr>`;
+  }
+  let html = `<thead><tr>
+    <th>Date</th>
+    <th>Home</th>
+    <th>Away</th>
+    <th>Venue</th>
+    <th>Secretary</th>
+    <th>Contact</th>
+  </tr></thead><tbody>`;
+  fixtures.forEach(f => {
+    const dateStr = new Date(f.Date).toLocaleDateString("en-GB", {
+      day: "2-digit", month: "short", year: "numeric"
+    });
+    html += `<tr${past ? ' class="past-fixture"' : ''}>
+      <td>${dateStr}</td>
+      <td>${f["Home Team"]}</td>
+      <td>${f["Away Team"]}</td>
+      <td>${f.Venue}</td>
+      <td>${f.Secretary}</td>
+      <td>${f.Contact}</td>
+    </tr>`;
+  });
+  html += "</tbody>";
+  return html;
+}
+
+function loadFixtures() {
+  const csvFile = `${teamName} Fixtures.csv`;
+  fetch(csvFile)
+    .then(res => {
+      if (!res.ok) throw new Error(`Cannot load ${csvFile}`);
+      return res.text();
+    })
+    .then(text => {
+      const data = parseCSV(text);
+      const today = new Date(); today.setHours(0,0,0,0);
+      const past = [], upcoming = [];
+      data.forEach(fix => {
+        const date = new Date(fix.Date); date.setHours(0,0,0,0);
+        if (date < today) past.push(fix);
+        else upcoming.push(fix);
+      });
+
+      document.getElementById("upcomingTable").innerHTML = buildTable(upcoming);
+      document.getElementById("pastTable").innerHTML = buildTable(past.reverse(), true);
+    })
+    .catch(err => {
+      document.getElementById("upcomingTable").innerHTML = `<tr><td colspan="6">${err.message}</td></tr>`;
+      document.getElementById("pastTable").innerHTML = "";
+    });
+}
+
+document.addEventListener("DOMContentLoaded", loadFixtures);
+</script>
+
+<!-- Optional: include your team members and utility scripts -->
+<script src="team-template.js"></script>
+<script src="site-utils.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KSB Table Tennis Club</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  body { color: #f0f0f0; background-color: #121212; }
+  body::before { content: ""; position: fixed; top:0; left:0; right:0; bottom:0;
+                 background-color: rgba(18,18,18,0.85); z-index:-1; }
+  .card { background-color: #1e1e1e; border: none; }
+  .hero-bold { font-weight: 700; }
+  .hero-semi { font-weight: 600; }
+  /* Animation */
+  .fade-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  .fade-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .about-icon {
+    color: #66b3ff;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Full-width banner -->
+<div class="position-relative mb-5" style="width:100%; height:500px; overflow:hidden;">
+  <img src="banner.jpg" alt="KSB Banner" 
+       style="width:100%; height:100%; object-fit:cover; object-position: 50% 40%;">
+  <div class="position-absolute top-50 translate-middle-y p-4" 
+       style="color:#fff; text-shadow:2px 2px 8px rgba(0,0,0,0.5); max-width:800px; left:10%;
+              background-color:rgba(0,0,0,0.35); border-radius:8px;">
+    <p class="hero-semi fade-slide-up" style="font-size:1.6rem; transition-delay:0.2s;">
+      Welcome to:
+    </p>
+    <h2 class="hero-bold fade-slide-up" style="font-size:2.2rem; line-height:1.3; transition-delay:0.4s;">
+      KSB Table Tennis Club<br>
+      <span style="font-size:2.2rem;">Rawtenstall</span>
+    </h2>
+    <p class="hero-semi fade-slide-up" style="font-size:1.6rem; transition-delay:0.6s;">
+      We are part of the East Lancashire Table Tennis League. Find team information, fixtures, contact details, and league updates here. All abilities are welcome!
+    </p>
+  </div>
+</div>
+
+
+<!-- About Us Section -->
+<div class="container my-5" style="max-width:900px;">
+  <h2 class="mb-4 text-center fade-slide-up">About Us</h2>
+  <div class="fade-slide-up mb-3 d-flex align-items-start">
+    <i class="fas fa-table-tennis about-icon fa-2x"></i>
+    <p>
+      KSB Table Tennis Club is a community of around 120 young and adult players, parents and friends connected to Kay Street Baptist Church.
+      Founded in 1991 with just 4 players, we are now the largest club in the East Lancs Table Tennis League with 6 junior and 7 adult teams.
+    </p>
+  </div>
+  <div class="fade-slide-up d-flex align-items-start">
+    <i class="fas fa-users about-icon fa-2x"></i>
+    <p>
+      Although we have been Premier Division champions for the past 6 years the Club fosters a friendly, sportsmanship and incluse environment where players of all ages and skill levels can enjoy the sport.
+      We have a development coaching programme which takes young players who are absolute beginners to a point where they are able to represent the Club by playing in the league.
+      During the closed season (April to September) we have open Club Nights every Tuesday and Wednesday to which new players are welcome.
+      If you would like any more details please contact Trev on 07981 387755.
+    </p>
+  </div>
+</div>
+
+<style>
+  /* Icon hover effect */
+  .about-icon {
+    color: #66b3ff;
+    margin-right: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .about-icon:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+  }
+</style>
+
+<script>
+  // Fade-in animation on scroll
+  const fadeElems = document.querySelectorAll('.fade-slide-up');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+  fadeElems.forEach(el => observer.observe(el));
+</script>
+
+<script src="site-utils.js"></script>
+</body>
+</html>
