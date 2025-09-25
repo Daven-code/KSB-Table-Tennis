@@ -2,7 +2,7 @@
 
 // ===== CONFIGURATION =====
 const siteConfig = {
-  logo: 'Club_Badge.jpg',
+  logo: 'Club_Badge.JPG',
   year: 2025,
   clubName: 'KSB Table Tennis Club',
   leagueText: 'Part of the East Lancashire Table Tennis League',
@@ -13,7 +13,7 @@ const siteConfig = {
     {text: 'League Info', href: 'league.html'},
     {text: 'News', href: 'news.html'}
   ],
-  backgroundImages: Array.from({length:31}, (_,i)=>`Background${i+1}.jpg`) // Background1.jpg ... Background28.jpg
+  backgroundImages: Array.from({length:31}, (_,i)=>`Background${i+1}.JPG`) // Background1.jpg ... Background28.jpg
 };
 
 // ===== RANDOM BACKGROUND =====
