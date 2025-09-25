@@ -13,7 +13,7 @@ const siteConfig = {
     {text: 'League Info', href: 'league.html'},
     {text: 'News', href: 'news.html'}
   ],
-  backgroundImages: Array.from({length:31}, (_,i)=>`background${i+1}.JPG`) // Background1.jpg ... Background28.jpg
+  backgroundImages: Array.from({length:31}, (_,i)=>`Background${i+1}.JPG`) // Background1.jpg ... Background28.jpg
 };
 
 // ===== RANDOM BACKGROUND =====
