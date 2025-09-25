@@ -93,8 +93,6 @@ function buildTable(fixtures, past=false) {
     <th>Home</th>
     <th>Away</th>
     <th>Venue</th>
-    <th>Secretary</th>
-    <th>Contact</th>
   </tr></thead><tbody>`;
   fixtures.forEach(f => {
     const dateStr = new Date(f.Date).toLocaleDateString("en-GB", {
@@ -105,8 +103,6 @@ function buildTable(fixtures, past=false) {
       <td>${f["Home Team"]}</td>
       <td>${f["Away Team"]}</td>
       <td>${f.Venue}</td>
-      <td>${f.Secretary}</td>
-      <td>${f.Contact}</td>
     </tr>`;
   });
   html += "</tbody>";

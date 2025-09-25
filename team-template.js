@@ -36,7 +36,7 @@ fetch(csvFileName)
   .then(res => res.text())
   .then(csv => {
     const rows = csv.trim().split('\n').map(r => r.split(','));
-    const headers = ['Date','Home Team','Away Team','Venue','Secretary','Contact'];
+    const headers = ['Date','Home Team','Away Team','Venue'];
     const table = document.getElementById('fixturesTable');
     if (!table) return;
 
