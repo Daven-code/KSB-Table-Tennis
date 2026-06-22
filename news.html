@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News - KSB Table Tennis Club</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      color: #f0f0f0;
+      background-color: #121212;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(18, 18, 18, 0.85);
+      z-index: -1;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border: none;
+    }
+
+    .news-item {
+      background-color: #1e1e1e;
+      border-left: 4px solid #66b3ff;
+      padding: 20px;
+      margin-bottom: 22px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+    }
+
+    .news-item:hover {
+      background-color: #252525;
+      transform: translateY(-2px);
+    }
+
+    .news-date {
+      font-size: 0.9rem;
+      color: #999;
+      margin-bottom: 5px;
+    }
+
+    .news-title {
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .news-content {
+      line-height: 1.65;
+    }
+
+    .featured-news {
+      border-left-color: #ffd166;
+      background: linear-gradient(135deg, #1f1f1f 0%, #222b36 100%);
+    }
+
+    .featured-badge {
+      display: inline-block;
+      background: rgba(255, 209, 102, 0.15);
+      color: #ffd166;
+      border: 1px solid rgba(255, 209, 102, 0.4);
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .lead-news {
+      font-size: 1.05rem;
+      color: #e8e8e8;
+      line-height: 1.7;
+    }
+
+    .result-card {
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 15px;
+      height: 100%;
+    }
+
+    .result-card h6 {
+      color: #66b3ff;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .result-card ul {
+      padding-left: 18px;
+      margin-bottom: 0;
+    }
+
+    .result-card li {
+      margin-bottom: 6px;
+    }
+
+    .winner-panel {
+      background: rgba(255, 209, 102, 0.10);
+      border: 1px solid rgba(255, 209, 102, 0.28);
+      border-radius: 14px;
+      padding: 18px;
+      margin: 18px 0;
+    }
+
+    .winner-panel h6 {
+      color: #ffd166;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .section-heading {
+      margin-top: 22px;
+      margin-bottom: 10px;
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      background-color: #111;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      cursor: pointer;
+      min-height: 150px;
+      padding: 0;
+      width: 100%;
+      color: inherit;
+      text-align: left;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .gallery-item:hover img,
+    .gallery-item:hover .video-placeholder {
+      transform: scale(1.04);
+      opacity: 0.92;
+    }
+
+    .gallery-label {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      right: 8px;
+      background: rgba(0, 0, 0, 0.62);
+      color: #fff;
+      font-size: 0.78rem;
+      padding: 4px 8px;
+      border-radius: 999px;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .video-placeholder {
+      height: 170px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at center, rgba(102, 179, 255, 0.26), transparent 42%),
+        linear-gradient(135deg, #101820, #1d2b3a);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .play-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: rgba(102, 179, 255, 0.92);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #06111c;
+      font-size: 1.7rem;
+      font-weight: 800;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      padding-left: 4px;
+    }
+
+    .video-label {
+      background: rgba(102, 179, 255, 0.88);
+      color: #07111c;
+      font-weight: 700;
+    }
+
+    .modal-content {
+      background-color: #080808;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .modal-header {
+      border-bottom-color: rgba(255, 255, 255, 0.14);
+    }
+
+    .media-stage {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at center, rgba(255, 255, 255, 0.06), transparent 45%),
+        #050505;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      padding: 12px;
+    }
+
+    .modal-media-img,
+    .modal-media-video {
+      max-width: 100%;
+      max-height: 76vh;
+      width: auto;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
+    }
+
+    .modal-media-video {
+      width: 100%;
+      max-width: 1100px;
+      background-color: #000;
+    }
+
+    .gallery-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+      width: 44px;
+      height: 54px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.20);
+      background: rgba(0, 0, 0, 0.55);
+      color: #fff;
+      font-size: 1.7rem;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery-nav:hover {
+      background: rgba(102, 179, 255, 0.78);
+      color: #06111c;
+    }
+
+    .gallery-nav.prev {
+      left: 14px;
+    }
+
+    .gallery-nav.next {
+      right: 14px;
+    }
+
+    .media-caption {
+      color: #d8d8d8;
+      font-size: 0.92rem;
+      margin-top: 12px;
+    }
+
+    .media-counter {
+      color: #aaa;
+      font-size: 0.86rem;
+      margin-top: 4px;
+    }
+
+    .swipe-hint {
+      color: #888;
+      font-size: 0.78rem;
+      margin-top: 4px;
+    }
+
+    a {
+      color: #9ccfff;
+    }
+
+    @media (max-width: 576px) {
+      .news-item {
+        padding: 16px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .gallery-item img,
+      .video-placeholder {
+        height: 135px;
+      }
+
+      .media-stage {
+        min-height: 48vh;
+        padding: 8px;
+      }
+
+      .gallery-nav {
+        width: 38px;
+        height: 48px;
+        font-size: 1.4rem;
+      }
+
+      .gallery-nav.prev {
+        left: 8px;
+      }
+
+      .gallery-nav.next {
+        right: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar automatically inserted by site-utils.js -->
+
+  <div class="container mt-5 mb-5" style="max-width: 980px;">
+    <h1 class="mb-4">Club News</h1>
+    <div id="newsContainer"></div>
+  </div>
+
+  <!-- Gallery modal / lightbox carousel -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h5 class="modal-title mb-0">KSB Open Singles Competition — June 2026</h5>
+            <div id="modalCounter" class="media-counter"></div>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-center">
+          <div id="mediaStage" class="media-stage">
+
+            <button type="button" class="gallery-nav prev" onclick="changeMedia(-1)" aria-label="Previous media">
+              &#10094;
+            </button>
+
+            <div id="modalMediaContainer"></div>
+
+            <button type="button" class="gallery-nav next" onclick="changeMedia(1)" aria-label="Next media">
+              &#10095;
+            </button>
+
+          </div>
+
+          <div id="modalCaption" class="media-caption"></div>
+          <div class="swipe-hint">Use the arrows, keyboard left/right keys, or swipe on mobile.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="site-utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    /*
+      Performance note:
+      This gallery supports optional thumbnail images.
+
+      Current working setup:
+      - Your full images are in: June 2026/
+      - Thumbnail images should be in: June 2026/thumbs/
+
+      Thumbnail naming rule:
+      - Thumbnail filenames must match the full-size image filenames exactly.
+
+      Example:
+      Full image:
+      June 2026/Singles Comp June 2026 1.jpg
+
+      Thumbnail:
+      June 2026/thumbs/Singles Comp June 2026 1.jpg
+
+      If a thumbnail is missing, the code automatically falls back to the full-size image.
+    */
+
+    const galleryCaption = "KSB Open Singles Competition — June 2026";
+
+    const ksbOpenMedia = [
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 1.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 1.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 2.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 2.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 3.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 3.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 4.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 4.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 5.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 5.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 6.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 6.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 7.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 7.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 8.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 8.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 9.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 9.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 10.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 10.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 11.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 11.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 12.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 12.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 13.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 13.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "image",
+        src: "June 2026/Singles Comp June 2026 14.jpg",
+        thumb: "June 2026/thumbs/Singles Comp June 2026 14.jpg",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "video",
+        src: "June 2026/Singles Comp June 2026 15.mp4",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "video",
+        src: "June 2026/Singles Comp June 2026 16.mp4",
+        alt: galleryCaption,
+        caption: galleryCaption
+      },
+      {
+        type: "video",
+        src: "June 2026/Singles Comp June 2026 17.mp4",
+        alt: galleryCaption,
+        caption: galleryCaption
+      }
+    ];
+
+    let currentMediaIndex = 0;
+    let galleryModalInstance = null;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function createKsbOpenGallery() {
+      return `
+        <div class="gallery-grid">
+          ${ksbOpenMedia.map((media, index) => {
+            if (media.type === "image") {
+              return `
+                <button class="gallery-item" type="button" onclick="openGallery(${index})" aria-label="Open photo ${index + 1}">
+                  <img
+                    src="${media.thumb}"
+                    data-full="${media.src}"
+                    alt="${media.alt}"
+                    loading="lazy"
+                    decoding="async"
+                    onerror="this.onerror=null; this.src=this.dataset.full;"
+                  >
+                  <div class="gallery-label">Photo ${index + 1}</div>
+                </button>
+              `;
+            }
+
+            return `
+              <button class="gallery-item" type="button" onclick="openGallery(${index})" aria-label="Open video ${index - 13}">
+                <div class="video-placeholder">
+                  <div class="play-icon">&#9658;</div>
+                </div>
+                <div class="gallery-label video-label">Video ${index - 13}</div>
+              </button>
+            `;
+          }).join("")}
+        </div>
+      `;
+    }
+
+    function openGallery(index) {
+      currentMediaIndex = index;
+      showMedia();
+
+      if (!galleryModalInstance) {
+        galleryModalInstance = new bootstrap.Modal(document.getElementById("galleryModal"));
+      }
+
+      galleryModalInstance.show();
+    }
+
+    function showMedia() {
+      const media = ksbOpenMedia[currentMediaIndex];
+      const container = document.getElementById("modalMediaContainer");
+      const caption = document.getElementById("modalCaption");
+      const counter = document.getElementById("modalCounter");
+
+      stopCurrentVideo();
+
+      if (media.type === "image") {
+        container.innerHTML = `
+          <img
+            class="modal-media-img"
+            src="${media.src}"
+            alt="${media.alt}"
+            decoding="async"
+          >
+        `;
+      } else {
+        container.innerHTML = `
+          <video
+            class="modal-media-video"
+            controls
+            autoplay
+            playsinline
+            preload="auto"
+          >
+            <source src="${media.src}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        `;
+      }
+
+      caption.textContent = galleryCaption;
+      counter.textContent = `${currentMediaIndex + 1} of ${ksbOpenMedia.length}`;
+    }
+
+    function changeMedia(direction) {
+      currentMediaIndex += direction;
+
+      if (currentMediaIndex < 0) {
+        currentMediaIndex = ksbOpenMedia.length - 1;
+      }
+
+      if (currentMediaIndex >= ksbOpenMedia.length) {
+        currentMediaIndex = 0;
+      }
+
+      showMedia();
+    }
+
+    function stopCurrentVideo() {
+      const existingVideo = document.querySelector("#modalMediaContainer video");
+
+      if (existingVideo) {
+        existingVideo.pause();
+        existingVideo.removeAttribute("src");
+        existingVideo.load();
+      }
+    }
+
+    document.addEventListener("keydown", function (e) {
+      const modalOpen = document.querySelector("#galleryModal.show");
+      if (!modalOpen) return;
+
+      if (e.key === "ArrowRight") {
+        changeMedia(1);
+      }
+
+      if (e.key === "ArrowLeft") {
+        changeMedia(-1);
+      }
+    });
+
+    document.getElementById("galleryModal").addEventListener("hidden.bs.modal", function () {
+      stopCurrentVideo();
+      document.getElementById("modalMediaContainer").innerHTML = "";
+    });
+
+    document.getElementById("mediaStage").addEventListener("touchstart", function (e) {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    document.getElementById("mediaStage").addEventListener("touchend", function (e) {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+      const swipeDistance = touchEndX - touchStartX;
+      const minimumSwipeDistance = 50;
+
+      if (Math.abs(swipeDistance) < minimumSwipeDistance) {
+        return;
+      }
+
+      if (swipeDistance < 0) {
+        changeMedia(1);
+      } else {
+        changeMedia(-1);
+      }
+    }
+
+    const newsData = [
+      {
+        date: "Jun-2026",
+        title: "KSB Open Singles Competition — June 2026",
+        featured: true,
+        content: `
+          <div class="featured-badge">Club Competition</div>
+
+          <p class="lead-news">
+            The June 2026 <strong>KSB Open Singles Competition</strong> produced a fantastic evening of table tennis,
+            with <strong>20 KSB players</strong> taking part in extremely hot and humid conditions. Despite the challenging
+            environment, the standard of play was excellent throughout, with competitive matches, long rallies and a great
+            atmosphere across the club.
+          </p>
+
+          <p>
+            It was especially pleasing to welcome some new faces, including <strong>Dave Jefferson</strong> and
+            <strong>Shom</strong>, and to see several of our junior players involved in the competition.
+            <strong>Alex</strong>, <strong>Filip</strong> and <strong>Ava</strong> all took part and represented themselves
+            brilliantly, gaining valuable experience against a strong field of senior players.
+          </p>
+
+          <h6 class="section-heading">Group Stage Qualifiers</h6>
+          <p>
+            After a competitive group stage, the players progressing to the knockout rounds were:
+            <strong>Rob H</strong>, <strong>Pawel M</strong>, <strong>Daven A</strong>, <strong>Harry L</strong>,
+            <strong>Craig M</strong>, <strong>Shom</strong>, <strong>Chris H</strong> and <strong>Dave J</strong>.
+          </p>
+
+          <div class="row g-3 mt-2">
+            <div class="col-md-6">
+              <div class="result-card">
+                <h6>Quarter Finals</h6>
+                <ul>
+                  <li><strong>Rob H</strong> beat <strong>Pawel M</strong> 3-0</li>
+                  <li><strong>Daven A</strong> beat <strong>Harry L</strong> 3-0</li>
+                  <li><strong>Craig M</strong> beat <strong>Shom</strong> 3-1</li>
+                  <li><strong>Chris H</strong> beat <strong>Dave J</strong> 3-1</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="result-card">
+                <h6>Semi Finals</h6>
+                <ul>
+                  <li>
+                    <strong>Rob H</strong> beat <strong>Daven A</strong> 3-1 in a high-quality match featuring some
+                    excellent rallies and close sets.
+                  </li>
+                  <li>
+                    <strong>Chris H</strong> beat <strong>Craig M</strong> 3-0, with Craig producing some incredible
+                    defensive play and contributing to many entertaining rallies.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="winner-panel">
+            <h6>The Final</h6>
+            <p class="mb-0">
+              The final was contested by the Hall brothers, <strong>Rob</strong> and <strong>Chris</strong>, who both played
+              with real determination and produced some outstanding points. After a brilliant final, <strong>Rob H</strong>
+              took the title with a <strong>3-1 victory</strong>. Congratulations to Rob on a superb performance and a
+              well-deserved win.
+            </p>
+          </div>
+
+          <p>
+            Well done to everyone who took part and helped make the competition such an enjoyable and competitive event.
+            The standard across the evening was excellent, and it was a great reflection of the strength, depth and spirit
+            within KSB Table Tennis Club.
+          </p>
+
+          <h6 class="section-heading">Photo &amp; Video Gallery</h6>
+          <p>
+            A selection of photos and videos from the evening are included below. Click any item to open the gallery,
+            then use the arrows, keyboard keys or swipe to move between photos and videos.
+          </p>
+
+          ${createKsbOpenGallery()}
+        `
+      },
+
+      {
+        date: "Apr-2026",
+        title: "End‑of‑Season Update — April 2026",
+        content: `
+          It has been a highly successful season for <strong>KSB TTC</strong>, with lots of team and individual successes to celebrate.
+          Across our <strong>13 teams</strong>, we are delighted to confirm <strong>three promotions</strong>. In cup competitions, <strong>three teams</strong> reached the <strong>semi‑finals</strong> and <strong>one team</strong> made it all the way to the <strong>Fred Holden Cup Final</strong>.
+          With around <strong>10 players</strong> expected to receive awards at the forthcoming <strong>Presentation Evening</strong>, it has been a season to be proud of — <strong>well done everyone!</strong>
+
+          <br><br>
+          <strong>League &amp; Individual Achievements</strong><br>
+          • <strong>Division 1:</strong> KSB D — <strong>League Winners</strong><br>
+          • <strong>Division 1:</strong> Keith Dale — <strong>1st</strong> in the Individual Merits<br>
+          • <strong>Division 2:</strong> KSB F — <strong>League Runners‑Up</strong><br>
+          • <strong>Division 2:</strong> Chris Green — <strong>2nd</strong> in the Individual Merits<br>
+          • <strong>Division 2:</strong> KSB Tigers — <strong>1st</strong> in the League Doubles<br>
+          • <strong>Division 2:</strong> KSB F — <strong>2nd</strong> in the League Doubles<br>
+          • <strong>Division 3:</strong> KSB G — <strong>League Winners</strong><br>
+          • <strong>Division 3:</strong> Andy Cretney — <strong>1st</strong> in the Individual Merits<br>
+          • <strong>Division 3:</strong> KSB G — <strong>1st</strong> in the League Doubles<br>
+          • <strong>Division 3:</strong> KSB Jaguars — <strong>2nd</strong> in the League Doubles
+
+          <br><br>
+          <strong>Handicap Competitions</strong><br>
+          • <strong>Prem / 1st Divisional Handicap:</strong> Simon Milnes — <strong>Runner‑Up</strong><br>
+          • <strong>2nd / 3rd Divisional Handicap:</strong> Alex Gavin — <strong>Runner‑Up</strong>
+
+          <br><br>
+          <strong>Championships &amp; Veterans</strong><br>
+          • <strong>Big Day Closed Championship (Doubles):</strong> Daven Argile &amp; Chris Hall — <strong>Winners</strong><br>
+          • <strong>Big Day Closed Championship (Doubles):</strong> Stuart Landes &amp; Tim Vaughan — <strong>Runners‑Up</strong><br>
+          • <strong>Younger Vets:</strong> Chris Hall — <strong>Winner</strong>
+
+          <img
+            src="Doubles_Winners_2026.jpg"
+            alt="Chris Hall &amp; Daven Argile — East Lancs Doubles Winners 2026"
+            style="max-width:420px; width:100%; height:auto; border-radius:10px; display:block; margin:10px auto 0;"
+            loading="lazy"
+            decoding="async"
+          >
+
+          <br><br>
+          <strong>Cup Highlights</strong><br>
+          • <strong>FH Cup (Fred Holden Cup):</strong> KSB Tigers — <strong>Runner-Up</strong><br>
+          • <strong>Mozie Mafi Handicap Cup:</strong> Alex Gavin — <strong>Winner</strong>
+
+          <br><br>
+          <strong>Player Spotlight</strong><br>
+          • <strong>Ava</strong> recently won the <strong>Rossendale Primary Schools Championship</strong> and plays occasionally for <strong>KSB Panthers</strong>.
+          <br><br>
+
+          <img
+            src="Rossendale_Primary_School_Champion_2026.jpg"
+            alt="Ava — Rossendale Primary School Champion 2026"
+            style="max-width:420px; width:100%; height:auto; border-radius:10px; display:block; margin:10px auto 0;"
+            loading="lazy"
+            decoding="async"
+          >
+        `
+      },
+
+      {
+        date: "Dec-2025",
+        title: "Mid‑Season Report — Christmas 2025",
+        content: `
+          <p>It was great to see <strong>38 members</strong> of KSB TTC at the Christmas Curry Night, with our two Ministers <strong>Ben</strong> and <strong>Jonny</strong> as guests.</p>
+
+          <p>Incredibly, <strong>over 40 adults</strong> and <strong>30 junior players</strong> have represented one of our <strong>13 teams</strong> since the start of the season — brilliant commitment across the club.</p>
+
+          <h6>Premiership</h6>
+          <p>The <strong>A team</strong> currently top the table and the <strong>B team</strong> are a fantastic <strong>3rd</strong> — well done to <strong>Daven</strong> and <strong>Craig</strong> for managing those teams. Other teams do have games in hand, so it’s likely both sides will finish a little lower by the end of the season, but it’s been an excellent first half.</p>
+
+          <h6>Division 1</h6>
+          <p>All three teams are performing well with the <strong>D team</strong> even in danger of picking up <strong>promotion</strong> if they’re not very careful! Notably, <strong>6 of the top 8</strong> in the individual merit table are from KSB teams. We’ll decide in the summer whether to maintain the current balance across teams next season or group our strongest players to aim for a <strong>third Premiership team</strong>.</p>
+
+          <h6>Division 2</h6>
+          <p>Our two best junior teams are more than holding their own. The <strong>Tigers</strong> are currently <strong>second</strong>, while both the <strong>F</strong> and <strong>Lions</strong> teams have games in hand — it’s very tight at the top! Congratulations to <strong>Chris Green (KSB Lions)</strong>, currently <strong>second</strong> in the averages.</p>
+
+          <h6>Division 3</h6>
+          <p>A highlight has been the performance of our junior team, the <strong>KSB Jaguars</strong>, currently <strong>third</strong> in the table — thanks to <strong>Simon</strong> for managing this team. The <strong>G team</strong> are <strong>top</strong> with <strong>Andy Cretney</strong> also leading the individual averages.</p>
+
+          <h6>Cup Competitions</h6>
+          <p>We have <strong>six teams</strong> through to the next round of the cup in January — watch this space for results.</p>
+
+          <h6>Individual Honours</h6>
+          <ul>
+            <li><strong>September:</strong> <strong>Alex Gavin</strong> became the second junior in a row to win the <strong>Mozi Mafie Cup</strong>.</li>
+            <li><strong>Jackson Boldy</strong> has won <strong>two North West junior competitions</strong> in recent weeks — superb form.</li>
+            <li><strong>Chris Hall</strong> won the <strong>ELTTL Veterans</strong> competition on 15th December 2025 — congratulations!</li>
+          </ul>
+
+          <h6>Thank You</h6>
+          <p>A big thank you to all <strong>team captains</strong> for organising their teams, to <strong>parents</strong> for their support, and to <strong>Kay Street Church</strong> for allowing us to use their facilities. It’s been a highly successful first half of the season — here’s to an equally successful second half.</p>
+        `
+      },
+
+      {
+        date: "15-Sep-2025",
+        title: "Season Kick-off!",
+        content: "The new 2025/26 season has started with exciting fixtures and new team lineups."
+      }
+    ];
+
+    const newsContainer = document.getElementById("newsContainer");
+
+    newsData.forEach(item => {
+      const div = document.createElement("div");
+      div.className = item.featured ? "news-item featured-news" : "news-item";
+
+      div.innerHTML = `
+        <div class="news-date">${item.date}</div>
+        <h5 class="news-title">${item.title}</h5>
+        <div class="news-content">${item.content}</div>
+      `;
+
+      newsContainer.appendChild(div);
+    });
+  </script>
+
+</body>
+</html>
