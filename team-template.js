@@ -26,8 +26,8 @@ const slug = teamUrls[teamName] || "ksb-a";
 const membersIframe = document.getElementById("membersIframe");
 const membersLink = document.getElementById("membersLink");
 
-if (membersIframe) membersIframe.src = `https://eastlancstt.org.uk/result/2025/team/${slug}`;
-if (membersLink) membersLink.href = `https://eastlancstt.org.uk/result/2025/team/${slug}`;
+if (membersIframe) membersIframe.src = `https://eastlancstt.org.uk/result/2026/team/${slug}`;
+if (membersLink) membersLink.href = `https://eastlancstt.org.uk/result/2026/team/${slug}`;
 
 // --- Load Fixtures from CSV specific to the team ---
 const csvFileName = `${teamName} Fixtures.csv`; // e.g. "KSB A Fixtures.csv"
