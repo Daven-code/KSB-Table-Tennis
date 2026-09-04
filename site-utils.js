@@ -3,7 +3,7 @@
 // ===== CONFIGURATION =====
 const siteConfig = {
   logo: 'Club_Badge.JPG',
-  year: 2026,
+  year: new Date().getFullYear(),
   clubName: 'KSB Table Tennis Club',
   leagueText: 'Part of the East Lancashire Table Tennis League',
   navLinks: [
