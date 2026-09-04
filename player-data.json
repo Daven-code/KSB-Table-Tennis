@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "currentSeason": 2026,
+  "api": {
+    "teamSeasonUrl": "",
+    "currentPlayersUrl": "",
+    "historicPlayersUrl": "",
+    "playerProfileUrl": ""
+  },
+  "players": [],
+  "teamSeasons": {}
+}

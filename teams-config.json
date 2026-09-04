@@ -1,0 +1,46 @@
+{
+  "currentSeason": 2026,
+  "seasons": {
+    "2026": {
+      "label": "2026-27",
+      "divisions": {
+        "premier": [
+          "KSB A",
+          "KSB B",
+          "KSB C"
+        ],
+        "first": [
+          "KSB D",
+          "KSB E",
+          "KSB F"
+        ],
+        "second": [
+          "KSB G",
+          "KSB Jaguars",
+          "KSB Lions",
+          "KSB Tigers"
+        ],
+        "third": [
+          "KSB Leopards",
+          "KSB Panthers",
+          "KSB Pumas"
+        ]
+      }
+    }
+  },
+  "teamFiles": {
+    "KSB A": "KSB_A.html",
+    "KSB B": "KSB_B.html",
+    "KSB C": "KSB_C.html",
+    "KSB D": "KSB_D.html",
+    "KSB E": "KSB_E.html",
+    "KSB F": "KSB_F.html",
+    "KSB G": "KSB_G.html",
+    "KSB Lions": "KSB_Lions.html",
+    "KSB Tigers": "KSB_Tigers.html",
+    "KSB Jaguars": "KSB_Jaguars.html",
+    "KSB Leopards": "KSB_Leopards.html",
+    "KSB Pumas": "KSB_Pumas.html",
+    "KSB Panthers": "KSB_Panthers.html"
+  }
+}

@@ -1,0 +1,86 @@
+/* Shared KSB team-page presentation */
+body { color:#f0f0f0; background-color:#121212; }
+body::before { content:""; position:fixed; inset:0; background:rgba(18,18,18,.85); z-index:-1; }
+.team-page { width:min(1320px, calc(100% - 28px)); }
+.team-shell { background:rgba(25,25,25,.96); border:1px solid rgba(255,255,255,.08); border-radius:14px; box-shadow:0 14px 35px rgba(0,0,0,.28); }
+.nav-tabs { border-bottom-color:#495057; gap:4px; }
+.nav-tabs .nav-link { color:#8dc6ff; border-radius:8px 8px 0 0; }
+.nav-tabs .nav-link:hover { color:#fff; border-color:#495057; }
+.nav-tabs .nav-link.active { color:#151515; font-weight:700; }
+.section-heading { font-size:1.2rem; margin-bottom:1rem; }
+.table { --bs-table-bg:#20242a; --bs-table-striped-bg:#2b3036; --bs-table-hover-bg:#343b43; margin-bottom:0; }
+th, td { text-align:center; vertical-align:middle; white-space:nowrap; }
+.past-fixture td { color:#9aa0a6; }
+.status-panel { min-height:160px; display:grid; place-items:center; text-align:center; color:#c8cdd2; }
+.status-panel.error { color:#ffbbbb; }
+.summary-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-bottom:18px; }
+.summary-card { background:#262b31; border:1px solid #3b424a; border-radius:12px; padding:16px; text-align:center; }
+.summary-label { color:#abb4bd; font-size:.82rem; text-transform:uppercase; letter-spacing:.06em; }
+.summary-value { display:block; margin-top:4px; font-size:1.55rem; font-weight:800; color:#fff; }
+/* Blue highlight for every KSB team in the manually selected table. */
+.table > tbody > tr.league-row-ksb > * {
+  --bs-table-bg:#123f60;
+  --bs-table-striped-bg:#123f60;
+  --bs-table-hover-bg:#18557f;
+  --bs-table-color:#fff;
+  background-color:#123f60 !important;
+  box-shadow:inset 0 0 0 9999px #123f60 !important;
+  color:#fff !important;
+  font-weight:700;
+}
+.table > tbody > tr.league-row-ksb:hover > * {
+  background-color:#18557f !important;
+  box-shadow:inset 0 0 0 9999px #18557f !important;
+}
+.league-row-current td { box-shadow:inset 0 1px #58b6ff, inset 0 -1px #58b6ff; }
+.position-badge { display:inline-grid; place-items:center; min-width:32px; height:32px; border-radius:50%; background:#3a424b; font-weight:800; }
+.coming-soon { max-width:760px; margin:18px auto; padding:28px; background:#262b31; border:1px solid #3b424a; border-radius:14px; text-align:center; }
+.coming-soon-icon { width:62px; height:62px; display:grid; place-items:center; margin:0 auto 14px; border-radius:50%; background:#123f60; font-size:1.7rem; }
+.small-note { color:#aeb6bf; }
+@media (max-width:767px) {
+ .team-page { width:min(100% - 16px,1320px); margin-top:1.5rem!important; }
+ .team-shell { padding:12px!important; }
+ .summary-grid { grid-template-columns:repeat(2,1fr); }
+ .nav-tabs { flex-wrap:nowrap; overflow-x:auto; }
+ .nav-tabs .nav-link { white-space:nowrap; padding:.65rem .75rem; }
+}
+
+/* Refined league filters */
+.league-toolbar {
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:24px;
+  margin-bottom:18px;
+}
+.league-toolbar .section-heading { margin:0 24px 10px 0; }
+.league-toolbar .season-control {
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  width:190px;
+}
+/* The division control is inserted after the season control. */
+.league-toolbar .season-control + .season-control { margin-left:-12px; }
+.season-control label { color:#c8d0d8; font-size:.8rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; }
+.season-control .form-select {
+  min-height:42px;
+  padding:.55rem 2.35rem .55rem .8rem;
+  color:#f4f7fa;
+  background-color:#252b31;
+  border:1px solid #46515c;
+  border-radius:9px;
+  box-shadow:0 3px 10px rgba(0,0,0,.18);
+}
+.season-control .form-select:hover { border-color:#66b3ff; }
+.season-control .form-select:focus { border-color:#66b3ff; box-shadow:0 0 0 .2rem rgba(102,179,255,.18); }
+@media (min-width:768px) {
+  .league-toolbar { display:grid; grid-template-columns:1fr 190px 190px; }
+  .league-toolbar .season-control + .season-control { margin-left:0; }
+}
+@media (max-width:767px) {
+  .league-toolbar { display:grid; grid-template-columns:1fr; gap:10px; align-items:stretch; }
+  .league-toolbar .section-heading { margin:0 0 2px; }
+  .league-toolbar .season-control { width:100%; }
+  .league-toolbar .season-control + .season-control { margin-left:0; }
+}

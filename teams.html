@@ -11,6 +11,9 @@
   .team-btn { background-color: #2c2c2c; color: #f0f0f0; border: 1px solid #444; border-radius: 8px; padding: 15px 20px; display: block; text-decoration: none; transition: all 0.3s ease; }
   .team-btn:hover { background-color: #444; color: #66b3ff; transform: scale(1.05); }
   .card { background-color: #1e1e1e; border: none; }
+  .team-season-label { color:#b9c3cc; margin-top:-10px; margin-bottom:4px; }
+  .team-list-loading, .team-list-error { padding:24px; color:#b9c3cc; }
+  .team-list-error { color:#ffb6b6; }
 </style>
 </head>
 <body>
@@ -20,41 +23,11 @@
 <div class="container text-center mt-5">
   <h1 class="mb-4">Select Your Team</h1>
 
-  <!-- Premier Division -->
-  <h3 class="text-start mb-3 mt-4">Premier Division</h3>
-  <div class="row g-3">
-    <div class="col-6 col-md-3">
-      <a class="team-btn py-2 px-3" href="KSB_A.html">KSB A</a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a class="team-btn py-2 px-3" href="KSB_B.html">KSB B</a>
-    </div>
-  </div>
-
-  <!-- First Division -->
-  <h3 class="text-start mb-3 mt-4">First Division</h3>
-  <div class="row g-3">
-    <div class="col-6 col-md-3"><a class="team-btn py-2 px-3" href="KSB_C.html">KSB C</a></div>
-    <div class="col-6 col-md-3"><a class="team-btn py-2 px-3" href="KSB_D.html">KSB D</a></div>
-    <div class="col-6 col-md-3"><a class="team-btn py-2 px-3" href="KSB_E.html">KSB E</a></div>
-  </div>
-
-  <!-- Second Division -->
-  <h3 class="text-start mb-3 mt-4">Second Division</h3>
-  <div class="row g-3">
-    <div class="col-6 col-md-3"><a class="team-btn py-2 px-3" href="KSB_F.html">KSB F</a></div>
-    <div class="col-6 col-md-3"><a class="team-btn py-2 px-3" href="KSB_Lions.html">KSB Lions</a></div>
-    <div class="col-6 col-md-3"><a class="team-btn py-2 px-3" href="KSB_Tigers_Jun.html">KSB Tigers (Jun)</a></div>
-  </div>
-
-    <!-- Third Division -->
-  <h3 class="text-start mb-3 mt-4">Third Division</h3>
-  <div class="row g-3">
-    <div class="col-6 col-md-3"><a class="team-btn py-2 px-3" href="KSB_G.html">KSB G</a></div>
-    <div class="col-6 col-md-3"><a class="team-btn py-2 px-3" href="KSB_Jaguars.html">KSB Jaguars</a></div>
-    <div class="col-6 col-md-3"><a class="team-btn py-2 px-3" href="KSB_Leopards_Jun.html">KSB Leopards (Jun)</a></div>
-    <div class="col-6 col-md-3"><a class="team-btn py-2 px-3" href="KSB_Pumas_Jun.html">KSB Pumas (Jun)</a></div>
-    <div class="col-6 col-md-3"><a class="team-btn py-2 px-3" href="KSB_Panthers_Jun.html">KSB Panthers (Jun)</a></div>
+  <!-- Team groupings are loaded from teams-config.json. -->
+  <p id="teamSeasonLabel" class="team-season-label"></p>
+  <div class="mb-4"><a class="btn btn-primary px-4 py-2" href="players.html">All Players</a></div>
+  <div id="teamDivisionGroups">
+    <div class="team-list-loading">Loading current team divisions...</div>
   </div>
 
   <!-- Weekly Fixtures -->
@@ -89,10 +62,46 @@
 // List of team fixture files to include
 const teams = [
   "KSB A", "KSB B", "KSB C", "KSB D", "KSB E",
-  "KSB F", "KSB Lions", "KSB Tigers (Jun)",
-  "KSB G", "KSB Jaguars", "KSB Leopards (Jun)",
-  "KSB Pumas (Jun)", "KSB Panthers (Jun)"
+  "KSB F", "KSB Lions", "KSB Tigers",
+  "KSB G", "KSB Jaguars", "KSB Leopards",
+  "KSB Pumas", "KSB Panthers"
 ];
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, char => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;"
+  })[char]);
+}
+
+function divisionHeading(key) {
+  return ({ premier:"Premier Division", first:"First Division", second:"Second Division", third:"Third Division" })[key] || key;
+}
+
+async function loadTeamDivisions() {
+  const host = document.getElementById("teamDivisionGroups");
+  try {
+    const response = await fetch("teams-config.json", { cache:"no-cache" });
+    if (!response.ok) throw new Error(`Could not load teams-config.json (${response.status}).`);
+    const config = await response.json();
+    const season = String(config.currentSeason);
+    const seasonConfig = config.seasons?.[season];
+    if (!seasonConfig) throw new Error(`No team configuration found for ${season}.`);
+
+    document.getElementById("teamSeasonLabel").textContent = `${seasonConfig.label || season} season`;
+    host.innerHTML = Object.entries(seasonConfig.divisions).map(([divisionKey, divisionTeams]) => `
+      <section class="team-division-group">
+        <h3 class="text-start mb-3 mt-4">${divisionHeading(divisionKey)}</h3>
+        <div class="row g-3">
+          ${divisionTeams.map(team => `
+            <div class="col-6 col-md-3">
+              <a class="team-btn py-2 px-3" href="${escapeHtml(config.teamFiles[team])}">${escapeHtml(team)}</a>
+            </div>`).join("")}
+        </div>
+      </section>`).join("");
+  } catch (error) {
+    host.innerHTML = `<div class="team-list-error">${escapeHtml(error.message)}</div>`;
+  }
+}
 
 function parseCSV(text) {
   const rows = text.trim().split("\n");
@@ -173,7 +182,10 @@ uniqueFixtures.forEach(f => {
 });
 }
 
-document.addEventListener("DOMContentLoaded", loadWeeklyFixtures);
+document.addEventListener("DOMContentLoaded", () => {
+  loadTeamDivisions();
+  loadWeeklyFixtures();
+});
 </script>
 </body>
 </html>

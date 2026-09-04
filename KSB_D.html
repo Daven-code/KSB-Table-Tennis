@@ -1,147 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KSB Table Tennis Club - KSB D</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
-  body { color: #f0f0f0; background-color: #121212; }
-  body::before { content:""; position:fixed; top:0; left:0; right:0; bottom:0; background-color: rgba(18,18,18,0.85); z-index:-1; }
-  .card { background-color: #1e1e1e; border: none; }
-  .tab-content { color: #f8f8f8; }
-  iframe { width:100%; height:600px; border:none; }
-  table { width: 100%; }
-  th, td { text-align: center; vertical-align: middle; }
-  .past-fixture td { color: #888; } /* Optional: dim past fixtures */
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSB Table Tennis Club - KSB D</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="team-styles.css" rel="stylesheet">
 </head>
 <body>
-
-<div class="container my-5">
-  <h1 class="mb-4">KSB D</h1>
-
-  <!-- Tabs -->
-  <ul class="nav nav-tabs" id="teamTabs" role="tablist">
-    <li class="nav-item">
-      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#fixtures" type="button">Fixtures</button>
-    </li>
-    <li class="nav-item">
-      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#members" type="button">Team Members</button>
-    </li>
-    <li class="nav-item">
-      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#league" type="button">League Table</button>
-    </li>
-  </ul>
-
-  <div class="tab-content card p-3 mt-3">
-    <!-- Fixtures Tab -->
-    <div class="tab-pane fade show active" id="fixtures">
-      <h4>Upcoming Fixtures</h4>
-      <div class="table-responsive">
-        <table id="upcomingTable" class="table table-dark table-striped table-hover text-center align-middle"></table>
-      </div>
-
-      <h4 class="mt-4">Past Fixtures</h4>
-      <div class="table-responsive">
-        <table id="pastTable" class="table table-dark table-striped text-center align-middle"></table>
-      </div>
+  <main class="container team-page my-5">
+    <h1 class="mb-4">KSB D</h1>
+    <ul class="nav nav-tabs" id="teamTabs" role="tablist">
+      <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#fixtures" type="button">Fixtures</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#members" type="button">Team Members</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#league" type="button">League Table</button></li>
+    </ul>
+    <div class="tab-content team-shell p-3 mt-3">
+      <section class="tab-pane fade show active" id="fixtures">
+        <h2 class="section-heading">Upcoming Fixtures</h2>
+        <div class="table-responsive"><table id="upcomingTable" class="table table-dark table-striped table-hover align-middle"></table></div>
+        <h2 class="section-heading mt-4">Past Fixtures</h2>
+        <div class="table-responsive"><table id="pastTable" class="table table-dark table-striped align-middle"></table></div>
+      </section>
+      <section class="tab-pane fade" id="members">
+        <div class="team-members-toolbar"><h2 class="section-heading mb-0">Team Members</h2><span class="small-note">Season follows the League Table selection</span></div>
+        <div id="teamMembersContent" class="status-panel">Player statistics will appear here when the feed is connected.</div>
+      </section>
+      <section class="tab-pane fade" id="league">
+        <div class="league-toolbar">
+          <h2 id="leagueHeading" class="section-heading mb-0">First Division Table</h2>
+          <div class="season-control">
+            <label for="seasonSelect">Season</label>
+            <select id="seasonSelect" class="form-select form-select-sm" aria-label="Select league table season">
+              <option value="2026">2026</option>
+              <option value="2025" selected>2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+            </select>
+          </div>
+        </div>
+        <div id="leagueContent" class="status-panel"><div><div class="spinner-border text-primary mb-3" role="status"></div><p>Loading league table...</p></div></div>
+      </section>
     </div>
-
-    <!-- Team Members Tab -->
-    <div class="tab-pane fade" id="members">
-      <h4>Team Members</h4>
-      <iframe id="membersIframe"></iframe>
-      <p class="text-muted mt-2">If the content does not load, <a id="membersLink" href="" target="_blank">open it here</a>.</p>
-    </div>
-
-    <!-- League Table Tab -->
-    <div class="tab-pane fade" id="league">
-      <h4>League Table</h4>
-      <iframe src="https://eastlancstt.org.uk/result/2026/first/league"></iframe>
-      <p class="text-muted mt-2">If the table does not display, <a href="https://eastlancstt.org.uk" target="_blank">view on website</a>.</p>
-    </div>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Team name -->
-<script>
-  const teamName = "KSB D"; // Change for each team
-</script>
-
-<!-- CSV fixtures loader and tables -->
-<script>
-function parseCSV(text) {
-  const rows = text.trim().split("\n");
-  const headers = rows.shift().split(",");
-  return rows.map(row => {
-    const values = row.split(",");
-    const obj = {};
-    headers.forEach((h, i) => obj[h.trim()] = values[i]?.trim());
-    return obj;
-  });
-}
-
-function buildTable(fixtures, past=false) {
-  if (fixtures.length === 0) {
-    return `<tr><td colspan="6"><em>No fixtures available.</em></td></tr>`;
-  }
-  let html = `<thead><tr>
-    <th>Date</th>
-    <th>Home</th>
-    <th>Away</th>
-    <th>Venue</th>
-  </tr></thead><tbody>`;
-  fixtures.forEach(f => {
-    const dateStr = new Date(f.Date).toLocaleDateString("en-GB", {
-      day: "2-digit", month: "short", year: "numeric"
-    });
-    html += `<tr${past ? ' class="past-fixture"' : ''}>
-      <td>${dateStr}</td>
-      <td>${f["Home Team"]}</td>
-      <td>${f["Away Team"]}</td>
-      <td>${f.Venue}</td>
-    </tr>`;
-  });
-  html += "</tbody>";
-  return html;
-}
-
-function loadFixtures() {
-  const csvFile = `${teamName} Fixtures.csv`;
-  fetch(csvFile)
-    .then(res => {
-      if (!res.ok) throw new Error(`Cannot load ${csvFile}`);
-      return res.text();
-    })
-    .then(text => {
-      const data = parseCSV(text);
-      const today = new Date(); today.setHours(0,0,0,0);
-      const past = [], upcoming = [];
-      data.forEach(fix => {
-        const date = new Date(fix.Date); date.setHours(0,0,0,0);
-        if (date < today) past.push(fix);
-        else upcoming.push(fix);
-      });
-
-      document.getElementById("upcomingTable").innerHTML = buildTable(upcoming);
-      document.getElementById("pastTable").innerHTML = buildTable(past.reverse(), true);
-    })
-    .catch(err => {
-      document.getElementById("upcomingTable").innerHTML = `<tr><td colspan="6">${err.message}</td></tr>`;
-      document.getElementById("pastTable").innerHTML = "";
-    });
-}
-
-document.addEventListener("DOMContentLoaded", loadFixtures);
-</script>
-
-<!-- Optional: include your team members and utility scripts -->
-<script src="team-template.js"></script>
-<script src="site-utils.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+  </main>
+  <script>const teamName='KSB D';</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="team-template.js"></script>
+  <script src="site-utils.js"></script>
 </body>
 </html>
