@@ -84,3 +84,90 @@ th, td { text-align:center; vertical-align:middle; white-space:nowrap; }
   .league-toolbar .season-control { width:100%; }
   .league-toolbar .season-control + .season-control { margin-left:0; }
 }
+
+
+/* Mobile-only fixture table viewing controls. Desktop presentation is unchanged. */
+.fixture-mobile-tools { display:none; }
+
+@media (max-width:767px) {
+  #fixtures .table-responsive {
+    width:100%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior-inline:contain;
+    touch-action:pan-x pan-y pinch-zoom;
+    scrollbar-width:thin;
+    scrollbar-color:#7b8792 #20242a;
+    border-radius:8px;
+  }
+
+  #fixtures .table-responsive::-webkit-scrollbar { height:9px; }
+  #fixtures .table-responsive::-webkit-scrollbar-track { background:#20242a; }
+  #fixtures .table-responsive::-webkit-scrollbar-thumb {
+    background:#7b8792;
+    border-radius:999px;
+    border:2px solid #20242a;
+  }
+
+  #fixtures table {
+    --fixture-scale:1;
+    width:max-content;
+    min-width:720px;
+    font-size:calc(1rem * var(--fixture-scale));
+  }
+
+  #fixtures table th,
+  #fixtures table td {
+    padding:calc(.5rem * var(--fixture-scale)) calc(.65rem * var(--fixture-scale));
+  }
+
+  .fixture-mobile-tools {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:14px;
+    padding:10px 12px;
+    background:#22272d;
+    border:1px solid #3b444d;
+    border-radius:9px;
+  }
+
+  .fixture-tools-label {
+    color:#d8dee4;
+    font-size:.82rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+  }
+
+  .fixture-size-buttons { display:flex; gap:6px; }
+
+  .fixture-size-button {
+    min-width:40px;
+    min-height:36px;
+    padding:5px 9px;
+    border:1px solid #52606c;
+    border-radius:7px;
+    background:#303840;
+    color:#fff;
+    font-weight:700;
+  }
+
+  .fixture-size-button:active,
+  .fixture-size-button:focus-visible {
+    border-color:#66b3ff;
+    outline:2px solid rgba(102,179,255,.28);
+    outline-offset:1px;
+  }
+
+  .fixture-size-reset { min-width:58px; font-size:.78rem; }
+
+  .fixture-scroll-hint {
+    flex-basis:100%;
+    color:#aeb7c0;
+    font-size:.78rem;
+  }
+}

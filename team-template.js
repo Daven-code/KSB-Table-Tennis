@@ -53,6 +53,52 @@ function parseCSV(text) {
   });
 }
 
+function initialiseMobileFixtureControls() {
+  const fixturesSection = document.getElementById("fixtures");
+  if (!fixturesSection || fixturesSection.querySelector(".fixture-mobile-tools")) return;
+
+  const tools = document.createElement("div");
+  tools.className = "fixture-mobile-tools";
+  tools.setAttribute("aria-label", "Mobile fixture table controls");
+  tools.innerHTML = `
+    <span class="fixture-tools-label">Table size</span>
+    <div class="fixture-size-buttons" role="group" aria-label="Change fixture table size">
+      <button type="button" class="fixture-size-button" data-fixture-size="smaller" aria-label="Make fixture table smaller">A-</button>
+      <button type="button" class="fixture-size-button fixture-size-reset" data-fixture-size="reset" aria-label="Reset fixture table size">Reset</button>
+      <button type="button" class="fixture-size-button" data-fixture-size="larger" aria-label="Make fixture table larger">A+</button>
+    </div>
+    <span class="fixture-scroll-hint">Swipe left or right to see all columns</span>`;
+
+  fixturesSection.insertBefore(tools, fixturesSection.firstElementChild);
+
+  const fixtureTables = [
+    document.getElementById("upcomingTable"),
+    document.getElementById("pastTable")
+  ].filter(Boolean);
+
+  const sizeSteps = [0.78, 0.9, 1, 1.12, 1.25];
+  let sizeIndex = 2;
+
+  function applySize() {
+    fixtureTables.forEach(table => {
+      table.style.setProperty("--fixture-scale", sizeSteps[sizeIndex]);
+    });
+  }
+
+  tools.addEventListener("click", event => {
+    const button = event.target.closest("[data-fixture-size]");
+    if (!button) return;
+
+    const action = button.dataset.fixtureSize;
+    if (action === "smaller") sizeIndex = Math.max(0, sizeIndex - 1);
+    if (action === "larger") sizeIndex = Math.min(sizeSteps.length - 1, sizeIndex + 1);
+    if (action === "reset") sizeIndex = 2;
+    applySize();
+  });
+
+  applySize();
+}
+
 function buildFixtureTable(fixtures, past = false) {
   if (!fixtures.length) return '<tbody><tr><td colspan="4"><em>No fixtures available.</em></td></tr></tbody>';
   const rows = fixtures.map(fixture => {
@@ -215,6 +261,7 @@ async function loadLeagueHistory() {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
+  initialiseMobileFixtureControls();
   loadFixtures();
   prepareMembers();
   initialiseTeamMembers();
