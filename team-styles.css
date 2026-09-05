@@ -171,3 +171,148 @@ th, td { text-align:center; vertical-align:middle; white-space:nowrap; }
     font-size:.78rem;
   }
 }
+.current-team-meta{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px;padding:12px 14px;background:#202830;border-radius:9px}.current-team-meta span{color:#aeb7c0;font-size:.85rem}.team-member-grid{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:767px){.current-team-meta{align-items:flex-start;flex-direction:column}.team-member-grid{grid-template-columns:1fr}}
+
+
+/* ===== KSB PLAYER UI: AUTHORITATIVE STYLES ===== */
+.ksb-player-directory{padding:8px 4px}.ksb-directory-controls{display:grid;grid-template-columns:minmax(260px,1.6fr) minmax(220px,1fr) 112px;gap:28px;align-items:end;margin:0 0 26px;padding:22px 24px;background:#20262c;border:1px solid #3b4650;border-radius:12px}.ksb-directory-controls label{display:flex;flex-direction:column;gap:8px;margin:0;color:#cbd4dc;font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}.ksb-directory-controls .form-control,.ksb-directory-controls .form-select{width:100%;min-height:44px;color:#f5f7f9;background:#15191d;border:1px solid #4a5661;border-radius:8px}.ksb-player-count{display:grid;place-items:center;min-height:44px;padding:8px;color:#dff1ff;background:#123f60;border:1px solid #316b92;border-radius:8px;font-size:.86rem;font-weight:800}.ksb-player-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.ksb-player-card{display:grid;grid-template-columns:minmax(0,1fr) 76px 14px;align-items:center;gap:12px;min-width:0;min-height:66px;padding:11px 13px;color:#fff!important;text-decoration:none!important;background:linear-gradient(145deg,#282f35,#22282e);border:1px solid #3d4852;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.16);transition:.18s}.ksb-player-card:hover{transform:translateY(-2px);border-color:#66b3ff;box-shadow:0 9px 20px rgba(0,0,0,.25)}.ksb-player-main{display:flex;flex-direction:column;gap:5px;min-width:0}.ksb-player-main strong,.ksb-player-main small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ksb-player-main strong{font-size:.92rem}.ksb-player-main small{color:#aeb9c3;font-size:.72rem}.ksb-rank-block{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:8px;text-align:right}.ksb-rank-block strong{color:#8dc6ff;font-size:1.12rem;line-height:1}.ksb-rank-block small{color:#9da8b2;font-size:.66rem;line-height:1.1}.ksb-card-chevron{color:#66b3ff;font-size:1.3rem}.ksb-player-empty{padding:36px 18px;color:#aeb9c3;text-align:center}.ksb-member-tabs{display:flex;gap:10px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid #3a444d}.ksb-member-tabs button{padding:9px 15px;color:#9fd0f5;background:#20262c;border:1px solid #3c4750;border-radius:8px;font-weight:700}.ksb-member-tabs button.active{color:#fff;background:#123f60;border-color:#4b94c5}.ksb-member-panel{display:none}.ksb-member-panel.active{display:block}.ksb-roster-title{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px;padding:13px 15px;background:#202830;border:1px solid #344652;border-radius:9px}.ksb-roster-title h3{margin:0;font-size:1rem}.ksb-roster-title p{margin:3px 0 0;color:#aeb8c1;font-size:.8rem}.ksb-roster-title>span{padding:6px 9px;color:#cbeaff;background:#123f60;border-radius:6px;font-size:.72rem;font-weight:700}.ksb-history-controls{width:min(340px,100%);margin-bottom:16px;padding:14px;background:#20262c;border:1px solid #3c4750;border-radius:9px}.ksb-history-controls label{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:14px;color:#cbd3db;font-size:.78rem;font-weight:800;text-transform:uppercase}.ksb-history-controls .form-select{min-height:42px;color:#fff;background-color:#15191d;border-color:#4a5661}
+.player-profile{display:grid;gap:18px}.player-profile-hero{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px;background:linear-gradient(135deg,rgba(26,31,36,.98),rgba(18,63,96,.78));border:1px solid #3e5263;border-radius:14px}.profile-kicker{margin:0 0 5px;color:#8dc6ff;font-size:.75rem;font-weight:800;text-transform:uppercase}.player-profile-hero h1{margin:0 0 5px}.player-profile-hero p:not(.profile-kicker){margin:0;color:#b7c1ca}.profile-rank{min-width:120px;padding:15px;background:rgba(10,29,43,.75);border:1px solid #40789e;border-radius:12px;text-align:center}.profile-rank strong,.profile-rank span{display:block}.profile-rank strong{font-size:1.8rem}.profile-rank span{color:#a9d4f5;font-size:.72rem}.profile-summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.profile-summary-grid>div,.profile-panel{padding:17px;background:rgba(24,28,32,.97);border:1px solid #384149;border-radius:12px}.profile-summary-grid>div{text-align:center}.profile-summary-grid span,.profile-summary-grid strong{display:block}.profile-summary-grid span{color:#9faab4;font-size:.7rem;text-transform:uppercase}.profile-summary-grid strong{margin-top:5px}.profile-chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.profile-panel h2{font-size:1.12rem}.profile-panel-heading p,.profile-help{color:#9faab4;font-size:.8rem}.chart-box{height:270px}.player-history-table th{font-size:.75rem;white-space:normal}.player-history-table td{font-size:.86rem}
+@media(max-width:991px){.ksb-player-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.profile-chart-grid{grid-template-columns:1fr}}
+@media(max-width:767px){.ksb-directory-controls{grid-template-columns:1fr;gap:14px;padding:16px}.ksb-player-count{width:100%}.ksb-player-grid{grid-template-columns:1fr}.ksb-player-card{min-height:64px;padding:10px 12px}.ksb-member-tabs{display:grid;grid-template-columns:1fr 1fr}.ksb-member-tabs button{padding:10px 7px}.ksb-roster-title{align-items:flex-start;flex-direction:column}.ksb-history-controls{width:100%}.profile-summary-grid{grid-template-columns:repeat(2,1fr)}.player-profile-hero{align-items:flex-start;padding:18px}.profile-rank{min-width:92px}.player-history-table{min-width:820px}.chart-box{height:230px}}
+
+/* Player-profile mobile containment and archive note */
+.records-start-note {
+  margin-top:9px !important;
+  color:#9fc7e3 !important;
+  font-size:.78rem;
+  line-height:1.45;
+}
+
+.player-profile,
+.player-profile > *,
+.profile-chart-grid,
+.profile-chart-grid > *,
+.profile-summary-grid,
+.profile-summary-grid > * {
+  min-width:0;
+  max-width:100%;
+  box-sizing:border-box;
+}
+
+.profile-panel {
+  overflow:hidden;
+}
+
+.profile-panel > .table-responsive {
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+.chart-box,
+.chart-box canvas {
+  max-width:100% !important;
+}
+
+@media (max-width:767px) {
+  body {
+    overflow-x:hidden;
+  }
+
+  .team-page {
+    width:calc(100% - 20px);
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .player-profile {
+    width:100%;
+    max-width:100%;
+    gap:14px;
+    overflow:hidden;
+  }
+
+  .player-profile-hero {
+    width:100%;
+    max-width:100%;
+    flex-direction:column;
+    align-items:stretch;
+    gap:14px;
+    padding:17px;
+    overflow:hidden;
+  }
+
+  .player-profile-hero > div:first-child {
+    min-width:0;
+  }
+
+  .player-profile-hero h1 {
+    overflow-wrap:anywhere;
+  }
+
+  .profile-rank {
+    width:100%;
+    min-width:0;
+    max-width:100%;
+  }
+
+  .profile-summary-grid {
+    width:100%;
+    max-width:100%;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:9px;
+  }
+
+  .profile-summary-grid > div {
+    min-width:0;
+    padding:13px 8px;
+  }
+
+  .profile-summary-grid strong {
+    overflow-wrap:anywhere;
+    font-size:.95rem;
+  }
+
+  .profile-chart-grid {
+    width:100%;
+    max-width:100%;
+    grid-template-columns:minmax(0,1fr);
+    gap:14px;
+  }
+
+  .profile-panel {
+    width:100%;
+    max-width:100%;
+    padding:14px;
+  }
+
+  .chart-box {
+    width:100% !important;
+    height:225px;
+    overflow:hidden;
+  }
+
+  .chart-box canvas {
+    width:100% !important;
+    height:100% !important;
+  }
+
+  .player-history-table {
+    min-width:820px;
+  }
+
+  .records-start-note {
+    max-width:34rem;
+    font-size:.75rem;
+  }
+}
+
+@media (max-width:420px) {
+  .profile-summary-grid {
+    grid-template-columns:minmax(0,1fr);
+  }
+
+  .chart-box {
+    height:210px;
+  }
+}

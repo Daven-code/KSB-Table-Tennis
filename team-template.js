@@ -3,6 +3,7 @@
 // No API request or separate JSON file is required.
 // Change this one value to 2027 next season.
 const CURRENT_SEASON = 2026;
+const PLAYER_CURRENT_SEASON = 2025;
 const API_ROOT = "https://eastlancstt.org.uk/api/result";
 const DIVISIONS = ["premier", "first", "second", "third"];
 
@@ -231,25 +232,26 @@ function prepareMembers() {
 }
 
 async function initialiseTeamMembers() {
-  const host = document.getElementById("teamMembersContent");
-  if (!host) return;
-
+  const host=document.getElementById("teamMembersContent");
+  if(!host) return;
+  const teamSlug=teamSlugs[teamName];
   try {
-    const response = await fetch("player-data.json", { cache: "no-cache" });
-    if (!response.ok) throw new Error("Player data is not available yet.");
-    const store = await response.json();
-    const players = (store.players || []).filter(player => player.team === teamName && player.current !== false);
-
-    if (!players.length) {
-      host.textContent = "No current player records are available for this team yet.";
-      return;
-    }
-
-    host.className = "";
-    host.innerHTML = `<div class="table-responsive"><table class="table table-dark table-striped table-hover align-middle"><thead><tr><th>Rank</th><th class="text-start">Player</th><th>Played</th><th>Wins</th><th>Win %</th></tr></thead><tbody>${players.map(player => `<tr><td>${escapeHtml(player.rank ?? "-")}</td><td class="text-start">${escapeHtml(player.name)}</td><td>${escapeHtml(player.played ?? "-")}</td><td>${escapeHtml(player.wins ?? "-")}</td><td>${player.winRate != null ? `${escapeHtml(player.winRate)}%` : "-"}</td></tr>`).join("")}</tbody></table></div>`;
-  } catch (error) {
-    host.textContent = error.message;
-  }
+    const response=await fetch("player-data.json",{cache:"no-cache"});
+    if(!response.ok) throw new Error(`Could not load player-data.json (${response.status}).`);
+    const store=await response.json();
+    const rosters=store.teamRosters||{};
+    const card=(player,season,label)=>`<a class="ksb-player-card" href="player.html?id=${encodeURIComponent(player.slug)}"><span class="ksb-player-main"><strong>${escapeHtml(player.name)}</strong><small>${escapeHtml(label)} · ${season}</small></span><span class="ksb-rank-block"><strong>${escapeHtml(player.rank??"-")}</strong><small>${season} rank</small></span><span class="ksb-card-chevron">›</span></a>`;
+    const sorted=players=>[...players].sort((a,b)=>(b.rank||0)-(a.rank||0)||a.name.localeCompare(b.name));
+    const current=rosters[String(PLAYER_CURRENT_SEASON)]?.[teamSlug];
+    const historicYears=Object.keys(rosters).filter(year=>Number(year)<PLAYER_CURRENT_SEASON&&rosters[year]?.[teamSlug]?.players?.length).sort((a,b)=>b-a);
+    host.className="ksb-team-members";
+    host.innerHTML=`<div class="ksb-member-tabs"><button class="active" data-member-tab="current">Current Team</button><button data-member-tab="history">Historic Team Members</button></div>
+      <section class="ksb-member-panel active" data-member-panel="current">${current?.players?.length?`<div class="ksb-roster-title"><div><h3>${PLAYER_CURRENT_SEASON} Team Members</h3><p>${escapeHtml(teamName)} · highest rank first</p></div><span>${current.players.length} players</span></div><div class="ksb-player-grid">${sorted(current.players).map(p=>card(p,PLAYER_CURRENT_SEASON,teamName)).join("")}</div>`:`<div class="ksb-player-empty">No ${PLAYER_CURRENT_SEASON} roster is available.</div>`}</section>
+      <section class="ksb-member-panel" data-member-panel="history">${historicYears.length?`<div class="ksb-history-controls"><label>Season<select class="form-select" id="historySeason">${historicYears.map(y=>`<option>${y}</option>`).join("")}</select></label></div><div id="historyRoster"></div>`:'<div class="ksb-player-empty">No historic rosters are available.</div>'}</section>`;
+    host.querySelectorAll("[data-member-tab]").forEach(button=>button.addEventListener("click",()=>{host.querySelectorAll("[data-member-tab]").forEach(b=>b.classList.toggle("active",b===button));host.querySelectorAll("[data-member-panel]").forEach(p=>p.classList.toggle("active",p.dataset.memberPanel===button.dataset.memberTab));}));
+    const select=host.querySelector("#historySeason"), list=host.querySelector("#historyRoster");
+    if(select&&list){const draw=()=>{const year=select.value,roster=rosters[year][teamSlug];list.innerHTML=`<div class="ksb-roster-title"><div><h3>${escapeHtml(roster.team?.name||teamName)}</h3><p>${escapeHtml(roster.team?.divisionName||"")} Division · ${year}</p></div><span>${roster.players.length} players</span></div><div class="ksb-player-grid">${sorted(roster.players).map(p=>card(p,year,roster.team?.name||teamName)).join("")}</div>`;};select.addEventListener("change",draw);draw();}
+  } catch(error) { host.className="status-panel error"; host.textContent=error.message; }
 }
 
 async function loadLeagueHistory() {
