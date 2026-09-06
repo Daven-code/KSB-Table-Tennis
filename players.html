@@ -10,16 +10,18 @@
 <body>
   <main class="container team-page my-5">
     <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap mb-4">
-      <div><h1 class="mb-1">All Players</h1><p class="small-note mb-0">2025 current players and KSB player history from 2013 to 2025</p></div>
+      <div><h1 class="mb-1">All Players</h1><p class="small-note mb-0">Current players and complete KSB player history from 2013 onwards</p></div>
       <a class="btn btn-outline-light" href="teams.html">Back to Teams</a>
     </div>
     <ul class="nav nav-tabs" role="tablist">
       <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#currentPlayers" type="button">Current Players</button></li>
       <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#historicPlayers" type="button">Historic Players</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#clubInsights" type="button">Club Insights</button></li>
     </ul>
     <div class="tab-content team-shell p-3 mt-3">
       <section class="tab-pane fade show active" id="currentPlayers"><div id="currentPlayersContent" class="status-panel">Loading current player records...</div></section>
       <section class="tab-pane fade" id="historicPlayers"><div id="historicPlayersContent" class="status-panel">Loading historical player records...</div></section>
+      <section class="tab-pane fade" id="clubInsights"><div id="clubInsightsContent" class="status-panel">Loading club insights...</div></section>
     </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

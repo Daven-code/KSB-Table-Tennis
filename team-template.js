@@ -3,7 +3,7 @@
 // No API request or separate JSON file is required.
 // Change this one value to 2027 next season.
 const CURRENT_SEASON = 2026;
-const PLAYER_CURRENT_SEASON = 2025;
+const PLAYER_CURRENT_SEASON = 2026;
 const API_ROOT = "https://eastlancstt.org.uk/api/result";
 const DIVISIONS = ["premier", "first", "second", "third"];
 
@@ -231,28 +231,7 @@ function prepareMembers() {
   membersLink.href = `https://eastlancstt.org.uk/result/${CURRENT_SEASON}/team/${teamSlugs[teamName] || "ksb-a"}`;
 }
 
-async function initialiseTeamMembers() {
-  const host=document.getElementById("teamMembersContent");
-  if(!host) return;
-  const teamSlug=teamSlugs[teamName];
-  try {
-    const response=await fetch("player-data.json",{cache:"no-cache"});
-    if(!response.ok) throw new Error(`Could not load player-data.json (${response.status}).`);
-    const store=await response.json();
-    const rosters=store.teamRosters||{};
-    const card=(player,season,label)=>`<a class="ksb-player-card" href="player.html?id=${encodeURIComponent(player.slug)}"><span class="ksb-player-main"><strong>${escapeHtml(player.name)}</strong><small>${escapeHtml(label)} · ${season}</small></span><span class="ksb-rank-block"><strong>${escapeHtml(player.rank??"-")}</strong><small>${season} rank</small></span><span class="ksb-card-chevron">›</span></a>`;
-    const sorted=players=>[...players].sort((a,b)=>(b.rank||0)-(a.rank||0)||a.name.localeCompare(b.name));
-    const current=rosters[String(PLAYER_CURRENT_SEASON)]?.[teamSlug];
-    const historicYears=Object.keys(rosters).filter(year=>Number(year)<PLAYER_CURRENT_SEASON&&rosters[year]?.[teamSlug]?.players?.length).sort((a,b)=>b-a);
-    host.className="ksb-team-members";
-    host.innerHTML=`<div class="ksb-member-tabs"><button class="active" data-member-tab="current">Current Team</button><button data-member-tab="history">Historic Team Members</button></div>
-      <section class="ksb-member-panel active" data-member-panel="current">${current?.players?.length?`<div class="ksb-roster-title"><div><h3>${PLAYER_CURRENT_SEASON} Team Members</h3><p>${escapeHtml(teamName)} · highest rank first</p></div><span>${current.players.length} players</span></div><div class="ksb-player-grid">${sorted(current.players).map(p=>card(p,PLAYER_CURRENT_SEASON,teamName)).join("")}</div>`:`<div class="ksb-player-empty">No ${PLAYER_CURRENT_SEASON} roster is available.</div>`}</section>
-      <section class="ksb-member-panel" data-member-panel="history">${historicYears.length?`<div class="ksb-history-controls"><label>Season<select class="form-select" id="historySeason">${historicYears.map(y=>`<option>${y}</option>`).join("")}</select></label></div><div id="historyRoster"></div>`:'<div class="ksb-player-empty">No historic rosters are available.</div>'}</section>`;
-    host.querySelectorAll("[data-member-tab]").forEach(button=>button.addEventListener("click",()=>{host.querySelectorAll("[data-member-tab]").forEach(b=>b.classList.toggle("active",b===button));host.querySelectorAll("[data-member-panel]").forEach(p=>p.classList.toggle("active",p.dataset.memberPanel===button.dataset.memberTab));}));
-    const select=host.querySelector("#historySeason"), list=host.querySelector("#historyRoster");
-    if(select&&list){const draw=()=>{const year=select.value,roster=rosters[year][teamSlug];list.innerHTML=`<div class="ksb-roster-title"><div><h3>${escapeHtml(roster.team?.name||teamName)}</h3><p>${escapeHtml(roster.team?.divisionName||"")} Division · ${year}</p></div><span>${roster.players.length} players</span></div><div class="ksb-player-grid">${sorted(roster.players).map(p=>card(p,year,roster.team?.name||teamName)).join("")}</div>`;};select.addEventListener("change",draw);draw();}
-  } catch(error) { host.className="status-panel error"; host.textContent=error.message; }
-}
+async function initialiseTeamMembers(){const host=document.getElementById("teamMembersContent");if(!host)return;try{const r=await fetch("ksb_master_database.json",{cache:"no-cache"});if(!r.ok)throw Error("Could not load master database");const d=await r.json(),slug=teamSlugs[teamName],year=d.coverage.currentSeason,live=d.currentSeason.teams?.[slug],hist=d.historic.seasons||{},years=Object.keys(hist).filter(y=>hist[y].teams?.[slug]?.players?.length).sort((a,b)=>b-a),card=(p,y)=>`<a class="ksb-player-card" href="player.html?id=${encodeURIComponent(p.slug)}"><span class="ksb-player-main"><strong>${escapeHtml(p.name)}</strong><small>${y}</small></span><span class="ksb-rank-block"><strong>${p.rank??"-"}</strong><small>${y} rank</small></span><span class="ksb-card-chevron">›</span></a>`,grid=(a,y)=>`<div class="ksb-player-grid">${[...a].sort((a,b)=>(b.rank||0)-(a.rank||0)).map(p=>card(p,y)).join("")}</div>`;host.className="ksb-team-members";host.innerHTML=`<div class="ksb-member-tabs"><button class="active" data-member-tab="current">Current Team (${year})</button><button data-member-tab="history">Historic Team Members</button></div><section class="ksb-member-panel active" data-member-panel="current">${live?.players?.length?`<div class="ksb-roster-title"><h3>${escapeHtml(live.team?.name||teamName)}</h3><span>${live.players.length} players</span></div>${grid(live.players,year)}`:`<div class="current-season-empty"><h3>${year} team not published</h3><p>Refresh the master database.</p></div>`}</section><section class="ksb-member-panel" data-member-panel="history"><div class="ksb-history-controls"><label>Season<select id="historySeason" class="form-select">${years.map(y=>`<option>${y}</option>`).join("")}</select></label></div><div id="historyRoster"></div></section>`;host.querySelectorAll("[data-member-tab]").forEach(b=>b.onclick=()=>{host.querySelectorAll("[data-member-tab]").forEach(x=>x.classList.toggle("active",x===b));host.querySelectorAll("[data-member-panel]").forEach(x=>x.classList.toggle("active",x.dataset.memberPanel===b.dataset.memberTab))});const sel=host.querySelector("#historySeason"),out=host.querySelector("#historyRoster"),draw=()=>{const y=sel.value,x=hist[y].teams[slug];out.innerHTML=`<div class="ksb-roster-title"><h3>${escapeHtml(x.team.name)}</h3><span>${x.players.length} players</span></div>${grid(x.players,y)}`};if(sel){sel.onchange=draw;draw()}}catch(x){host.className="status-panel error";host.textContent=x.message}}
 
 async function loadLeagueHistory() {
   const response = await fetch("league-history.json", { cache: "no-cache" });
