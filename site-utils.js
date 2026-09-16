@@ -1,3 +1,19 @@
+
+// Shared favicon for every page that loads site-utils.js.
+(function addSiteFavicons() {
+  const icons = [
+    { rel: "icon", type: "image/x-icon", href: "favicon.ico" },
+    { rel: "icon", type: "image/png", sizes: "32x32", href: "favicon-32x32.png" },
+    { rel: "icon", type: "image/png", sizes: "192x192", href: "favicon-192x192.png" },
+    { rel: "apple-touch-icon", sizes: "180x180", href: "favicon-180x180.png" }
+  ];
+  icons.forEach(icon => {
+    const link = document.createElement("link");
+    Object.entries(icon).forEach(([name, value]) => link.setAttribute(name, value));
+    document.head.appendChild(link);
+  });
+})();
+
 // site-utils.js
 
 // ===== CONFIGURATION =====
