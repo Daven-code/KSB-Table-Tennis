@@ -121,6 +121,13 @@ function teamContext(player, database, opposition) {
   return `<div class="profile-chart-grid"><section class="profile-panel"><h2>Ranking history</h2><div class="chart-box"><canvas id="teamRankChart"></canvas></div></section><section class="profile-panel"><h2>Team win rate by season</h2><div class="chart-box"><canvas id="teamRateChart"></canvas></div><p class="profile-help">Team results during seasons when this player appeared on the registered squad.</p></section></div><section class="profile-panel"><h2>Team season history</h2><div class="table-responsive"><table class="table table-dark table-striped align-middle player-history-table"><thead><tr><th>Season</th><th class="text-start">Team</th><th>Division</th><th>Rank</th><th>Team Played</th><th>Team Wins</th><th>Team Draws</th><th>Team Losses</th><th>Team Win %</th></tr></thead><tbody>${[...rows].reverse().map(row=>`<tr><td>${row.season}</td><td class="text-start">${esc(row.team)}</td><td>${esc(row.division)}</td><td>${row.rank}</td><td>${row.played}</td><td>${row.wins}</td><td>${row.draws}</td><td>${row.losses}</td><td>${row.winPercentage}%</td></tr>`).join("")}</tbody></table></div></section>${playerClubPanel(player,opposition,"team-context")}`;
 }
 
+function currentSeasonProfile(player, database) {
+  const year = Number(database.coverage?.currentSeason || 2026);
+  const season = seasonOf(player, year);
+  if (!season) return `<section class="profile-panel"><h2>${year} current season</h2><div class="ksb-player-empty">This player has no current-season registration or results.</div></section>`;
+  return `<section class="profile-panel"><div class="season-heading"><div><h2>${year} current season</h2><p>${esc(teamName(season))} · Updated from the current league records</p></div></div>${metricTiles(season.statistics, true, rankOf(season))}<div class="two-scroll-panels"><div><h3>Opponent record</h3>${opponentCards(season.statistics?.opponents || [], database, year)}</div><div><h3>Individual results</h3>${resultCards(season.statistics?.encounters || [], database, year)}</div></div></section>`;
+}
+
 function pastSeasons(player, database) {
   const seasons = seasonsOf(player).filter(season => Number(season.season) <= Number(database.coverage?.historicEndSeason || 2025));
   const aggregate = player.historic || {};
@@ -139,7 +146,10 @@ function careerOpponentMap(player, database, opposition) {
     item.played++; item.setsWon += Number(match.playerScore || 0); item.setsLost += Number(match.opponentScore || 0); item.matches.push({...match,season:season.season});
     if (match.result === "W") item.wins++; else if (match.result === "L") item.losses++; else item.draws++;
     const oppositionPlayer = opposition?.players?.[match.opponentSlug];
-    (oppositionPlayer?.teamHistory || []).forEach(record => { if (record?.team?.name) item.teams.add(record.team.name); });
+    const oppositionEncounter = (oppositionPlayer?.ksbEncounters || []).find(record => Number(record.season) === Number(season.season) && record.id === match.id && record.ksbPlayerSlug === player.slug);
+    if (oppositionEncounter?.opponentTeam?.name) item.teams.add(oppositionEncounter.opponentTeam.name);
+    else (oppositionPlayer?.teamHistory || []).filter(record => Number(record.season) === Number(season.season)).forEach(record => { if (record?.team?.name) item.teams.add(record.team.name); });
+    if (oppositionEncounter?.opponentTeam) item.matches[item.matches.length - 1].opponentTeam = oppositionEncounter.opponentTeam;
     map.set(key,item);
   }));
   return [...map.values()].map(item => ({...item,teams:[...item.teams],winPercentage:pct(item.wins,item.played),setPercentage:pct(item.setsWon,item.setsWon+item.setsLost)})).sort((a,b)=>a.name.localeCompare(b.name));
@@ -185,9 +195,10 @@ function extraPlayerStats(player, database, opposition) {
   return `<div class="extra-stats-grid">${card("Best season",bestSeason?.season,bestSeason?`${stat(bestSeason,"winPercentage")}% wins · ${stat(bestSeason,"wins")}-${stat(bestSeason,"losses")}`:"No recorded matches")}${card("Most matches in a season",busiest?.season,busiest?`${stat(busiest,"played")} matches`:"")}${card("Most wins against",mostWins?.name,mostWins?`${mostWins.wins} wins from ${mostWins.played}`:"No opponent data")}${card("Most losses against",mostLosses?.name,mostLosses?`${mostLosses.losses} losses from ${mostLosses.played}`:"No opponent data")}${card("Most frequent opponent",frequent?.name,frequent?`${frequent.played} matches`:"No opponent data")}${card("Best opponent record",bestOpponent?.name,bestOpponent?`${bestOpponent.winPercentage}% over ${bestOpponent.played} matches`:"Minimum 3 matches")}${card("Closest rivalry",close?.name,close?`${close.wins}-${close.losses} · ${close.played} matches`:"Minimum 3 matches")}${card("Career sets won %",`${pct(player.career?.setsWon||0,(player.career?.setsWon||0)+(player.career?.setsLost||0))}%`,`${player.career?.setsWon||0}-${player.career?.setsLost||0} sets`)}${card("Most faced club",mostFacedClub?.name,mostFacedClub?`${mostFacedClub.played} individual matches`:"No club data")}${card("Most wins against a club",mostClubWins?.name,mostClubWins?`${mostClubWins.wins} wins from ${mostClubWins.played}`:"No club data")}${card("Best club record",bestClub?.name,bestClub?`${bestClub.winPercentage}% over ${bestClub.played} matches`:"Minimum 5 matches")}${card("Toughest club",toughestClub?.name,toughestClub?`${toughestClub.winPercentage}% over ${toughestClub.played} matches`:"Minimum 5 matches")}</div><section class="profile-panel"><h2>Season comparison</h2><div class="chart-box"><canvas id="extraSeasonChart"></canvas></div><p class="profile-help">Individual match win percentage for every recorded season.</p></section>`;
 }
 
-function oppositionTeamForSeason(opposition, opponentSlug, season) {
-  const record = (opposition?.players?.[opponentSlug]?.teamHistory || []).find(item => Number(item.season) === Number(season));
-  return record?.team?.name || "";
+function oppositionTeamForSeason(opposition, opponentSlug, season, match = null) {
+  if (match?.opponentTeam?.name) return match.opponentTeam.name;
+  const records = (opposition?.players?.[opponentSlug]?.teamHistory || []).filter(item => Number(item.season) === Number(season));
+  return records.at(-1)?.team?.name || "";
 }
 
 function playerClubRecord(player, opposition) {
@@ -270,8 +281,8 @@ async function initProfile() {
     document.title = `${player.name} - KSB Table Tennis Club`;
     host.className = "player-profile";
     host.innerHTML = `<header class="player-profile-hero"><div><p class="profile-kicker">KSB player profile</p><h1>${esc(player.name)}</h1><p>${seasons[0]?.season} to ${latest?.season} · ${seasons.length} recorded seasons</p><p class="records-start-note">Club records begin in 2013. Earlier seasons were not recorded and are not shown.</p></div><div class="profile-rank"><strong>${esc(rankOf(latest))}</strong><span>Latest rank</span></div></header>
-      <nav class="profile-main-tabs"><button class="active" data-main-tab="team">Team context</button><button data-main-tab="past">Past seasons</button><button data-main-tab="lookup">Career lookup</button><button data-main-tab="extra">Extra stats</button></nav>
-      <section class="profile-main-panel active" data-main-panel="team">${teamContext(player,database,opposition)}</section>
+      <nav class="profile-main-tabs"><button class="active" data-main-tab="current">Current season</button><button data-main-tab="team">Team context</button><button data-main-tab="past">Past seasons</button><button data-main-tab="lookup">Career lookup</button><button data-main-tab="extra">Extra stats</button></nav>
+      <section class="profile-main-panel active" data-main-panel="current">${currentSeasonProfile(player,database)}</section><section class="profile-main-panel" data-main-panel="team">${teamContext(player,database,opposition)}</section>
       <section class="profile-main-panel" data-main-panel="past">${pastSeasons(player,database)}</section>
       <section class="profile-main-panel" data-main-panel="lookup">${careerLookup(player,database)}</section>
       <section class="profile-main-panel" data-main-panel="extra">${extraPlayerStats(player,database,opposition)}${playerClubPanel(player,opposition)}</section>`;
@@ -291,7 +302,7 @@ async function initProfile() {
     document.getElementById("seasonSelect")?.addEventListener("change",drawSeason); if(document.getElementById("seasonSelect")) drawSeason();
 
     const opponentData=careerOpponentMap(player,database,opposition), oppSearch=document.getElementById("careerOpponentSearch"), lookupOut=document.getElementById("careerLookupResults");
-    function drawLookup(){const q=oppSearch.value.toLowerCase();const rows=opponentData.filter(o=>!q||o.name.toLowerCase().includes(q));lookupOut.innerHTML=rows.length?`<div class="lookup-result-grid">${rows.map(o=>`<article><h3>${esc(o.name)}</h3><p class="opposition-team-history"><b>Teams represented:</b> ${esc(o.teams.length ? o.teams.join(", ") : "Opponent not recorded")}</p><div><span>${o.played}<small>Matches</small></span><span>${o.wins}-${o.losses}<small>W-L</small></span><span>${o.winPercentage}%<small>Win rate</small></span><span>${o.setPercentage}%<small>Sets won</small></span></div><div class="lookup-match-scroll">${o.matches.map(m=>`<p>${resultBadge(m.result)} ${m.season} · ${m.playerScore}-${m.opponentScore} · ${esc(teamName(seasonOf(player,m.season)))} · Opposition: ${esc(oppositionTeamForSeason(opposition,m.opponentSlug,m.season) || "Team not recorded")}</p>`).join("")}</div></article>`).join("")}</div>`:'<div class="ksb-player-empty">No matching career records.</div>'};oppSearch.addEventListener("input",drawLookup);drawLookup();
+    function drawLookup(){const q=oppSearch.value.toLowerCase();const rows=opponentData.filter(o=>!q||o.name.toLowerCase().includes(q));lookupOut.innerHTML=rows.length?`<div class="lookup-result-grid">${rows.map(o=>`<article><h3>${esc(o.name)}</h3><p class="opposition-team-history"><b>Teams represented:</b> ${esc(o.teams.length ? o.teams.join(", ") : "Opponent not recorded")}</p><div><span>${o.played}<small>Matches</small></span><span>${o.wins}-${o.losses}<small>W-L</small></span><span>${o.winPercentage}%<small>Win rate</small></span><span>${o.setPercentage}%<small>Sets won</small></span></div><div class="lookup-match-scroll">${o.matches.map(m=>`<p>${resultBadge(m.result)} ${m.season} · ${m.playerScore}-${m.opponentScore} · ${esc(teamName(seasonOf(player,m.season)))} · Opposition: ${esc(oppositionTeamForSeason(opposition,m.opponentSlug,m.season,m) || "Team not recorded")}</p>`).join("")}</div></article>`).join("")}</div>`:'<div class="ksb-player-empty">No matching career records.</div>'};oppSearch.addEventListener("input",drawLookup);drawLookup();
 
 
   } catch(error) { host.className="status-panel error"; host.textContent=error.message; }

@@ -6362,5 +6362,61 @@
   "2023:zoe-cassidy": {
     "url": "https://eastlancstt.org.uk/api/result/2023/player/zoe-cassidy",
     "status": "success"
+  },
+  "2026:aamir-gondal": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/aamir-gondal",
+    "status": "success"
+  },
+  "2026:chib-mistry": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/chib-mistry",
+    "status": "success"
+  },
+  "2026:eric-yuan-shi": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/eric-yuan-shi",
+    "status": "success"
+  },
+  "2026:henry-wright": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/henry-wright",
+    "status": "success"
+  },
+  "2026:issy-emberton": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/issy-emberton",
+    "status": "success"
+  },
+  "2026:issy-sinkinson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/issy-sinkinson",
+    "status": "success"
+  },
+  "2026:jacob_atkinson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/jacob_atkinson",
+    "status": "success"
+  },
+  "2026:james-astle": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/james-astle",
+    "status": "success"
+  },
+  "2026:joe-mason": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/joe-mason",
+    "status": "success"
+  },
+  "2026:rafeeq-sulaiman": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/rafeeq-sulaiman",
+    "status": "success"
+  },
+  "2026:rory-wilson-tidswell": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/rory-wilson-tidswell",
+    "status": "success"
+  },
+  "2026:rosie-bacon": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/rosie-bacon",
+    "status": "success"
+  },
+  "2026:ryan-halstead": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/ryan-halstead",
+    "status": "success"
+  },
+  "2026:thomas-sheard": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/thomas-sheard",
+    "status": "success"
   }
 }

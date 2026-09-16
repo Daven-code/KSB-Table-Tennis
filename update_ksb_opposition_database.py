@@ -134,6 +134,7 @@ def extract_ksb_encounters(master):
                         "resultForKSBPlayer": e.get("result"),
                         "opponent": e.get("opponent"),
                         "opponentSlug": opponent_slug,
+                        "fixtureKey": e.get("fixtureKey"),
                     }
     return list(rows.values())
 
@@ -209,18 +210,46 @@ def enrich_player_season(data, season, slug):
     }
 
 
-def attach_team_to_encounters(player):
-    by_season = {int(x["season"]): x for x in player.get("teamHistory", [])}
-    for e in player.get("ksbEncounters", []):
-        rec = by_season.get(int(e["season"]))
-        if rec:
-            e["opponentTeam"] = rec.get("team")
-            e["opponentDivision"] = rec.get("team", {}).get("division")
-            e["opponentRank"] = rec.get("player", {}).get("rank")
-        else:
-            e["opponentTeam"] = None
-            e["opponentDivision"] = None
-            e["opponentRank"] = None
+def current_fixture_opponents(master):
+    """Map each current-season fixture key to the exact opposition team."""
+    season = int(master.get("coverage", {}).get("currentSeason") or 0)
+    index = {}
+    for ksb_team_slug, team_record in (master.get("currentSeason", {}).get("teams") or {}).items():
+        for fixture in team_record.get("fixtures") or []:
+            key = fixture.get("fixtureKey")
+            if not key:
+                key = f"{season}|{fixture.get('weekId')}|{fixture.get('teamLeftSlug') or ''}|{fixture.get('teamRightSlug') or ''}|{fixture.get('timeFulfilled') or ''}"
+            if fixture.get("teamLeftSlug") == ksb_team_slug:
+                opponent = {"name": fixture.get("teamRightName"), "slug": fixture.get("teamRightSlug")}
+            elif fixture.get("teamRightSlug") == ksb_team_slug:
+                opponent = {"name": fixture.get("teamLeftName"), "slug": fixture.get("teamLeftSlug")}
+            else:
+                continue
+            index[key] = opponent
+    return season, index
+
+
+def attach_team_to_encounters(player, current_season, fixture_opponents):
+    """Use exact current fixture data; retain API-enriched historical teams."""
+    historical = {}
+    for record in player.get("teamHistory", []):
+        historical.setdefault(int(record["season"]), []).append(record)
+    current_teams = {}
+    for encounter in player.get("ksbEncounters", []):
+        season = int(encounter["season"])
+        exact = fixture_opponents.get(encounter.get("fixtureKey")) if season == current_season else None
+        fallback = (historical.get(season) or [None])[-1]
+        team = exact or (fallback or {}).get("team")
+        encounter["opponentTeam"] = team
+        encounter["opponentDivision"] = (team or {}).get("division")
+        encounter["opponentRank"] = (fallback or {}).get("player", {}).get("rank")
+        if exact and exact.get("slug"):
+            current_teams[exact["slug"]] = exact
+    if current_teams:
+        player["teamHistory"] = [row for row in player.get("teamHistory", []) if int(row["season"]) != current_season]
+        for team in current_teams.values():
+            player["teamHistory"].append({"season": current_season, "player": {"name": player.get("name"), "slug": player.get("slug")}, "team": team, "api": {"status": "derived-from-exact-fixture"}})
+        player["teamHistory"].sort(key=lambda row: (int(row["season"]), (row.get("team") or {}).get("name") or ""))
 
 
 def rebuild_global_team_summaries(players):
@@ -338,9 +367,11 @@ def main():
             print(f"  [{i}/{len(requests)}] complete; success={successful}, failed={failed}")
         time.sleep(max(0, args.delay))
 
-    # Directly attach the opposition team to every individual KSB encounter.
+    # Current teams come from the exact linked fixture. Historical teams keep
+    # using the season-specific player API enrichment and archived JSON data.
+    current_season, fixture_opponents = current_fixture_opponents(master)
     for p in players.values():
-        attach_team_to_encounters(p)
+        attach_team_to_encounters(p, current_season, fixture_opponents)
         p["teamHistoryComplete"] = all(
             any(int(t.get("season")) == s for t in p.get("teamHistory", []))
             for s in p.get("ksbSeasons", [])

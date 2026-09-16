@@ -34,8 +34,10 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-DEFAULT_MASTER = "ksb_master_database.json"
-DEFAULT_TIMEOUT = 20
+SCRIPT_DIR = Path(__file__).resolve().parent
+DEFAULT_MASTER = SCRIPT_DIR / "ksb_master_database.json"
+DEFAULT_LEAGUE_HISTORY = SCRIPT_DIR / "league-history.json"
+DEFAULT_TIMEOUT = 30
 
 # These are deliberately conservative. Update these two values when a new
 # season begins/ends.
@@ -44,11 +46,11 @@ CURRENT_SEASON = 2026
 
 KSB_TEAM_SLUGS = [
     "ksb-a", "ksb-b", "ksb-c", "ksb-d", "ksb-e", "ksb-f", "ksb-g",
-    "ksb-h", "ksb-juniors", "ksb-juniors-1", "ksb-juniors-2",
-    "ksb-juniors-3", "ksb-juniors-4", "ksb-lions", "ksb-tigers-jun",
-    "ksb-jaguars", "ksb-pumas-jun", "ksb-leopards-jun",
-    "ksb-panthers-jun"
+    "ksb-lions", "ksb-tigers-jun", "ksb-jaguars", "ksb-pumas-jun",
+    "ksb-leopards-jun", "ksb-panthers-jun"
 ]
+
+DIVISION_SLUGS = ("premier", "first", "second", "third")
 
 BASE = "https://eastlancstt.org.uk"
 
@@ -102,124 +104,184 @@ def aggregate(records):
     }
 
 
+def fixture_key(season, fixture):
+    """Return the canonical identity used by both team and player records."""
+    week = fixture.get("weekId")
+    left = fixture.get("teamLeftSlug") or ""
+    right = fixture.get("teamRightSlug") or ""
+    fulfilled = fixture.get("timeFulfilled") or ""
+    return f"{season}|{week}|{left}|{right}|{fulfilled}"
+
+
 def build_player_season(player_data, season):
-    p = player_data.get("player") or {}
+    """Normalise one player API response into current-season records."""
+    api_player = player_data.get("player") or {}
+    player_name = api_player.get("name") or "Unknown player"
+    player_slug = api_player.get("slug") or ""
+    raw_encounters = player_data.get("encounters") or []
+    fixtures = player_data.get("fixtures") or []
+    completed = [f for f in fixtures if f.get("scoreLeft") is not None and f.get("scoreRight") is not None]
+
     encounters = []
-    for e in player_data.get("encounters") or []:
-        player = p.get("name") or e.get("player")
-        player_slug = p.get("slug") or e.get("playerSlug")
-        left = e.get("playerLeftName")
-        right = e.get("playerRightName")
-        if e.get("playerSlug") == player_slug:
-            player_score = e.get("playerScore")
-            opponent_score = e.get("opponentScore")
-            opponent = e.get("opponent")
-            opponent_slug = e.get("opponentSlug")
-        else:
-            # The API normally supplies player/opponent fields already, but
-            # this fallback makes the record robust if they are absent.
-            player_score = e.get("playerScore")
-            opponent_score = e.get("opponentScore")
-            opponent = e.get("opponent") or (right if left == player else left)
-            opponent_slug = e.get("opponentSlug")
-        result = e.get("result")
-        encounters.append({
-            "id": e.get("id"),
-            "scoreLeft": e.get("scoreLeft"),
-            "scoreRight": e.get("scoreRight"),
-            "playerLeftName": left,
-            "playerLeftSlug": e.get("playerLeftSlug"),
-            "playerRightName": right,
-            "playerRightSlug": e.get("playerRightSlug"),
-            "playerRankChangeLeft": e.get("playerRankChangeLeft"),
-            "playerRankChangeRight": e.get("playerRankChangeRight"),
-            "player": player,
+    for index, raw in enumerate(raw_encounters):
+        left_slug = raw.get("playerLeftSlug")
+        right_slug = raw.get("playerRightSlug")
+        left_name = raw.get("playerLeftName")
+        right_name = raw.get("playerRightName")
+        left_score = raw.get("scoreLeft")
+        right_score = raw.get("scoreRight")
+
+        on_left = left_slug == player_slug or (not player_slug and left_name == player_name)
+        on_right = right_slug == player_slug or (not player_slug and right_name == player_name)
+        if not on_left and not on_right:
+            continue
+
+        player_score = left_score if on_left else right_score
+        opponent_score = right_score if on_left else left_score
+        opponent = right_name if on_left else left_name
+        opponent_slug = right_slug if on_left else left_slug
+        result = "D"
+        if player_score is not None and opponent_score is not None:
+            if int(player_score) > int(opponent_score):
+                result = "W"
+            elif int(player_score) < int(opponent_score):
+                result = "L"
+
+        # League teams field three players, each playing three singles. The
+        # player API orders encounter blocks in the same order as that player's
+        # completed fixture list. Store the canonical fixture key at ingestion.
+        fixture_index = index // 3
+        linked_fixture = completed[fixture_index] if fixture_index < len(completed) else None
+        encounter = dict(raw)
+        encounter.update({
+            "player": player_name,
             "playerSlug": player_slug,
             "opponent": opponent,
             "opponentSlug": opponent_slug,
             "playerScore": player_score,
             "opponentScore": opponent_score,
             "result": result,
+            "fixtureKey": fixture_key(season, linked_fixture) if linked_fixture else None,
         })
+        encounters.append(encounter)
 
-    # Recalculate basic statistics from encounters so the master DB is
-    # self-consistent even if the API's summary fields change.
-    played = len(encounters)
-    wins = sum(1 for e in encounters if e["result"] == "W")
-    losses = sum(1 for e in encounters if e["result"] == "L")
-    draws = sum(1 for e in encounters if e["result"] == "D")
+    wins = sum(e["result"] == "W" for e in encounters)
+    draws = sum(e["result"] == "D" for e in encounters)
+    losses = sum(e["result"] == "L" for e in encounters)
     sets_won = sum(int(e["playerScore"] or 0) for e in encounters)
     sets_lost = sum(int(e["opponentScore"] or 0) for e in encounters)
-
     opponents = {}
-    for e in encounters:
-        s = e["opponentSlug"]
-        if not s:
+    for encounter in encounters:
+        key = encounter.get("opponentSlug") or encounter.get("opponent")
+        if not key:
             continue
-        o = opponents.setdefault(s, {
-            "name": e["opponent"],
-            "slug": s,
-            "played": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-        })
-        o["played"] += 1
-        if e["result"] == "W":
-            o["wins"] += 1
-        elif e["result"] == "D":
-            o["draws"] += 1
-        elif e["result"] == "L":
-            o["losses"] += 1
-    for o in opponents.values():
-        o["winPercentage"] = round((o["wins"] / o["played"]) * 100, 2) if o["played"] else 0
-    opponents = sorted(opponents.values(), key=lambda x: x["name"].lower())
+        row = opponents.setdefault(key, {"name": encounter["opponent"], "slug": encounter.get("opponentSlug"), "played": 0, "wins": 0, "draws": 0, "losses": 0})
+        row["played"] += 1
+        row[{"W": "wins", "D": "draws", "L": "losses"}[encounter["result"]]] += 1
+    for row in opponents.values():
+        row["winPercentage"] = round(row["wins"] / row["played"] * 100, 2) if row["played"] else 0
 
-    stats = {
+    played = len(encounters)
+    statistics = {
         "played": played,
         "wins": wins,
         "draws": draws,
         "losses": losses,
-        "winPercentage": round((wins / played) * 100, 2) if played else 0,
+        "winPercentage": round(wins / played * 100, 2) if played else 0,
         "setsWon": sets_won,
         "setsLost": sets_lost,
         "setDifference": sets_won - sets_lost,
-        "opponents": opponents,
-        "encounters": encounters
+        "opponents": sorted(opponents.values(), key=lambda row: row["name"].lower()),
+        "encounters": encounters,
     }
-
     return {
         "season": season,
-        "player": {
-            "id": p.get("id"),
-            "name": p.get("name"),
-            "slug": p.get("slug"),
-            "rank": p.get("rank")
-        },
-        "team": {
-            "id": p.get("teamId"),
-            "name": p.get("teamName"),
-            "slug": p.get("teamSlug"),
-            "divisionId": p.get("divisionId")
-        },
-        "statistics": stats,
-        "fixtures": player_data.get("fixtures") or [],
+        "player": api_player,
+        "team": player_data.get("team") or {},
+        "statistics": statistics,
+        "fixtures": [{**fixture, "fixtureKey": fixture_key(season, fixture)} for fixture in fixtures],
         "weeks": player_data.get("weeks") or [],
-        "api": {
-            "url": f"{BASE}/api/result/{season}/player/{p.get('slug')}",
-            "status": "success"
-        }
+        "api": {"status": "success"},
     }
+
+def first_value(row, *names, default=None):
+    for name in names:
+        if isinstance(row, dict) and row.get(name) is not None:
+            return row[name]
+    return default
+
+
+def normalise_league_table(payload):
+    """Convert the league API response to the compact format used by team-template.js."""
+    if isinstance(payload, list):
+        rows = payload
+    elif isinstance(payload, dict):
+        rows = first_value(payload, "league", "table", "rows", "standings", "teams", "data", default=[])
+        if isinstance(rows, dict):
+            rows = first_value(rows, "league", "table", "rows", "standings", "teams", default=[])
+    else:
+        rows = []
+
+    output = []
+    for index, row in enumerate(rows or [], 1):
+        if not isinstance(row, dict):
+            continue
+        team = first_value(row, "t", "team", "teamName", "name")
+        if isinstance(team, dict):
+            team = first_value(team, "name", "teamName", "t")
+        if not team:
+            continue
+        output.append({
+            "p": int(first_value(row, "p", "position", "pos", "rank", default=index) or index),
+            "t": str(team),
+            "w": int(first_value(row, "w", "won", "wins", default=0) or 0),
+            "d": int(first_value(row, "d", "drawn", "draws", default=0) or 0),
+            "l": int(first_value(row, "l", "lost", "losses", default=0) or 0),
+            "pl": int(first_value(row, "pl", "played", "matchesPlayed", default=0) or 0),
+            "pts": int(first_value(row, "pts", "points", "score", default=0) or 0),
+        })
+    return sorted(output, key=lambda row: row["p"])
+
+
+def update_current_leagues(season, timeout, league_history_path):
+    """Replace only the selected current season in league-history.json."""
+    if league_history_path.exists():
+        archive = json.loads(league_history_path.read_text(encoding="utf-8"))
+    else:
+        archive = {"data": {}, "statuses": {}}
+    archive.setdefault("data", {})
+    archive.setdefault("statuses", {})
+    season_key = str(season)
+    current = {}
+    statuses = {}
+    for division in DIVISION_SLUGS:
+        url = f"{BASE}/api/result/{season}/{division}/league"
+        result = safe_get(url, timeout)
+        statuses[division] = {"url": url, "status": result["status"], "error": result.get("error")}
+        if result["status"] != "success":
+            print(f"  league {division}: {result['status']} - {result['error']}")
+            continue
+        current[division] = normalise_league_table(result["data"])
+        print(f"  league {division}: {len(current[division])} teams")
+    if current:
+        archive["data"][season_key] = current
+        archive["statuses"][season_key] = statuses
+        archive["currentSeason"] = season
+        archive["lastUpdated"] = utc_now()
+        league_history_path.write_text(json.dumps(archive, ensure_ascii=False, indent=2), encoding="utf-8")
+    return current
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--master", default=DEFAULT_MASTER)
+    parser.add_argument("--master", default=str(DEFAULT_MASTER))
+    parser.add_argument("--league-history", default=str(DEFAULT_LEAGUE_HISTORY))
     parser.add_argument("--season", type=int, default=None)
     parser.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT)
     args = parser.parse_args()
 
-    master_path = Path(args.master)
+    master_path = Path(args.master).resolve()
+    league_history_path = Path(args.league_history).resolve()
     if not master_path.exists():
         raise SystemExit(
             f"Could not find {master_path}. Put this script beside "
@@ -394,6 +456,10 @@ def main():
                 "seasons": {str(season): current}
             }
 
+    print("Fetching current league tables...")
+    current_leagues = update_current_leagues(season, args.timeout, league_history_path)
+    master["currentSeason"]["leagues"] = current_leagues
+
     master["coverage"]["lastUpdated"] = utc_now()
     master["coverage"]["livePlayerCount"] = len(current_players)
     master["coverage"]["liveEncounterCount"] = len(encounters)
@@ -405,6 +471,7 @@ def main():
     print("Done.")
     print(f"Master database: {master_path}")
     print(f"Current season: {season}")
+    print(f"League history: {league_history_path}")
     print(f"Live players: {len(current_players)}")
     print(f"Live encounters: {len(encounters)}")
     print(f"Successful player requests: {successful}")
