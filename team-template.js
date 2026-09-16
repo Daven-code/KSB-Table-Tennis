@@ -175,7 +175,10 @@ function renderLeague(data, season, selectedDivision) {
     const isKsbTeam = /^KSB(?:\s|$)/i.test(String(entry.t).trim());
     const classes = [isKsbTeam ? "league-row-ksb" : "", entry.t === teamName ? "league-row-current" : ""].filter(Boolean).join(" ");
     const rate = entry.pl ? Math.round((entry.w / entry.pl) * 100) : 0;
-    return `<tr class="${classes}"><td><span class="position-badge">${entry.p}</span></td><td class="text-start">${escapeHtml(entry.t)}</td><td>${entry.pl}</td><td>${entry.w}</td><td>${entry.d}</td><td>${entry.l}</td><td>${rate}%</td><td><strong>${entry.pts}</strong></td></tr>`;
+    const calculatedLosses = Math.max(0, Number(entry.pl) - Number(entry.w) - Number(entry.d));
+    const suppliedLosses = Number(entry.l ?? calculatedLosses);
+    const losses = Number(entry.pl) === Number(entry.w) + Number(entry.d) + suppliedLosses ? suppliedLosses : calculatedLosses;
+    return `<tr class="${classes}"><td><span class="position-badge">${entry.p}</span></td><td class="text-start">${escapeHtml(entry.t)}</td><td>${entry.pl}</td><td>${entry.w}</td><td>${entry.d}</td><td>${losses}</td><td>${rate}%</td><td><strong>${entry.pts}</strong></td></tr>`;
   }).join("");
   host.className = "";
   host.innerHTML = `${summary}<div class="table-responsive"><table class="table table-dark table-striped table-hover align-middle"><thead><tr><th>Pos</th><th class="text-start">Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>Win %</th><th>Pts</th></tr></thead><tbody>${rows}</tbody></table></div>`;

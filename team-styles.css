@@ -727,3 +727,79 @@ th, td { text-align:center; vertical-align:middle; white-space:nowrap; }
 
 /* Current-season match results and drill-down */
 .team-results-panel{display:grid;gap:12px}.team-results-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:4px;padding:15px 17px;background:#202830;border:1px solid #354956;border-radius:10px}.team-results-heading h2,.team-results-heading p{margin:0}.team-results-heading p{margin-top:4px;color:#aab6c0;font-size:.82rem}.team-results-heading>span{padding:7px 10px;color:#cbeaff;background:#123f60;border-radius:7px;font-size:.75rem;font-weight:800}.team-result-card{overflow:hidden;border:1px solid #3b4852;border-radius:10px;background:#1d2328}.team-result-summary{display:flex;width:100%;align-items:center;justify-content:space-between;gap:18px;padding:14px 16px;color:#fff;background:#252d34;border:0;text-align:left}.team-result-summary:hover{background:#2d3942}.team-result-summary span:first-child{display:grid;gap:4px}.team-result-summary small{color:#9eacb7}.result-expand{flex:0 0 auto;color:#8dc6ff;font-size:.78rem;font-weight:800}.team-result-detail{padding:14px}.result-breakdown-table{min-width:620px}.result-breakdown-table a{color:#fff;text-decoration:none}.result-breakdown-table a:hover{color:#73b9e8}.team-result-badge{display:inline-grid;min-width:26px;height:26px;place-items:center;border-radius:50%;font-weight:900}.unlinked-results{margin-top:8px;padding:16px;background:#1d2328;border:1px solid #3b4852;border-radius:10px}.unlinked-results h3{font-size:1rem}.profile-main-panel[data-main-panel="current"] .profile-panel{display:grid;gap:16px}@media(max-width:767px){.team-results-heading,.team-result-summary{align-items:flex-start;flex-direction:column}.result-expand{align-self:flex-start}}
+
+/* Mobile and landscape refinements for team pages */
+@media (max-width: 767px) {
+  html, body { max-width:100%; overflow-x:hidden; }
+  .team-page { width:100%; max-width:none; margin:0 !important; padding:74px 10px 14px; }
+  .team-page > h1 { margin:0 0 12px; font-size:1.55rem; }
+  .team-shell { width:100%; padding:12px !important; border-radius:12px; overflow:hidden; }
+
+  .team-page > .nav-tabs,
+  .team-shell > .nav-tabs { display:flex; flex-wrap:nowrap; gap:2px; width:100%; overflow-x:auto; scrollbar-width:none; }
+  .team-page > .nav-tabs::-webkit-scrollbar,
+  .team-shell > .nav-tabs::-webkit-scrollbar { display:none; }
+  .nav-tabs .nav-item { flex:0 0 auto; }
+  .nav-tabs .nav-link { padding:9px 11px; font-size:.82rem; white-space:nowrap; }
+
+  .fixture-mobile-tools { gap:8px; padding:10px; }
+  .fixture-tools-label { font-size:.72rem; }
+  .fixture-size-buttons { gap:5px; }
+  .fixture-size-button { min-width:42px; padding:7px 8px; font-size:.78rem; }
+  .fixture-scroll-hint { width:100%; font-size:.72rem; }
+  .section-heading { margin-bottom:.7rem; font-size:1.05rem; }
+
+  .table-responsive { width:100%; max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  #upcomingTable, #pastTable { min-width:560px; font-size:calc(.79rem * var(--fixture-scale, 1)); }
+  #upcomingTable th, #upcomingTable td,
+  #pastTable th, #pastTable td { padding:calc(.48rem * var(--fixture-scale, 1)) calc(.55rem * var(--fixture-scale, 1)); }
+
+  .ksb-team-members { padding:0; }
+  .ksb-member-tabs { gap:7px; }
+  .ksb-member-tabs button { min-height:52px; padding:9px 8px; font-size:.82rem; line-height:1.25; }
+  .ksb-member-panel { padding-top:10px; }
+  .ksb-roster-title { padding:12px; }
+  .ksb-roster-title h3 { font-size:.95rem; }
+  .current-player-stats-table { min-width:620px; font-size:.78rem; }
+  .current-player-stats-table th,
+  .current-player-stats-table td { padding:.48rem .5rem; }
+
+  .team-results-panel { padding:0; }
+  .team-results-heading { align-items:flex-start; gap:10px; padding:15px; }
+  .team-results-heading h2 { font-size:1.35rem; }
+  .team-results-heading p { font-size:.8rem; line-height:1.45; }
+  .team-results-heading > span { padding:6px 8px; font-size:.68rem; }
+  .team-result-card { border-radius:10px; }
+  .team-result-summary { align-items:flex-start; gap:10px; padding:13px 12px; }
+  .team-result-summary strong { font-size:.84rem; line-height:1.35; white-space:normal; }
+  .team-result-summary small { font-size:.7rem; }
+  .result-expand { font-size:.68rem; white-space:nowrap; }
+  .team-result-detail { padding:8px; }
+  .result-breakdown-table { min-width:520px; font-size:.76rem; }
+  .result-breakdown-table th,
+  .result-breakdown-table td { padding:.45rem .5rem; }
+
+  .season-controls { gap:8px; }
+  .season-control { min-width:0; width:100%; }
+  .summary-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:7px; }
+  .summary-card { min-width:0; padding:10px 5px; border-radius:9px; }
+  .summary-label { font-size:.59rem; letter-spacing:.03em; }
+  .summary-value { font-size:1.12rem; }
+  #leagueContent .table-responsive { margin:0; }
+  #leagueContent table { min-width:570px; font-size:.75rem; }
+  #leagueContent th, #leagueContent td { padding:.44rem .45rem; }
+  .position-badge { width:27px; height:27px; font-size:.76rem; }
+}
+
+/* Mobile landscape: use the available width and reduce vertical bulk */
+@media (max-height: 520px) and (orientation: landscape) {
+  .team-page { width:100%; max-width:none; padding:58px 10px 10px; }
+  .team-page > h1 { margin-bottom:7px; font-size:1.3rem; }
+  .team-shell { padding:9px !important; }
+  .nav-tabs .nav-link { padding:7px 10px; font-size:.76rem; }
+  .fixture-mobile-tools { padding:8px 10px; }
+  .team-results-heading { padding:11px 13px; }
+  .team-result-summary { padding:10px 12px; }
+  .summary-card { padding:8px 4px; }
+  .summary-value { font-size:1rem; }
+}

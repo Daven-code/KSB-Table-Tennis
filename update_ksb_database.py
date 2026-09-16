@@ -231,13 +231,26 @@ def normalise_league_table(payload):
             team = first_value(team, "name", "teamName", "t")
         if not team:
             continue
+        played = int(first_value(row, "pl", "played", "matchesPlayed", "matches", default=0) or 0)
+        wins = int(first_value(row, "w", "won", "wins", "matchesWon", default=0) or 0)
+        draws = int(first_value(row, "d", "drawn", "draws", "matchesDrawn", default=0) or 0)
+        # Some current league responses omit a dedicated losses field. Losses
+        # are an invariant of the table, so derive them from played, wins and
+        # draws whenever no explicit value is supplied.
+        raw_losses = first_value(row, "l", "lost", "losses", "matchesLost", default=None)
+        calculated_losses = max(0, played - wins - draws)
+        # The current API is returning 0 in its losses field for every row.
+        # When that conflicts with the table invariant P = W + D + L, the
+        # invariant is authoritative. Explicit non-conflicting values remain.
+        supplied_losses = int(raw_losses) if raw_losses is not None else calculated_losses
+        losses = supplied_losses if played == wins + draws + supplied_losses else calculated_losses
         output.append({
             "p": int(first_value(row, "p", "position", "pos", "rank", default=index) or index),
             "t": str(team),
-            "w": int(first_value(row, "w", "won", "wins", default=0) or 0),
-            "d": int(first_value(row, "d", "drawn", "draws", default=0) or 0),
-            "l": int(first_value(row, "l", "lost", "losses", default=0) or 0),
-            "pl": int(first_value(row, "pl", "played", "matchesPlayed", default=0) or 0),
+            "w": wins,
+            "d": draws,
+            "l": losses,
+            "pl": played,
             "pts": int(first_value(row, "pts", "points", "score", default=0) or 0),
         })
     return sorted(output, key=lambda row: row["p"])

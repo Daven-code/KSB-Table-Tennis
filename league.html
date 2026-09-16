@@ -5,31 +5,70 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>League Info - KSB Table Tennis Club</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="team-styles.css" rel="stylesheet">
 <style>
-  body { color: #f0f0f0; background-color: #121212; }
-  body::before { content: ""; position: fixed; top:0; left:0; right:0; bottom:0; background-color: rgba(18,18,18,0.85); z-index:-1; }
-  .card { background-color: #1e1e1e; border: none; }
-  iframe { width: 100%; height: 600px; border: none; }
-  a { color: #66b3ff; text-decoration: none; }
-  a:hover { color: #99ccff; text-decoration: underline; }
-  .info-text { color: #cccccc; } /* lighter grey for readability */
+body{color:#f0f0f0;background:#121212}body::before{content:"";position:fixed;inset:0;background:rgba(18,18,18,.85);z-index:-1}.league-page{width:min(1180px,calc(100% - 28px))}.league-main-tabs{gap:5px;border-bottom:1px solid #495057}.league-main-tabs .nav-link{color:#8dc6ff}.league-main-tabs .nav-link.active{color:#151515;font-weight:800}.league-panel{padding:20px;background:rgba(25,25,25,.96);border:1px solid rgba(255,255,255,.09);border-radius:0 12px 12px 12px}.league-controls{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:18px}.division-tabs{display:flex;gap:8px;overflow-x:auto}.division-tabs button{padding:9px 14px;color:#acd8f8;background:#232a30;border:1px solid #414d57;border-radius:8px;font-weight:700;white-space:nowrap}.division-tabs button.active{color:#fff;background:#14527d;border-color:#61b8ef}.league-season-control{display:flex;flex-direction:column;gap:6px;min-width:150px}.league-season-control label{color:#c8d0d8;font-size:.75rem;font-weight:800;text-transform:uppercase}.league-season-control .form-select{color:#fff;background:#252b31;border-color:#46515c}.league-table-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px;padding:14px 16px;background:#202830;border:1px solid #354956;border-radius:10px}.league-table-heading h2{margin:2px 0 0;font-size:1.15rem}.league-kicker{color:#8dc6ff;font-size:.72rem;font-weight:800;text-transform:uppercase}.league-table-heading>span{padding:6px 9px;color:#cbeaff;background:#123f60;border-radius:6px;font-size:.72rem;font-weight:800}.league-page-table{min-width:720px}.league-empty{min-height:220px;display:grid;place-content:center;text-align:center;color:#aeb6bf}.league-empty h3{color:#fff}.league-error{color:#ffbbbb}.league-site-card{padding:18px;background:#1e1e1e;border-radius:12px}.league-site-card iframe{width:100%;height:650px;border:0;border-radius:8px}.league-site-card a{color:#66b3ff}@media(max-width:767px){.league-page{width:calc(100% - 16px)}.league-panel{padding:12px}.league-controls{align-items:stretch;flex-direction:column}.league-season-control{width:100%}.league-table-heading{align-items:flex-start;flex-direction:column}}
+
+@media (max-width:767px) {
+  html,body{max-width:100%;overflow-x:hidden}
+  .league-page{width:100%;max-width:none;margin:0!important;padding:72px 10px 14px}
+  .league-page>h1{margin-bottom:12px!important;font-size:1.55rem}
+  .league-main-tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .league-main-tabs::-webkit-scrollbar{display:none}
+  .league-main-tabs .nav-link{padding:9px 11px;font-size:.82rem;white-space:nowrap}
+  .league-panel{padding:11px;border-radius:0 0 11px 11px}
+  .league-controls{gap:10px}
+  .division-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;gap:4px}
+  .division-tabs button{min-width:0;padding:8px 3px;font-size:.72rem}
+  .league-season-control{width:100%}
+  .league-table-heading{gap:8px;margin-bottom:10px}
+  .league-table-heading h2{font-size:1.2rem}
+  .league-table-heading span{font-size:.7rem}
+  #leagueTableHost .table-responsive{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .league-page-table{min-width:570px;font-size:.75rem}
+  .league-page-table th,.league-page-table td{padding:.44rem .45rem}
+  .position-badge{width:27px;height:27px;font-size:.76rem}
+  .league-site-card{padding:10px}
+  .league-site-card iframe{height:calc(100vh - 180px);min-height:360px}
+}
+@media (max-height:520px) and (orientation:landscape) {
+  .league-page{padding:56px 10px 10px}
+  .league-page>h1{margin-bottom:7px!important;font-size:1.3rem}
+  .league-main-tabs .nav-link{padding:7px 10px;font-size:.76rem}
+  .league-panel{padding:9px}
+  .league-controls{flex-direction:row;align-items:end}
+  .division-tabs{flex:1}
+  .league-season-control{width:120px}
+}
 </style>
 </head>
 <body>
-
-<div class="container my-5">
+<div class="container league-page my-5">
   <h1 class="mb-3">League Information</h1>
-  <p class="info-text mb-4">
-    View full league information on the East Lancashire Table Tennis website: 
-    <a href="https://eastlancstt.org.uk" target="_blank">https://eastlancstt.org.uk</a>
-  </p>
-
-  <div class="card p-3">
-    <iframe src="https://eastlancstt.org.uk"></iframe>
+  <ul class="nav nav-tabs league-main-tabs" role="tablist">
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#leagueTables" type="button">League Tables</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#leagueWebsite" type="button">League Website</button></li>
+  </ul>
+  <div class="tab-content">
+    <section class="tab-pane fade show active league-panel" id="leagueTables">
+      <div class="league-controls">
+        <div class="division-tabs" aria-label="Select division">
+          <button class="active" data-league-division="premier">Premier</button>
+          <button data-league-division="first">First</button>
+          <button data-league-division="second">Second</button>
+          <button data-league-division="third">Third</button>
+        </div>
+        <div class="league-season-control"><label for="leagueSeasonSelect">Season</label><select id="leagueSeasonSelect" class="form-select"></select></div>
+      </div>
+      <div id="leagueTableHost"><div class="league-empty">Loading league table...</div></div>
+    </section>
+    <section class="tab-pane fade league-panel" id="leagueWebsite">
+      <div class="league-site-card"><p>View the full competition website at <a href="https://eastlancstt.org.uk" target="_blank" rel="noopener">East Lancashire Table Tennis League</a>.</p><iframe src="https://eastlancstt.org.uk" title="East Lancashire Table Tennis League"></iframe></div>
+    </section>
   </div>
 </div>
-
 <script src="site-utils.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="league.js"></script>
 </body>
 </html>
