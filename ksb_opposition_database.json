@@ -27,9 +27,9 @@
     "oppositionTeamCount": 106,
     "ksbEncounterCount": 12625,
     "enrichedEncounterCount": 12625,
-    "successfulApiLookupsThisRun": 18,
+    "successfulApiLookupsThisRun": 0,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-09-18T09:16:59.267927+00:00"
+    "lastUpdated": "2026-09-18T09:24:16.114698+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -4182,7 +4182,7 @@
             "slug": "whalley-hawks"
           },
           "opponentDivision": null,
-          "opponentRank": 1254
+          "opponentRank": null
         },
         {
           "id": 41323,
@@ -4946,7 +4946,7 @@
             "slug": "slayers"
           },
           "opponentDivision": null,
-          "opponentRank": 1254
+          "opponentRank": null
         },
         {
           "id": 41327,
@@ -6286,7 +6286,7 @@
             "slug": "slayers"
           },
           "opponentDivision": null,
-          "opponentRank": 1254
+          "opponentRank": null
         },
         {
           "id": 33977,
@@ -24735,15 +24735,11 @@
           "opponentSlug": "andrew-brierley",
           "fixtureKey": null,
           "opponentTeam": {
-            "id": 99,
             "name": "Whalley Hawks",
-            "slug": "whalley-hawks",
-            "divisionId": 3,
-            "division": null,
-            "rank": 1029
+            "slug": "whalley-hawks"
           },
           "opponentDivision": null,
-          "opponentRank": 1029
+          "opponentRank": null
         },
         {
           "id": 22880,
@@ -26083,7 +26079,7 @@
             "slug": "whalley-hawks"
           },
           "opponentDivision": null,
-          "opponentRank": 1029
+          "opponentRank": null
         },
         {
           "id": 20924,
@@ -27615,7 +27611,7 @@
             "slug": "whalley-hawks"
           },
           "opponentDivision": null,
-          "opponentRank": 1029
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -93467,7 +93463,7 @@
             "slug": "whalley-hawks"
           },
           "opponentDivision": null,
-          "opponentRank": 1158
+          "opponentRank": null
         },
         {
           "id": 41326,
@@ -94391,7 +94387,7 @@
             "slug": "slayers"
           },
           "opponentDivision": null,
-          "opponentRank": 1158
+          "opponentRank": null
         },
         {
           "id": 41330,
@@ -96115,7 +96111,7 @@
             "slug": "slayers"
           },
           "opponentDivision": null,
-          "opponentRank": 1158
+          "opponentRank": null
         },
         {
           "id": 32896,
@@ -99412,7 +99408,7 @@
             "slug": "vanguard-tornados"
           },
           "opponentDivision": null,
-          "opponentRank": 1823
+          "opponentRank": null
         },
         {
           "id": 21386,
@@ -99888,7 +99884,7 @@
             "slug": "vanguard-tornados"
           },
           "opponentDivision": null,
-          "opponentRank": 1823
+          "opponentRank": null
         },
         {
           "id": 26620,
@@ -101036,7 +101032,7 @@
             "slug": "vanguard-tornados"
           },
           "opponentDivision": null,
-          "opponentRank": 1823
+          "opponentRank": null
         },
         {
           "id": 21390,
@@ -128090,7 +128086,7 @@
             "slug": "rovers"
           },
           "opponentDivision": null,
-          "opponentRank": 2648
+          "opponentRank": null
         },
         {
           "id": 40512,
@@ -128438,7 +128434,7 @@
             "slug": "rovers"
           },
           "opponentDivision": null,
-          "opponentRank": 2648
+          "opponentRank": null
         },
         {
           "id": 42879,
@@ -128466,7 +128462,7 @@
             "slug": "rovers"
           },
           "opponentDivision": null,
-          "opponentRank": 2648
+          "opponentRank": null
         },
         {
           "id": 40503,
@@ -134599,7 +134595,7 @@
             "slug": "vanguard-raptors"
           },
           "opponentDivision": null,
-          "opponentRank": 2501
+          "opponentRank": null
         },
         {
           "id": 39073,
@@ -134723,7 +134719,7 @@
             "slug": "vanguard-raptors"
           },
           "opponentDivision": null,
-          "opponentRank": 2501
+          "opponentRank": null
         },
         {
           "id": 24947,
@@ -135775,7 +135771,7 @@
             "slug": "vanguard-raptors"
           },
           "opponentDivision": null,
-          "opponentRank": 2501
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -154961,7 +154957,7 @@
             "slug": "vanguard-tornados"
           },
           "opponentDivision": null,
-          "opponentRank": 1666
+          "opponentRank": null
         },
         {
           "id": 7192,
@@ -155693,7 +155689,7 @@
             "slug": "vanguard-tornados"
           },
           "opponentDivision": null,
-          "opponentRank": 1666
+          "opponentRank": null
         },
         {
           "id": 35417,
@@ -156905,7 +156901,7 @@
             "slug": "vanguard-tornados"
           },
           "opponentDivision": null,
-          "opponentRank": 1666
+          "opponentRank": null
         },
         {
           "id": 34806,
@@ -279163,7 +279159,7 @@
             "slug": "rovers"
           },
           "opponentDivision": null,
-          "opponentRank": 2206
+          "opponentRank": null
         },
         {
           "id": 38551,
@@ -279479,7 +279475,7 @@
             "slug": "rovers"
           },
           "opponentDivision": null,
-          "opponentRank": 2206
+          "opponentRank": null
         },
         {
           "id": 21493,
@@ -279571,7 +279567,7 @@
             "slug": "rovers"
           },
           "opponentDivision": null,
-          "opponentRank": 2206
+          "opponentRank": null
         },
         {
           "id": 21497,
@@ -293972,15 +293968,11 @@
           "opponentSlug": "martin-fox",
           "fixtureKey": null,
           "opponentTeam": {
-            "id": 99,
             "name": "Whalley Hawks",
-            "slug": "whalley-hawks",
-            "divisionId": 3,
-            "division": null,
-            "rank": 926
+            "slug": "whalley-hawks"
           },
           "opponentDivision": null,
-          "opponentRank": 926
+          "opponentRank": null
         },
         {
           "id": 40482,
@@ -294360,7 +294352,7 @@
             "slug": "whalley-hawks"
           },
           "opponentDivision": null,
-          "opponentRank": 926
+          "opponentRank": null
         },
         {
           "id": 36507,
@@ -294868,7 +294860,7 @@
             "slug": "whalley-hawks"
           },
           "opponentDivision": null,
-          "opponentRank": 926
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -295057,15 +295049,11 @@
           "opponentSlug": "martin-holmes",
           "fixtureKey": null,
           "opponentTeam": {
-            "id": 99,
             "name": "Whalley Hawks",
-            "slug": "whalley-hawks",
-            "divisionId": 3,
-            "division": null,
-            "rank": 1192
+            "slug": "whalley-hawks"
           },
           "opponentDivision": null,
-          "opponentRank": 1192
+          "opponentRank": null
         },
         {
           "id": 40829,
@@ -295349,7 +295337,7 @@
             "slug": "whalley-hawks"
           },
           "opponentDivision": null,
-          "opponentRank": 1192
+          "opponentRank": null
         },
         {
           "id": 40831,
@@ -295569,7 +295557,7 @@
             "slug": "whalley-hawks"
           },
           "opponentDivision": null,
-          "opponentRank": 1192
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -323770,7 +323758,7 @@
             "slug": "vanguard-phantoms"
           },
           "opponentDivision": null,
-          "opponentRank": 1416
+          "opponentRank": null
         },
         {
           "id": 29620,
@@ -324694,7 +324682,7 @@
             "slug": "vanguard-phantoms"
           },
           "opponentDivision": null,
-          "opponentRank": 1416
+          "opponentRank": null
         },
         {
           "id": 27191,
@@ -325170,7 +325158,7 @@
             "slug": "vanguard-phantoms"
           },
           "opponentDivision": null,
-          "opponentRank": 1416
+          "opponentRank": null
         },
         {
           "id": 40021,
@@ -330403,7 +330391,7 @@
             "slug": "vanguard-phantoms"
           },
           "opponentDivision": null,
-          "opponentRank": 2025
+          "opponentRank": null
         },
         {
           "id": 30005,
@@ -331647,7 +331635,7 @@
             "slug": "vanguard-phantoms"
           },
           "opponentDivision": null,
-          "opponentRank": 2025
+          "opponentRank": null
         },
         {
           "id": 24642,
@@ -332475,7 +332463,7 @@
             "slug": "vanguard-phantoms"
           },
           "opponentDivision": null,
-          "opponentRank": 2025
+          "opponentRank": null
         },
         {
           "id": 363,
@@ -348948,7 +348936,7 @@
             "slug": "vanguard-raptors"
           },
           "opponentDivision": null,
-          "opponentRank": 2373
+          "opponentRank": null
         },
         {
           "id": 42917,
@@ -348976,7 +348964,7 @@
             "slug": "vanguard-raptors"
           },
           "opponentDivision": null,
-          "opponentRank": 2373
+          "opponentRank": null
         },
         {
           "id": 42915,
@@ -349004,7 +348992,7 @@
             "slug": "vanguard-raptors"
           },
           "opponentDivision": null,
-          "opponentRank": 2373
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -400358,7 +400346,7 @@
             "slug": "vanguard-raptors"
           },
           "opponentDivision": null,
-          "opponentRank": 2059
+          "opponentRank": null
         },
         {
           "id": 39082,
@@ -400482,7 +400470,7 @@
             "slug": "vanguard-raptors"
           },
           "opponentDivision": null,
-          "opponentRank": 2059
+          "opponentRank": null
         },
         {
           "id": 937,
@@ -402558,7 +402546,7 @@
             "slug": "vanguard-raptors"
           },
           "opponentDivision": null,
-          "opponentRank": 2059
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -423661,7 +423649,7 @@
             "slug": "vanguard-phantoms"
           },
           "opponentDivision": null,
-          "opponentRank": 2046
+          "opponentRank": null
         },
         {
           "id": 28985,
@@ -425225,7 +425213,7 @@
             "slug": "vanguard-phantoms"
           },
           "opponentDivision": null,
-          "opponentRank": 2046
+          "opponentRank": null
         },
         {
           "id": 28987,
@@ -426373,7 +426361,7 @@
             "slug": "vanguard-phantoms"
           },
           "opponentDivision": null,
-          "opponentRank": 2046
+          "opponentRank": null
         },
         {
           "id": 365,
@@ -466385,7 +466373,7 @@
             "slug": "whalley-hawks"
           },
           "opponentDivision": null,
-          "opponentRank": 993
+          "opponentRank": null
         },
         {
           "id": 42905,
@@ -466413,7 +466401,7 @@
             "slug": "slayers"
           },
           "opponentDivision": null,
-          "opponentRank": 993
+          "opponentRank": null
         },
         {
           "id": 42909,
@@ -466441,7 +466429,7 @@
             "slug": "slayers"
           },
           "opponentDivision": null,
-          "opponentRank": 993
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -467034,7 +467022,7 @@
             "slug": "rovers"
           },
           "opponentDivision": null,
-          "opponentRank": 2140
+          "opponentRank": null
         },
         {
           "id": 29574,
@@ -468054,7 +468042,7 @@
             "slug": "rovers"
           },
           "opponentDivision": null,
-          "opponentRank": 2140
+          "opponentRank": null
         },
         {
           "id": 31019,
@@ -468466,7 +468454,7 @@
             "slug": "rovers"
           },
           "opponentDivision": null,
-          "opponentRank": 2140
+          "opponentRank": null
         },
         {
           "id": 33141,
@@ -486472,7 +486460,7 @@
             "slug": "vanguard-tornados"
           },
           "opponentDivision": null,
-          "opponentRank": 625
+          "opponentRank": null
         },
         {
           "id": 42859,
@@ -486500,7 +486488,7 @@
             "slug": "vanguard-tornados"
           },
           "opponentDivision": null,
-          "opponentRank": 625
+          "opponentRank": null
         },
         {
           "id": 42855,
@@ -486528,7 +486516,7 @@
             "slug": "vanguard-tornados"
           },
           "opponentDivision": null,
-          "opponentRank": 625
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -526578,7 +526566,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-09-18T09:16:59.268104+00:00",
+    "generatedAt": "2026-09-18T09:24:16.114850+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
