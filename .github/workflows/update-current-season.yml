@@ -1,0 +1,78 @@
+name: Update KSB current-season data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub schedules use UTC. Runs every three hours at 20 minutes past.
+    - cron: "20 */3 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ksb-current-season-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update current teams, players and league tables
+        run: python update_ksb_database.py --timeout 60 --attempts 4 --retry-delay 5
+
+      - name: Update opposition enrichment
+        run: python update_ksb_opposition_database.py --timeout 60
+
+      - name: Validate generated current-season data
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          master = json.loads(Path("ksb_master_database.json").read_text(encoding="utf-8"))
+          season = str(master["coverage"]["currentSeason"])
+          current = master["currentSeason"]
+          teams = current.get("teams", {})
+          players = current.get("players", {})
+          leagues = current.get("leagues", {})
+          if str(current.get("season")) != season:
+              raise SystemExit("Current-season key does not match currentSeason coverage")
+          if set(leagues) != {"premier", "first", "second", "third"}:
+              raise SystemExit("All four league division keys must be retained")
+          if not teams:
+              raise SystemExit("No current team records or placeholders were generated")
+          historic_end = int(master["coverage"]["historicEndSeason"])
+          historic = master.get("historic", {}).get("seasons", {})
+          if any(int(year) > historic_end for year in historic):
+              raise SystemExit("Current data has leaked into the historic archive")
+          missing = [slug for slug in players if season not in master["players"].get(slug, {}).get("seasons", {})]
+          if missing:
+              raise SystemExit(f"Published current players missing from master profiles: {missing}")
+          updated = sum(team.get("updateStatus") == "updated" for team in teams.values())
+          retained = sum(team.get("updateStatus") == "retained-previous" for team in teams.values())
+          pending = sum(team.get("updateStatus") == "not-published" for team in teams.values())
+          print(f"Validated season {season}: {len(teams)} team records, {len(players)} available players; updated={updated}, retained={retained}, pending={pending}")
+          PY
+      - name: Commit refreshed JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ksb_master_database.json league-history.json ksb_opposition_database.json ksb_opposition_api_cache.json
+          if git diff --cached --quiet; then
+            echo "League APIs returned no changes."
+          else
+            git commit -m "Automatically update current-season data"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

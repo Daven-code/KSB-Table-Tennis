@@ -6418,5 +6418,77 @@
   "2026:thomas-sheard": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/thomas-sheard",
     "status": "success"
+  },
+  "2026:adam-hek": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/adam-hek",
+    "status": "success"
+  },
+  "2026:andrew-brierley": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/andrew-brierley",
+    "status": "success"
+  },
+  "2026:david-heys": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/david-heys",
+    "status": "success"
+  },
+  "2026:david-worrall": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/david-worrall",
+    "status": "success"
+  },
+  "2026:fraser-mcewen": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/fraser-mcewen",
+    "status": "success"
+  },
+  "2026:gary-firth": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/gary-firth",
+    "status": "success"
+  },
+  "2026:ian-baskerville": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/ian-baskerville",
+    "status": "success"
+  },
+  "2026:mark-gleave": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/mark-gleave",
+    "status": "success"
+  },
+  "2026:martin-fox": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/martin-fox",
+    "status": "success"
+  },
+  "2026:martin-holmes": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/martin-holmes",
+    "status": "success"
+  },
+  "2026:mohan-attanayaka": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/mohan-attanayaka",
+    "status": "success"
+  },
+  "2026:neil-hepworth": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/neil-hepworth",
+    "status": "success"
+  },
+  "2026:patrick_kinsella": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/patrick_kinsella",
+    "status": "success"
+  },
+  "2026:richard-tokeley": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/richard-tokeley",
+    "status": "success"
+  },
+  "2026:ryan-fallon": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/ryan-fallon",
+    "status": "success"
+  },
+  "2026:susan_crook": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/susan_crook",
+    "status": "success"
+  },
+  "2026:teddy-robinson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/teddy-robinson",
+    "status": "success"
+  },
+  "2026:waliu_jayeola": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/waliu_jayeola",
+    "status": "success"
   }
 }

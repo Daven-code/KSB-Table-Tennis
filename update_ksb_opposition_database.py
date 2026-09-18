@@ -61,16 +61,29 @@ def get_json(url, timeout):
         return json.loads(response.read().decode("utf-8"))
 
 
-def safe_get(url, timeout):
-    try:
-        return {"status": "success", "data": get_json(url, timeout), "error": None}
-    except urllib.error.HTTPError as e:
-        return {"status": "http_error", "data": None, "error": f"HTTP {e.code}"}
-    except urllib.error.URLError as e:
-        return {"status": "network_error", "data": None, "error": str(e.reason)}
-    except Exception as e:
-        return {"status": "error", "data": None, "error": str(e)}
-
+def safe_get(url, timeout, attempts=4, retry_delay=3.0):
+    """Fetch opposition API JSON with retries for transient failures."""
+    errors = []
+    for attempt in range(1, attempts + 1):
+        try:
+            request = urllib.request.Request(url, headers={
+                "User-Agent": "Mozilla/5.0 (compatible; KSB-Opposition-Database/3.0)",
+                "Accept": "application/json",
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
+            })
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                return {"status": "success", "data": json.loads(response.read().decode("utf-8")), "error": None, "attempts": attempt}
+        except urllib.error.HTTPError as error:
+            detail = f"HTTP {error.code}"
+            if error.code not in (408, 429) and 400 <= error.code < 500:
+                return {"status": "http_error", "data": None, "error": detail, "attempts": attempt}
+        except Exception as error:
+            detail = str(error)
+        errors.append(f"attempt {attempt}: {detail}")
+        if attempt < attempts:
+            time.sleep(retry_delay * attempt)
+    return {"status": "error", "data": None, "error": "; ".join(errors), "attempts": attempts}
 
 def blank_stats():
     return {

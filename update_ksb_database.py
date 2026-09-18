@@ -60,27 +60,41 @@ def utc_now():
 
 
 def get_json(url, timeout):
-    req = urllib.request.Request(
+    """Download and decode one JSON API response."""
+    request = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "KSB-Table-Tennis-Database/2.0",
+            "User-Agent": "Mozilla/5.0 (compatible; KSB-Table-Tennis-Database/3.0)",
             "Accept": "application/json",
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
         },
     )
-    with urllib.request.urlopen(req, timeout=timeout) as response:
+    with urllib.request.urlopen(request, timeout=timeout) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
-def safe_get(url, timeout):
-    try:
-        return {"status": "success", "data": get_json(url, timeout), "error": None}
-    except urllib.error.HTTPError as e:
-        return {"status": "http_error", "data": None, "error": f"HTTP {e.code}"}
-    except urllib.error.URLError as e:
-        return {"status": "network_error", "data": None, "error": str(e.reason)}
-    except Exception as e:
-        return {"status": "error", "data": None, "error": str(e)}
-
+def safe_get(url, timeout, attempts=4, retry_delay=3.0):
+    """Request JSON with bounded retries for transient league-site failures."""
+    errors = []
+    for attempt in range(1, attempts + 1):
+        try:
+            return {"status": "success", "data": get_json(url, timeout), "error": None, "attempts": attempt}
+        except urllib.error.HTTPError as error:
+            detail = f"HTTP {error.code}"
+            # Most 4xx responses are permanent for this run; 408/429 can be transient.
+            if error.code not in (408, 429) and 400 <= error.code < 500:
+                return {"status": "http_error", "data": None, "error": detail, "attempts": attempt}
+        except urllib.error.URLError as error:
+            detail = str(error.reason)
+        except TimeoutError as error:
+            detail = str(error) or "request timed out"
+        except Exception as error:
+            detail = str(error)
+        errors.append(f"attempt {attempt}: {detail}")
+        if attempt < attempts:
+            time.sleep(retry_delay * attempt)
+    return {"status": "error", "data": None, "error": "; ".join(errors), "attempts": attempts}
 
 def aggregate(records):
     played = wins = draws = losses = sets_won = sets_lost = 0
@@ -256,8 +270,13 @@ def normalise_league_table(payload):
     return sorted(output, key=lambda row: row["p"])
 
 
-def update_current_leagues(season, timeout, league_history_path):
-    """Replace only the selected current season in league-history.json."""
+def update_current_leagues(season, timeout, league_history_path, attempts=4, retry_delay=3.0):
+    """Refresh every available division without discarding last-known-good data.
+
+    A successful empty response is valid at the start of a season. A failed
+    request retains that division's previous current-season snapshot, while
+    other successful divisions still update.
+    """
     if league_history_path.exists():
         archive = json.loads(league_history_path.read_text(encoding="utf-8"))
     else:
@@ -265,24 +284,35 @@ def update_current_leagues(season, timeout, league_history_path):
     archive.setdefault("data", {})
     archive.setdefault("statuses", {})
     season_key = str(season)
+    previous = archive["data"].get(season_key, {})
     current = {}
     statuses = {}
     for division in DIVISION_SLUGS:
         url = f"{BASE}/api/result/{season}/{division}/league"
-        result = safe_get(url, timeout)
-        statuses[division] = {"url": url, "status": result["status"], "error": result.get("error")}
-        if result["status"] != "success":
-            print(f"  league {division}: {result['status']} - {result['error']}")
-            continue
-        current[division] = normalise_league_table(result["data"])
-        print(f"  league {division}: {len(current[division])} teams")
-    if current:
-        archive["data"][season_key] = current
-        archive["statuses"][season_key] = statuses
-        archive["currentSeason"] = season
-        archive["lastUpdated"] = utc_now()
-        league_history_path.write_text(json.dumps(archive, ensure_ascii=False, indent=2), encoding="utf-8")
-    return current
+        result = safe_get(url, timeout, attempts, retry_delay)
+        if result["status"] == "success":
+            current[division] = normalise_league_table(result["data"])
+            state = "updated"
+        else:
+            current[division] = previous.get(division, [])
+            state = "retained-previous"
+        statuses[division] = {
+            "url": url,
+            "status": result["status"],
+            "state": state,
+            "error": result.get("error"),
+            "attempts": result.get("attempts"),
+            "teamCount": len(current[division]),
+        }
+        print(f"  league {division}: {state}, {len(current[division])} teams")
+    archive["data"][season_key] = current
+    archive["statuses"][season_key] = statuses
+    archive["currentSeason"] = season
+    archive["lastUpdated"] = utc_now()
+    temporary = league_history_path.with_suffix(league_history_path.suffix + ".tmp")
+    temporary.write_text(json.dumps(archive, ensure_ascii=False, indent=2), encoding="utf-8")
+    temporary.replace(league_history_path)
+    return current, statuses
 
 
 def main():
@@ -291,6 +321,8 @@ def main():
     parser.add_argument("--league-history", default=str(DEFAULT_LEAGUE_HISTORY))
     parser.add_argument("--season", type=int, default=None)
     parser.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT)
+    parser.add_argument("--attempts", type=int, default=4)
+    parser.add_argument("--retry-delay", type=float, default=3.0)
     args = parser.parse_args()
 
     master_path = Path(args.master).resolve()
@@ -306,6 +338,9 @@ def main():
 
     season = args.season or master.get("coverage", {}).get("currentSeason") or CURRENT_SEASON
     historic_end = int(master.get("coverage", {}).get("historicEndSeason", HISTORIC_END_SEASON))
+    previous_current = master.get("currentSeason", {}) if int(master.get("currentSeason", {}).get("season") or 0) == int(season) else {}
+    previous_teams = previous_current.get("teams", {})
+    previous_players = previous_current.get("players", {})
 
     # Keep the local historic layer intact. If the chosen current season is
     # already historic, stop rather than silently mixing layers.
@@ -323,12 +358,26 @@ def main():
     player_slugs = {}
     all_fixtures = []
     all_weeks = []
+    team_failures = []
 
     for team_slug in KSB_TEAM_SLUGS:
         url = f"{BASE}/api/result/{season}/team/{team_slug}"
-        result = safe_get(url, args.timeout)
+        result = safe_get(url, args.timeout, args.attempts, args.retry_delay)
         if result["status"] != "success":
-            print(f"  {team_slug}: {result['status']} - {result['error']}")
+            team_failures.append(f"{team_slug}: {result['error']}")
+            if team_slug in previous_teams:
+                teams[team_slug] = previous_teams[team_slug]
+                teams[team_slug]["updateStatus"] = "retained-previous"
+                teams[team_slug]["lastError"] = result["error"]
+                for player in teams[team_slug].get("players") or []:
+                    if player.get("slug"):
+                        player_slugs[player["slug"]] = player
+                all_fixtures.extend(teams[team_slug].get("fixtures") or [])
+                all_weeks.extend(teams[team_slug].get("weeks") or [])
+                print(f"  {team_slug}: unavailable; retained previous current-season data")
+            else:
+                teams[team_slug] = {"source": url, "status": "unavailable", "updateStatus": "not-published", "lastError": result["error"], "team": {"slug": team_slug}, "players": [], "fixtures": [], "weeks": []}
+                print(f"  {team_slug}: unavailable and no previous current-season data; placeholder retained")
             continue
 
         data = result["data"]
@@ -340,6 +389,8 @@ def main():
         teams[team_slug] = {
             "source": url,
             "status": "success",
+            "updateStatus": "updated",
+            "lastError": None,
             "team": team,
             "players": players,
             "fixtures": fixtures,
@@ -354,6 +405,9 @@ def main():
         all_weeks.extend(weeks)
         print(f"  {team_slug}: {len(players)} players, {len(fixtures)} fixtures")
 
+    if team_failures:
+        print(f"Continuing with {len(team_failures)} unavailable team API(s); previous data or placeholders were retained.")
+
     print(f"Found {len(player_slugs)} current-season player slugs.")
     print("Fetching individual player data...")
 
@@ -364,9 +418,17 @@ def main():
 
     for i, (slug, basic_player) in enumerate(sorted(player_slugs.items()), 1):
         url = f"{BASE}/api/result/{season}/player/{slug}"
-        result = safe_get(url, args.timeout)
+        result = safe_get(url, args.timeout, args.attempts, args.retry_delay)
         if result["status"] != "success":
-            print(f"  [{i}/{len(player_slugs)}] {slug}: FAILED {result['error']}")
+            if slug in previous_players:
+                retained = previous_players[slug]
+                retained.setdefault("api", {})
+                retained["api"].update({"status": "retained-previous", "lastError": result["error"]})
+                current_players[slug] = retained
+                encounters.extend((retained.get("statistics") or {}).get("encounters") or [])
+                print(f"  [{i}/{len(player_slugs)}] {slug}: unavailable; retained previous current-season record")
+            else:
+                print(f"  [{i}/{len(player_slugs)}] {slug}: unavailable and no previous record; skipped for this run")
             failed += 1
             continue
 
@@ -381,7 +443,10 @@ def main():
         # Be polite to the public API.
         time.sleep(0.05)
 
-    # Update current-season data.
+    if failed:
+        print(f"Continuing after {failed} unavailable player API request(s); available and retained records will be published.")
+
+    # Update current-season data only after every required API request succeeds.
     master["coverage"]["currentSeason"] = season
     master["currentSeason"] = {
         "season": season,
@@ -393,9 +458,11 @@ def main():
         "fixtures": all_fixtures,
         "weeks": all_weeks,
         "api": {
-            "status": "success" if successful else "failed",
+            "status": "partial" if team_failures or failed else "success",
             "successfulPlayerRequests": successful,
-            "failedPlayerRequests": failed
+            "failedPlayerRequests": failed,
+            "failedTeamRequests": len(team_failures),
+            "teamErrors": team_failures
         }
     }
 
@@ -470,15 +537,17 @@ def main():
             }
 
     print("Fetching current league tables...")
-    current_leagues = update_current_leagues(season, args.timeout, league_history_path)
+    current_leagues, league_statuses = update_current_leagues(season, args.timeout, league_history_path, args.attempts, args.retry_delay)
     master["currentSeason"]["leagues"] = current_leagues
+    master["currentSeason"]["leagueApi"] = league_statuses
 
     master["coverage"]["lastUpdated"] = utc_now()
     master["coverage"]["livePlayerCount"] = len(current_players)
     master["coverage"]["liveEncounterCount"] = len(encounters)
 
-    with master_path.open("w", encoding="utf-8") as f:
-        json.dump(master, f, ensure_ascii=False, indent=2)
+    temporary_master = master_path.with_suffix(master_path.suffix + ".tmp")
+    temporary_master.write_text(json.dumps(master, ensure_ascii=False, indent=2), encoding="utf-8")
+    temporary_master.replace(master_path)
 
     print()
     print("Done.")
