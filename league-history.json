@@ -3703,6 +3703,15 @@
       "premier": [
         {
           "p": 1,
+          "t": "KSB A",
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "pl": 1,
+          "pts": 27
+        },
+        {
+          "p": 2,
           "t": "Spartans",
           "w": 1,
           "d": 0,
@@ -3711,7 +3720,7 @@
           "pts": 25
         },
         {
-          "p": 2,
+          "p": 3,
           "t": "KSB B",
           "w": 1,
           "d": 0,
@@ -3720,7 +3729,7 @@
           "pts": 24
         },
         {
-          "p": 3,
+          "p": 4,
           "t": "Rovers",
           "w": 1,
           "d": 0,
@@ -3729,7 +3738,7 @@
           "pts": 21
         },
         {
-          "p": 4,
+          "p": 5,
           "t": "Vanguard Raptors",
           "w": 0,
           "d": 0,
@@ -3738,7 +3747,7 @@
           "pts": 14
         },
         {
-          "p": 5,
+          "p": 6,
           "t": "KSB C",
           "w": 0,
           "d": 0,
@@ -3747,13 +3756,22 @@
           "pts": 12
         },
         {
-          "p": 6,
+          "p": 7,
           "t": "Burnley Black Widows",
           "w": 0,
           "d": 0,
           "l": 1,
           "pl": 1,
           "pts": 10
+        },
+        {
+          "p": 8,
+          "t": "Gladiators",
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "pl": 1,
+          "pts": 6
         }
       ],
       "first": [
@@ -3795,6 +3813,24 @@
         },
         {
           "p": 5,
+          "t": "Past Masters",
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "pl": 1,
+          "pts": 20
+        },
+        {
+          "p": 6,
+          "t": "Burnley Hornets",
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "pl": 1,
+          "pts": 18
+        },
+        {
+          "p": 7,
           "t": "Whalley Falcons",
           "w": 0,
           "d": 0,
@@ -3803,7 +3839,7 @@
           "pts": 14
         },
         {
-          "p": 6,
+          "p": 8,
           "t": "KSB D",
           "w": 0,
           "d": 0,
@@ -3812,7 +3848,7 @@
           "pts": 13
         },
         {
-          "p": 7,
+          "p": 9,
           "t": "KSB E",
           "w": 0,
           "d": 0,
@@ -3821,7 +3857,7 @@
           "pts": 12
         },
         {
-          "p": 8,
+          "p": 10,
           "t": "Misfits",
           "w": 0,
           "d": 0,
@@ -3961,6 +3997,15 @@
         },
         {
           "p": 5,
+          "t": "Burnley Wasps",
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "pl": 1,
+          "pts": 19
+        },
+        {
+          "p": 6,
           "t": "Whalley Merlins",
           "w": 0,
           "d": 0,
@@ -3969,7 +4014,16 @@
           "pts": 17
         },
         {
-          "p": 6,
+          "p": 7,
+          "t": "Burnley Dragon Flies",
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "pl": 1,
+          "pts": 14
+        },
+        {
+          "p": 8,
           "t": "KSB Panthers (Jun)",
           "w": 0,
           "d": 0,
@@ -3978,7 +4032,7 @@
           "pts": 13
         },
         {
-          "p": 7,
+          "p": 9,
           "t": "KSB Leopards (Jun)",
           "w": 0,
           "d": 0,
@@ -3987,7 +4041,7 @@
           "pts": 12
         },
         {
-          "p": 8,
+          "p": 10,
           "t": "Burnley Scorpions",
           "w": 0,
           "d": 0,
@@ -4084,7 +4138,7 @@
         "state": "updated",
         "error": null,
         "attempts": 1,
-        "teamCount": 6
+        "teamCount": 8
       },
       "first": {
         "url": "https://eastlancstt.org.uk/api/result/2026/first/league",
@@ -4092,7 +4146,7 @@
         "state": "updated",
         "error": null,
         "attempts": 1,
-        "teamCount": 8
+        "teamCount": 10
       },
       "second": {
         "url": "https://eastlancstt.org.uk/api/result/2026/second/league",
@@ -4108,10 +4162,10 @@
         "state": "updated",
         "error": null,
         "attempts": 1,
-        "teamCount": 8
+        "teamCount": 10
       }
     }
   },
   "currentSeason": 2026,
-  "lastUpdated": "2026-09-18T09:16:48.641759+00:00"
+  "lastUpdated": "2026-09-21T16:34:24.062902+00:00"
 }
