@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # GitHub schedules use UTC. Runs every three hours at 20 minutes past.
-    - cron: "20 */3 * * *"
+    - cron: "17 * * * *"
 
 permissions:
   contents: write
