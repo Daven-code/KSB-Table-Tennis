@@ -27,9 +27,9 @@
     "oppositionTeamCount": 107,
     "ksbEncounterCount": 12634,
     "enrichedEncounterCount": 12634,
-    "successfulApiLookupsThisRun": 5,
+    "successfulApiLookupsThisRun": 0,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-09-21T16:34:28.691900+00:00"
+    "lastUpdated": "2026-09-21T21:06:11.901935+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -82033,7 +82033,7 @@
             "slug": "hyndburn-ttc-a"
           },
           "opponentDivision": null,
-          "opponentRank": 2690
+          "opponentRank": null
         },
         {
           "id": 39125,
@@ -207127,7 +207127,7 @@
             "slug": "gladiators"
           },
           "opponentDivision": null,
-          "opponentRank": 2579
+          "opponentRank": null
         },
         {
           "id": 5771,
@@ -208211,7 +208211,7 @@
             "slug": "gladiators"
           },
           "opponentDivision": null,
-          "opponentRank": 2579
+          "opponentRank": null
         },
         {
           "id": 37456,
@@ -208399,7 +208399,7 @@
             "slug": "gladiators"
           },
           "opponentDivision": null,
-          "opponentRank": 2579
+          "opponentRank": null
         },
         {
           "id": 4247,
@@ -345454,7 +345454,7 @@
             "slug": "gladiators"
           },
           "opponentDivision": null,
-          "opponentRank": 2451
+          "opponentRank": null
         },
         {
           "id": 39514,
@@ -345578,7 +345578,7 @@
             "slug": "gladiators"
           },
           "opponentDivision": null,
-          "opponentRank": 2451
+          "opponentRank": null
         },
         {
           "id": 42969,
@@ -345606,7 +345606,7 @@
             "slug": "gladiators"
           },
           "opponentDivision": null,
-          "opponentRank": 2451
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -403522,7 +403522,7 @@
             "slug": "hyndburn-ttc-a"
           },
           "opponentDivision": null,
-          "opponentRank": 2573
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -475164,7 +475164,7 @@
             "slug": "hyndburn-ttc-a"
           },
           "opponentDivision": null,
-          "opponentRank": 2389
+          "opponentRank": null
         },
         {
           "id": 41322,
@@ -527139,7 +527139,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-09-21T16:34:28.692206+00:00",
+    "generatedAt": "2026-09-21T21:06:11.902168+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
