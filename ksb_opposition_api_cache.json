@@ -6490,5 +6490,25 @@
   "2026:waliu_jayeola": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/waliu_jayeola",
     "status": "success"
+  },
+  "2026:daven-argile": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/daven-argile",
+    "status": "success"
+  },
+  "2026:jason-pilling": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/jason-pilling",
+    "status": "success"
+  },
+  "2026:oliver-fox": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/oliver-fox",
+    "status": "success"
+  },
+  "2026:rob-hall": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/rob-hall",
+    "status": "success"
+  },
+  "2026:timothy-vaughan": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/timothy-vaughan",
+    "status": "success"
   }
 }

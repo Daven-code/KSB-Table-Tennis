@@ -3703,6 +3703,15 @@
       "premier": [
         {
           "p": 1,
+          "t": "KSB A",
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "pl": 1,
+          "pts": 27
+        },
+        {
+          "p": 2,
           "t": "Spartans",
           "w": 1,
           "d": 0,
@@ -3711,7 +3720,7 @@
           "pts": 25
         },
         {
-          "p": 2,
+          "p": 3,
           "t": "KSB B",
           "w": 1,
           "d": 0,
@@ -3720,7 +3729,7 @@
           "pts": 24
         },
         {
-          "p": 3,
+          "p": 4,
           "t": "Rovers",
           "w": 1,
           "d": 0,
@@ -3729,7 +3738,7 @@
           "pts": 21
         },
         {
-          "p": 4,
+          "p": 5,
           "t": "Vanguard Raptors",
           "w": 0,
           "d": 0,
@@ -3738,7 +3747,7 @@
           "pts": 14
         },
         {
-          "p": 5,
+          "p": 6,
           "t": "KSB C",
           "w": 0,
           "d": 0,
@@ -3747,13 +3756,22 @@
           "pts": 12
         },
         {
-          "p": 6,
+          "p": 7,
           "t": "Burnley Black Widows",
           "w": 0,
           "d": 0,
           "l": 1,
           "pl": 1,
           "pts": 10
+        },
+        {
+          "p": 8,
+          "t": "Gladiators",
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "pl": 1,
+          "pts": 6
         }
       ],
       "first": [
@@ -4120,7 +4138,7 @@
         "state": "updated",
         "error": null,
         "attempts": 1,
-        "teamCount": 6
+        "teamCount": 8
       },
       "first": {
         "url": "https://eastlancstt.org.uk/api/result/2026/first/league",
@@ -4149,5 +4167,5 @@
     }
   },
   "currentSeason": 2026,
-  "lastUpdated": "2026-09-21T13:01:14.517455+00:00"
+  "lastUpdated": "2026-09-21T16:34:24.062902+00:00"
 }
