@@ -6510,5 +6510,53 @@
   "2026:timothy-vaughan": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/timothy-vaughan",
     "status": "success"
+  },
+  "2026:caroline-harris": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/caroline-harris",
+    "status": "success"
+  },
+  "2026:chloe-smith": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/chloe-smith",
+    "status": "success"
+  },
+  "2026:chris-gray": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/chris-gray",
+    "status": "success"
+  },
+  "2026:chris_wilkinson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/chris_wilkinson",
+    "status": "success"
+  },
+  "2026:damian-savage": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/damian-savage",
+    "status": "success"
+  },
+  "2026:daniel-vickers": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/daniel-vickers",
+    "status": "success"
+  },
+  "2026:georgia_cockshott": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/georgia_cockshott",
+    "status": "success"
+  },
+  "2026:joel-cooper": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/joel-cooper",
+    "status": "success"
+  },
+  "2026:kelvin-cockshott": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/kelvin-cockshott",
+    "status": "success"
+  },
+  "2026:ollie-bradshaw": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/ollie-bradshaw",
+    "status": "success"
+  },
+  "2026:paul-rush": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/paul-rush",
+    "status": "success"
+  },
+  "2026:stuart_oliver": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/stuart_oliver",
+    "status": "success"
   }
 }

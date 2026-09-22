@@ -3703,6 +3703,24 @@
       "premier": [
         {
           "p": 1,
+          "t": "Vanguard Raptors",
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "pl": 2,
+          "pts": 35
+        },
+        {
+          "p": 2,
+          "t": "KSB C",
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "pl": 2,
+          "pts": 31
+        },
+        {
+          "p": 3,
           "t": "KSB A",
           "w": 1,
           "d": 0,
@@ -3711,7 +3729,7 @@
           "pts": 27
         },
         {
-          "p": 2,
+          "p": 4,
           "t": "Spartans",
           "w": 1,
           "d": 0,
@@ -3720,7 +3738,7 @@
           "pts": 25
         },
         {
-          "p": 3,
+          "p": 5,
           "t": "KSB B",
           "w": 1,
           "d": 0,
@@ -3729,7 +3747,25 @@
           "pts": 24
         },
         {
-          "p": 4,
+          "p": 6,
+          "t": "Gladiators",
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "pl": 2,
+          "pts": 24
+        },
+        {
+          "p": 7,
+          "t": "Whalley Eagles",
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "pl": 1,
+          "pts": 21
+        },
+        {
+          "p": 8,
           "t": "Rovers",
           "w": 1,
           "d": 0,
@@ -3738,69 +3774,42 @@
           "pts": 21
         },
         {
-          "p": 5,
-          "t": "Vanguard Raptors",
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "pl": 1,
-          "pts": 14
-        },
-        {
-          "p": 6,
-          "t": "KSB C",
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "pl": 1,
-          "pts": 12
-        },
-        {
-          "p": 7,
+          "p": 9,
           "t": "Burnley Black Widows",
           "w": 0,
           "d": 0,
           "l": 1,
           "pl": 1,
           "pts": 10
-        },
-        {
-          "p": 8,
-          "t": "Gladiators",
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "pl": 1,
-          "pts": 6
         }
       ],
       "first": [
         {
           "p": 1,
           "t": "Vanguard Jets",
-          "w": 1,
+          "w": 2,
           "d": 0,
           "l": 0,
-          "pl": 1,
-          "pts": 30
+          "pl": 2,
+          "pts": 51
         },
         {
           "p": 2,
+          "t": "Vanguard Phantoms",
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "pl": 2,
+          "pts": 39
+        },
+        {
+          "p": 3,
           "t": "Vanguard Tornados",
           "w": 1,
           "d": 0,
           "l": 0,
           "pl": 1,
           "pts": 28
-        },
-        {
-          "p": 3,
-          "t": "Vanguard Phantoms",
-          "w": 1,
-          "d": 0,
-          "l": 0,
-          "pl": 1,
-          "pts": 23
         },
         {
           "p": 4,
@@ -3870,11 +3879,11 @@
         {
           "p": 1,
           "t": "KSB Jaguars",
-          "w": 1,
+          "w": 2,
           "d": 0,
           "l": 0,
-          "pl": 1,
-          "pts": 29
+          "pl": 2,
+          "pts": 54
         },
         {
           "p": 2,
@@ -3905,6 +3914,15 @@
         },
         {
           "p": 5,
+          "t": "KSB Tigers",
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "pl": 2,
+          "pts": 24
+        },
+        {
+          "p": 6,
           "t": "KSB G",
           "w": 1,
           "d": 0,
@@ -3913,7 +3931,7 @@
           "pts": 23
         },
         {
-          "p": 6,
+          "p": 7,
           "t": "Slayers",
           "w": 0,
           "d": 0,
@@ -3922,7 +3940,7 @@
           "pts": 16
         },
         {
-          "p": 7,
+          "p": 8,
           "t": "Hyndburn TTC A",
           "w": 0,
           "d": 0,
@@ -3931,22 +3949,13 @@
           "pts": 16
         },
         {
-          "p": 8,
+          "p": 9,
           "t": "Brierfield",
           "w": 0,
           "d": 0,
           "l": 1,
           "pl": 1,
           "pts": 13
-        },
-        {
-          "p": 9,
-          "t": "KSB Tigers",
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "pl": 1,
-          "pts": 11
         },
         {
           "p": 10,
@@ -3962,47 +3971,47 @@
         {
           "p": 1,
           "t": "Vanguard Typhoons",
-          "w": 1,
+          "w": 2,
           "d": 0,
           "l": 0,
-          "pl": 1,
-          "pts": 25
+          "pl": 2,
+          "pts": 55
         },
         {
           "p": 2,
+          "t": "Hyndburn TTC B",
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "pl": 2,
+          "pts": 52
+        },
+        {
+          "p": 3,
+          "t": "Burnley Wasps",
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "pl": 2,
+          "pts": 46
+        },
+        {
+          "p": 4,
+          "t": "KSB Pumas (Jun)",
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "pl": 2,
+          "pts": 33
+        },
+        {
+          "p": 5,
           "t": "Whalley Harriers",
           "w": 1,
           "d": 0,
           "l": 0,
           "pl": 1,
           "pts": 24
-        },
-        {
-          "p": 3,
-          "t": "KSB Pumas (Jun)",
-          "w": 1,
-          "d": 0,
-          "l": 0,
-          "pl": 1,
-          "pts": 23
-        },
-        {
-          "p": 4,
-          "t": "Hyndburn TTC B",
-          "w": 1,
-          "d": 0,
-          "l": 0,
-          "pl": 1,
-          "pts": 22
-        },
-        {
-          "p": 5,
-          "t": "Burnley Wasps",
-          "w": 1,
-          "d": 0,
-          "l": 0,
-          "pl": 1,
-          "pts": 19
         },
         {
           "p": 6,
@@ -4015,6 +4024,15 @@
         },
         {
           "p": 7,
+          "t": "KSB Panthers (Jun)",
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "pl": 2,
+          "pts": 16
+        },
+        {
+          "p": 8,
           "t": "Burnley Dragon Flies",
           "w": 0,
           "d": 0,
@@ -4023,22 +4041,13 @@
           "pts": 14
         },
         {
-          "p": 8,
-          "t": "KSB Panthers (Jun)",
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "pl": 1,
-          "pts": 13
-        },
-        {
           "p": 9,
           "t": "KSB Leopards (Jun)",
           "w": 0,
           "d": 0,
-          "l": 1,
-          "pl": 1,
-          "pts": 12
+          "l": 2,
+          "pl": 2,
+          "pts": 13
         },
         {
           "p": 10,
@@ -4138,7 +4147,7 @@
         "state": "updated",
         "error": null,
         "attempts": 1,
-        "teamCount": 8
+        "teamCount": 9
       },
       "first": {
         "url": "https://eastlancstt.org.uk/api/result/2026/first/league",
@@ -4167,5 +4176,5 @@
     }
   },
   "currentSeason": 2026,
-  "lastUpdated": "2026-09-21T16:34:24.062902+00:00"
+  "lastUpdated": "2026-09-22T12:41:25.658174+00:00"
 }

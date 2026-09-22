@@ -127,7 +127,7 @@ def fixture_key(season, fixture):
     return f"{season}|{week}|{left}|{right}|{fulfilled}"
 
 
-def build_player_season(player_data, season):
+def build_player_season(player_data, season, opponent_teams_by_player):
     """Normalise one player API response into current-season records."""
     api_player = player_data.get("player") or {}
     player_name = api_player.get("name") or "Unknown player"
@@ -135,6 +135,17 @@ def build_player_season(player_data, season):
     raw_encounters = player_data.get("encounters") or []
     fixtures = player_data.get("fixtures") or []
     completed = [f for f in fixtures if f.get("scoreLeft") is not None and f.get("scoreRight") is not None]
+    player_team_slug = (player_data.get("team") or {}).get("slug") or api_player.get("teamSlug")
+
+    def opposing_team_slug(fixture):
+        """Return the other team in a fixture involving this player's team."""
+        left = fixture.get("teamLeftSlug")
+        right = fixture.get("teamRightSlug")
+        if player_team_slug and left == player_team_slug:
+            return right
+        if player_team_slug and right == player_team_slug:
+            return left
+        return None
 
     encounters = []
     for index, raw in enumerate(raw_encounters):
@@ -161,11 +172,16 @@ def build_player_season(player_data, season):
             elif int(player_score) < int(opponent_score):
                 result = "L"
 
-        # League teams field three players, each playing three singles. The
-        # player API orders encounter blocks in the same order as that player's
-        # completed fixture list. Store the canonical fixture key at ingestion.
-        fixture_index = index // 3
-        linked_fixture = completed[fixture_index] if fixture_index < len(completed) else None
+        # Link by identity, never by array position. The old index // 3 rule
+        # placed late or reordered encounters under the wrong team result.
+        # An encounter belongs to the completed fixture whose opposition team
+        # roster contains the opponent's player slug.
+        registered_teams = opponent_teams_by_player.get(opponent_slug, set())
+        candidates = [
+            fixture for fixture in completed
+            if opposing_team_slug(fixture) in registered_teams
+        ]
+        linked_fixture = candidates[0] if len(candidates) == 1 else None
         encounter = dict(raw)
         encounter.update({
             "player": player_name,
@@ -409,6 +425,35 @@ def main():
         print(f"Continuing with {len(team_failures)} unavailable team API(s); previous data or placeholders were retained.")
 
     print(f"Found {len(player_slugs)} current-season player slugs.")
+
+    # Build an exact current-season player-to-team index from every opposition
+    # team appearing in a KSB fixture. This is the authoritative link between
+    # an individual encounter and its team fixture.
+    fixture_team_slugs = {
+        slug
+        for fixture in all_fixtures
+        for slug in (fixture.get("teamLeftSlug"), fixture.get("teamRightSlug"))
+        if slug
+    }
+    opponent_teams_by_player = {}
+    print(f"Fetching {len(fixture_team_slugs)} fixture-team rosters for exact result linking...")
+    for i, fixture_team_slug in enumerate(sorted(fixture_team_slugs), 1):
+        if fixture_team_slug in teams and teams[fixture_team_slug].get("players") is not None:
+            roster = teams[fixture_team_slug].get("players") or []
+        else:
+            team_url = f"{BASE}/api/result/{season}/team/{fixture_team_slug}"
+            team_result = safe_get(team_url, args.timeout, args.attempts, args.retry_delay)
+            if team_result["status"] != "success":
+                print(f"  roster {fixture_team_slug}: unavailable; its encounters will remain unlinked this run")
+                continue
+            roster = (team_result["data"] or {}).get("players") or []
+        for roster_player in roster:
+            roster_slug = roster_player.get("slug")
+            if roster_slug:
+                opponent_teams_by_player.setdefault(roster_slug, set()).add(fixture_team_slug)
+        if i % 10 == 0 or i == len(fixture_team_slugs):
+            print(f"  [{i}/{len(fixture_team_slugs)}] fixture-team rosters complete")
+
     print("Fetching individual player data...")
 
     current_players = {}
@@ -432,7 +477,7 @@ def main():
             failed += 1
             continue
 
-        record = build_player_season(result["data"], season)
+        record = build_player_season(result["data"], season, opponent_teams_by_player)
         current_players[slug] = record
         encounters.extend(record["statistics"]["encounters"])
         successful += 1
@@ -445,6 +490,9 @@ def main():
 
     if failed:
         print(f"Continuing after {failed} unavailable player API request(s); available and retained records will be published.")
+    linked_encounters = sum(bool(item.get("fixtureKey")) for item in encounters)
+    unlinked_encounters = len(encounters) - linked_encounters
+    print(f"Current encounters linked to exact fixtures: {linked_encounters}; unlinked: {unlinked_encounters}")
 
     # Update current-season data only after every required API request succeeds.
     master["coverage"]["currentSeason"] = season
