@@ -27,9 +27,9 @@
     "oppositionTeamCount": 109,
     "ksbEncounterCount": 12715,
     "enrichedEncounterCount": 12715,
-    "successfulApiLookupsThisRun": 10,
+    "successfulApiLookupsThisRun": 0,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-09-23T09:44:04.128130+00:00"
+    "lastUpdated": "2026-09-23T11:38:19.621780+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -67616,7 +67616,7 @@
             "slug": "past-masters"
           },
           "opponentDivision": null,
-          "opponentRank": 1942
+          "opponentRank": null
         },
         {
           "id": 8339,
@@ -68828,7 +68828,7 @@
             "slug": "past-masters"
           },
           "opponentDivision": null,
-          "opponentRank": 1942
+          "opponentRank": null
         },
         {
           "id": 5354,
@@ -70072,7 +70072,7 @@
             "slug": "past-masters"
           },
           "opponentDivision": null,
-          "opponentRank": 1942
+          "opponentRank": null
         },
         {
           "id": 3656,
@@ -172839,7 +172839,7 @@
             "slug": "past-masters"
           },
           "opponentDivision": null,
-          "opponentRank": 1738
+          "opponentRank": null
         },
         {
           "id": 10989,
@@ -174499,7 +174499,7 @@
             "slug": "past-masters"
           },
           "opponentDivision": null,
-          "opponentRank": 1738
+          "opponentRank": null
         },
         {
           "id": 6487,
@@ -176095,7 +176095,7 @@
             "slug": "past-masters"
           },
           "opponentDivision": null,
-          "opponentRank": 1738
+          "opponentRank": null
         },
         {
           "id": 720,
@@ -211669,7 +211669,7 @@
             "slug": "vanguard-tornados"
           },
           "opponentDivision": null,
-          "opponentRank": 2031
+          "opponentRank": null
         },
         {
           "id": 20869,
@@ -212273,7 +212273,7 @@
             "slug": "vanguard-tornados"
           },
           "opponentDivision": null,
-          "opponentRank": 2031
+          "opponentRank": null
         },
         {
           "id": 21777,
@@ -212813,7 +212813,7 @@
             "slug": "vanguard-tornados"
           },
           "opponentDivision": null,
-          "opponentRank": 2031
+          "opponentRank": null
         },
         {
           "id": 21775,
@@ -284654,7 +284654,7 @@
             "slug": "whalley-ospreys"
           },
           "opponentDivision": null,
-          "opponentRank": 1181
+          "opponentRank": null
         },
         {
           "id": 35602,
@@ -285258,7 +285258,7 @@
             "slug": "whalley-ospreys"
           },
           "opponentDivision": null,
-          "opponentRank": 1181
+          "opponentRank": null
         },
         {
           "id": 31163,
@@ -286182,7 +286182,7 @@
             "slug": "whalley-ospreys"
           },
           "opponentDivision": null,
-          "opponentRank": 1181
+          "opponentRank": null
         },
         {
           "id": 29016,
@@ -288675,7 +288675,7 @@
             "slug": "whalley-ospreys"
           },
           "opponentDivision": null,
-          "opponentRank": 1289
+          "opponentRank": null
         },
         {
           "id": 17811,
@@ -289471,7 +289471,7 @@
             "slug": "whalley-ospreys"
           },
           "opponentDivision": null,
-          "opponentRank": 1289
+          "opponentRank": null
         },
         {
           "id": 17040,
@@ -290395,7 +290395,7 @@
             "slug": "whalley-ospreys"
           },
           "opponentDivision": null,
-          "opponentRank": 1289
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -392580,7 +392580,7 @@
             "slug": "whalley-ospreys"
           },
           "opponentDivision": null,
-          "opponentRank": 1128
+          "opponentRank": null
         },
         {
           "id": 33794,
@@ -393344,7 +393344,7 @@
             "slug": "whalley-ospreys"
           },
           "opponentDivision": null,
-          "opponentRank": 1128
+          "opponentRank": null
         },
         {
           "id": 24452,
@@ -394396,7 +394396,7 @@
             "slug": "whalley-ospreys"
           },
           "opponentDivision": null,
-          "opponentRank": 1128
+          "opponentRank": null
         },
         {
           "id": 24909,
@@ -530712,7 +530712,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-09-23T09:44:04.128326+00:00",
+    "generatedAt": "2026-09-23T11:38:19.621952+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
