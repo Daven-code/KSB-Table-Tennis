@@ -6558,5 +6558,45 @@
   "2026:stuart_oliver": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/stuart_oliver",
     "status": "success"
+  },
+  "2026:austin-phillip": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/austin-phillip",
+    "status": "success"
+  },
+  "2026:carlton-cooper": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/carlton-cooper",
+    "status": "success"
+  },
+  "2026:dan-chamberlain": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/dan-chamberlain",
+    "status": "success"
+  },
+  "2026:ian-pickles": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/ian-pickles",
+    "status": "success"
+  },
+  "2026:james-balmforth": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/james-balmforth",
+    "status": "success"
+  },
+  "2026:jason-tomlinson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/jason-tomlinson",
+    "status": "success"
+  },
+  "2026:mark-gavin": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/mark-gavin",
+    "status": "success"
+  },
+  "2026:mark-hodkinson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/mark-hodkinson",
+    "status": "success"
+  },
+  "2026:mark-rawson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/mark-rawson",
+    "status": "success"
+  },
+  "2026:steve-horner": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/steve-horner",
+    "status": "success"
   }
 }
