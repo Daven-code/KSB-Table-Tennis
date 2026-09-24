@@ -6598,5 +6598,49 @@
   "2026:steve-horner": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/steve-horner",
     "status": "success"
+  },
+  "2026:chris-freely": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/chris-freely",
+    "status": "success"
+  },
+  "2026:craig-milnes": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/craig-milnes",
+    "status": "success"
+  },
+  "2026:david-eastwood": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/david-eastwood",
+    "status": "success"
+  },
+  "2026:douglas_hodgson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/douglas_hodgson",
+    "status": "success"
+  },
+  "2026:gustavs_saurins": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/gustavs_saurins",
+    "status": "success"
+  },
+  "2026:harry-lewis": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/harry-lewis",
+    "status": "success"
+  },
+  "2026:lee-pattinson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/lee-pattinson",
+    "status": "success"
+  },
+  "2026:martin-wyatt": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/martin-wyatt",
+    "status": "success"
+  },
+  "2026:mick-swindells": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/mick-swindells",
+    "status": "success"
+  },
+  "2026:pawel-mlynarski": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/pawel-mlynarski",
+    "status": "success"
+  },
+  "2026:simon_brooke": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/simon_brooke",
+    "status": "success"
   }
 }
