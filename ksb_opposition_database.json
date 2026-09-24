@@ -27,9 +27,9 @@
     "oppositionTeamCount": 110,
     "ksbEncounterCount": 12742,
     "enrichedEncounterCount": 12742,
-    "successfulApiLookupsThisRun": 11,
+    "successfulApiLookupsThisRun": 0,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-09-24T10:03:28.123797+00:00"
+    "lastUpdated": "2026-09-24T15:08:03.452034+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -55021,7 +55021,7 @@
             "slug": "spartans"
           },
           "opponentDivision": null,
-          "opponentRank": 2681
+          "opponentRank": null
         },
         {
           "id": 33326,
@@ -55433,7 +55433,7 @@
             "slug": "spartans"
           },
           "opponentDivision": null,
-          "opponentRank": 2681
+          "opponentRank": null
         },
         {
           "id": 39534,
@@ -55525,7 +55525,7 @@
             "slug": "spartans"
           },
           "opponentDivision": null,
-          "opponentRank": 2681
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -89588,7 +89588,7 @@
             "slug": "burnley-black-widows"
           },
           "opponentDivision": null,
-          "opponentRank": 2420
+          "opponentRank": null
         },
         {
           "id": 21374,
@@ -90224,7 +90224,7 @@
             "slug": "burnley-black-widows"
           },
           "opponentDivision": null,
-          "opponentRank": 2420
+          "opponentRank": null
         },
         {
           "id": 37243,
@@ -90796,7 +90796,7 @@
             "slug": "burnley-black-widows"
           },
           "opponentDivision": null,
-          "opponentRank": 2420
+          "opponentRank": null
         },
         {
           "id": 37924,
@@ -107739,7 +107739,7 @@
             "slug": "burnley-black-widows"
           },
           "opponentDivision": null,
-          "opponentRank": 1750
+          "opponentRank": null
         },
         {
           "id": 43131,
@@ -107767,7 +107767,7 @@
             "slug": "burnley-black-widows"
           },
           "opponentDivision": null,
-          "opponentRank": 1750
+          "opponentRank": null
         },
         {
           "id": 43125,
@@ -107795,7 +107795,7 @@
             "slug": "burnley-black-widows"
           },
           "opponentDivision": null,
-          "opponentRank": 1750
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -146012,7 +146012,7 @@
             "slug": "burnley-hornets"
           },
           "opponentDivision": null,
-          "opponentRank": 1751
+          "opponentRank": null
         },
         {
           "id": 43141,
@@ -146040,7 +146040,7 @@
             "slug": "burnley-hornets"
           },
           "opponentDivision": null,
-          "opponentRank": 1751
+          "opponentRank": null
         },
         {
           "id": 43133,
@@ -146068,7 +146068,7 @@
             "slug": "burnley-hornets"
           },
           "opponentDivision": null,
-          "opponentRank": 1751
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -268393,7 +268393,7 @@
             "slug": "burnley-hornets"
           },
           "opponentDivision": null,
-          "opponentRank": 1877
+          "opponentRank": null
         },
         {
           "id": 36176,
@@ -268485,7 +268485,7 @@
             "slug": "burnley-hornets"
           },
           "opponentDivision": null,
-          "opponentRank": 1877
+          "opponentRank": null
         },
         {
           "id": 37703,
@@ -269185,7 +269185,7 @@
             "slug": "burnley-hornets"
           },
           "opponentDivision": null,
-          "opponentRank": 1877
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -303119,7 +303119,7 @@
             "slug": "spartans"
           },
           "opponentDivision": null,
-          "opponentRank": 2589
+          "opponentRank": null
         },
         {
           "id": 3357,
@@ -303531,7 +303531,7 @@
             "slug": "spartans"
           },
           "opponentDivision": null,
-          "opponentRank": 2589
+          "opponentRank": null
         },
         {
           "id": 39536,
@@ -303623,7 +303623,7 @@
             "slug": "spartans"
           },
           "opponentDivision": null,
-          "opponentRank": 2589
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -322324,7 +322324,7 @@
             "slug": "burnley-hornets"
           },
           "opponentDivision": null,
-          "opponentRank": 1687
+          "opponentRank": null
         },
         {
           "id": 35407,
@@ -322448,7 +322448,7 @@
             "slug": "burnley-hornets"
           },
           "opponentDivision": null,
-          "opponentRank": 1687
+          "opponentRank": null
         },
         {
           "id": 37706,
@@ -323116,7 +323116,7 @@
             "slug": "burnley-hornets"
           },
           "opponentDivision": null,
-          "opponentRank": 1687
+          "opponentRank": null
         },
         {
           "id": 32705,
@@ -449235,7 +449235,7 @@
             "slug": "spartans"
           },
           "opponentDivision": null,
-          "opponentRank": 2402
+          "opponentRank": null
         },
         {
           "id": 43117,
@@ -449263,7 +449263,7 @@
             "slug": "spartans"
           },
           "opponentDivision": null,
-          "opponentRank": 2402
+          "opponentRank": null
         },
         {
           "id": 43115,
@@ -449291,7 +449291,7 @@
             "slug": "spartans"
           },
           "opponentDivision": null,
-          "opponentRank": 2402
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -532136,7 +532136,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-09-24T10:03:28.124007+00:00",
+    "generatedAt": "2026-09-24T15:08:03.452241+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
