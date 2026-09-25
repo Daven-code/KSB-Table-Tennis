@@ -29,7 +29,7 @@
     "enrichedEncounterCount": 12742,
     "successfulApiLookupsThisRun": 0,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-09-25T07:50:05.536006+00:00"
+    "lastUpdated": "2026-09-25T13:49:09.376161+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -145955,9 +145955,9 @@
         "draws": 0,
         "losses": 3,
         "winPercentage": 0.0,
-        "setsWon": 2,
+        "setsWon": 1,
         "setsLost": 9,
-        "setDifference": -7
+        "setDifference": -8
       },
       "ksbBySeason": {
         "2026": {
@@ -145966,9 +145966,9 @@
           "draws": 0,
           "losses": 3,
           "winPercentage": 0.0,
-          "setsWon": 2,
+          "setsWon": 1,
           "setsLost": 9,
-          "setDifference": -7
+          "setDifference": -8
         }
       },
       "ksbByTeam": {
@@ -145980,20 +145980,20 @@
           "draws": 0,
           "losses": 3,
           "winPercentage": 0.0,
-          "setsWon": 2,
+          "setsWon": 1,
           "setsLost": 9,
-          "setDifference": -7
+          "setDifference": -8
         }
       },
       "ksbEncounters": [
         {
-          "id": 43136,
+          "id": 43156,
           "season": 2026,
           "ksbPlayer": "David Greenwood",
           "ksbPlayerSlug": "david-greenwood",
           "ksbTeam": null,
           "ksbTeamSlug": null,
-          "scoreLeft": 1,
+          "scoreLeft": 0,
           "scoreRight": 3,
           "playerLeftName": "David Greenwood",
           "playerLeftSlug": "david-greenwood",
@@ -146001,12 +146001,12 @@
           "playerRightSlug": "gustavs_saurins",
           "playerRankChangeLeft": -3,
           "playerRankChangeRight": 5,
-          "ksbPlayerScore": 1,
+          "ksbPlayerScore": 0,
           "opponentScore": 3,
           "resultForKSBPlayer": "L",
           "opponent": "Gustavs Saurins",
           "opponentSlug": "gustavs_saurins",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790237887",
+          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -146015,7 +146015,7 @@
           "opponentRank": null
         },
         {
-          "id": 43141,
+          "id": 43161,
           "season": 2026,
           "ksbPlayer": "Graham Young",
           "ksbPlayerSlug": "graham-young",
@@ -146034,7 +146034,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Gustavs Saurins",
           "opponentSlug": "gustavs_saurins",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790237887",
+          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -146043,7 +146043,7 @@
           "opponentRank": null
         },
         {
-          "id": 43133,
+          "id": 43153,
           "season": 2026,
           "ksbPlayer": "Trevor Elkington",
           "ksbPlayerSlug": "trevor-elkington",
@@ -146062,7 +146062,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Gustavs Saurins",
           "opponentSlug": "gustavs_saurins",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790237887",
+          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -268368,7 +268368,7 @@
           "opponentRank": 1796
         },
         {
-          "id": 43134,
+          "id": 43154,
           "season": 2026,
           "ksbPlayer": "David Greenwood",
           "ksbPlayerSlug": "david-greenwood",
@@ -268387,7 +268387,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Lee Pattison",
           "opponentSlug": "lee-pattinson",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790237887",
+          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -268460,7 +268460,7 @@
           "opponentRank": 943
         },
         {
-          "id": 43139,
+          "id": 43159,
           "season": 2026,
           "ksbPlayer": "Graham Young",
           "ksbPlayerSlug": "graham-young",
@@ -268479,7 +268479,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Lee Pattison",
           "opponentSlug": "lee-pattinson",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790237887",
+          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -269160,7 +269160,7 @@
           "opponentRank": 1796
         },
         {
-          "id": 43142,
+          "id": 43162,
           "season": 2026,
           "ksbPlayer": "Trevor Elkington",
           "ksbPlayerSlug": "trevor-elkington",
@@ -269179,7 +269179,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Lee Pattison",
           "opponentSlug": "lee-pattinson",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790237887",
+          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -322299,7 +322299,7 @@
           "opponentRank": 1595
         },
         {
-          "id": 43140,
+          "id": 43160,
           "season": 2026,
           "ksbPlayer": "David Greenwood",
           "ksbPlayerSlug": "david-greenwood",
@@ -322318,7 +322318,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Mick Swindells",
           "opponentSlug": "mick-swindells",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790237887",
+          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -322423,7 +322423,7 @@
           "opponentRank": 1444
         },
         {
-          "id": 43135,
+          "id": 43155,
           "season": 2026,
           "ksbPlayer": "Graham Young",
           "ksbPlayerSlug": "graham-young",
@@ -322442,7 +322442,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Mick Swindells",
           "opponentSlug": "mick-swindells",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790237887",
+          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -323091,7 +323091,7 @@
           "opponentRank": 1276
         },
         {
-          "id": 43137,
+          "id": 43157,
           "season": 2026,
           "ksbPlayer": "Trevor Elkington",
           "ksbPlayerSlug": "trevor-elkington",
@@ -323110,7 +323110,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Mick Swindells",
           "opponentSlug": "mick-swindells",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790237887",
+          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -500389,7 +500389,7 @@
       "wins": 70,
       "draws": 0,
       "losses": 83,
-      "setsWon": 249,
+      "setsWon": 248,
       "setsLost": 304,
       "ksbPlayers": {
         "andy-cretney": {
@@ -500476,9 +500476,9 @@
           "draws": 0,
           "losses": 7,
           "winPercentage": 22.22,
-          "setsWon": 8,
+          "setsWon": 7,
           "setsLost": 23,
-          "setDifference": -15
+          "setDifference": -16
         },
         "david-mottershead": {
           "name": "David Mottershead",
@@ -500775,9 +500775,9 @@
           "draws": 0,
           "losses": 3,
           "winPercentage": 0.0,
-          "setsWon": 2,
+          "setsWon": 1,
           "setsLost": 9,
-          "setDifference": -7
+          "setDifference": -8
         },
         "keith-cocker": {
           "name": "Keith Cocker",
@@ -500858,7 +500858,7 @@
         }
       },
       "winPercentage": 45.75,
-      "setDifference": -55
+      "setDifference": -56
     },
     "burnley-scorpions": {
       "name": "Burnley Scorpions",
@@ -532136,7 +532136,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-09-25T07:50:05.536205+00:00",
+    "generatedAt": "2026-09-25T13:49:09.376324+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
