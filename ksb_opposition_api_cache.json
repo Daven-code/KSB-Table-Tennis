@@ -6642,5 +6642,53 @@
   "2026:simon_brooke": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/simon_brooke",
     "status": "success"
+  },
+  "2026:dave_lawrence": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/dave_lawrence",
+    "status": "success"
+  },
+  "2026:john-lee": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/john-lee",
+    "status": "success"
+  },
+  "2026:judith-glover": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/judith-glover",
+    "status": "success"
+  },
+  "2026:keith-cocker": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/keith-cocker",
+    "status": "success"
+  },
+  "2026:mark_brandwood": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/mark_brandwood",
+    "status": "success"
+  },
+  "2026:martin-astle": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/martin-astle",
+    "status": "success"
+  },
+  "2026:neil-graham": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/neil-graham",
+    "status": "success"
+  },
+  "2026:paulina_gauweda": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/paulina_gauweda",
+    "status": "success"
+  },
+  "2026:sam-bell": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/sam-bell",
+    "status": "success"
+  },
+  "2026:stephen_carpanina": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/stephen_carpanina",
+    "status": "success"
+  },
+  "2026:steve-axell": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/steve-axell",
+    "status": "success"
+  },
+  "2026:vacas-ahmed": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/vacas-ahmed",
+    "status": "success"
   }
 }
