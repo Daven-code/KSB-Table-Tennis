@@ -27,9 +27,9 @@
     "oppositionTeamCount": 111,
     "ksbEncounterCount": 12778,
     "enrichedEncounterCount": 12778,
-    "successfulApiLookupsThisRun": 12,
+    "successfulApiLookupsThisRun": 0,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-09-29T15:53:52.361992+00:00"
+    "lastUpdated": "2026-09-29T20:48:36.651643+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -83203,7 +83203,7 @@
             "slug": "burnley-dragon-flies"
           },
           "opponentDivision": null,
-          "opponentRank": 417
+          "opponentRank": null
         },
         {
           "id": 43180,
@@ -83231,7 +83231,7 @@
             "slug": "burnley-dragon-flies"
           },
           "opponentDivision": null,
-          "opponentRank": 417
+          "opponentRank": null
         },
         {
           "id": 43174,
@@ -83259,7 +83259,7 @@
             "slug": "burnley-dragon-flies"
           },
           "opponentDivision": null,
-          "opponentRank": 417
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -231033,7 +231033,7 @@
             "slug": "burnley-scorpions"
           },
           "opponentDivision": null,
-          "opponentRank": 261
+          "opponentRank": null
         },
         {
           "id": 43166,
@@ -231061,7 +231061,7 @@
             "slug": "burnley-scorpions"
           },
           "opponentDivision": null,
-          "opponentRank": 261
+          "opponentRank": null
         },
         {
           "id": 38607,
@@ -231601,7 +231601,7 @@
             "slug": "burnley-scorpions"
           },
           "opponentDivision": null,
-          "opponentRank": 261
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -243870,7 +243870,7 @@
             "slug": "burnley-bees"
           },
           "opponentDivision": null,
-          "opponentRank": 891
+          "opponentRank": null
         },
         {
           "id": 33399,
@@ -244250,7 +244250,7 @@
             "slug": "burnley-bees"
           },
           "opponentDivision": null,
-          "opponentRank": 891
+          "opponentRank": null
         },
         {
           "id": 34441,
@@ -244470,7 +244470,7 @@
             "slug": "burnley-bees"
           },
           "opponentDivision": null,
-          "opponentRank": 891
+          "opponentRank": null
         },
         {
           "id": 38441,
@@ -253451,7 +253451,7 @@
             "slug": "burnley-bees"
           },
           "opponentDivision": null,
-          "opponentRank": 1189
+          "opponentRank": null
         },
         {
           "id": 26732,
@@ -253863,7 +253863,7 @@
             "slug": "burnley-bees"
           },
           "opponentDivision": null,
-          "opponentRank": 1189
+          "opponentRank": null
         },
         {
           "id": 27320,
@@ -254051,7 +254051,7 @@
             "slug": "burnley-bees"
           },
           "opponentDivision": null,
-          "opponentRank": 1189
+          "opponentRank": null
         },
         {
           "id": 38433,
@@ -281858,7 +281858,7 @@
             "slug": "burnley-scorpions"
           },
           "opponentDivision": null,
-          "opponentRank": 69
+          "opponentRank": null
         },
         {
           "id": 43170,
@@ -281886,7 +281886,7 @@
             "slug": "burnley-scorpions"
           },
           "opponentDivision": null,
-          "opponentRank": 69
+          "opponentRank": null
         },
         {
           "id": 43165,
@@ -281914,7 +281914,7 @@
             "slug": "burnley-scorpions"
           },
           "opponentDivision": null,
-          "opponentRank": 69
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -293470,7 +293470,7 @@
             "slug": "whalley-merlins"
           },
           "opponentDivision": null,
-          "opponentRank": 648
+          "opponentRank": null
         },
         {
           "id": 40622,
@@ -293722,7 +293722,7 @@
             "slug": "whalley-merlins"
           },
           "opponentDivision": null,
-          "opponentRank": 648
+          "opponentRank": null
         },
         {
           "id": 38595,
@@ -294230,7 +294230,7 @@
             "slug": "whalley-merlins"
           },
           "opponentDivision": null,
-          "opponentRank": 648
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -333968,7 +333968,7 @@
             "slug": "burnley-dragon-flies"
           },
           "opponentDivision": null,
-          "opponentRank": 144
+          "opponentRank": null
         },
         {
           "id": 42574,
@@ -334028,7 +334028,7 @@
             "slug": "burnley-dragon-flies"
           },
           "opponentDivision": null,
-          "opponentRank": 144
+          "opponentRank": null
         },
         {
           "id": 43182,
@@ -334056,7 +334056,7 @@
             "slug": "burnley-dragon-flies"
           },
           "opponentDivision": null,
-          "opponentRank": 144
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -372646,7 +372646,7 @@
             "slug": "burnley-dragon-flies"
           },
           "opponentDivision": null,
-          "opponentRank": 222
+          "opponentRank": null
         },
         {
           "id": 43175,
@@ -372674,7 +372674,7 @@
             "slug": "burnley-dragon-flies"
           },
           "opponentDivision": null,
-          "opponentRank": 222
+          "opponentRank": null
         },
         {
           "id": 43179,
@@ -372702,7 +372702,7 @@
             "slug": "burnley-dragon-flies"
           },
           "opponentDivision": null,
-          "opponentRank": 222
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -432895,7 +432895,7 @@
             "slug": "whalley-merlins"
           },
           "opponentDivision": null,
-          "opponentRank": 450
+          "opponentRank": null
         },
         {
           "id": 36090,
@@ -433435,7 +433435,7 @@
             "slug": "whalley-merlins"
           },
           "opponentDivision": null,
-          "opponentRank": 450
+          "opponentRank": null
         },
         {
           "id": 38600,
@@ -434487,7 +434487,7 @@
             "slug": "whalley-merlins"
           },
           "opponentDivision": null,
-          "opponentRank": 450
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -457317,7 +457317,7 @@
             "slug": "burnley-scorpions"
           },
           "opponentDivision": null,
-          "opponentRank": 398
+          "opponentRank": null
         },
         {
           "id": 43164,
@@ -457345,7 +457345,7 @@
             "slug": "burnley-scorpions"
           },
           "opponentDivision": null,
-          "opponentRank": 398
+          "opponentRank": null
         },
         {
           "id": 43169,
@@ -457373,7 +457373,7 @@
             "slug": "burnley-scorpions"
           },
           "opponentDivision": null,
-          "opponentRank": 398
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -462202,7 +462202,7 @@
             "slug": "whalley-merlins"
           },
           "opponentDivision": null,
-          "opponentRank": 670
+          "opponentRank": null
         },
         {
           "id": 43189,
@@ -462230,7 +462230,7 @@
             "slug": "whalley-merlins"
           },
           "opponentDivision": null,
-          "opponentRank": 670
+          "opponentRank": null
         },
         {
           "id": 43185,
@@ -462258,7 +462258,7 @@
             "slug": "whalley-merlins"
           },
           "opponentDivision": null,
-          "opponentRank": 670
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -492632,7 +492632,7 @@
             "slug": "burnley-bees"
           },
           "opponentDivision": null,
-          "opponentRank": 815
+          "opponentRank": null
         },
         {
           "id": 39857,
@@ -492756,7 +492756,7 @@
             "slug": "burnley-bees"
           },
           "opponentDivision": null,
-          "opponentRank": 815
+          "opponentRank": null
         },
         {
           "id": 39172,
@@ -492880,7 +492880,7 @@
             "slug": "burnley-bees"
           },
           "opponentDivision": null,
-          "opponentRank": 815
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -533894,7 +533894,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-09-29T15:53:52.362173+00:00",
+    "generatedAt": "2026-09-29T20:48:36.651827+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
