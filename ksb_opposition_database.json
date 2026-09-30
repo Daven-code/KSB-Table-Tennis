@@ -25,11 +25,11 @@
     "currentSeason": 2026,
     "oppositionPlayerCount": 473,
     "oppositionTeamCount": 111,
-    "ksbEncounterCount": 12778,
-    "enrichedEncounterCount": 12778,
-    "successfulApiLookupsThisRun": 0,
+    "ksbEncounterCount": 12796,
+    "enrichedEncounterCount": 12796,
+    "successfulApiLookupsThisRun": 4,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-09-30T06:44:59.964043+00:00"
+    "lastUpdated": "2026-09-30T13:46:08.857739+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -89121,14 +89121,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 62,
-        "wins": 43,
+        "played": 65,
+        "wins": 44,
         "draws": 0,
-        "losses": 19,
-        "winPercentage": 69.35,
-        "setsWon": 143,
-        "setsLost": 74,
-        "setDifference": 69
+        "losses": 21,
+        "winPercentage": 67.69,
+        "setsWon": 147,
+        "setsLost": 82,
+        "setDifference": 65
       },
       "ksbBySeason": {
         "2013": {
@@ -89222,14 +89222,14 @@
           "setDifference": 9
         },
         "2026": {
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 3,
           "draws": 0,
-          "losses": 1,
-          "winPercentage": 66.67,
-          "setsWon": 8,
-          "setsLost": 4,
-          "setDifference": 4
+          "losses": 3,
+          "winPercentage": 50.0,
+          "setsWon": 12,
+          "setsLost": 12,
+          "setDifference": 0
         }
       },
       "ksbByTeam": {
@@ -89284,17 +89284,45 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 3,
           "draws": 0,
-          "losses": 1,
-          "winPercentage": 66.67,
-          "setsWon": 8,
-          "setsLost": 4,
-          "setDifference": 4
+          "losses": 3,
+          "winPercentage": 50.0,
+          "setsWon": 12,
+          "setsLost": 12,
+          "setDifference": 0
         }
       },
       "ksbEncounters": [
+        {
+          "id": 43234,
+          "season": 2026,
+          "ksbPlayer": "Alan Meltzer",
+          "ksbPlayerSlug": "alan-meltzer",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Alan Meltzer",
+          "playerLeftSlug": "alan-meltzer",
+          "playerRightName": "David Eastwood",
+          "playerRightSlug": "david-eastwood",
+          "playerRankChangeLeft": -3,
+          "playerRankChangeRight": 5,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "David Eastwood",
+          "opponentSlug": "david-eastwood",
+          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "opponentTeam": {
+            "name": "Burnley Black Widows",
+            "slug": "burnley-black-widows"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
         {
           "id": 19561,
           "season": 2018,
@@ -90600,6 +90628,34 @@
           "opponentRank": 2458
         },
         {
+          "id": 43239,
+          "season": 2026,
+          "ksbPlayer": "Keith Dale",
+          "ksbPlayerSlug": "keith-dale",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Keith Dale",
+          "playerLeftSlug": "keith-dale",
+          "playerRightName": "David Eastwood",
+          "playerRightSlug": "david-eastwood",
+          "playerRankChangeLeft": -8,
+          "playerRankChangeRight": 12,
+          "ksbPlayerScore": 1,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "David Eastwood",
+          "opponentSlug": "david-eastwood",
+          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "opponentTeam": {
+            "name": "Burnley Black Widows",
+            "slug": "burnley-black-widows"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 21379,
           "season": 2018,
           "ksbPlayer": "Mark Ramsbottom",
@@ -90790,6 +90846,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 2421
+        },
+        {
+          "id": 43242,
+          "season": 2026,
+          "ksbPlayer": "Matt Hodgkinson",
+          "ksbPlayerSlug": "matt-hodgkinson",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 2,
+          "playerLeftName": "Matt Hodgkinson",
+          "playerLeftSlug": "matt-hodgkinson",
+          "playerRightName": "David Eastwood",
+          "playerRightSlug": "david-eastwood",
+          "playerRankChangeLeft": 26,
+          "playerRankChangeRight": -17,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "David Eastwood",
+          "opponentSlug": "david-eastwood",
+          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "opponentTeam": {
+            "name": "Burnley Black Widows",
+            "slug": "burnley-black-widows"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 30781,
@@ -107826,42 +107910,70 @@
         2026
       ],
       "ksbCareer": {
-        "played": 3,
-        "wins": 3,
+        "played": 6,
+        "wins": 6,
         "draws": 0,
         "losses": 0,
         "winPercentage": 100.0,
-        "setsWon": 9,
+        "setsWon": 18,
         "setsLost": 0,
-        "setDifference": 9
+        "setDifference": 18
       },
       "ksbBySeason": {
         "2026": {
-          "played": 3,
-          "wins": 3,
+          "played": 6,
+          "wins": 6,
           "draws": 0,
           "losses": 0,
           "winPercentage": 100.0,
-          "setsWon": 9,
+          "setsWon": 18,
           "setsLost": 0,
-          "setDifference": 9
+          "setDifference": 18
         }
       },
       "ksbByTeam": {
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
-          "wins": 3,
+          "played": 6,
+          "wins": 6,
           "draws": 0,
           "losses": 0,
           "winPercentage": 100.0,
-          "setsWon": 9,
+          "setsWon": 18,
           "setsLost": 0,
-          "setDifference": 9
+          "setDifference": 18
         }
       },
       "ksbEncounters": [
+        {
+          "id": 43236,
+          "season": 2026,
+          "ksbPlayer": "Alan Meltzer",
+          "ksbPlayerSlug": "alan-meltzer",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Alan Meltzer",
+          "playerLeftSlug": "alan-meltzer",
+          "playerRightName": "Douglas Hodgson",
+          "playerRightSlug": "douglas_hodgson",
+          "playerRankChangeLeft": 2,
+          "playerRankChangeRight": -1,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Douglas Hodgson",
+          "opponentSlug": "douglas_hodgson",
+          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "opponentTeam": {
+            "name": "Burnley Black Widows",
+            "slug": "burnley-black-widows"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
         {
           "id": 43129,
           "season": 2026,
@@ -107911,6 +108023,62 @@
           "opponent": "Douglas Hodgson",
           "opponentSlug": "douglas_hodgson",
           "fixtureKey": "2026|2|burnley-black-widows|ksb-b|1790237755",
+          "opponentTeam": {
+            "name": "Burnley Black Widows",
+            "slug": "burnley-black-widows"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 43241,
+          "season": 2026,
+          "ksbPlayer": "Keith Dale",
+          "ksbPlayerSlug": "keith-dale",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Keith Dale",
+          "playerLeftSlug": "keith-dale",
+          "playerRightName": "Douglas Hodgson",
+          "playerRightSlug": "douglas_hodgson",
+          "playerRankChangeLeft": 0,
+          "playerRankChangeRight": 0,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Douglas Hodgson",
+          "opponentSlug": "douglas_hodgson",
+          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "opponentTeam": {
+            "name": "Burnley Black Widows",
+            "slug": "burnley-black-widows"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 43233,
+          "season": 2026,
+          "ksbPlayer": "Matt Hodgkinson",
+          "ksbPlayerSlug": "matt-hodgkinson",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Matt Hodgkinson",
+          "playerLeftSlug": "matt-hodgkinson",
+          "playerRightName": "Douglas Hodgson",
+          "playerRightSlug": "douglas_hodgson",
+          "playerRankChangeLeft": 2,
+          "playerRankChangeRight": -1,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Douglas Hodgson",
+          "opponentSlug": "douglas_hodgson",
+          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -193145,7 +193313,7 @@
       "name": "Jacob Blackburn",
       "slug": "jacob-blackburn",
       "firstKnownKSBSeason": 2022,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2022,
@@ -193230,23 +193398,38 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/jacob-blackburn",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "name": "Jacob Blackburn",
+            "slug": "jacob-blackburn"
+          },
+          "team": {
+            "name": "Burnley Black Widows",
+            "slug": "burnley-black-widows"
+          },
+          "api": {
+            "status": "derived-from-exact-fixture"
+          }
         }
       ],
       "ksbSeasons": [
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 42,
-        "wins": 29,
+        "played": 45,
+        "wins": 32,
         "draws": 0,
         "losses": 13,
-        "winPercentage": 69.05,
-        "setsWon": 99,
-        "setsLost": 63,
-        "setDifference": 36
+        "winPercentage": 71.11,
+        "setsWon": 108,
+        "setsLost": 66,
+        "setDifference": 42
       },
       "ksbBySeason": {
         "2022": {
@@ -193288,6 +193471,16 @@
           "setsWon": 26,
           "setsLost": 21,
           "setDifference": 5
+        },
+        "2026": {
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 3,
+          "setDifference": 6
         }
       },
       "ksbByTeam": {
@@ -193326,9 +193519,49 @@
           "setsWon": 3,
           "setsLost": 0,
           "setDifference": 3
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 3,
+          "setDifference": 6
         }
       },
       "ksbEncounters": [
+        {
+          "id": 43240,
+          "season": 2026,
+          "ksbPlayer": "Alan Meltzer",
+          "ksbPlayerSlug": "alan-meltzer",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Alan Meltzer",
+          "playerLeftSlug": "alan-meltzer",
+          "playerRightName": "Jacob Blackburn",
+          "playerRightSlug": "jacob-blackburn",
+          "playerRankChangeLeft": 26,
+          "playerRankChangeRight": -17,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Jacob Blackburn",
+          "opponentSlug": "jacob-blackburn",
+          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "opponentTeam": {
+            "name": "Burnley Black Widows",
+            "slug": "burnley-black-widows"
+          },
+          "opponentDivision": null,
+          "opponentRank": 2297
+        },
         {
           "id": 34532,
           "season": 2023,
@@ -194354,6 +194587,34 @@
           "opponentRank": 2186
         },
         {
+          "id": 43235,
+          "season": 2026,
+          "ksbPlayer": "Keith Dale",
+          "ksbPlayerSlug": "keith-dale",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 1,
+          "playerLeftName": "Keith Dale",
+          "playerLeftSlug": "keith-dale",
+          "playerRightName": "Jacob Blackburn",
+          "playerRightSlug": "jacob-blackburn",
+          "playerRankChangeLeft": 9,
+          "playerRankChangeRight": -6,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Jacob Blackburn",
+          "opponentSlug": "jacob-blackburn",
+          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "opponentTeam": {
+            "name": "Burnley Black Widows",
+            "slug": "burnley-black-widows"
+          },
+          "opponentDivision": null,
+          "opponentRank": 2297
+        },
+        {
           "id": 30966,
           "season": 2022,
           "ksbPlayer": "Mark Ramsbottom",
@@ -194416,6 +194677,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 2322
+        },
+        {
+          "id": 43237,
+          "season": 2026,
+          "ksbPlayer": "Matt Hodgkinson",
+          "ksbPlayerSlug": "matt-hodgkinson",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 2,
+          "playerLeftName": "Matt Hodgkinson",
+          "playerLeftSlug": "matt-hodgkinson",
+          "playerRightName": "Jacob Blackburn",
+          "playerRightSlug": "jacob-blackburn",
+          "playerRankChangeLeft": 21,
+          "playerRankChangeRight": -14,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "Jacob Blackburn",
+          "opponentSlug": "jacob-blackburn",
+          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "opponentTeam": {
+            "name": "Burnley Black Widows",
+            "slug": "burnley-black-widows"
+          },
+          "opponentDivision": null,
+          "opponentRank": 2297
         },
         {
           "id": 30775,
@@ -313315,7 +313604,7 @@
       "name": "Michael Rostron",
       "slug": "michael-rostron",
       "firstKnownKSBSeason": 2013,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2013,
@@ -313568,6 +313857,20 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/michael-rostron",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "name": "Michael Rostron",
+            "slug": "michael-rostron"
+          },
+          "team": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "api": {
+            "status": "derived-from-exact-fixture"
+          }
         }
       ],
       "ksbSeasons": [
@@ -313582,16 +313885,17 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 109,
-        "wins": 69,
+        "played": 112,
+        "wins": 71,
         "draws": 0,
-        "losses": 40,
-        "winPercentage": 63.3,
-        "setsWon": 249,
-        "setsLost": 171,
+        "losses": 41,
+        "winPercentage": 63.39,
+        "setsWon": 256,
+        "setsLost": 178,
         "setDifference": 78
       },
       "ksbBySeason": {
@@ -313714,6 +314018,16 @@
           "setsWon": 46,
           "setsLost": 14,
           "setDifference": 32
+        },
+        "2026": {
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 7,
+          "setsLost": 7,
+          "setDifference": 0
         }
       },
       "ksbByTeam": {
@@ -313824,6 +314138,18 @@
           "setsWon": 18,
           "setsLost": 6,
           "setDifference": 12
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 7,
+          "setsLost": 7,
+          "setDifference": 0
         }
       },
       "ksbEncounters": [
@@ -313954,6 +314280,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1279
+        },
+        {
+          "id": 43247,
+          "season": 2026,
+          "ksbPlayer": "Alex Gavin",
+          "ksbPlayerSlug": "alex-gavin",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 2,
+          "playerLeftName": "Alex Gavin",
+          "playerLeftSlug": "alex-gavin",
+          "playerRightName": "Michael Rostron",
+          "playerRightSlug": "michael-rostron",
+          "playerRankChangeLeft": 9,
+          "playerRankChangeRight": -6,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "Michael Rostron",
+          "opponentSlug": "michael-rostron",
+          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": 1072
         },
         {
           "id": 16690,
@@ -315490,6 +315844,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1359
+        },
+        {
+          "id": 43245,
+          "season": 2026,
+          "ksbPlayer": "Jackson Boldy",
+          "ksbPlayerSlug": "jackson-boldy",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 2,
+          "playerLeftName": "Jackson Boldy",
+          "playerLeftSlug": "jackson-boldy",
+          "playerRightName": "Michael Rostron",
+          "playerRightSlug": "michael-rostron",
+          "playerRankChangeLeft": 26,
+          "playerRankChangeRight": -17,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "Michael Rostron",
+          "opponentSlug": "michael-rostron",
+          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": 1072
         },
         {
           "id": 20557,
@@ -317314,6 +317696,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1183
+        },
+        {
+          "id": 43250,
+          "season": 2026,
+          "ksbPlayer": "Roman Mychajlshyn",
+          "ksbPlayerSlug": "roman-mychajlshyn",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Roman Mychajlshyn",
+          "playerLeftSlug": "roman-mychajlshyn",
+          "playerRightName": "Michael Rostron",
+          "playerRightSlug": "michael-rostron",
+          "playerRankChangeLeft": -22,
+          "playerRankChangeRight": 33,
+          "ksbPlayerScore": 1,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Michael Rostron",
+          "opponentSlug": "michael-rostron",
+          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": 1072
         }
       ],
       "apiStatus": "success",
@@ -356606,7 +357016,7 @@
       "name": "Paul Crabtree",
       "slug": "paul-crabtree",
       "firstKnownKSBSeason": 2023,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2023,
@@ -356670,22 +357080,37 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/paul-crabtree",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "name": "Paul Crabtree",
+            "slug": "paul-crabtree"
+          },
+          "team": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "api": {
+            "status": "derived-from-exact-fixture"
+          }
         }
       ],
       "ksbSeasons": [
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 60,
-        "wins": 19,
+        "played": 63,
+        "wins": 22,
         "draws": 0,
         "losses": 41,
-        "winPercentage": 31.67,
-        "setsWon": 80,
-        "setsLost": 143,
-        "setDifference": -63
+        "winPercentage": 34.92,
+        "setsWon": 89,
+        "setsLost": 144,
+        "setDifference": -55
       },
       "ksbBySeason": {
         "2023": {
@@ -356717,6 +357142,16 @@
           "setsWon": 26,
           "setsLost": 25,
           "setDifference": 1
+        },
+        "2026": {
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 1,
+          "setDifference": 8
         }
       },
       "ksbByTeam": {
@@ -356827,6 +357262,18 @@
           "setsWon": 4,
           "setsLost": 8,
           "setDifference": -4
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 1,
+          "setDifference": 8
         }
       },
       "ksbEncounters": [
@@ -356893,6 +357340,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 835
+        },
+        {
+          "id": 43243,
+          "season": 2026,
+          "ksbPlayer": "Alex Gavin",
+          "ksbPlayerSlug": "alex-gavin",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Alex Gavin",
+          "playerLeftSlug": "alex-gavin",
+          "playerRightName": "Paul Crabtree",
+          "playerRightSlug": "paul-crabtree",
+          "playerRankChangeLeft": 14,
+          "playerRankChangeRight": -9,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Paul Crabtree",
+          "opponentSlug": "paul-crabtree",
+          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": 1106
         },
         {
           "id": 38909,
@@ -357725,6 +358200,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 835
+        },
+        {
+          "id": 43251,
+          "season": 2026,
+          "ksbPlayer": "Jackson Boldy",
+          "ksbPlayerSlug": "jackson-boldy",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 1,
+          "playerLeftName": "Jackson Boldy",
+          "playerLeftSlug": "jackson-boldy",
+          "playerRightName": "Paul Crabtree",
+          "playerRightSlug": "paul-crabtree",
+          "playerRankChangeLeft": 26,
+          "playerRankChangeRight": -17,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Paul Crabtree",
+          "opponentSlug": "paul-crabtree",
+          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": 1106
         },
         {
           "id": 38429,
@@ -358749,6 +359252,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 835
+        },
+        {
+          "id": 43246,
+          "season": 2026,
+          "ksbPlayer": "Roman Mychajlshyn",
+          "ksbPlayerSlug": "roman-mychajlshyn",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Roman Mychajlshyn",
+          "playerLeftSlug": "roman-mychajlshyn",
+          "playerRightName": "Paul Crabtree",
+          "playerRightSlug": "paul-crabtree",
+          "playerRankChangeLeft": 5,
+          "playerRankChangeRight": -3,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Paul Crabtree",
+          "opponentSlug": "paul-crabtree",
+          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": 1106
         }
       ],
       "apiStatus": "success",
@@ -378976,7 +379507,7 @@
       "name": "Peter Howard",
       "slug": "peter-howard",
       "firstKnownKSBSeason": 2013,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2013,
@@ -379229,6 +379760,20 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/peter-howard",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "name": "Peter Howard",
+            "slug": "peter-howard"
+          },
+          "team": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "api": {
+            "status": "derived-from-exact-fixture"
+          }
         }
       ],
       "ksbSeasons": [
@@ -379243,17 +379788,18 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 104,
-        "wins": 58,
+        "played": 107,
+        "wins": 61,
         "draws": 0,
         "losses": 46,
-        "winPercentage": 55.77,
-        "setsWon": 211,
-        "setsLost": 186,
-        "setDifference": 25
+        "winPercentage": 57.01,
+        "setsWon": 220,
+        "setsLost": 188,
+        "setDifference": 32
       },
       "ksbBySeason": {
         "2013": {
@@ -379375,6 +379921,16 @@
           "setsWon": 22,
           "setsLost": 25,
           "setDifference": -3
+        },
+        "2026": {
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 2,
+          "setDifference": 7
         }
       },
       "ksbByTeam": {
@@ -379473,6 +380029,18 @@
           "setsWon": 7,
           "setsLost": 15,
           "setDifference": -8
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 2,
+          "setDifference": 7
         }
       },
       "ksbEncounters": [
@@ -379603,6 +380171,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1186
+        },
+        {
+          "id": 43252,
+          "season": 2026,
+          "ksbPlayer": "Alex Gavin",
+          "ksbPlayerSlug": "alex-gavin",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Alex Gavin",
+          "playerLeftSlug": "alex-gavin",
+          "playerRightName": "Peter Howard",
+          "playerRightSlug": "peter-howard",
+          "playerRankChangeLeft": 14,
+          "playerRankChangeRight": -9,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Peter Howard",
+          "opponentSlug": "peter-howard",
+          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": 1162
         },
         {
           "id": 24367,
@@ -380979,6 +381575,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1455
+        },
+        {
+          "id": 43249,
+          "season": 2026,
+          "ksbPlayer": "Jackson Boldy",
+          "ksbPlayerSlug": "jackson-boldy",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 1,
+          "playerLeftName": "Jackson Boldy",
+          "playerLeftSlug": "jackson-boldy",
+          "playerRightName": "Peter Howard",
+          "playerRightSlug": "peter-howard",
+          "playerRankChangeLeft": 33,
+          "playerRankChangeRight": -22,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Peter Howard",
+          "opponentSlug": "peter-howard",
+          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": 1162
         },
         {
           "id": 21754,
@@ -382803,6 +383427,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1379
+        },
+        {
+          "id": 43244,
+          "season": 2026,
+          "ksbPlayer": "Roman Mychajlshyn",
+          "ksbPlayerSlug": "roman-mychajlshyn",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 1,
+          "playerLeftName": "Roman Mychajlshyn",
+          "playerLeftSlug": "roman-mychajlshyn",
+          "playerRightName": "Peter Howard",
+          "playerRightSlug": "peter-howard",
+          "playerRankChangeLeft": 8,
+          "playerRankChangeRight": -5,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Peter Howard",
+          "opponentSlug": "peter-howard",
+          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": 1162
         }
       ],
       "apiStatus": "success",
@@ -500028,18 +500680,19 @@
         "2019": 36,
         "2021": 33,
         "2025": 58,
+        "2026": 9,
         "2017": 36,
         "2018": 33,
         "2023": 36,
         "2022": 21,
         "2013": 18
       },
-      "played": 304,
-      "wins": 188,
+      "played": 313,
+      "wins": 196,
       "draws": 0,
-      "losses": 116,
-      "setsWon": 663,
-      "setsLost": 485,
+      "losses": 117,
+      "setsWon": 688,
+      "setsLost": 495,
       "ksbPlayers": {
         "adam-najduch": {
           "name": "Adam Najduch",
@@ -500051,6 +500704,17 @@
           "setsWon": 34,
           "setsLost": 31,
           "setDifference": 3
+        },
+        "alex-gavin": {
+          "name": "Alex Gavin",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 2,
+          "setDifference": 7
         },
         "andy-wood": {
           "name": "Andy Wood",
@@ -500217,6 +500881,17 @@
           "setsLost": 26,
           "setDifference": 0
         },
+        "jackson-boldy": {
+          "name": "Jackson Boldy",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 4,
+          "setDifference": 5
+        },
         "jamie-saggers": {
           "name": "Jamie Saggers",
           "played": 12,
@@ -500349,6 +501024,17 @@
           "setsLost": 15,
           "setDifference": 2
         },
+        "roman-mychajlshyn": {
+          "name": "Roman Mychajlshyn",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 7,
+          "setsLost": 4,
+          "setDifference": 3
+        },
         "sam-bradshaw": {
           "name": "Sam Bradshaw",
           "played": 3,
@@ -500474,13 +501160,13 @@
         },
         "michael-rostron": {
           "name": "Michael Rostron",
-          "played": 88,
-          "wins": 60,
+          "played": 91,
+          "wins": 62,
           "draws": 0,
-          "losses": 28,
-          "winPercentage": 68.18,
-          "setsWon": 212,
-          "setsLost": 131,
+          "losses": 29,
+          "winPercentage": 68.13,
+          "setsWon": 219,
+          "setsLost": 138,
           "setDifference": 81
         },
         "michael-wrigley": {
@@ -500507,14 +501193,14 @@
         },
         "paul-crabtree": {
           "name": "Paul Crabtree",
-          "played": 12,
-          "wins": 6,
+          "played": 15,
+          "wins": 9,
           "draws": 0,
           "losses": 6,
-          "winPercentage": 50.0,
-          "setsWon": 26,
-          "setsLost": 25,
-          "setDifference": 1
+          "winPercentage": 60.0,
+          "setsWon": 35,
+          "setsLost": 26,
+          "setDifference": 9
         },
         "peter-gildea": {
           "name": "Peter Gildea",
@@ -500529,14 +501215,14 @@
         },
         "peter-howard": {
           "name": "Peter Howard",
-          "played": 74,
-          "wins": 45,
+          "played": 77,
+          "wins": 48,
           "draws": 0,
           "losses": 29,
-          "winPercentage": 60.81,
-          "setsWon": 160,
-          "setsLost": 123,
-          "setDifference": 37
+          "winPercentage": 62.34,
+          "setsWon": 169,
+          "setsLost": 125,
+          "setDifference": 44
         },
         "peter-marsland": {
           "name": "Peter Marsland",
@@ -500561,8 +501247,8 @@
           "setDifference": 27
         }
       },
-      "winPercentage": 61.84,
-      "setDifference": 178
+      "winPercentage": 62.62,
+      "setDifference": 193
     },
     "brierfield-b": {
       "name": "Brierfield B",
@@ -501790,15 +502476,26 @@
       "slug": "burnley-black-widows",
       "divisions": {},
       "seasons": {
-        "2026": 6
+        "2026": 15
       },
-      "played": 6,
-      "wins": 5,
+      "played": 15,
+      "wins": 12,
       "draws": 0,
-      "losses": 1,
-      "setsWon": 17,
-      "setsLost": 4,
+      "losses": 3,
+      "setsWon": 39,
+      "setsLost": 15,
       "ksbPlayers": {
+        "alan-meltzer": {
+          "name": "Alan Meltzer",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 6,
+          "setsLost": 3,
+          "setDifference": 3
+        },
         "craig-milnes": {
           "name": "Craig Milnes",
           "played": 2,
@@ -501821,6 +502518,28 @@
           "setsLost": 0,
           "setDifference": 6
         },
+        "keith-dale": {
+          "name": "Keith Dale",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 7,
+          "setsLost": 4,
+          "setDifference": 3
+        },
+        "matt-hodgkinson": {
+          "name": "Matt Hodgkinson",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 4,
+          "setDifference": 5
+        },
         "pawel-mlynarski": {
           "name": "Pawel Mlynarski",
           "played": 2,
@@ -501836,29 +502555,40 @@
       "oppositionPlayers": {
         "david-eastwood": {
           "name": "David Eastwood",
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 3,
           "draws": 0,
-          "losses": 1,
-          "winPercentage": 66.67,
-          "setsWon": 8,
-          "setsLost": 4,
-          "setDifference": 4
+          "losses": 3,
+          "winPercentage": 50.0,
+          "setsWon": 12,
+          "setsLost": 12,
+          "setDifference": 0
         },
         "douglas_hodgson": {
           "name": "Douglas Hodgson",
+          "played": 6,
+          "wins": 6,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 18,
+          "setsLost": 0,
+          "setDifference": 18
+        },
+        "jacob-blackburn": {
+          "name": "Jacob Blackburn",
           "played": 3,
           "wins": 3,
           "draws": 0,
           "losses": 0,
           "winPercentage": 100.0,
           "setsWon": 9,
-          "setsLost": 0,
-          "setDifference": 9
+          "setsLost": 3,
+          "setDifference": 6
         }
       },
-      "winPercentage": 83.33,
-      "setDifference": 13
+      "winPercentage": 80.0,
+      "setDifference": 24
     },
     "burnley-boys-club": {
       "name": "Burnley Boys Club",
@@ -525273,9 +526003,9 @@
       "divisions": {},
       "seasons": {
         "2023": 18,
-        "2022": 36,
         "2024": 36,
-        "2025": 35
+        "2025": 35,
+        "2022": 36
       },
       "played": 125,
       "wins": 87,
@@ -529290,10 +530020,10 @@
         "2025": 48,
         "2018": 18,
         "2019": 18,
-        "2014": 36,
-        "2016": 18,
         "2021": 18,
-        "2017": 2
+        "2017": 2,
+        "2014": 36,
+        "2016": 18
       },
       "played": 203,
       "wins": 133,
@@ -533894,7 +534624,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-09-30T06:44:59.964212+00:00",
+    "generatedAt": "2026-09-30T13:46:08.857995+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }

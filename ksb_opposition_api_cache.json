@@ -6690,5 +6690,21 @@
   "2026:vacas-ahmed": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/vacas-ahmed",
     "status": "success"
+  },
+  "2026:jacob-blackburn": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/jacob-blackburn",
+    "status": "success"
+  },
+  "2026:michael-rostron": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/michael-rostron",
+    "status": "success"
+  },
+  "2026:paul-crabtree": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/paul-crabtree",
+    "status": "success"
+  },
+  "2026:peter-howard": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/peter-howard",
+    "status": "success"
   }
 }
