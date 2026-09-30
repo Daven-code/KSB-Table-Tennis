@@ -27,9 +27,9 @@
     "oppositionTeamCount": 111,
     "ksbEncounterCount": 12796,
     "enrichedEncounterCount": 12796,
-    "successfulApiLookupsThisRun": 4,
+    "successfulApiLookupsThisRun": 0,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-09-30T13:46:08.857739+00:00"
+    "lastUpdated": "2026-09-30T19:22:29.544314+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -193560,7 +193560,7 @@
             "slug": "burnley-black-widows"
           },
           "opponentDivision": null,
-          "opponentRank": 2297
+          "opponentRank": null
         },
         {
           "id": 34532,
@@ -194612,7 +194612,7 @@
             "slug": "burnley-black-widows"
           },
           "opponentDivision": null,
-          "opponentRank": 2297
+          "opponentRank": null
         },
         {
           "id": 30966,
@@ -194704,7 +194704,7 @@
             "slug": "burnley-black-widows"
           },
           "opponentDivision": null,
-          "opponentRank": 2297
+          "opponentRank": null
         },
         {
           "id": 30775,
@@ -314307,7 +314307,7 @@
             "slug": "brierfield"
           },
           "opponentDivision": null,
-          "opponentRank": 1072
+          "opponentRank": null
         },
         {
           "id": 16690,
@@ -315871,7 +315871,7 @@
             "slug": "brierfield"
           },
           "opponentDivision": null,
-          "opponentRank": 1072
+          "opponentRank": null
         },
         {
           "id": 20557,
@@ -317723,7 +317723,7 @@
             "slug": "brierfield"
           },
           "opponentDivision": null,
-          "opponentRank": 1072
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -357367,7 +357367,7 @@
             "slug": "brierfield"
           },
           "opponentDivision": null,
-          "opponentRank": 1106
+          "opponentRank": null
         },
         {
           "id": 38909,
@@ -358227,7 +358227,7 @@
             "slug": "brierfield"
           },
           "opponentDivision": null,
-          "opponentRank": 1106
+          "opponentRank": null
         },
         {
           "id": 38429,
@@ -359279,7 +359279,7 @@
             "slug": "brierfield"
           },
           "opponentDivision": null,
-          "opponentRank": 1106
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -380198,7 +380198,7 @@
             "slug": "brierfield"
           },
           "opponentDivision": null,
-          "opponentRank": 1162
+          "opponentRank": null
         },
         {
           "id": 24367,
@@ -381602,7 +381602,7 @@
             "slug": "brierfield"
           },
           "opponentDivision": null,
-          "opponentRank": 1162
+          "opponentRank": null
         },
         {
           "id": 21754,
@@ -383454,7 +383454,7 @@
             "slug": "brierfield"
           },
           "opponentDivision": null,
-          "opponentRank": 1162
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -534624,7 +534624,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-09-30T13:46:08.857995+00:00",
+    "generatedAt": "2026-09-30T19:22:29.544560+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
