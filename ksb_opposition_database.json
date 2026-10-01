@@ -27,9 +27,9 @@
     "oppositionTeamCount": 111,
     "ksbEncounterCount": 12817,
     "enrichedEncounterCount": 12817,
-    "successfulApiLookupsThisRun": 9,
+    "successfulApiLookupsThisRun": 0,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-10-01T13:16:43.276351+00:00"
+    "lastUpdated": "2026-10-01T18:56:38.697026+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -535845,7 +535845,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-10-01T13:16:43.276473+00:00",
+    "generatedAt": "2026-10-01T18:56:38.697240+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
