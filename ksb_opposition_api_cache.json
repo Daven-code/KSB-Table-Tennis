@@ -6706,5 +6706,41 @@
   "2026:peter-howard": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/peter-howard",
     "status": "success"
+  },
+  "2026:alan-calow": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/alan-calow",
+    "status": "success"
+  },
+  "2026:chris-whitehead": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/chris-whitehead",
+    "status": "success"
+  },
+  "2026:dave-jefferson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/dave-jefferson",
+    "status": "success"
+  },
+  "2026:david-greenwood": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/david-greenwood",
+    "status": "success"
+  },
+  "2026:ian-cockcroft": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/ian-cockcroft",
+    "status": "success"
+  },
+  "2026:mark-hanson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/mark-hanson",
+    "status": "success"
+  },
+  "2026:phil-mileham": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/phil-mileham",
+    "status": "success"
+  },
+  "2026:sam-richardson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/sam-richardson",
+    "status": "success"
+  },
+  "2026:trevor-elkington": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/trevor-elkington",
+    "status": "success"
   }
 }

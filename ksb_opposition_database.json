@@ -23,13 +23,13 @@
     "historicStartSeason": 2013,
     "historicEndSeason": 2025,
     "currentSeason": 2026,
-    "oppositionPlayerCount": 473,
+    "oppositionPlayerCount": 475,
     "oppositionTeamCount": 111,
-    "ksbEncounterCount": 12796,
-    "enrichedEncounterCount": 12796,
-    "successfulApiLookupsThisRun": 0,
+    "ksbEncounterCount": 12817,
+    "enrichedEncounterCount": 12817,
+    "successfulApiLookupsThisRun": 9,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-10-01T05:55:35.981933+00:00"
+    "lastUpdated": "2026-10-01T13:16:43.276351+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -373,7 +373,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Aamir Gondal",
           "opponentSlug": "aamir-gondal",
-          "fixtureKey": "2026|1|whalley-falcons|ksb-f|1789507194",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Falcons",
             "slug": "whalley-falcons"
@@ -561,7 +561,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Aamir Gondal",
           "opponentSlug": "aamir-gondal",
-          "fixtureKey": "2026|1|whalley-falcons|ksb-f|1789507194",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Falcons",
             "slug": "whalley-falcons"
@@ -749,7 +749,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Aamir Gondal",
           "opponentSlug": "aamir-gondal",
-          "fixtureKey": "2026|1|whalley-falcons|ksb-f|1789507194",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Falcons",
             "slug": "whalley-falcons"
@@ -4926,7 +4926,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Adam Hek",
           "opponentSlug": "adam-hek",
-          "fixtureKey": "2026|1|slayers|ksb-lions|1789650946",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -5530,7 +5530,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Adam Hek",
           "opponentSlug": "adam-hek",
-          "fixtureKey": "2026|2|ksb-g|slayers|1790147443",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -5846,7 +5846,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Adam Hek",
           "opponentSlug": "adam-hek",
-          "fixtureKey": "2026|2|ksb-g|slayers|1790147443",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -5970,7 +5970,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Adam Hek",
           "opponentSlug": "adam-hek",
-          "fixtureKey": "2026|2|ksb-g|slayers|1790147443",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -6350,7 +6350,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Adam Hek",
           "opponentSlug": "adam-hek",
-          "fixtureKey": "2026|1|slayers|ksb-lions|1789650946",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -10586,7 +10586,7 @@
       "name": "Alan Calow",
       "slug": "alan-calow",
       "firstKnownKSBSeason": 2013,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2013,
@@ -10839,6 +10839,27 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/alan-calow",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "id": 85,
+            "name": "Alan Calow",
+            "slug": "alan-calow",
+            "rank": 2181
+          },
+          "team": {
+            "id": 26,
+            "name": "Whalley Kestrels",
+            "slug": "whalley-kestrels",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2181
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/alan-calow",
+            "status": "success"
+          }
         }
       ],
       "ksbSeasons": [
@@ -10853,17 +10874,18 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 100,
-        "wins": 61,
+        "played": 101,
+        "wins": 62,
         "draws": 0,
         "losses": 39,
-        "winPercentage": 61.0,
-        "setsWon": 211,
-        "setsLost": 149,
-        "setDifference": 62
+        "winPercentage": 61.39,
+        "setsWon": 214,
+        "setsLost": 151,
+        "setDifference": 63
       },
       "ksbBySeason": {
         "2013": {
@@ -10985,6 +11007,16 @@
           "setsWon": 37,
           "setsLost": 7,
           "setDifference": 30
+        },
+        "2026": {
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 3,
+          "setsLost": 2,
+          "setDifference": 1
         }
       },
       "ksbByTeam": {
@@ -11059,9 +11091,53 @@
           "setsWon": 1,
           "setsLost": 3,
           "setDifference": -2
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 3,
+          "setsLost": 2,
+          "setDifference": 1
         }
       },
       "ksbEncounters": [
+        {
+          "id": 43290,
+          "season": 2026,
+          "ksbPlayer": "Alex Gavin",
+          "ksbPlayerSlug": "alex-gavin",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 2,
+          "playerLeftName": "Alex Gavin",
+          "playerLeftSlug": "alex-gavin",
+          "playerRightName": "Alan Calow",
+          "playerRightSlug": "alan-calow",
+          "playerRankChangeLeft": 75,
+          "playerRankChangeRight": -50,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "Alan Calow",
+          "opponentSlug": "alan-calow",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 26,
+            "name": "Whalley Kestrels",
+            "slug": "whalley-kestrels",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2181
+          },
+          "opponentDivision": null,
+          "opponentRank": 2181
+        },
         {
           "id": 19465,
           "season": 2018,
@@ -24803,7 +24879,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Andrew Brierley",
           "opponentSlug": "andrew-brierley",
-          "fixtureKey": "2026|1|ksb-jaguars|whalley-hawks|1789564962",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Hawks",
             "slug": "whalley-hawks"
@@ -26143,7 +26219,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Andrew Brierley",
           "opponentSlug": "andrew-brierley",
-          "fixtureKey": "2026|1|ksb-jaguars|whalley-hawks|1789564962",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Hawks",
             "slug": "whalley-hawks"
@@ -27675,7 +27751,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Andrew Brierley",
           "opponentSlug": "andrew-brierley",
-          "fixtureKey": "2026|1|ksb-jaguars|whalley-hawks|1789564962",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Hawks",
             "slug": "whalley-hawks"
@@ -44248,7 +44324,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Caroline Harris",
           "opponentSlug": "caroline-harris",
-          "fixtureKey": "2026|2|burnley-wasps|ksb-pumas-jun|1790067269",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Wasps",
             "slug": "burnley-wasps"
@@ -44500,7 +44576,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Caroline Harris",
           "opponentSlug": "caroline-harris",
-          "fixtureKey": "2026|2|burnley-wasps|ksb-pumas-jun|1790067269",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Wasps",
             "slug": "burnley-wasps"
@@ -45232,7 +45308,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Caroline Harris",
           "opponentSlug": "caroline-harris",
-          "fixtureKey": "2026|2|burnley-wasps|ksb-pumas-jun|1790067269",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Wasps",
             "slug": "burnley-wasps"
@@ -49029,7 +49105,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Chib Mistry",
           "opponentSlug": "chib-mistry",
-          "fixtureKey": "2026|1|whalley-harriers|ksb-leopards-jun|1789427193",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Harriers",
             "slug": "whalley-harriers"
@@ -49505,7 +49581,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Chib Mistry",
           "opponentSlug": "chib-mistry",
-          "fixtureKey": "2026|1|whalley-harriers|ksb-leopards-jun|1789427193",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Harriers",
             "slug": "whalley-harriers"
@@ -49533,7 +49609,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Chib Mistry",
           "opponentSlug": "chib-mistry",
-          "fixtureKey": "2026|1|whalley-harriers|ksb-leopards-jun|1789427193",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Harriers",
             "slug": "whalley-harriers"
@@ -49758,7 +49834,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Chloe Smith",
           "opponentSlug": "chloe-smith",
-          "fixtureKey": "2026|2|ksb-tigers|ksb-jaguars|1790067060",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Tigers",
             "slug": "ksb-tigers"
@@ -49914,7 +49990,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Chloe Smith",
           "opponentSlug": "chloe-smith",
-          "fixtureKey": "2026|2|ksb-tigers|ksb-jaguars|1790067060",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Tigers",
             "slug": "ksb-tigers"
@@ -49942,7 +50018,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Chloe Smith",
           "opponentSlug": "chloe-smith",
-          "fixtureKey": "2026|2|ksb-tigers|ksb-jaguars|1790067060",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Tigers",
             "slug": "ksb-tigers"
@@ -55015,7 +55091,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Chris Freely",
           "opponentSlug": "chris-freely",
-          "fixtureKey": "2026|2|ksb-a|spartans|1790237581",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Spartans",
             "slug": "spartans"
@@ -55427,7 +55503,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Chris Freely",
           "opponentSlug": "chris-freely",
-          "fixtureKey": "2026|2|ksb-a|spartans|1790237581",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Spartans",
             "slug": "spartans"
@@ -55519,7 +55595,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Chris Freely",
           "opponentSlug": "chris-freely",
-          "fixtureKey": "2026|2|ksb-a|spartans|1790237581",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Spartans",
             "slug": "spartans"
@@ -55852,7 +55928,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Chris Gray",
           "opponentSlug": "chris-gray",
-          "fixtureKey": "2026|2|burnley-wasps|ksb-pumas-jun|1790067269",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Wasps",
             "slug": "burnley-wasps"
@@ -56136,7 +56212,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Chris Gray",
           "opponentSlug": "chris-gray",
-          "fixtureKey": "2026|2|burnley-wasps|ksb-pumas-jun|1790067269",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Wasps",
             "slug": "burnley-wasps"
@@ -56388,7 +56464,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Chris Gray",
           "opponentSlug": "chris-gray",
-          "fixtureKey": "2026|2|burnley-wasps|ksb-pumas-jun|1790067269",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Wasps",
             "slug": "burnley-wasps"
@@ -58896,6 +58972,174 @@
       "apiStatus": "success",
       "teamHistoryComplete": true
     },
+    "chris-whitehead": {
+      "name": "Chris Whitehead",
+      "slug": "chris-whitehead",
+      "firstKnownKSBSeason": 2026,
+      "lastKnownKSBSeason": 2026,
+      "teamHistory": [
+        {
+          "season": 2026,
+          "player": {
+            "id": 774,
+            "name": "Chris Whitehead",
+            "slug": "chris-whitehead",
+            "rank": 2502
+          },
+          "team": {
+            "id": 18,
+            "name": "KSB B",
+            "slug": "ksb-b",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2502
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/chris-whitehead",
+            "status": "success"
+          }
+        }
+      ],
+      "ksbSeasons": [
+        2026
+      ],
+      "ksbCareer": {
+        "played": 3,
+        "wins": 2,
+        "draws": 0,
+        "losses": 1,
+        "winPercentage": 66.67,
+        "setsWon": 8,
+        "setsLost": 4,
+        "setDifference": 4
+      },
+      "ksbBySeason": {
+        "2026": {
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 8,
+          "setsLost": 4,
+          "setDifference": 4
+        }
+      },
+      "ksbByTeam": {
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 8,
+          "setsLost": 4,
+          "setDifference": 4
+        }
+      },
+      "ksbEncounters": [
+        {
+          "id": 43309,
+          "season": 2026,
+          "ksbPlayer": "Chris Hall",
+          "ksbPlayerSlug": "hall-chris",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 2,
+          "playerLeftName": "Chris Whitehead",
+          "playerLeftSlug": "chris-whitehead",
+          "playerRightName": "Chris Hall",
+          "playerRightSlug": "hall-chris",
+          "playerRankChangeLeft": 12,
+          "playerRankChangeRight": -8,
+          "ksbPlayerScore": 2,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Chris Whitehead",
+          "opponentSlug": "chris-whitehead",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 18,
+            "name": "KSB B",
+            "slug": "ksb-b",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2502
+          },
+          "opponentDivision": null,
+          "opponentRank": 2502
+        },
+        {
+          "id": 43305,
+          "season": 2026,
+          "ksbPlayer": "Daven Argile",
+          "ksbPlayerSlug": "daven-argile",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Chris Whitehead",
+          "playerLeftSlug": "chris-whitehead",
+          "playerRightName": "Daven Argile",
+          "playerRightSlug": "daven-argile",
+          "playerRankChangeLeft": -4,
+          "playerRankChangeRight": 6,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Chris Whitehead",
+          "opponentSlug": "chris-whitehead",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 18,
+            "name": "KSB B",
+            "slug": "ksb-b",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2502
+          },
+          "opponentDivision": null,
+          "opponentRank": 2502
+        },
+        {
+          "id": 43311,
+          "season": 2026,
+          "ksbPlayer": "Rob Hall",
+          "ksbPlayerSlug": "rob-hall",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Chris Whitehead",
+          "playerLeftSlug": "chris-whitehead",
+          "playerRightName": "Rob Hall",
+          "playerRightSlug": "rob-hall",
+          "playerRankChangeLeft": -6,
+          "playerRankChangeRight": 9,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Chris Whitehead",
+          "opponentSlug": "chris-whitehead",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 18,
+            "name": "KSB B",
+            "slug": "ksb-b",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2502
+          },
+          "opponentDivision": null,
+          "opponentRank": 2502
+        }
+      ],
+      "apiStatus": "success",
+      "teamHistoryComplete": true
+    },
     "chris_wilkinson": {
       "name": "Chris Wilkinson",
       "slug": "chris_wilkinson",
@@ -58977,7 +59221,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Chris Wilkinson",
           "opponentSlug": "chris_wilkinson",
-          "fixtureKey": "2026|2|ksb-leopards-jun|vanguard-typhoons|1790067146",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Typhoons",
             "slug": "vanguard-typhoons"
@@ -59005,7 +59249,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Chris Wilkinson",
           "opponentSlug": "chris_wilkinson",
-          "fixtureKey": "2026|2|ksb-leopards-jun|vanguard-typhoons|1790067146",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Typhoons",
             "slug": "vanguard-typhoons"
@@ -59033,7 +59277,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Chris Wilkinson",
           "opponentSlug": "chris_wilkinson",
-          "fixtureKey": "2026|2|ksb-leopards-jun|vanguard-typhoons|1790067146",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Typhoons",
             "slug": "vanguard-typhoons"
@@ -65754,7 +65998,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Damian Savage",
           "opponentSlug": "damian-savage",
-          "fixtureKey": "2026|2|ksb-panthers-jun|hyndburn-ttc-b|1790067383",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC B",
             "slug": "hyndburn-ttc-b"
@@ -65782,7 +66026,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Damian Savage",
           "opponentSlug": "damian-savage",
-          "fixtureKey": "2026|2|ksb-panthers-jun|hyndburn-ttc-b|1790067383",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC B",
             "slug": "hyndburn-ttc-b"
@@ -65810,7 +66054,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Damian Savage",
           "opponentSlug": "damian-savage",
-          "fixtureKey": "2026|2|ksb-panthers-jun|hyndburn-ttc-b|1790067383",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC B",
             "slug": "hyndburn-ttc-b"
@@ -67807,7 +68051,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Dan Chamberlain",
           "opponentSlug": "dan-chamberlain",
-          "fixtureKey": "2026|2|past-masters|ksb-d|1790148246",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Past Masters",
             "slug": "past-masters"
@@ -69019,7 +69263,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Dan Chamberlain",
           "opponentSlug": "dan-chamberlain",
-          "fixtureKey": "2026|2|past-masters|ksb-d|1790148246",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Past Masters",
             "slug": "past-masters"
@@ -70263,7 +70507,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Dan Chamberlain",
           "opponentSlug": "dan-chamberlain",
-          "fixtureKey": "2026|2|past-masters|ksb-d|1790148246",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Past Masters",
             "slug": "past-masters"
@@ -74040,7 +74284,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Daniel Vickers",
           "opponentSlug": "daniel-vickers",
-          "fixtureKey": "2026|2|ksb-tigers|ksb-jaguars|1790067060",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Tigers",
             "slug": "ksb-tigers"
@@ -74484,7 +74728,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Daniel Vickers",
           "opponentSlug": "daniel-vickers",
-          "fixtureKey": "2026|2|ksb-tigers|ksb-jaguars|1790067060",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Tigers",
             "slug": "ksb-tigers"
@@ -74512,7 +74756,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Daniel Vickers",
           "opponentSlug": "daniel-vickers",
-          "fixtureKey": "2026|2|ksb-tigers|ksb-jaguars|1790067060",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Tigers",
             "slug": "ksb-tigers"
@@ -81196,6 +81440,174 @@
       "apiStatus": "success",
       "teamHistoryComplete": true
     },
+    "dave-jefferson": {
+      "name": "Dave Jefferson",
+      "slug": "dave-jefferson",
+      "firstKnownKSBSeason": 2026,
+      "lastKnownKSBSeason": 2026,
+      "teamHistory": [
+        {
+          "season": 2026,
+          "player": {
+            "id": 773,
+            "name": "Dave Jefferson",
+            "slug": "dave-jefferson",
+            "rank": 2503
+          },
+          "team": {
+            "id": 18,
+            "name": "KSB B",
+            "slug": "ksb-b",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2503
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/dave-jefferson",
+            "status": "success"
+          }
+        }
+      ],
+      "ksbSeasons": [
+        2026
+      ],
+      "ksbCareer": {
+        "played": 3,
+        "wins": 2,
+        "draws": 0,
+        "losses": 1,
+        "winPercentage": 66.67,
+        "setsWon": 7,
+        "setsLost": 6,
+        "setDifference": 1
+      },
+      "ksbBySeason": {
+        "2026": {
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 7,
+          "setsLost": 6,
+          "setDifference": 1
+        }
+      },
+      "ksbByTeam": {
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 7,
+          "setsLost": 6,
+          "setDifference": 1
+        }
+      },
+      "ksbEncounters": [
+        {
+          "id": 43304,
+          "season": 2026,
+          "ksbPlayer": "Chris Hall",
+          "ksbPlayerSlug": "hall-chris",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 1,
+          "playerLeftName": "Dave Jefferson",
+          "playerLeftSlug": "dave-jefferson",
+          "playerRightName": "Chris Hall",
+          "playerRightSlug": "hall-chris",
+          "playerRankChangeLeft": 12,
+          "playerRankChangeRight": -8,
+          "ksbPlayerScore": 1,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Dave Jefferson",
+          "opponentSlug": "dave-jefferson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 18,
+            "name": "KSB B",
+            "slug": "ksb-b",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2503
+          },
+          "opponentDivision": null,
+          "opponentRank": 2503
+        },
+        {
+          "id": 43310,
+          "season": 2026,
+          "ksbPlayer": "Daven Argile",
+          "ksbPlayerSlug": "daven-argile",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Dave Jefferson",
+          "playerLeftSlug": "dave-jefferson",
+          "playerRightName": "Daven Argile",
+          "playerRightSlug": "daven-argile",
+          "playerRankChangeLeft": -4,
+          "playerRankChangeRight": 6,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Dave Jefferson",
+          "opponentSlug": "dave-jefferson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 18,
+            "name": "KSB B",
+            "slug": "ksb-b",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2503
+          },
+          "opponentDivision": null,
+          "opponentRank": 2503
+        },
+        {
+          "id": 43306,
+          "season": 2026,
+          "ksbPlayer": "Rob Hall",
+          "ksbPlayerSlug": "rob-hall",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 2,
+          "scoreRight": 3,
+          "playerLeftName": "Dave Jefferson",
+          "playerLeftSlug": "dave-jefferson",
+          "playerRightName": "Rob Hall",
+          "playerRightSlug": "rob-hall",
+          "playerRankChangeLeft": -6,
+          "playerRankChangeRight": 9,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "Dave Jefferson",
+          "opponentSlug": "dave-jefferson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 18,
+            "name": "KSB B",
+            "slug": "ksb-b",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2503
+          },
+          "opponentDivision": null,
+          "opponentRank": 2503
+        }
+      ],
+      "apiStatus": "success",
+      "teamHistoryComplete": true
+    },
     "dave-kay": {
       "name": "Dave Kay",
       "slug": "dave-kay",
@@ -83197,7 +83609,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Dave Lawrence",
           "opponentSlug": "dave_lawrence",
-          "fixtureKey": "2026|3|burnley-dragon-flies|ksb-leopards-jun|1790684939",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Dragon Flies",
             "slug": "burnley-dragon-flies"
@@ -83225,7 +83637,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Dave Lawrence",
           "opponentSlug": "dave_lawrence",
-          "fixtureKey": "2026|3|burnley-dragon-flies|ksb-leopards-jun|1790684939",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Dragon Flies",
             "slug": "burnley-dragon-flies"
@@ -83253,7 +83665,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Dave Lawrence",
           "opponentSlug": "dave_lawrence",
-          "fixtureKey": "2026|3|burnley-dragon-flies|ksb-leopards-jun|1790684939",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Dragon Flies",
             "slug": "burnley-dragon-flies"
@@ -89315,7 +89727,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "David Eastwood",
           "opponentSlug": "david-eastwood",
-          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -89759,7 +90171,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "David Eastwood",
           "opponentSlug": "david-eastwood",
-          "fixtureKey": "2026|2|burnley-black-widows|ksb-b|1790237755",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -90395,7 +90807,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "David Eastwood",
           "opponentSlug": "david-eastwood",
-          "fixtureKey": "2026|2|burnley-black-widows|ksb-b|1790237755",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -90647,7 +91059,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "David Eastwood",
           "opponentSlug": "david-eastwood",
-          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -90867,7 +91279,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "David Eastwood",
           "opponentSlug": "david-eastwood",
-          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -91023,7 +91435,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "David Eastwood",
           "opponentSlug": "david-eastwood",
-          "fixtureKey": "2026|2|burnley-black-widows|ksb-b|1790237755",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -92179,7 +92591,7 @@
       "name": "David Greenwood",
       "slug": "david-greenwood",
       "firstKnownKSBSeason": 2013,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2013,
@@ -92369,6 +92781,27 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/david-greenwood",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "id": 224,
+            "name": "David Greenwood",
+            "slug": "david-greenwood",
+            "rank": 1394
+          },
+          "team": {
+            "id": 90,
+            "name": "KSB E",
+            "slug": "ksb-e",
+            "divisionId": 2,
+            "division": null,
+            "rank": 1394
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/david-greenwood",
+            "status": "success"
+          }
         }
       ],
       "ksbSeasons": [
@@ -92380,17 +92813,18 @@
         2018,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 65,
-        "wins": 36,
+        "played": 66,
+        "wins": 37,
         "draws": 0,
         "losses": 29,
-        "winPercentage": 55.38,
-        "setsWon": 125,
-        "setsLost": 126,
-        "setDifference": -1
+        "winPercentage": 56.06,
+        "setsWon": 128,
+        "setsLost": 128,
+        "setDifference": 0
       },
       "ksbBySeason": {
         "2013": {
@@ -92482,6 +92916,16 @@
           "setsWon": 3,
           "setsLost": 2,
           "setDifference": 1
+        },
+        "2026": {
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 3,
+          "setsLost": 2,
+          "setDifference": 1
         }
       },
       "ksbByTeam": {
@@ -92544,6 +92988,18 @@
           "setsWon": 11,
           "setsLost": 20,
           "setDifference": -9
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 3,
+          "setsLost": 2,
+          "setDifference": 1
         }
       },
       "ksbEncounters": [
@@ -92930,6 +93386,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 1412
+        },
+        {
+          "id": 43301,
+          "season": 2026,
+          "ksbPlayer": "Bernard Milnes",
+          "ksbPlayerSlug": "bernard-milnes",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 2,
+          "playerLeftName": "Bernard Milnes",
+          "playerLeftSlug": "bernard-milnes",
+          "playerRightName": "David Greenwood",
+          "playerRightSlug": "david-greenwood",
+          "playerRankChangeLeft": 5,
+          "playerRankChangeRight": -3,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "David Greenwood",
+          "opponentSlug": "david-greenwood",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 90,
+            "name": "KSB E",
+            "slug": "ksb-e",
+            "divisionId": 2,
+            "division": null,
+            "rank": 1394
+          },
+          "opponentDivision": null,
+          "opponentRank": 1394
         },
         {
           "id": 3284,
@@ -96032,7 +96520,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "David Heys",
           "opponentSlug": "david-heys",
-          "fixtureKey": "2026|1|slayers|ksb-lions|1789650946",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -96700,7 +97188,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "David Heys",
           "opponentSlug": "david-heys",
-          "fixtureKey": "2026|2|ksb-g|slayers|1790147443",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -97144,7 +97632,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "David Heys",
           "opponentSlug": "david-heys",
-          "fixtureKey": "2026|2|ksb-g|slayers|1790147443",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -97332,7 +97820,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "David Heys",
           "opponentSlug": "david-heys",
-          "fixtureKey": "2026|2|ksb-g|slayers|1790147443",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -97840,7 +98328,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "David Heys",
           "opponentSlug": "david-heys",
-          "fixtureKey": "2026|1|slayers|ksb-lions|1789650946",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -101137,7 +101625,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "David Worrall",
           "opponentSlug": "david-worrall",
-          "fixtureKey": "2026|1|vanguard-tornados|ksb-e|1789564729",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Tornados",
             "slug": "vanguard-tornados"
@@ -101613,7 +102101,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "David Worrall",
           "opponentSlug": "david-worrall",
-          "fixtureKey": "2026|1|vanguard-tornados|ksb-e|1789564729",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Tornados",
             "slug": "vanguard-tornados"
@@ -102761,7 +103249,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "David Worrall",
           "opponentSlug": "david-worrall",
-          "fixtureKey": "2026|1|vanguard-tornados|ksb-e|1789564729",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Tornados",
             "slug": "vanguard-tornados"
@@ -107966,7 +108454,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Douglas Hodgson",
           "opponentSlug": "douglas_hodgson",
-          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -107994,7 +108482,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Douglas Hodgson",
           "opponentSlug": "douglas_hodgson",
-          "fixtureKey": "2026|2|burnley-black-widows|ksb-b|1790237755",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -108022,7 +108510,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Douglas Hodgson",
           "opponentSlug": "douglas_hodgson",
-          "fixtureKey": "2026|2|burnley-black-widows|ksb-b|1790237755",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -108050,7 +108538,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Douglas Hodgson",
           "opponentSlug": "douglas_hodgson",
-          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -108078,7 +108566,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Douglas Hodgson",
           "opponentSlug": "douglas_hodgson",
-          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -108106,7 +108594,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Douglas Hodgson",
           "opponentSlug": "douglas_hodgson",
-          "fixtureKey": "2026|2|burnley-black-widows|ksb-b|1790237755",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -117447,7 +117935,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Eric Yuan Shi",
           "opponentSlug": "eric-yuan-shi",
-          "fixtureKey": "2026|1|hyndburn-ttc-a|ksb-g|1789478674",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC A",
             "slug": "hyndburn-ttc-a"
@@ -117475,7 +117963,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Eric Yuan Shi",
           "opponentSlug": "eric-yuan-shi",
-          "fixtureKey": "2026|1|hyndburn-ttc-a|ksb-g|1789478674",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC A",
             "slug": "hyndburn-ttc-a"
@@ -117631,7 +118119,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Eric Yuan Shi",
           "opponentSlug": "eric-yuan-shi",
-          "fixtureKey": "2026|1|hyndburn-ttc-a|ksb-g|1789478674",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC A",
             "slug": "hyndburn-ttc-a"
@@ -130048,7 +130536,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Fraser McEwen",
           "opponentSlug": "fraser-mcewen",
-          "fixtureKey": "2026|1|ksb-c|rovers|1789565150",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Rovers",
             "slug": "rovers"
@@ -130396,7 +130884,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Fraser McEwen",
           "opponentSlug": "fraser-mcewen",
-          "fixtureKey": "2026|1|ksb-c|rovers|1789565150",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Rovers",
             "slug": "rovers"
@@ -130424,7 +130912,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Fraser McEwen",
           "opponentSlug": "fraser-mcewen",
-          "fixtureKey": "2026|1|ksb-c|rovers|1789565150",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Rovers",
             "slug": "rovers"
@@ -136557,7 +137045,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Gary Firth",
           "opponentSlug": "gary-firth",
-          "fixtureKey": "2026|1|ksb-b|vanguard-raptors|1789651114",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -136681,7 +137169,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Gary Firth",
           "opponentSlug": "gary-firth",
-          "fixtureKey": "2026|1|ksb-b|vanguard-raptors|1789651114",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -136965,7 +137453,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Gary Firth",
           "opponentSlug": "gary-firth",
-          "fixtureKey": "2026|2|vanguard-raptors|ksb-c|1790066915",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -137057,7 +137545,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Gary Firth",
           "opponentSlug": "gary-firth",
-          "fixtureKey": "2026|2|vanguard-raptors|ksb-c|1790066915",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -137437,7 +137925,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Gary Firth",
           "opponentSlug": "gary-firth",
-          "fixtureKey": "2026|2|vanguard-raptors|ksb-c|1790066915",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -137817,7 +138305,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Gary Firth",
           "opponentSlug": "gary-firth",
-          "fixtureKey": "2026|1|ksb-b|vanguard-raptors|1789651114",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -143854,7 +144342,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Georgia Cockshott",
           "opponentSlug": "georgia_cockshott",
-          "fixtureKey": "2026|2|ksb-panthers-jun|hyndburn-ttc-b|1790067383",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC B",
             "slug": "hyndburn-ttc-b"
@@ -144394,7 +144882,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Georgia Cockshott",
           "opponentSlug": "georgia_cockshott",
-          "fixtureKey": "2026|2|ksb-panthers-jun|hyndburn-ttc-b|1790067383",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC B",
             "slug": "hyndburn-ttc-b"
@@ -144550,7 +145038,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Georgia Cockshott",
           "opponentSlug": "georgia_cockshott",
-          "fixtureKey": "2026|2|ksb-panthers-jun|hyndburn-ttc-b|1790067383",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC B",
             "slug": "hyndburn-ttc-b"
@@ -146323,7 +146811,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Gustavs Saurins",
           "opponentSlug": "gustavs_saurins",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -146351,7 +146839,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Gustavs Saurins",
           "opponentSlug": "gustavs_saurins",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -146379,7 +146867,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Gustavs Saurins",
           "opponentSlug": "gustavs_saurins",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -154648,7 +155136,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Henry Wright",
           "opponentSlug": "henry-wright",
-          "fixtureKey": "2026|1|ksb-pumas-jun|ksb-panthers-jun|1789478886",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Pumas (Jun)",
             "slug": "ksb-pumas-jun"
@@ -157377,7 +157865,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Ian Baskerville",
           "opponentSlug": "ian-baskerville",
-          "fixtureKey": "2026|1|vanguard-tornados|ksb-e|1789564729",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Tornados",
             "slug": "vanguard-tornados"
@@ -158109,7 +158597,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Ian Baskerville",
           "opponentSlug": "ian-baskerville",
-          "fixtureKey": "2026|1|vanguard-tornados|ksb-e|1789564729",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Tornados",
             "slug": "vanguard-tornados"
@@ -159321,7 +159809,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Ian Baskerville",
           "opponentSlug": "ian-baskerville",
-          "fixtureKey": "2026|1|vanguard-tornados|ksb-e|1789564729",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Tornados",
             "slug": "vanguard-tornados"
@@ -161021,7 +161509,7 @@
       "name": "Ian Cockcroft",
       "slug": "ian-cockcroft",
       "firstKnownKSBSeason": 2024,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2024,
@@ -161064,21 +161552,43 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/ian-cockcroft",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "id": 714,
+            "name": "Ian Cockcroft",
+            "slug": "ian-cockcroft",
+            "rank": 2303
+          },
+          "team": {
+            "id": 18,
+            "name": "KSB B",
+            "slug": "ksb-b",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2303
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/ian-cockcroft",
+            "status": "success"
+          }
         }
       ],
       "ksbSeasons": [
         2024,
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 7,
-        "wins": 6,
+        "played": 9,
+        "wins": 8,
         "draws": 0,
         "losses": 1,
-        "winPercentage": 85.71,
-        "setsWon": 20,
-        "setsLost": 5,
-        "setDifference": 15
+        "winPercentage": 88.89,
+        "setsWon": 26,
+        "setsLost": 7,
+        "setDifference": 19
       },
       "ksbBySeason": {
         "2024": {
@@ -161100,6 +161610,16 @@
           "setsWon": 3,
           "setsLost": 0,
           "setDifference": 3
+        },
+        "2026": {
+          "played": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 6,
+          "setsLost": 2,
+          "setDifference": 4
         }
       },
       "ksbByTeam": {
@@ -161114,6 +161634,18 @@
           "setsWon": 20,
           "setsLost": 5,
           "setDifference": 15
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 6,
+          "setsLost": 2,
+          "setDifference": 4
         }
       },
       "ksbEncounters": [
@@ -161180,6 +161712,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 2306
+        },
+        {
+          "id": 43312,
+          "season": 2026,
+          "ksbPlayer": "Chris Hall",
+          "ksbPlayerSlug": "hall-chris",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Ian Cockcroft",
+          "playerLeftSlug": "ian-cockcroft",
+          "playerRightName": "Chris Hall",
+          "playerRightSlug": "hall-chris",
+          "playerRankChangeLeft": -4,
+          "playerRankChangeRight": 6,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Ian Cockcroft",
+          "opponentSlug": "ian-cockcroft",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 18,
+            "name": "KSB B",
+            "slug": "ksb-b",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2303
+          },
+          "opponentDivision": null,
+          "opponentRank": 2303
         },
         {
           "id": 37681,
@@ -161276,6 +161840,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 2294
+        },
+        {
+          "id": 43307,
+          "season": 2026,
+          "ksbPlayer": "Daven Argile",
+          "ksbPlayerSlug": "daven-argile",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Ian Cockcroft",
+          "playerLeftSlug": "ian-cockcroft",
+          "playerRightName": "Daven Argile",
+          "playerRightSlug": "daven-argile",
+          "playerRankChangeLeft": -2,
+          "playerRankChangeRight": 3,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Ian Cockcroft",
+          "opponentSlug": "ian-cockcroft",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 18,
+            "name": "KSB B",
+            "slug": "ksb-b",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2303
+          },
+          "opponentDivision": null,
+          "opponentRank": 2303
         },
         {
           "id": 37673,
@@ -173870,7 +174466,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Ian Pickles",
           "opponentSlug": "ian-pickles",
-          "fixtureKey": "2026|2|past-masters|ksb-d|1790148246",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Past Masters",
             "slug": "past-masters"
@@ -175530,7 +176126,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Ian Pickles",
           "opponentSlug": "ian-pickles",
-          "fixtureKey": "2026|2|past-masters|ksb-d|1790148246",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Past Masters",
             "slug": "past-masters"
@@ -177126,7 +177722,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Ian Pickles",
           "opponentSlug": "ian-pickles",
-          "fixtureKey": "2026|2|past-masters|ksb-d|1790148246",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Past Masters",
             "slug": "past-masters"
@@ -182923,7 +183519,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Issy Emberton",
           "opponentSlug": "issy-emberton",
-          "fixtureKey": "2026|1|ksb-pumas-jun|ksb-panthers-jun|1789478886",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Pumas (Jun)",
             "slug": "ksb-pumas-jun"
@@ -183376,7 +183972,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Issy Sinkinson",
           "opponentSlug": "issy-sinkinson",
-          "fixtureKey": "2026|1|ksb-pumas-jun|ksb-panthers-jun|1789478886",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Pumas (Jun)",
             "slug": "ksb-pumas-jun"
@@ -183660,7 +184256,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Issy Sinkinson",
           "opponentSlug": "issy-sinkinson",
-          "fixtureKey": "2026|1|ksb-pumas-jun|ksb-panthers-jun|1789478886",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Pumas (Jun)",
             "slug": "ksb-pumas-jun"
@@ -192473,7 +193069,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Jacob Atkinson",
           "opponentSlug": "jacob_atkinson",
-          "fixtureKey": "2026|1|hyndburn-ttc-a|ksb-g|1789478674",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC A",
             "slug": "hyndburn-ttc-a"
@@ -192661,7 +193257,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Jacob Atkinson",
           "opponentSlug": "jacob_atkinson",
-          "fixtureKey": "2026|1|hyndburn-ttc-a|ksb-g|1789478674",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC A",
             "slug": "hyndburn-ttc-a"
@@ -192945,7 +193541,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Jacob Atkinson",
           "opponentSlug": "jacob_atkinson",
-          "fixtureKey": "2026|1|hyndburn-ttc-a|ksb-g|1789478674",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC A",
             "slug": "hyndburn-ttc-a"
@@ -193554,7 +194150,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Jacob Blackburn",
           "opponentSlug": "jacob-blackburn",
-          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -194606,7 +195202,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Jacob Blackburn",
           "opponentSlug": "jacob-blackburn",
-          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -194698,7 +195294,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Jacob Blackburn",
           "opponentSlug": "jacob-blackburn",
-          "fixtureKey": "2026|3|ksb-c|burnley-black-widows|1790756594",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Black Widows",
             "slug": "burnley-black-widows"
@@ -209864,7 +210460,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Jason Pilling",
           "opponentSlug": "jason-pilling",
-          "fixtureKey": "2026|1|gladiators|ksb-a|1789996025",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Gladiators",
             "slug": "gladiators"
@@ -210948,7 +211544,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Jason Pilling",
           "opponentSlug": "jason-pilling",
-          "fixtureKey": "2026|1|gladiators|ksb-a|1789996025",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Gladiators",
             "slug": "gladiators"
@@ -211136,7 +211732,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Jason Pilling",
           "opponentSlug": "jason-pilling",
-          "fixtureKey": "2026|1|gladiators|ksb-a|1789996025",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Gladiators",
             "slug": "gladiators"
@@ -212821,7 +213417,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Jason Tomlinson",
           "opponentSlug": "jason-tomlinson",
-          "fixtureKey": "2026|2|ksb-f|vanguard-tornados|1790147702",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Tornados",
             "slug": "vanguard-tornados"
@@ -213425,7 +214021,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Jason Tomlinson",
           "opponentSlug": "jason-tomlinson",
-          "fixtureKey": "2026|2|ksb-f|vanguard-tornados|1790147702",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Tornados",
             "slug": "vanguard-tornados"
@@ -213965,7 +214561,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Jason Tomlinson",
           "opponentSlug": "jason-tomlinson",
-          "fixtureKey": "2026|2|ksb-f|vanguard-tornados|1790147702",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Tornados",
             "slug": "vanguard-tornados"
@@ -218734,7 +219330,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Joe Mason",
           "opponentSlug": "joe-mason",
-          "fixtureKey": "2026|1|whalley-harriers|ksb-leopards-jun|1789427193",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Harriers",
             "slug": "whalley-harriers"
@@ -218826,7 +219422,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Joe Mason",
           "opponentSlug": "joe-mason",
-          "fixtureKey": "2026|1|whalley-harriers|ksb-leopards-jun|1789427193",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Harriers",
             "slug": "whalley-harriers"
@@ -218854,7 +219450,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Joe Mason",
           "opponentSlug": "joe-mason",
-          "fixtureKey": "2026|1|whalley-harriers|ksb-leopards-jun|1789427193",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Harriers",
             "slug": "whalley-harriers"
@@ -222947,7 +223543,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Joel Cooper",
           "opponentSlug": "joel-cooper",
-          "fixtureKey": "2026|2|ksb-leopards-jun|vanguard-typhoons|1790067146",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Typhoons",
             "slug": "vanguard-typhoons"
@@ -222975,7 +223571,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Joel Cooper",
           "opponentSlug": "joel-cooper",
-          "fixtureKey": "2026|2|ksb-leopards-jun|vanguard-typhoons|1790067146",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Typhoons",
             "slug": "vanguard-typhoons"
@@ -223003,7 +223599,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Joel Cooper",
           "opponentSlug": "joel-cooper",
-          "fixtureKey": "2026|2|ksb-leopards-jun|vanguard-typhoons|1790067146",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Typhoons",
             "slug": "vanguard-typhoons"
@@ -231316,7 +231912,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "John Lee",
           "opponentSlug": "john-lee",
-          "fixtureKey": "2026|3|ksb-pumas-jun|burnley-scorpions|1790684722",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Scorpions",
             "slug": "burnley-scorpions"
@@ -231344,7 +231940,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "John Lee",
           "opponentSlug": "john-lee",
-          "fixtureKey": "2026|3|ksb-pumas-jun|burnley-scorpions|1790684722",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Scorpions",
             "slug": "burnley-scorpions"
@@ -231884,7 +232480,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "John Lee",
           "opponentSlug": "john-lee",
-          "fixtureKey": "2026|3|ksb-pumas-jun|burnley-scorpions|1790684722",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Scorpions",
             "slug": "burnley-scorpions"
@@ -244153,7 +244749,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Judith Glover",
           "opponentSlug": "judith-glover",
-          "fixtureKey": "2026|3|burnley-bees|ksb-lions|1790685421",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Bees",
             "slug": "burnley-bees"
@@ -244533,7 +245129,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Judith Glover",
           "opponentSlug": "judith-glover",
-          "fixtureKey": "2026|3|burnley-bees|ksb-lions|1790685421",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Bees",
             "slug": "burnley-bees"
@@ -244753,7 +245349,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Judith Glover",
           "opponentSlug": "judith-glover",
-          "fixtureKey": "2026|3|burnley-bees|ksb-lions|1790685421",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Bees",
             "slug": "burnley-bees"
@@ -253734,7 +254330,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Keith Cocker",
           "opponentSlug": "keith-cocker",
-          "fixtureKey": "2026|3|burnley-bees|ksb-lions|1790685421",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Bees",
             "slug": "burnley-bees"
@@ -254146,7 +254742,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Keith Cocker",
           "opponentSlug": "keith-cocker",
-          "fixtureKey": "2026|3|burnley-bees|ksb-lions|1790685421",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Bees",
             "slug": "burnley-bees"
@@ -254334,7 +254930,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Keith Cocker",
           "opponentSlug": "keith-cocker",
-          "fixtureKey": "2026|3|burnley-bees|ksb-lions|1790685421",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Bees",
             "slug": "burnley-bees"
@@ -259215,7 +259811,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Kelvin Cockshott",
           "opponentSlug": "kelvin-cockshott",
-          "fixtureKey": "2026|2|ksb-panthers-jun|hyndburn-ttc-b|1790067383",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC B",
             "slug": "hyndburn-ttc-b"
@@ -259755,7 +260351,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Kelvin Cockshott",
           "opponentSlug": "kelvin-cockshott",
-          "fixtureKey": "2026|2|ksb-panthers-jun|hyndburn-ttc-b|1790067383",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC B",
             "slug": "hyndburn-ttc-b"
@@ -259911,7 +260507,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Kelvin Cockshott",
           "opponentSlug": "kelvin-cockshott",
-          "fixtureKey": "2026|2|ksb-panthers-jun|hyndburn-ttc-b|1790067383",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC B",
             "slug": "hyndburn-ttc-b"
@@ -269188,7 +269784,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Lee Pattison",
           "opponentSlug": "lee-pattinson",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -269280,7 +269876,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Lee Pattison",
           "opponentSlug": "lee-pattinson",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -269980,7 +270576,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Lee Pattison",
           "opponentSlug": "lee-pattinson",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -282141,7 +282737,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Mark Brandwood",
           "opponentSlug": "mark_brandwood",
-          "fixtureKey": "2026|3|ksb-pumas-jun|burnley-scorpions|1790684722",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Scorpions",
             "slug": "burnley-scorpions"
@@ -282169,7 +282765,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Mark Brandwood",
           "opponentSlug": "mark_brandwood",
-          "fixtureKey": "2026|3|ksb-pumas-jun|burnley-scorpions|1790684722",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Scorpions",
             "slug": "burnley-scorpions"
@@ -282197,7 +282793,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Mark Brandwood",
           "opponentSlug": "mark_brandwood",
-          "fixtureKey": "2026|3|ksb-pumas-jun|burnley-scorpions|1790684722",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Scorpions",
             "slug": "burnley-scorpions"
@@ -282285,14 +282881,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 18,
+        "played": 19,
         "wins": 4,
         "draws": 0,
-        "losses": 14,
-        "winPercentage": 22.22,
+        "losses": 15,
+        "winPercentage": 21.05,
         "setsWon": 18,
-        "setsLost": 47,
-        "setDifference": -29
+        "setsLost": 50,
+        "setDifference": -32
       },
       "ksbBySeason": {
         "2024": {
@@ -282316,14 +282912,14 @@
           "setDifference": -3
         },
         "2026": {
-          "played": 1,
+          "played": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
-          "winPercentage": 100.0,
+          "losses": 1,
+          "winPercentage": 50.0,
           "setsWon": 3,
-          "setsLost": 1,
-          "setDifference": 2
+          "setsLost": 4,
+          "setDifference": -1
         }
       },
       "ksbByTeam": {
@@ -282402,14 +282998,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 1,
+          "played": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
-          "winPercentage": 100.0,
+          "losses": 1,
+          "winPercentage": 50.0,
           "setsWon": 3,
-          "setsLost": 1,
-          "setDifference": 2
+          "setsLost": 4,
+          "setDifference": -1
         }
       },
       "ksbEncounters": [
@@ -282636,6 +283232,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 1894
+        },
+        {
+          "id": 43296,
+          "season": 2026,
+          "ksbPlayer": "David Greenwood",
+          "ksbPlayerSlug": "david-greenwood",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Mark Gavin",
+          "playerLeftSlug": "mark-gavin",
+          "playerRightName": "David Greenwood",
+          "playerRightSlug": "david-greenwood",
+          "playerRankChangeLeft": 2,
+          "playerRankChangeRight": -1,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Mark Gavin",
+          "opponentSlug": "mark-gavin",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 20,
+            "name": "KSB D",
+            "slug": "ksb-d",
+            "divisionId": 2,
+            "division": null,
+            "rank": 1862
+          },
+          "opponentDivision": null,
+          "opponentRank": 1862
         },
         {
           "id": 38212,
@@ -283238,7 +283866,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Mark Gleave",
           "opponentSlug": "mark-gleave",
-          "fixtureKey": "2026|1|ksb-c|rovers|1789565150",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Rovers",
             "slug": "rovers"
@@ -283554,7 +284182,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Mark Gleave",
           "opponentSlug": "mark-gleave",
-          "fixtureKey": "2026|1|ksb-c|rovers|1789565150",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Rovers",
             "slug": "rovers"
@@ -283646,7 +284274,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Mark Gleave",
           "opponentSlug": "mark-gleave",
-          "fixtureKey": "2026|1|ksb-c|rovers|1789565150",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Rovers",
             "slug": "rovers"
@@ -283790,7 +284418,7 @@
       "name": "Mark Hanson",
       "slug": "mark-hanson",
       "firstKnownKSBSeason": 2013,
-      "lastKnownKSBSeason": 2024,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2013,
@@ -283938,6 +284566,27 @@
             "url": "https://eastlancstt.org.uk/api/result/2024/player/mark-hanson",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "id": 258,
+            "name": "Mark Hanson",
+            "slug": "mark-hanson",
+            "rank": 2390
+          },
+          "team": {
+            "id": 26,
+            "name": "Whalley Kestrels",
+            "slug": "whalley-kestrels",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2390
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/mark-hanson",
+            "status": "success"
+          }
         }
       ],
       "ksbSeasons": [
@@ -283947,17 +284596,18 @@
         2021,
         2022,
         2023,
-        2024
+        2024,
+        2026
       ],
       "ksbCareer": {
-        "played": 42,
-        "wins": 27,
+        "played": 43,
+        "wins": 28,
         "draws": 0,
         "losses": 15,
-        "winPercentage": 64.29,
-        "setsWon": 98,
-        "setsLost": 64,
-        "setDifference": 34
+        "winPercentage": 65.12,
+        "setsWon": 101,
+        "setsLost": 66,
+        "setDifference": 35
       },
       "ksbBySeason": {
         "2013": {
@@ -284029,6 +284679,16 @@
           "setsWon": 20,
           "setsLost": 14,
           "setDifference": 6
+        },
+        "2026": {
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 3,
+          "setsLost": 2,
+          "setDifference": 1
         }
       },
       "ksbByTeam": {
@@ -284079,9 +284739,53 @@
           "setsWon": 1,
           "setsLost": 3,
           "setDifference": -2
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 3,
+          "setsLost": 2,
+          "setDifference": 1
         }
       },
       "ksbEncounters": [
+        {
+          "id": 43284,
+          "season": 2026,
+          "ksbPlayer": "Alex Gavin",
+          "ksbPlayerSlug": "alex-gavin",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 2,
+          "playerLeftName": "Alex Gavin",
+          "playerLeftSlug": "alex-gavin",
+          "playerRightName": "Mark Hanson",
+          "playerRightSlug": "mark-hanson",
+          "playerRankChangeLeft": 75,
+          "playerRankChangeRight": -50,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "Mark Hanson",
+          "opponentSlug": "mark-hanson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 26,
+            "name": "Whalley Kestrels",
+            "slug": "whalley-kestrels",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2390
+          },
+          "opponentDivision": null,
+          "opponentRank": 2390
+        },
         {
           "id": 20041,
           "season": 2018,
@@ -286439,7 +287143,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Mark Hodkinson",
           "opponentSlug": "mark-hodkinson",
-          "fixtureKey": "2026|2|ksb-lions|whalley-ospreys|1790148065",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Ospreys",
             "slug": "whalley-ospreys"
@@ -287043,7 +287747,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Mark Hodkinson",
           "opponentSlug": "mark-hodkinson",
-          "fixtureKey": "2026|2|ksb-lions|whalley-ospreys|1790148065",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Ospreys",
             "slug": "whalley-ospreys"
@@ -287967,7 +288671,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Mark Hodkinson",
           "opponentSlug": "mark-hodkinson",
-          "fixtureKey": "2026|2|ksb-lions|whalley-ospreys|1790148065",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Ospreys",
             "slug": "whalley-ospreys"
@@ -290460,7 +291164,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Mark Rawson",
           "opponentSlug": "mark-rawson",
-          "fixtureKey": "2026|2|ksb-lions|whalley-ospreys|1790148065",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Ospreys",
             "slug": "whalley-ospreys"
@@ -291256,7 +291960,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Mark Rawson",
           "opponentSlug": "mark-rawson",
-          "fixtureKey": "2026|2|ksb-lions|whalley-ospreys|1790148065",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Ospreys",
             "slug": "whalley-ospreys"
@@ -292180,7 +292884,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Mark Rawson",
           "opponentSlug": "mark-rawson",
-          "fixtureKey": "2026|2|ksb-lions|whalley-ospreys|1790148065",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Ospreys",
             "slug": "whalley-ospreys"
@@ -293753,7 +294457,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Martin Astle",
           "opponentSlug": "martin-astle",
-          "fixtureKey": "2026|3|whalley-merlins|ksb-panthers-jun|1790685087",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Merlins",
             "slug": "whalley-merlins"
@@ -294005,7 +294709,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Martin Astle",
           "opponentSlug": "martin-astle",
-          "fixtureKey": "2026|3|whalley-merlins|ksb-panthers-jun|1790685087",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Merlins",
             "slug": "whalley-merlins"
@@ -294513,7 +295217,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Martin Astle",
           "opponentSlug": "martin-astle",
-          "fixtureKey": "2026|3|whalley-merlins|ksb-panthers-jun|1790685087",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Merlins",
             "slug": "whalley-merlins"
@@ -298414,7 +299118,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Martin Fox",
           "opponentSlug": "martin-fox",
-          "fixtureKey": "2026|1|ksb-jaguars|whalley-hawks|1789564962",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Hawks",
             "slug": "whalley-hawks"
@@ -298794,7 +299498,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Martin Fox",
           "opponentSlug": "martin-fox",
-          "fixtureKey": "2026|1|ksb-jaguars|whalley-hawks|1789564962",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Hawks",
             "slug": "whalley-hawks"
@@ -299302,7 +300006,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Martin Fox",
           "opponentSlug": "martin-fox",
-          "fixtureKey": "2026|1|ksb-jaguars|whalley-hawks|1789564962",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Hawks",
             "slug": "whalley-hawks"
@@ -299495,7 +300199,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Martin Holmes",
           "opponentSlug": "martin-holmes",
-          "fixtureKey": "2026|1|ksb-jaguars|whalley-hawks|1789564962",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Hawks",
             "slug": "whalley-hawks"
@@ -299779,7 +300483,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Martin Holmes",
           "opponentSlug": "martin-holmes",
-          "fixtureKey": "2026|1|ksb-jaguars|whalley-hawks|1789564962",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Hawks",
             "slug": "whalley-hawks"
@@ -299999,7 +300703,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Martin Holmes",
           "opponentSlug": "martin-holmes",
-          "fixtureKey": "2026|1|ksb-jaguars|whalley-hawks|1789564962",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Hawks",
             "slug": "whalley-hawks"
@@ -304184,7 +304888,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Martin Wyatt",
           "opponentSlug": "martin-wyatt",
-          "fixtureKey": "2026|2|ksb-a|spartans|1790237581",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Spartans",
             "slug": "spartans"
@@ -304596,7 +305300,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Martin Wyatt",
           "opponentSlug": "martin-wyatt",
-          "fixtureKey": "2026|2|ksb-a|spartans|1790237581",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Spartans",
             "slug": "spartans"
@@ -304688,7 +305392,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Martin Wyatt",
           "opponentSlug": "martin-wyatt",
-          "fixtureKey": "2026|2|ksb-a|spartans|1790237581",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Spartans",
             "slug": "spartans"
@@ -314301,7 +315005,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Michael Rostron",
           "opponentSlug": "michael-rostron",
-          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Brierfield",
             "slug": "brierfield"
@@ -315865,7 +316569,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Michael Rostron",
           "opponentSlug": "michael-rostron",
-          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Brierfield",
             "slug": "brierfield"
@@ -317717,7 +318421,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Michael Rostron",
           "opponentSlug": "michael-rostron",
-          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Brierfield",
             "slug": "brierfield"
@@ -323510,7 +324214,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Mick Swindells",
           "opponentSlug": "mick-swindells",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -323634,7 +324338,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Mick Swindells",
           "opponentSlug": "mick-swindells",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -324302,7 +325006,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Mick Swindells",
           "opponentSlug": "mick-swindells",
-          "fixtureKey": "2026|2|ksb-e|burnley-hornets|1790328493",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Hornets",
             "slug": "burnley-hornets"
@@ -328563,7 +329267,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Mohan Attanayaka",
           "opponentSlug": "mohan-attanayaka",
-          "fixtureKey": "2026|1|ksb-d|vanguard-phantoms|1789651371",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Phantoms",
             "slug": "vanguard-phantoms"
@@ -329487,7 +330191,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Mohan Attanayaka",
           "opponentSlug": "mohan-attanayaka",
-          "fixtureKey": "2026|1|ksb-d|vanguard-phantoms|1789651371",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Phantoms",
             "slug": "vanguard-phantoms"
@@ -329963,7 +330667,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Mohan Attanayaka",
           "opponentSlug": "mohan-attanayaka",
-          "fixtureKey": "2026|1|ksb-d|vanguard-phantoms|1789651371",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Phantoms",
             "slug": "vanguard-phantoms"
@@ -334372,7 +335076,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Neil Graham",
           "opponentSlug": "neil-graham",
-          "fixtureKey": "2026|3|burnley-dragon-flies|ksb-leopards-jun|1790684939",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Dragon Flies",
             "slug": "burnley-dragon-flies"
@@ -334432,7 +335136,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Neil Graham",
           "opponentSlug": "neil-graham",
-          "fixtureKey": "2026|3|burnley-dragon-flies|ksb-leopards-jun|1790684939",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Dragon Flies",
             "slug": "burnley-dragon-flies"
@@ -334460,7 +335164,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Neil Graham",
           "opponentSlug": "neil-graham",
-          "fixtureKey": "2026|3|burnley-dragon-flies|ksb-leopards-jun|1790684939",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Dragon Flies",
             "slug": "burnley-dragon-flies"
@@ -335317,7 +336021,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Neil Hepworth",
           "opponentSlug": "neil-hepworth",
-          "fixtureKey": "2026|1|ksb-d|vanguard-phantoms|1789651371",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Phantoms",
             "slug": "vanguard-phantoms"
@@ -336561,7 +337265,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Neil Hepworth",
           "opponentSlug": "neil-hepworth",
-          "fixtureKey": "2026|1|ksb-d|vanguard-phantoms|1789651371",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Phantoms",
             "slug": "vanguard-phantoms"
@@ -337389,7 +338093,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Neil Hepworth",
           "opponentSlug": "neil-hepworth",
-          "fixtureKey": "2026|1|ksb-d|vanguard-phantoms|1789651371",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Phantoms",
             "slug": "vanguard-phantoms"
@@ -350194,7 +350898,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Oliver Fox",
           "opponentSlug": "oliver-fox",
-          "fixtureKey": "2026|1|gladiators|ksb-a|1789996025",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Gladiators",
             "slug": "gladiators"
@@ -350318,7 +351022,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Oliver Fox",
           "opponentSlug": "oliver-fox",
-          "fixtureKey": "2026|1|gladiators|ksb-a|1789996025",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Gladiators",
             "slug": "gladiators"
@@ -350346,7 +351050,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Oliver Fox",
           "opponentSlug": "oliver-fox",
-          "fixtureKey": "2026|1|gladiators|ksb-a|1789996025",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Gladiators",
             "slug": "gladiators"
@@ -350807,7 +351511,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Ollie Bradshaw",
           "opponentSlug": "ollie-bradshaw",
-          "fixtureKey": "2026|2|ksb-tigers|ksb-jaguars|1790067060",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Tigers",
             "slug": "ksb-tigers"
@@ -351155,7 +351859,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Ollie Bradshaw",
           "opponentSlug": "ollie-bradshaw",
-          "fixtureKey": "2026|2|ksb-tigers|ksb-jaguars|1790067060",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Tigers",
             "slug": "ksb-tigers"
@@ -351215,7 +351919,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Ollie Bradshaw",
           "opponentSlug": "ollie-bradshaw",
-          "fixtureKey": "2026|2|ksb-tigers|ksb-jaguars|1790067060",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Tigers",
             "slug": "ksb-tigers"
@@ -354104,7 +354808,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Patrick Kinsella",
           "opponentSlug": "patrick_kinsella",
-          "fixtureKey": "2026|1|ksb-b|vanguard-raptors|1789651114",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -354132,7 +354836,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Patrick Kinsella",
           "opponentSlug": "patrick_kinsella",
-          "fixtureKey": "2026|1|ksb-b|vanguard-raptors|1789651114",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -354160,7 +354864,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Patrick Kinsella",
           "opponentSlug": "patrick_kinsella",
-          "fixtureKey": "2026|2|vanguard-raptors|ksb-c|1790066915",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -354188,7 +354892,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Patrick Kinsella",
           "opponentSlug": "patrick_kinsella",
-          "fixtureKey": "2026|2|vanguard-raptors|ksb-c|1790066915",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -354216,7 +354920,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Patrick Kinsella",
           "opponentSlug": "patrick_kinsella",
-          "fixtureKey": "2026|2|vanguard-raptors|ksb-c|1790066915",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -354244,7 +354948,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Patrick Kinsella",
           "opponentSlug": "patrick_kinsella",
-          "fixtureKey": "2026|1|ksb-b|vanguard-raptors|1789651114",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -357361,7 +358065,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Paul Crabtree",
           "opponentSlug": "paul-crabtree",
-          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Brierfield",
             "slug": "brierfield"
@@ -358221,7 +358925,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Paul Crabtree",
           "opponentSlug": "paul-crabtree",
-          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Brierfield",
             "slug": "brierfield"
@@ -359273,7 +359977,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Paul Crabtree",
           "opponentSlug": "paul-crabtree",
-          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Brierfield",
             "slug": "brierfield"
@@ -362586,7 +363290,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Paul Rush",
           "opponentSlug": "paul-rush",
-          "fixtureKey": "2026|2|burnley-wasps|ksb-pumas-jun|1790067269",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Wasps",
             "slug": "burnley-wasps"
@@ -362838,7 +363542,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Paul Rush",
           "opponentSlug": "paul-rush",
-          "fixtureKey": "2026|2|burnley-wasps|ksb-pumas-jun|1790067269",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Wasps",
             "slug": "burnley-wasps"
@@ -364210,7 +364914,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Paul Rush",
           "opponentSlug": "paul-rush",
-          "fixtureKey": "2026|2|burnley-wasps|ksb-pumas-jun|1790067269",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Wasps",
             "slug": "burnley-wasps"
@@ -373171,7 +373875,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Paulina Gauweda",
           "opponentSlug": "paulina_gauweda",
-          "fixtureKey": "2026|3|burnley-dragon-flies|ksb-leopards-jun|1790684939",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Dragon Flies",
             "slug": "burnley-dragon-flies"
@@ -373199,7 +373903,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Paulina Gauweda",
           "opponentSlug": "paulina_gauweda",
-          "fixtureKey": "2026|3|burnley-dragon-flies|ksb-leopards-jun|1790684939",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Dragon Flies",
             "slug": "burnley-dragon-flies"
@@ -373227,7 +373931,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Paulina Gauweda",
           "opponentSlug": "paulina_gauweda",
-          "fixtureKey": "2026|3|burnley-dragon-flies|ksb-leopards-jun|1790684939",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Dragon Flies",
             "slug": "burnley-dragon-flies"
@@ -380192,7 +380896,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Peter Howard",
           "opponentSlug": "peter-howard",
-          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Brierfield",
             "slug": "brierfield"
@@ -381596,7 +382300,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Peter Howard",
           "opponentSlug": "peter-howard",
-          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Brierfield",
             "slug": "brierfield"
@@ -383448,7 +384152,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Peter Howard",
           "opponentSlug": "peter-howard",
-          "fixtureKey": "2026|3|ksb-jaguars|brierfield|1790756837",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Brierfield",
             "slug": "brierfield"
@@ -389348,7 +390052,7 @@
       "name": "Phil Mileham",
       "slug": "phil-mileham",
       "firstKnownKSBSeason": 2013,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2013,
@@ -389580,6 +390284,27 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/phil-mileham",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "id": 88,
+            "name": "Phil Mileham",
+            "slug": "phil-mileham",
+            "rank": 2373
+          },
+          "team": {
+            "id": 26,
+            "name": "Whalley Kestrels",
+            "slug": "whalley-kestrels",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2373
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/phil-mileham",
+            "status": "success"
+          }
         }
       ],
       "ksbSeasons": [
@@ -389593,17 +390318,18 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 82,
+        "played": 83,
         "wins": 36,
         "draws": 0,
-        "losses": 46,
-        "winPercentage": 43.9,
-        "setsWon": 144,
-        "setsLost": 163,
-        "setDifference": -19
+        "losses": 47,
+        "winPercentage": 43.37,
+        "setsWon": 145,
+        "setsLost": 166,
+        "setDifference": -21
       },
       "ksbBySeason": {
         "2013": {
@@ -389715,6 +390441,16 @@
           "setsWon": 11,
           "setsLost": 19,
           "setDifference": -8
+        },
+        "2026": {
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 0.0,
+          "setsWon": 1,
+          "setsLost": 3,
+          "setDifference": -2
         }
       },
       "ksbByTeam": {
@@ -389789,6 +390525,18 @@
           "setsWon": 0,
           "setsLost": 3,
           "setDifference": -3
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 0.0,
+          "setsWon": 1,
+          "setsLost": 3,
+          "setDifference": -2
         }
       },
       "ksbEncounters": [
@@ -389823,6 +390571,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 2220
+        },
+        {
+          "id": 43286,
+          "season": 2026,
+          "ksbPlayer": "Alex Gavin",
+          "ksbPlayerSlug": "alex-gavin",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Alex Gavin",
+          "playerLeftSlug": "alex-gavin",
+          "playerRightName": "Phil Mileham",
+          "playerRightSlug": "phil-mileham",
+          "playerRankChangeLeft": 0,
+          "playerRankChangeRight": 0,
+          "ksbPlayerScore": 1,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Phil Mileham",
+          "opponentSlug": "phil-mileham",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 26,
+            "name": "Whalley Kestrels",
+            "slug": "whalley-kestrels",
+            "divisionId": 1,
+            "division": null,
+            "rank": 2373
+          },
+          "opponentDivision": null,
+          "opponentRank": 2373
         },
         {
           "id": 19471,
@@ -395437,7 +396217,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Phillip Austin",
           "opponentSlug": "austin-phillip",
-          "fixtureKey": "2026|2|ksb-lions|whalley-ospreys|1790148065",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Ospreys",
             "slug": "whalley-ospreys"
@@ -396201,7 +396981,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Phillip Austin",
           "opponentSlug": "austin-phillip",
-          "fixtureKey": "2026|2|ksb-lions|whalley-ospreys|1790148065",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Ospreys",
             "slug": "whalley-ospreys"
@@ -397253,7 +398033,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Phillip Austin",
           "opponentSlug": "austin-phillip",
-          "fixtureKey": "2026|2|ksb-lions|whalley-ospreys|1790148065",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Ospreys",
             "slug": "whalley-ospreys"
@@ -399250,7 +400030,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Rafeeq Sulaiman",
           "opponentSlug": "rafeeq-sulaiman",
-          "fixtureKey": "2026|1|whalley-falcons|ksb-f|1789507194",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Falcons",
             "slug": "whalley-falcons"
@@ -399534,7 +400314,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Rafeeq Sulaiman",
           "opponentSlug": "rafeeq-sulaiman",
-          "fixtureKey": "2026|1|whalley-falcons|ksb-f|1789507194",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Falcons",
             "slug": "whalley-falcons"
@@ -399850,7 +400630,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Rafeeq Sulaiman",
           "opponentSlug": "rafeeq-sulaiman",
-          "fixtureKey": "2026|1|whalley-falcons|ksb-f|1789507194",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Falcons",
             "slug": "whalley-falcons"
@@ -406307,7 +407087,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Richard Tokeley",
           "opponentSlug": "richard-tokeley",
-          "fixtureKey": "2026|1|ksb-b|vanguard-raptors|1789651114",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -406431,7 +407211,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Richard Tokeley",
           "opponentSlug": "richard-tokeley",
-          "fixtureKey": "2026|1|ksb-b|vanguard-raptors|1789651114",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -406811,7 +407591,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Richard Tokeley",
           "opponentSlug": "richard-tokeley",
-          "fixtureKey": "2026|2|vanguard-raptors|ksb-c|1790066915",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -406967,7 +407747,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Richard Tokeley",
           "opponentSlug": "richard-tokeley",
-          "fixtureKey": "2026|2|vanguard-raptors|ksb-c|1790066915",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -407859,7 +408639,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Richard Tokeley",
           "opponentSlug": "richard-tokeley",
-          "fixtureKey": "2026|2|vanguard-raptors|ksb-c|1790066915",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -408591,7 +409371,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Richard Tokeley",
           "opponentSlug": "richard-tokeley",
-          "fixtureKey": "2026|1|ksb-b|vanguard-raptors|1789651114",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Raptors",
             "slug": "vanguard-raptors"
@@ -409204,39 +409984,39 @@
         2026
       ],
       "ksbCareer": {
-        "played": 1,
+        "played": 2,
         "wins": 0,
         "draws": 0,
-        "losses": 1,
+        "losses": 2,
         "winPercentage": 0.0,
         "setsWon": 0,
-        "setsLost": 3,
-        "setDifference": -3
+        "setsLost": 6,
+        "setDifference": -6
       },
       "ksbBySeason": {
         "2026": {
-          "played": 1,
+          "played": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "winPercentage": 0.0,
           "setsWon": 0,
-          "setsLost": 3,
-          "setDifference": -3
+          "setsLost": 6,
+          "setDifference": -6
         }
       },
       "ksbByTeam": {
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 1,
+          "played": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "winPercentage": 0.0,
           "setsWon": 0,
-          "setsLost": 3,
-          "setDifference": -3
+          "setsLost": 6,
+          "setDifference": -6
         }
       },
       "ksbEncounters": [
@@ -409255,6 +410035,34 @@
           "playerRightSlug": "rob-hall",
           "playerRankChangeLeft": 0,
           "playerRankChangeRight": 0,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Rob Hall",
+          "opponentSlug": "rob-hall",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Hyndburn TTC A",
+            "slug": "hyndburn-ttc-a"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 43303,
+          "season": 2026,
+          "ksbPlayer": "Ian Cockcroft",
+          "ksbPlayerSlug": "ian-cockcroft",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Ian Cockcroft",
+          "playerLeftSlug": "ian-cockcroft",
+          "playerRightName": "Rob Hall",
+          "playerRightSlug": "rob-hall",
+          "playerRankChangeLeft": -3,
+          "playerRankChangeRight": 5,
           "ksbPlayerScore": 0,
           "opponentScore": 3,
           "resultForKSBPlayer": "L",
@@ -426089,7 +426897,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Rory Wilson-Tidswell",
           "opponentSlug": "rory-wilson-tidswell",
-          "fixtureKey": "2026|1|whalley-harriers|ksb-leopards-jun|1789427193",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Harriers",
             "slug": "whalley-harriers"
@@ -426117,7 +426925,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Rory Wilson-Tidswell",
           "opponentSlug": "rory-wilson-tidswell",
-          "fixtureKey": "2026|1|whalley-harriers|ksb-leopards-jun|1789427193",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Harriers",
             "slug": "whalley-harriers"
@@ -426145,7 +426953,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Rory Wilson-Tidswell",
           "opponentSlug": "rory-wilson-tidswell",
-          "fixtureKey": "2026|1|whalley-harriers|ksb-leopards-jun|1789427193",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Harriers",
             "slug": "whalley-harriers"
@@ -426574,7 +427382,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Rosie Bacon",
           "opponentSlug": "rosie-bacon",
-          "fixtureKey": "2026|1|ksb-pumas-jun|ksb-panthers-jun|1789478886",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Pumas (Jun)",
             "slug": "ksb-pumas-jun"
@@ -426730,7 +427538,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Rosie Bacon",
           "opponentSlug": "rosie-bacon",
-          "fixtureKey": "2026|1|ksb-pumas-jun|ksb-panthers-jun|1789478886",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Pumas (Jun)",
             "slug": "ksb-pumas-jun"
@@ -429787,7 +430595,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Ryan Fallon",
           "opponentSlug": "ryan-fallon",
-          "fixtureKey": "2026|1|ksb-d|vanguard-phantoms|1789651371",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Phantoms",
             "slug": "vanguard-phantoms"
@@ -431351,7 +432159,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Ryan Fallon",
           "opponentSlug": "ryan-fallon",
-          "fixtureKey": "2026|1|ksb-d|vanguard-phantoms|1789651371",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Phantoms",
             "slug": "vanguard-phantoms"
@@ -432499,7 +433307,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Ryan Fallon",
           "opponentSlug": "ryan-fallon",
-          "fixtureKey": "2026|1|ksb-d|vanguard-phantoms|1789651371",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Phantoms",
             "slug": "vanguard-phantoms"
@@ -433016,7 +433824,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Ryan Halstead",
           "opponentSlug": "ryan-halstead",
-          "fixtureKey": "2026|1|ksb-pumas-jun|ksb-panthers-jun|1789478886",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Pumas (Jun)",
             "slug": "ksb-pumas-jun"
@@ -433044,7 +433852,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Ryan Halstead",
           "opponentSlug": "ryan-halstead",
-          "fixtureKey": "2026|1|ksb-pumas-jun|ksb-panthers-jun|1789478886",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Pumas (Jun)",
             "slug": "ksb-pumas-jun"
@@ -433072,7 +433880,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Ryan Halstead",
           "opponentSlug": "ryan-halstead",
-          "fixtureKey": "2026|1|ksb-pumas-jun|ksb-panthers-jun|1789478886",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "KSB Pumas (Jun)",
             "slug": "ksb-pumas-jun"
@@ -433541,7 +434349,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Sam Bell",
           "opponentSlug": "sam-bell",
-          "fixtureKey": "2026|3|whalley-merlins|ksb-panthers-jun|1790685087",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Merlins",
             "slug": "whalley-merlins"
@@ -434081,7 +434889,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Sam Bell",
           "opponentSlug": "sam-bell",
-          "fixtureKey": "2026|3|whalley-merlins|ksb-panthers-jun|1790685087",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Merlins",
             "slug": "whalley-merlins"
@@ -435133,7 +435941,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Sam Bell",
           "opponentSlug": "sam-bell",
-          "fixtureKey": "2026|3|whalley-merlins|ksb-panthers-jun|1790685087",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Merlins",
             "slug": "whalley-merlins"
@@ -439565,7 +440373,7 @@
       "name": "Sam Richardson",
       "slug": "sam-richardson",
       "firstKnownKSBSeason": 2023,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2023,
@@ -439629,22 +440437,44 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/sam-richardson",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "id": 637,
+            "name": "Sam Richardson",
+            "slug": "sam-richardson",
+            "rank": 1690
+          },
+          "team": {
+            "id": 90,
+            "name": "KSB E",
+            "slug": "ksb-e",
+            "divisionId": 2,
+            "division": null,
+            "rank": 1690
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/sam-richardson",
+            "status": "success"
+          }
         }
       ],
       "ksbSeasons": [
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 12,
-        "wins": 11,
+        "played": 14,
+        "wins": 12,
         "draws": 0,
-        "losses": 1,
-        "winPercentage": 91.67,
-        "setsWon": 34,
-        "setsLost": 10,
-        "setDifference": 24
+        "losses": 2,
+        "winPercentage": 85.71,
+        "setsWon": 39,
+        "setsLost": 13,
+        "setDifference": 26
       },
       "ksbBySeason": {
         "2023": {
@@ -439676,6 +440506,16 @@
           "setsWon": 22,
           "setsLost": 7,
           "setDifference": 15
+        },
+        "2026": {
+          "played": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 50.0,
+          "setsWon": 5,
+          "setsLost": 3,
+          "setDifference": 2
         }
       },
       "ksbByTeam": {
@@ -439702,6 +440542,18 @@
           "setsWon": 15,
           "setsLost": 1,
           "setDifference": 14
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 50.0,
+          "setsWon": 5,
+          "setsLost": 3,
+          "setDifference": 2
         }
       },
       "ksbEncounters": [
@@ -439832,6 +440684,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 1725
+        },
+        {
+          "id": 43295,
+          "season": 2026,
+          "ksbPlayer": "Bernard Milnes",
+          "ksbPlayerSlug": "bernard-milnes",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 2,
+          "scoreRight": 3,
+          "playerLeftName": "Bernard Milnes",
+          "playerLeftSlug": "bernard-milnes",
+          "playerRightName": "Sam Richardson",
+          "playerRightSlug": "sam-richardson",
+          "playerRankChangeLeft": -8,
+          "playerRankChangeRight": 12,
+          "ksbPlayerScore": 2,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Sam Richardson",
+          "opponentSlug": "sam-richardson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 90,
+            "name": "KSB E",
+            "slug": "ksb-e",
+            "divisionId": 2,
+            "division": null,
+            "rank": 1690
+          },
+          "opponentDivision": null,
+          "opponentRank": 1690
         },
         {
           "id": 33496,
@@ -439992,6 +440876,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 1725
+        },
+        {
+          "id": 43300,
+          "season": 2026,
+          "ksbPlayer": "Mark Gavin",
+          "ksbPlayerSlug": "mark-gavin",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Mark Gavin",
+          "playerLeftSlug": "mark-gavin",
+          "playerRightName": "Sam Richardson",
+          "playerRightSlug": "sam-richardson",
+          "playerRankChangeLeft": 5,
+          "playerRankChangeRight": -3,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Sam Richardson",
+          "opponentSlug": "sam-richardson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 90,
+            "name": "KSB E",
+            "slug": "ksb-e",
+            "divisionId": 2,
+            "division": null,
+            "rank": 1690
+          },
+          "opponentDivision": null,
+          "opponentRank": 1690
         },
         {
           "id": 41542,
@@ -451054,7 +451970,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Simon Brooke",
           "opponentSlug": "simon_brooke",
-          "fixtureKey": "2026|2|ksb-a|spartans|1790237581",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Spartans",
             "slug": "spartans"
@@ -451082,7 +451998,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Simon Brooke",
           "opponentSlug": "simon_brooke",
-          "fixtureKey": "2026|2|ksb-a|spartans|1790237581",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Spartans",
             "slug": "spartans"
@@ -451110,7 +452026,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Simon Brooke",
           "opponentSlug": "simon_brooke",
-          "fixtureKey": "2026|2|ksb-a|spartans|1790237581",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Spartans",
             "slug": "spartans"
@@ -457963,7 +458879,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Stephen Carpanini",
           "opponentSlug": "stephen_carpanina",
-          "fixtureKey": "2026|3|ksb-pumas-jun|burnley-scorpions|1790684722",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Scorpions",
             "slug": "burnley-scorpions"
@@ -457991,7 +458907,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Stephen Carpanini",
           "opponentSlug": "stephen_carpanina",
-          "fixtureKey": "2026|3|ksb-pumas-jun|burnley-scorpions|1790684722",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Scorpions",
             "slug": "burnley-scorpions"
@@ -458019,7 +458935,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Stephen Carpanini",
           "opponentSlug": "stephen_carpanina",
-          "fixtureKey": "2026|3|ksb-pumas-jun|burnley-scorpions|1790684722",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Scorpions",
             "slug": "burnley-scorpions"
@@ -462848,7 +463764,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Steve Axell",
           "opponentSlug": "steve-axell",
-          "fixtureKey": "2026|3|whalley-merlins|ksb-panthers-jun|1790685087",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Merlins",
             "slug": "whalley-merlins"
@@ -462876,7 +463792,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Steve Axell",
           "opponentSlug": "steve-axell",
-          "fixtureKey": "2026|3|whalley-merlins|ksb-panthers-jun|1790685087",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Merlins",
             "slug": "whalley-merlins"
@@ -462904,7 +463820,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Steve Axell",
           "opponentSlug": "steve-axell",
-          "fixtureKey": "2026|3|whalley-merlins|ksb-panthers-jun|1790685087",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Whalley Merlins",
             "slug": "whalley-merlins"
@@ -463102,14 +464018,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 40,
+        "played": 42,
         "wins": 11,
         "draws": 0,
-        "losses": 29,
-        "winPercentage": 27.5,
-        "setsWon": 51,
-        "setsLost": 94,
-        "setDifference": -43
+        "losses": 31,
+        "winPercentage": 26.19,
+        "setsWon": 52,
+        "setsLost": 100,
+        "setDifference": -48
       },
       "ksbBySeason": {
         "2014": {
@@ -463183,14 +464099,14 @@
           "setDifference": -3
         },
         "2026": {
-          "played": 1,
+          "played": 3,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
-          "winPercentage": 100.0,
-          "setsWon": 3,
-          "setsLost": 0,
-          "setDifference": 3
+          "losses": 2,
+          "winPercentage": 33.33,
+          "setsWon": 4,
+          "setsLost": 6,
+          "setDifference": -2
         }
       },
       "ksbByTeam": {
@@ -463245,14 +464161,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 1,
+          "played": 3,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
-          "winPercentage": 100.0,
-          "setsWon": 3,
-          "setsLost": 0,
-          "setDifference": 3
+          "losses": 2,
+          "winPercentage": 33.33,
+          "setsWon": 4,
+          "setsLost": 6,
+          "setDifference": -2
         }
       },
       "ksbEncounters": [
@@ -463801,6 +464717,38 @@
           "opponentRank": 2007
         },
         {
+          "id": 43293,
+          "season": 2026,
+          "ksbPlayer": "David Greenwood",
+          "ksbPlayerSlug": "david-greenwood",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 1,
+          "playerLeftName": "Steve Horner",
+          "playerLeftSlug": "steve-horner",
+          "playerRightName": "David Greenwood",
+          "playerRightSlug": "david-greenwood",
+          "playerRankChangeLeft": 0,
+          "playerRankChangeRight": 0,
+          "ksbPlayerScore": 1,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Steve Horner",
+          "opponentSlug": "steve-horner",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 20,
+            "name": "KSB D",
+            "slug": "ksb-d",
+            "divisionId": 2,
+            "division": null,
+            "rank": 1920
+          },
+          "opponentDivision": null,
+          "opponentRank": 1920
+        },
+        {
           "id": 34283,
           "season": 2023,
           "ksbPlayer": "David Mottershead",
@@ -464311,6 +465259,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 2007
+        },
+        {
+          "id": 43297,
+          "season": 2026,
+          "ksbPlayer": "Sam Richardson",
+          "ksbPlayerSlug": "sam-richardson",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Steve Horner",
+          "playerLeftSlug": "steve-horner",
+          "playerRightName": "Sam Richardson",
+          "playerRightSlug": "sam-richardson",
+          "playerRankChangeLeft": 5,
+          "playerRankChangeRight": -3,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Steve Horner",
+          "opponentSlug": "steve-horner",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 20,
+            "name": "KSB D",
+            "slug": "ksb-d",
+            "divisionId": 2,
+            "division": null,
+            "rank": 1920
+          },
+          "opponentDivision": null,
+          "opponentRank": 1920
         },
         {
           "id": 5050,
@@ -469513,7 +470493,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Stuart Oliver",
           "opponentSlug": "stuart_oliver",
-          "fixtureKey": "2026|2|ksb-leopards-jun|vanguard-typhoons|1790067146",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Typhoons",
             "slug": "vanguard-typhoons"
@@ -469541,7 +470521,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Stuart Oliver",
           "opponentSlug": "stuart_oliver",
-          "fixtureKey": "2026|2|ksb-leopards-jun|vanguard-typhoons|1790067146",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Typhoons",
             "slug": "vanguard-typhoons"
@@ -469569,7 +470549,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Stuart Oliver",
           "opponentSlug": "stuart_oliver",
-          "fixtureKey": "2026|2|ksb-leopards-jun|vanguard-typhoons|1790067146",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Vanguard Typhoons",
             "slug": "vanguard-typhoons"
@@ -473290,7 +474270,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Susan Crook",
           "opponentSlug": "susan_crook",
-          "fixtureKey": "2026|1|slayers|ksb-lions|1789650946",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -473318,7 +474298,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Susan Crook",
           "opponentSlug": "susan_crook",
-          "fixtureKey": "2026|2|ksb-g|slayers|1790147443",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -473346,7 +474326,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Susan Crook",
           "opponentSlug": "susan_crook",
-          "fixtureKey": "2026|2|ksb-g|slayers|1790147443",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -473374,7 +474354,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Susan Crook",
           "opponentSlug": "susan_crook",
-          "fixtureKey": "2026|2|ksb-g|slayers|1790147443",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -473402,7 +474382,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Susan Crook",
           "opponentSlug": "susan_crook",
-          "fixtureKey": "2026|1|slayers|ksb-lions|1789650946",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Slayers",
             "slug": "slayers"
@@ -473995,7 +474975,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Teddy Robinson",
           "opponentSlug": "teddy-robinson",
-          "fixtureKey": "2026|1|ksb-c|rovers|1789565150",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Rovers",
             "slug": "rovers"
@@ -475015,7 +475995,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Teddy Robinson",
           "opponentSlug": "teddy-robinson",
-          "fixtureKey": "2026|1|ksb-c|rovers|1789565150",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Rovers",
             "slug": "rovers"
@@ -475427,7 +476407,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Teddy Robinson",
           "opponentSlug": "teddy-robinson",
-          "fixtureKey": "2026|1|ksb-c|rovers|1789565150",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Rovers",
             "slug": "rovers"
@@ -478228,7 +479208,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Thomas Sheard",
           "opponentSlug": "thomas-sheard",
-          "fixtureKey": "2026|1|hyndburn-ttc-a|ksb-g|1789478674",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC A",
             "slug": "hyndburn-ttc-a"
@@ -478416,7 +479396,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Thomas Sheard",
           "opponentSlug": "thomas-sheard",
-          "fixtureKey": "2026|1|hyndburn-ttc-a|ksb-g|1789478674",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC A",
             "slug": "hyndburn-ttc-a"
@@ -478700,7 +479680,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Thomas Sheard",
           "opponentSlug": "thomas-sheard",
-          "fixtureKey": "2026|1|hyndburn-ttc-a|ksb-g|1789478674",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Hyndburn TTC A",
             "slug": "hyndburn-ttc-a"
@@ -487825,7 +488805,7 @@
       "name": "Trevor Elkington",
       "slug": "trevor-elkington",
       "firstKnownKSBSeason": 2014,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2014,
@@ -488015,6 +488995,27 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/trevor-elkington",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "id": 66,
+            "name": "Trevor Elkington",
+            "slug": "trevor-elkington",
+            "rank": 2063
+          },
+          "team": {
+            "id": 90,
+            "name": "KSB E",
+            "slug": "ksb-e",
+            "divisionId": 2,
+            "division": null,
+            "rank": 2063
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/trevor-elkington",
+            "status": "success"
+          }
         }
       ],
       "ksbSeasons": [
@@ -488026,17 +489027,18 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 57,
-        "wins": 8,
+        "played": 60,
+        "wins": 9,
         "draws": 0,
-        "losses": 49,
-        "winPercentage": 14.04,
-        "setsWon": 35,
-        "setsLost": 155,
-        "setDifference": -120
+        "losses": 51,
+        "winPercentage": 15.0,
+        "setsWon": 40,
+        "setsLost": 163,
+        "setDifference": -123
       },
       "ksbBySeason": {
         "2014": {
@@ -488128,6 +489130,16 @@
           "setsWon": 7,
           "setsLost": 16,
           "setDifference": -9
+        },
+        "2026": {
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "winPercentage": 33.33,
+          "setsWon": 5,
+          "setsLost": 8,
+          "setDifference": -3
         }
       },
       "ksbByTeam": {
@@ -488201,6 +489213,18 @@
           "winPercentage": 0.0,
           "setsWon": 0,
           "setsLost": 3,
+          "setDifference": -3
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "winPercentage": 33.33,
+          "setsWon": 5,
+          "setsLost": 8,
           "setDifference": -3
         }
       },
@@ -488460,6 +489484,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 2193
+        },
+        {
+          "id": 43299,
+          "season": 2026,
+          "ksbPlayer": "Bernard Milnes",
+          "ksbPlayerSlug": "bernard-milnes",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Bernard Milnes",
+          "playerLeftSlug": "bernard-milnes",
+          "playerRightName": "Trevor Elkington",
+          "playerRightSlug": "trevor-elkington",
+          "playerRankChangeLeft": -2,
+          "playerRankChangeRight": 3,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Trevor Elkington",
+          "opponentSlug": "trevor-elkington",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 90,
+            "name": "KSB E",
+            "slug": "ksb-e",
+            "divisionId": 2,
+            "division": null,
+            "rank": 2063
+          },
+          "opponentDivision": null,
+          "opponentRank": 2063
         },
         {
           "id": 30011,
@@ -489454,6 +490510,38 @@
           "opponentRank": 1942
         },
         {
+          "id": 43294,
+          "season": 2026,
+          "ksbPlayer": "Mark Gavin",
+          "ksbPlayerSlug": "mark-gavin",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 2,
+          "playerLeftName": "Mark Gavin",
+          "playerLeftSlug": "mark-gavin",
+          "playerRightName": "Trevor Elkington",
+          "playerRightSlug": "trevor-elkington",
+          "playerRankChangeLeft": 33,
+          "playerRankChangeRight": -22,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "Trevor Elkington",
+          "opponentSlug": "trevor-elkington",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 90,
+            "name": "KSB E",
+            "slug": "ksb-e",
+            "divisionId": 2,
+            "division": null,
+            "rank": 2063
+          },
+          "opponentDivision": null,
+          "opponentRank": 2063
+        },
+        {
           "id": 39882,
           "season": 2025,
           "ksbPlayer": "Matt Hodgkinson",
@@ -490028,6 +491116,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 2144
+        },
+        {
+          "id": 43302,
+          "season": 2026,
+          "ksbPlayer": "Steve Horner",
+          "ksbPlayerSlug": "steve-horner",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 2,
+          "scoreRight": 3,
+          "playerLeftName": "Steve Horner",
+          "playerLeftSlug": "steve-horner",
+          "playerRightName": "Trevor Elkington",
+          "playerRightSlug": "trevor-elkington",
+          "playerRankChangeLeft": -5,
+          "playerRankChangeRight": 8,
+          "ksbPlayerScore": 2,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Trevor Elkington",
+          "opponentSlug": "trevor-elkington",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 90,
+            "name": "KSB E",
+            "slug": "ksb-e",
+            "divisionId": 2,
+            "division": null,
+            "rank": 2063
+          },
+          "opponentDivision": null,
+          "opponentRank": 2063
         }
       ],
       "apiStatus": "success",
@@ -493278,7 +494398,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Vacas Ahmed",
           "opponentSlug": "vacas-ahmed",
-          "fixtureKey": "2026|3|burnley-bees|ksb-lions|1790685421",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Bees",
             "slug": "burnley-bees"
@@ -493402,7 +494522,7 @@
           "resultForKSBPlayer": "L",
           "opponent": "Vacas Ahmed",
           "opponentSlug": "vacas-ahmed",
-          "fixtureKey": "2026|3|burnley-bees|ksb-lions|1790685421",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Bees",
             "slug": "burnley-bees"
@@ -493526,7 +494646,7 @@
           "resultForKSBPlayer": "W",
           "opponent": "Vacas Ahmed",
           "opponentSlug": "vacas-ahmed",
-          "fixtureKey": "2026|3|burnley-bees|ksb-lions|1790685421",
+          "fixtureKey": null,
           "opponentTeam": {
             "name": "Burnley Bees",
             "slug": "burnley-bees"
@@ -507273,9 +508393,9 @@
       "slug": "east-lancs",
       "divisions": {},
       "seasons": {
-        "2023": 18,
         "2018": 18,
         "2019": 18,
+        "2023": 18,
         "2022": 33,
         "2021": 18
       },
@@ -508979,18 +510099,18 @@
         "2019": 18,
         "2021": 18,
         "2023": 18,
-        "2026": 12,
+        "2026": 13,
         "2018": 18,
         "2022": 27,
         "2017": 3,
         "2013": 15
       },
-      "played": 129,
+      "played": 130,
       "wins": 82,
       "draws": 0,
-      "losses": 47,
+      "losses": 48,
       "setsWon": 285,
-      "setsLost": 191,
+      "setsLost": 194,
       "ksbPlayers": {
         "andy-cretney": {
           "name": "Andy Cretney",
@@ -509079,6 +510199,17 @@
           "setsWon": 56,
           "setsLost": 51,
           "setDifference": 5
+        },
+        "ian-cockcroft": {
+          "name": "Ian Cockcroft",
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 0.0,
+          "setsWon": 0,
+          "setsLost": 3,
+          "setDifference": -3
         },
         "john-hayhurst": {
           "name": "John Hayhurst",
@@ -509359,14 +510490,14 @@
         },
         "rob-hall": {
           "name": "Rob Hall",
-          "played": 1,
+          "played": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "winPercentage": 0.0,
           "setsWon": 0,
-          "setsLost": 3,
-          "setDifference": -3
+          "setsLost": 6,
+          "setDifference": -6
         },
         "thomas-sheard": {
           "name": "Thomas Sheard",
@@ -509391,8 +510522,8 @@
           "setDifference": -2
         }
       },
-      "winPercentage": 63.57,
-      "setDifference": 94
+      "winPercentage": 63.08,
+      "setDifference": 91
     },
     "hyndburn-ttc-b": {
       "name": "Hyndburn TTC B",
@@ -512359,7 +513490,7 @@
         "2016": 11,
         "2015": 29,
         "2017": 18,
-        "2026": 3,
+        "2026": 11,
         "2024": 12,
         "2025": 5,
         "2019": 7,
@@ -512368,12 +513499,12 @@
         "2022": 18,
         "2014": 1
       },
-      "played": 132,
-      "wins": 48,
+      "played": 140,
+      "wins": 54,
       "draws": 0,
-      "losses": 84,
-      "setsWon": 187,
-      "setsLost": 282,
+      "losses": 86,
+      "setsWon": 208,
+      "setsLost": 294,
       "ksbPlayers": {
         "andy-cretney": {
           "name": "Andy Cretney",
@@ -512452,6 +513583,17 @@
           "setsLost": 45,
           "setDifference": -17
         },
+        "hall-chris": {
+          "name": "Chris Hall",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "winPercentage": 33.33,
+          "setsWon": 6,
+          "setsLost": 7,
+          "setDifference": -1
+        },
         "craig-milnes": {
           "name": "Craig Milnes",
           "played": 17,
@@ -512465,14 +513607,14 @@
         },
         "daven-argile": {
           "name": "Daven Argile",
-          "played": 13,
-          "wins": 12,
+          "played": 16,
+          "wins": 15,
           "draws": 0,
           "losses": 1,
-          "winPercentage": 92.31,
-          "setsWon": 36,
-          "setsLost": 6,
-          "setDifference": 30
+          "winPercentage": 93.75,
+          "setsWon": 45,
+          "setsLost": 9,
+          "setDifference": 36
         },
         "david-doehren": {
           "name": "David Doehren",
@@ -512562,6 +513704,17 @@
           "setsLost": 2,
           "setDifference": 1
         },
+        "rob-hall": {
+          "name": "Rob Hall",
+          "played": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 6,
+          "setsLost": 2,
+          "setDifference": 4
+        },
         "simon-kavanagh": {
           "name": "Simon Kavanagh",
           "played": 2,
@@ -512597,6 +513750,17 @@
           "setsLost": 1,
           "setDifference": 2
         },
+        "chris-whitehead": {
+          "name": "Chris Whitehead",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 8,
+          "setsLost": 4,
+          "setDifference": 4
+        },
         "craig-milnes": {
           "name": "Craig Milnes",
           "played": 4,
@@ -512607,6 +513771,17 @@
           "setsWon": 11,
           "setsLost": 5,
           "setDifference": 6
+        },
+        "dave-jefferson": {
+          "name": "Dave Jefferson",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 7,
+          "setsLost": 6,
+          "setDifference": 1
         },
         "david-doehren": {
           "name": "David Doehren",
@@ -512665,14 +513840,14 @@
         },
         "ian-cockcroft": {
           "name": "Ian Cockcroft",
-          "played": 7,
-          "wins": 6,
+          "played": 9,
+          "wins": 8,
           "draws": 0,
           "losses": 1,
-          "winPercentage": 85.71,
-          "setsWon": 20,
-          "setsLost": 5,
-          "setDifference": 15
+          "winPercentage": 88.89,
+          "setsWon": 26,
+          "setsLost": 7,
+          "setDifference": 19
         },
         "john-collins": {
           "name": "John Collins",
@@ -512807,8 +513982,8 @@
           "setDifference": -73
         }
       },
-      "winPercentage": 36.36,
-      "setDifference": -95
+      "winPercentage": 38.57,
+      "setDifference": -86
     },
     "ksb-c": {
       "name": "KSB C",
@@ -513385,7 +514560,7 @@
       "slug": "ksb-d",
       "divisions": {},
       "seasons": {
-        "2026": 3,
+        "2026": 6,
         "2013": 9,
         "2024": 23,
         "2022": 12,
@@ -513398,12 +514573,12 @@
         "2021": 7,
         "2025": 22
       },
-      "played": 162,
+      "played": 165,
       "wins": 60,
       "draws": 0,
-      "losses": 102,
-      "setsWon": 254,
-      "setsLost": 360,
+      "losses": 105,
+      "setsWon": 255,
+      "setsLost": 369,
       "ksbPlayers": {
         "adam-najduch": {
           "name": "Adam Najduch",
@@ -513583,14 +514758,14 @@
         },
         "david-greenwood": {
           "name": "David Greenwood",
-          "played": 4,
+          "played": 6,
           "wins": 1,
           "draws": 0,
-          "losses": 3,
-          "winPercentage": 25.0,
-          "setsWon": 6,
-          "setsLost": 9,
-          "setDifference": -3
+          "losses": 5,
+          "winPercentage": 16.67,
+          "setsWon": 7,
+          "setsLost": 15,
+          "setDifference": -8
         },
         "david-mottershead": {
           "name": "David Mottershead",
@@ -513792,14 +514967,14 @@
         },
         "sam-richardson": {
           "name": "Sam Richardson",
-          "played": 7,
+          "played": 8,
           "wins": 4,
           "draws": 0,
-          "losses": 3,
-          "winPercentage": 57.14,
+          "losses": 4,
+          "winPercentage": 50.0,
           "setsWon": 14,
-          "setsLost": 13,
-          "setDifference": 1
+          "setsLost": 16,
+          "setDifference": -2
         },
         "simon-kavanagh": {
           "name": "Simon Kavanagh",
@@ -513948,14 +515123,14 @@
         },
         "mark-gavin": {
           "name": "Mark Gavin",
-          "played": 1,
+          "played": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
-          "winPercentage": 100.0,
+          "losses": 1,
+          "winPercentage": 50.0,
           "setsWon": 3,
-          "setsLost": 1,
-          "setDifference": 2
+          "setsLost": 4,
+          "setDifference": -1
         },
         "paul-milnes": {
           "name": "Paul Milnes",
@@ -514003,14 +515178,14 @@
         },
         "steve-horner": {
           "name": "Steve Horner",
-          "played": 33,
+          "played": 35,
           "wins": 9,
           "draws": 0,
-          "losses": 24,
-          "winPercentage": 27.27,
-          "setsWon": 42,
-          "setsLost": 77,
-          "setDifference": -35
+          "losses": 26,
+          "winPercentage": 25.71,
+          "setsWon": 43,
+          "setsLost": 83,
+          "setDifference": -40
         },
         "tim-prior": {
           "name": "Tim Prior",
@@ -514035,8 +515210,8 @@
           "setDifference": 0
         }
       },
-      "winPercentage": 37.04,
-      "setDifference": -106
+      "winPercentage": 36.36,
+      "setDifference": -114
     },
     "ksb-e": {
       "name": "KSB E",
@@ -514045,6 +515220,7 @@
       "seasons": {
         "2024": 13,
         "2025": 21,
+        "2026": 6,
         "2023": 15,
         "2017": 12,
         "2018": 6,
@@ -514052,12 +515228,12 @@
         "2022": 9,
         "2013": 8
       },
-      "played": 96,
-      "wins": 56,
+      "played": 102,
+      "wins": 59,
       "draws": 0,
-      "losses": 40,
-      "setsWon": 190,
-      "setsLost": 158,
+      "losses": 43,
+      "setsWon": 203,
+      "setsLost": 171,
       "ksbPlayers": {
         "adam-najduch": {
           "name": "Adam Najduch",
@@ -514083,14 +515259,14 @@
         },
         "bernard-milnes": {
           "name": "Bernard Milnes",
-          "played": 9,
-          "wins": 5,
+          "played": 12,
+          "wins": 6,
           "draws": 0,
-          "losses": 4,
-          "winPercentage": 55.56,
-          "setsWon": 18,
-          "setsLost": 16,
-          "setDifference": 2
+          "losses": 6,
+          "winPercentage": 50.0,
+          "setsWon": 23,
+          "setsLost": 24,
+          "setDifference": -1
         },
         "bradley-saggers": {
           "name": "Bradley Saggers",
@@ -514292,14 +515468,14 @@
         },
         "mark-gavin": {
           "name": "Mark Gavin",
-          "played": 4,
-          "wins": 2,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
           "losses": 2,
-          "winPercentage": 50.0,
-          "setsWon": 6,
-          "setsLost": 8,
-          "setDifference": -2
+          "winPercentage": 66.67,
+          "setsWon": 12,
+          "setsLost": 10,
+          "setDifference": 2
         },
         "neil-hepworth": {
           "name": "Neil Hepworth",
@@ -514366,6 +515542,17 @@
           "setsWon": 6,
           "setsLost": 2,
           "setDifference": 4
+        },
+        "steve-horner": {
+          "name": "Steve Horner",
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 0.0,
+          "setsWon": 2,
+          "setsLost": 3,
+          "setDifference": -1
         }
       },
       "oppositionPlayers": {
@@ -514415,14 +515602,14 @@
         },
         "david-greenwood": {
           "name": "David Greenwood",
-          "played": 5,
-          "wins": 4,
+          "played": 6,
+          "wins": 5,
           "draws": 0,
           "losses": 1,
-          "winPercentage": 80.0,
-          "setsWon": 13,
-          "setsLost": 10,
-          "setDifference": 3
+          "winPercentage": 83.33,
+          "setsWon": 16,
+          "setsLost": 12,
+          "setDifference": 4
         },
         "david-mottershead": {
           "name": "David Mottershead",
@@ -514536,14 +515723,14 @@
         },
         "sam-richardson": {
           "name": "Sam Richardson",
-          "played": 12,
-          "wins": 11,
+          "played": 14,
+          "wins": 12,
           "draws": 0,
-          "losses": 1,
-          "winPercentage": 91.67,
-          "setsWon": 34,
-          "setsLost": 10,
-          "setDifference": 24
+          "losses": 2,
+          "winPercentage": 85.71,
+          "setsWon": 39,
+          "setsLost": 13,
+          "setDifference": 26
         },
         "simon-kavanagh": {
           "name": "Simon Kavanagh",
@@ -514589,6 +515776,17 @@
           "setsLost": 2,
           "setDifference": 7
         },
+        "trevor-elkington": {
+          "name": "Trevor Elkington",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "winPercentage": 33.33,
+          "setsWon": 5,
+          "setsLost": 8,
+          "setDifference": -3
+        },
         "william-cooper": {
           "name": "William Cooper",
           "played": 3,
@@ -514601,7 +515799,7 @@
           "setDifference": 6
         }
       },
-      "winPercentage": 58.33,
+      "winPercentage": 57.84,
       "setDifference": 32
     },
     "ksb-f": {
@@ -530611,18 +531809,19 @@
         "2024": 69,
         "2023": 39,
         "2025": 39,
+        "2026": 3,
         "2016": 18,
         "2017": 19,
         "2014": 36,
         "2015": 15,
         "2013": 18
       },
-      "played": 361,
-      "wins": 198,
+      "played": 364,
+      "wins": 200,
       "draws": 0,
-      "losses": 163,
-      "setsWon": 721,
-      "setsLost": 624,
+      "losses": 164,
+      "setsWon": 728,
+      "setsLost": 631,
       "ksbPlayers": {
         "adam-najduch": {
           "name": "Adam Najduch",
@@ -530634,6 +531833,17 @@
           "setsWon": 1,
           "setsLost": 15,
           "setDifference": -14
+        },
+        "alex-gavin": {
+          "name": "Alex Gavin",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 7,
+          "setsLost": 7,
+          "setDifference": 0
         },
         "barry-hall": {
           "name": "Barry Hall",
@@ -531035,14 +532245,14 @@
       "oppositionPlayers": {
         "alan-calow": {
           "name": "Alan Calow",
-          "played": 34,
-          "wins": 19,
+          "played": 35,
+          "wins": 20,
           "draws": 0,
           "losses": 15,
-          "winPercentage": 55.88,
-          "setsWon": 66,
-          "setsLost": 55,
-          "setDifference": 11
+          "winPercentage": 57.14,
+          "setsWon": 69,
+          "setsLost": 57,
+          "setDifference": 12
         },
         "ben-farrar-2": {
           "name": "Ben Farrar",
@@ -531121,6 +532331,17 @@
           "setsLost": 26,
           "setDifference": -20
         },
+        "mark-hanson": {
+          "name": "Mark Hanson",
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 3,
+          "setsLost": 2,
+          "setDifference": 1
+        },
         "martin-drury": {
           "name": "Martin Drury",
           "played": 12,
@@ -531134,14 +532355,14 @@
         },
         "phil-mileham": {
           "name": "Phil Mileham",
-          "played": 37,
+          "played": 38,
           "wins": 10,
           "draws": 0,
-          "losses": 27,
-          "winPercentage": 27.03,
-          "setsWon": 48,
-          "setsLost": 89,
-          "setDifference": -41
+          "losses": 28,
+          "winPercentage": 26.32,
+          "setsWon": 49,
+          "setsLost": 92,
+          "setDifference": -43
         },
         "philip-grace": {
           "name": "Philip Grace",
@@ -531188,7 +532409,7 @@
           "setDifference": 0
         }
       },
-      "winPercentage": 54.85,
+      "winPercentage": 54.95,
       "setDifference": 97
     },
     "whalley-kites": {
@@ -534624,7 +535845,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-10-01T05:55:35.982127+00:00",
+    "generatedAt": "2026-10-01T13:16:43.276473+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
