@@ -6742,5 +6742,33 @@
   "2026:trevor-elkington": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/trevor-elkington",
     "status": "success"
+  },
+  "2026:colin-hooper": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/colin-hooper",
+    "status": "success"
+  },
+  "2026:dyfan-innes-wilkin": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/dyfan-innes-wilkin",
+    "status": "success"
+  },
+  "2026:francis-barker": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/francis-barker",
+    "status": "success"
+  },
+  "2026:julie-knowles": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/julie-knowles",
+    "status": "success"
+  },
+  "2026:noel-duffy": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/noel-duffy",
+    "status": "success"
+  },
+  "2026:olivia-sanders": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/olivia-sanders",
+    "status": "success"
+  },
+  "2026:paul-barker": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/paul-barker",
+    "status": "success"
   }
 }
