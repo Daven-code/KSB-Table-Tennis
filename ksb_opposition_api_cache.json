@@ -6770,5 +6770,33 @@
   "2026:paul-barker": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/paul-barker",
     "status": "success"
+  },
+  "2026:paul-dooley": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/paul-dooley",
+    "status": "success"
+  },
+  "2026:roman-mychajlshyn": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/roman-mychajlshyn",
+    "status": "success"
+  },
+  "2026:sam-bradshaw": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/sam-bradshaw",
+    "status": "success"
+  },
+  "2026:sam-hodgkinson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/sam-hodgkinson",
+    "status": "success"
+  },
+  "2026:shamir-bose": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/shamir-bose",
+    "status": "success"
+  },
+  "2026:steve-armstead": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/steve-armstead",
+    "status": "success"
+  },
+  "2026:steven-wilding": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/steven-wilding",
+    "status": "success"
   }
 }
