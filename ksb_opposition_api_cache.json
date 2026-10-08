@@ -6798,5 +6798,29 @@
   "2026:steven-wilding": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/steven-wilding",
     "status": "success"
+  },
+  "2026:darren-wright": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/darren-wright",
+    "status": "success"
+  },
+  "2026:hall-chris": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/hall-chris",
+    "status": "success"
+  },
+  "2026:ian-lloyd": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/ian-lloyd",
+    "status": "success"
+  },
+  "2026:keith-dale": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/keith-dale",
+    "status": "success"
+  },
+  "2026:matt-hodgkinson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/matt-hodgkinson",
+    "status": "success"
+  },
+  "2026:saif-bhojani": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/saif-bhojani",
+    "status": "success"
   }
 }
