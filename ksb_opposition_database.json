@@ -25,11 +25,11 @@
     "currentSeason": 2026,
     "oppositionPlayerCount": 478,
     "oppositionTeamCount": 111,
-    "ksbEncounterCount": 12907,
-    "enrichedEncounterCount": 12907,
-    "successfulApiLookupsThisRun": 0,
+    "ksbEncounterCount": 12910,
+    "enrichedEncounterCount": 12910,
+    "successfulApiLookupsThisRun": 1,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-10-09T09:06:57.624395+00:00"
+    "lastUpdated": "2026-10-09T16:14:18.936308+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -316329,14 +316329,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 112,
-        "wins": 71,
+        "played": 113,
+        "wins": 72,
         "draws": 0,
         "losses": 41,
-        "winPercentage": 63.39,
-        "setsWon": 256,
-        "setsLost": 178,
-        "setDifference": 78
+        "winPercentage": 63.72,
+        "setsWon": 259,
+        "setsLost": 179,
+        "setDifference": 80
       },
       "ksbBySeason": {
         "2013": {
@@ -316460,14 +316460,14 @@
           "setDifference": 32
         },
         "2026": {
-          "played": 3,
-          "wins": 2,
+          "played": 4,
+          "wins": 3,
           "draws": 0,
           "losses": 1,
-          "winPercentage": 66.67,
-          "setsWon": 7,
-          "setsLost": 7,
-          "setDifference": 0
+          "winPercentage": 75.0,
+          "setsWon": 10,
+          "setsLost": 8,
+          "setDifference": 2
         }
       },
       "ksbByTeam": {
@@ -316582,14 +316582,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
-          "wins": 2,
+          "played": 4,
+          "wins": 3,
           "draws": 0,
           "losses": 1,
-          "winPercentage": 66.67,
-          "setsWon": 7,
-          "setsLost": 7,
-          "setDifference": 0
+          "winPercentage": 75.0,
+          "setsWon": 10,
+          "setsLost": 8,
+          "setDifference": 2
         }
       },
       "ksbEncounters": [
@@ -318156,6 +318156,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1368
+        },
+        {
+          "id": 43540,
+          "season": 2026,
+          "ksbPlayer": "Filip Ciolek",
+          "ksbPlayerSlug": "filip-ciolek",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Michael Rostron",
+          "playerLeftSlug": "michael-rostron",
+          "playerRightName": "Filip Ciolek",
+          "playerRightSlug": "filip-ciolek",
+          "playerRankChangeLeft": -40,
+          "playerRankChangeRight": 60,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Michael Rostron",
+          "opponentSlug": "michael-rostron",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 39916,
@@ -359959,14 +359987,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 63,
-        "wins": 22,
+        "played": 64,
+        "wins": 23,
         "draws": 0,
         "losses": 41,
-        "winPercentage": 34.92,
-        "setsWon": 89,
-        "setsLost": 144,
-        "setDifference": -55
+        "winPercentage": 35.94,
+        "setsWon": 92,
+        "setsLost": 145,
+        "setDifference": -53
       },
       "ksbBySeason": {
         "2023": {
@@ -360000,14 +360028,14 @@
           "setDifference": 1
         },
         "2026": {
-          "played": 3,
-          "wins": 3,
+          "played": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "winPercentage": 100.0,
-          "setsWon": 9,
-          "setsLost": 1,
-          "setDifference": 8
+          "setsWon": 12,
+          "setsLost": 2,
+          "setDifference": 10
         }
       },
       "ksbByTeam": {
@@ -360122,14 +360150,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
-          "wins": 3,
+          "played": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
           "winPercentage": 100.0,
-          "setsWon": 9,
-          "setsLost": 1,
-          "setDifference": 8
+          "setsWon": 12,
+          "setsLost": 2,
+          "setDifference": 10
         }
       },
       "ksbEncounters": [
@@ -360864,6 +360892,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 835
+        },
+        {
+          "id": 43535,
+          "season": 2026,
+          "ksbPlayer": "Filip Ciolek",
+          "ksbPlayerSlug": "filip-ciolek",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Paul Crabtree",
+          "playerLeftSlug": "paul-crabtree",
+          "playerRightName": "Filip Ciolek",
+          "playerRightSlug": "filip-ciolek",
+          "playerRankChangeLeft": -50,
+          "playerRankChangeRight": 75,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Paul Crabtree",
+          "opponentSlug": "paul-crabtree",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 38031,
@@ -386544,7 +386600,7 @@
       "name": "Peter Marsland",
       "slug": "peter-marsland",
       "firstKnownKSBSeason": 2013,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2013,
@@ -386797,6 +386853,27 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/peter-marsland",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "id": 81,
+            "name": "Peter Marsland",
+            "slug": "peter-marsland",
+            "rank": 1205
+          },
+          "team": {
+            "id": 16,
+            "name": "Brierfield",
+            "slug": "brierfield",
+            "divisionId": 3,
+            "division": null,
+            "rank": 1205
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/peter-marsland",
+            "status": "success"
+          }
         }
       ],
       "ksbSeasons": [
@@ -386811,17 +386888,18 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 107,
+        "played": 108,
         "wins": 62,
         "draws": 0,
-        "losses": 45,
-        "winPercentage": 57.94,
+        "losses": 46,
+        "winPercentage": 57.41,
         "setsWon": 216,
-        "setsLost": 183,
-        "setDifference": 33
+        "setsLost": 186,
+        "setDifference": 30
       },
       "ksbBySeason": {
         "2013": {
@@ -386943,6 +387021,16 @@
           "setsWon": 30,
           "setsLost": 24,
           "setDifference": 6
+        },
+        "2026": {
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 0.0,
+          "setsWon": 0,
+          "setsLost": 3,
+          "setDifference": -3
         }
       },
       "ksbByTeam": {
@@ -387041,6 +387129,18 @@
           "setsWon": 7,
           "setsLost": 5,
           "setDifference": 2
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 0.0,
+          "setsWon": 0,
+          "setsLost": 3,
+          "setDifference": -3
         }
       },
       "ksbEncounters": [
@@ -388579,6 +388679,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 1342
+        },
+        {
+          "id": 43537,
+          "season": 2026,
+          "ksbPlayer": "Filip Ciolek",
+          "ksbPlayerSlug": "filip-ciolek",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Peter Marsland",
+          "playerLeftSlug": "peter-marsland",
+          "playerRightName": "Filip Ciolek",
+          "playerRightSlug": "filip-ciolek",
+          "playerRankChangeLeft": 0,
+          "playerRankChangeRight": 0,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Peter Marsland",
+          "opponentSlug": "peter-marsland",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 16,
+            "name": "Brierfield",
+            "slug": "brierfield",
+            "divisionId": 3,
+            "division": null,
+            "rank": 1205
+          },
+          "opponentDivision": null,
+          "opponentRank": 1205
         },
         {
           "id": 21753,
@@ -505480,19 +505612,19 @@
         "2019": 36,
         "2021": 33,
         "2025": 58,
-        "2026": 9,
+        "2026": 12,
         "2017": 36,
         "2018": 33,
         "2023": 36,
         "2022": 21,
         "2013": 18
       },
-      "played": 313,
-      "wins": 196,
+      "played": 316,
+      "wins": 198,
       "draws": 0,
-      "losses": 117,
-      "setsWon": 688,
-      "setsLost": 495,
+      "losses": 118,
+      "setsWon": 694,
+      "setsLost": 500,
       "ksbPlayers": {
         "adam-najduch": {
           "name": "Adam Najduch",
@@ -505658,6 +505790,17 @@
           "setsWon": 6,
           "setsLost": 6,
           "setDifference": 0
+        },
+        "filip-ciolek": {
+          "name": "Filip Ciolek",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 6,
+          "setsLost": 5,
+          "setDifference": 1
         },
         "graham-hoy": {
           "name": "Graham Hoy",
@@ -505960,14 +506103,14 @@
         },
         "michael-rostron": {
           "name": "Michael Rostron",
-          "played": 91,
-          "wins": 62,
+          "played": 92,
+          "wins": 63,
           "draws": 0,
           "losses": 29,
-          "winPercentage": 68.13,
-          "setsWon": 219,
-          "setsLost": 138,
-          "setDifference": 81
+          "winPercentage": 68.48,
+          "setsWon": 222,
+          "setsLost": 139,
+          "setDifference": 83
         },
         "michael-wrigley": {
           "name": "Michael Wrigley",
@@ -505993,14 +506136,14 @@
         },
         "paul-crabtree": {
           "name": "Paul Crabtree",
-          "played": 15,
-          "wins": 9,
+          "played": 16,
+          "wins": 10,
           "draws": 0,
           "losses": 6,
-          "winPercentage": 60.0,
-          "setsWon": 35,
-          "setsLost": 26,
-          "setDifference": 9
+          "winPercentage": 62.5,
+          "setsWon": 38,
+          "setsLost": 27,
+          "setDifference": 11
         },
         "peter-gildea": {
           "name": "Peter Gildea",
@@ -506026,14 +506169,14 @@
         },
         "peter-marsland": {
           "name": "Peter Marsland",
-          "played": 80,
+          "played": 81,
           "wins": 48,
           "draws": 0,
-          "losses": 32,
-          "winPercentage": 60.0,
+          "losses": 33,
+          "winPercentage": 59.26,
           "setsWon": 170,
-          "setsLost": 129,
-          "setDifference": 41
+          "setsLost": 132,
+          "setDifference": 38
         },
         "tom-lacy": {
           "name": "Tom Lacy",
@@ -506047,8 +506190,8 @@
           "setDifference": 27
         }
       },
-      "winPercentage": 62.62,
-      "setDifference": 193
+      "winPercentage": 62.66,
+      "setDifference": 194
     },
     "brierfield-b": {
       "name": "Brierfield B",
@@ -539940,7 +540083,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-10-09T09:06:57.624578+00:00",
+    "generatedAt": "2026-10-09T16:14:18.936487+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
