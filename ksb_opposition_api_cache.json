@@ -6830,5 +6830,17 @@
   "2026:peter-watson": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/peter-watson",
     "status": "success"
+  },
+  "2026:rob-tokeley": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/rob-tokeley",
+    "status": "success"
+  },
+  "2026:ryan-feldwicke": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/ryan-feldwicke",
+    "status": "success"
+  },
+  "2026:scott-fleming": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/scott-fleming",
+    "status": "success"
   }
 }
