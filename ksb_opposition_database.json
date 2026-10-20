@@ -25,11 +25,11 @@
     "currentSeason": 2026,
     "oppositionPlayerCount": 478,
     "oppositionTeamCount": 111,
-    "ksbEncounterCount": 12910,
-    "enrichedEncounterCount": 12910,
-    "successfulApiLookupsThisRun": 0,
+    "ksbEncounterCount": 12919,
+    "enrichedEncounterCount": 12919,
+    "successfulApiLookupsThisRun": 1,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-10-20T06:04:25.720791+00:00"
+    "lastUpdated": "2026-10-20T11:38:14.476732+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -220136,14 +220136,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 9,
-        "wins": 3,
+        "played": 12,
+        "wins": 6,
         "draws": 0,
         "losses": 6,
-        "winPercentage": 33.33,
-        "setsWon": 10,
-        "setsLost": 19,
-        "setDifference": -9
+        "winPercentage": 50.0,
+        "setsWon": 19,
+        "setsLost": 21,
+        "setDifference": -2
       },
       "ksbBySeason": {
         "2025": {
@@ -220157,14 +220157,14 @@
           "setDifference": -5
         },
         "2026": {
-          "played": 3,
-          "wins": 1,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
           "losses": 2,
-          "winPercentage": 33.33,
-          "setsWon": 3,
-          "setsLost": 7,
-          "setDifference": -4
+          "winPercentage": 66.67,
+          "setsWon": 12,
+          "setsLost": 9,
+          "setDifference": 3
         }
       },
       "ksbByTeam": {
@@ -220195,14 +220195,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
-          "wins": 1,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
           "losses": 2,
-          "winPercentage": 33.33,
-          "setsWon": 3,
-          "setsLost": 7,
-          "setDifference": -4
+          "winPercentage": 66.67,
+          "setsWon": 12,
+          "setsLost": 9,
+          "setDifference": 3
         }
       },
       "ksbEncounters": [
@@ -220269,6 +220269,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 725
+        },
+        {
+          "id": 43567,
+          "season": 2026,
+          "ksbPlayer": "Filip Ciolek",
+          "ksbPlayerSlug": "filip-ciolek",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Filip Ciolek",
+          "playerLeftSlug": "filip-ciolek",
+          "playerRightName": "Joe Mason",
+          "playerRightSlug": "joe-mason",
+          "playerRankChangeLeft": 12,
+          "playerRankChangeRight": -8,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Joe Mason",
+          "opponentSlug": "joe-mason",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Harriers",
+            "slug": "whalley-harriers"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 42286,
@@ -220395,6 +220423,34 @@
           "opponentRank": 725
         },
         {
+          "id": 43570,
+          "season": 2026,
+          "ksbPlayer": "Stanley Smith",
+          "ksbPlayerSlug": "stanley-smith",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 2,
+          "playerLeftName": "Stanley Smith",
+          "playerLeftSlug": "stanley-smith",
+          "playerRightName": "Joe Mason",
+          "playerRightSlug": "joe-mason",
+          "playerRankChangeLeft": 45,
+          "playerRankChangeRight": -30,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "Joe Mason",
+          "opponentSlug": "joe-mason",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Harriers",
+            "slug": "whalley-harriers"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 42284,
           "season": 2025,
           "ksbPlayer": "Steven Wilding",
@@ -220444,6 +220500,34 @@
           "ksbPlayerScore": 0,
           "opponentScore": 3,
           "resultForKSBPlayer": "L",
+          "opponent": "Joe Mason",
+          "opponentSlug": "joe-mason",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Harriers",
+            "slug": "whalley-harriers"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 43565,
+          "season": 2026,
+          "ksbPlayer": "Pawel Ciolek",
+          "ksbPlayerSlug": "pawel-ciolek",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Pawel Ciolek",
+          "playerLeftSlug": "pawel-ciolek",
+          "playerRightName": "Joe Mason",
+          "playerRightSlug": "joe-mason",
+          "playerRankChangeLeft": 60,
+          "playerRankChangeRight": -40,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
           "opponent": "Joe Mason",
           "opponentSlug": "joe-mason",
           "fixtureKey": null,
@@ -390608,7 +390692,7 @@
       "name": "Peter Watson",
       "slug": "peter-watson",
       "firstKnownKSBSeason": 2025,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2025,
@@ -390630,20 +390714,42 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/peter-watson",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "id": 743,
+            "name": "Peter Watson",
+            "slug": "peter-watson",
+            "rank": 703
+          },
+          "team": {
+            "id": 17,
+            "name": "Whalley Harriers",
+            "slug": "whalley-harriers",
+            "divisionId": 4,
+            "division": null,
+            "rank": 703
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/peter-watson",
+            "status": "success"
+          }
         }
       ],
       "ksbSeasons": [
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 30,
+        "played": 33,
         "wins": 14,
         "draws": 0,
-        "losses": 16,
-        "winPercentage": 46.67,
+        "losses": 19,
+        "winPercentage": 42.42,
         "setsWon": 50,
-        "setsLost": 61,
-        "setDifference": -11
+        "setsLost": 70,
+        "setDifference": -20
       },
       "ksbBySeason": {
         "2025": {
@@ -390655,6 +390761,16 @@
           "setsWon": 50,
           "setsLost": 61,
           "setDifference": -11
+        },
+        "2026": {
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "winPercentage": 0.0,
+          "setsWon": 0,
+          "setsLost": 9,
+          "setDifference": -9
         }
       },
       "ksbByTeam": {
@@ -390729,6 +390845,18 @@
           "setsWon": 8,
           "setsLost": 15,
           "setDifference": -7
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "winPercentage": 0.0,
+          "setsWon": 0,
+          "setsLost": 9,
+          "setDifference": -9
         }
       },
       "ksbEncounters": [
@@ -391019,6 +391147,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 664
+        },
+        {
+          "id": 43572,
+          "season": 2026,
+          "ksbPlayer": "Filip Ciolek",
+          "ksbPlayerSlug": "filip-ciolek",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Filip Ciolek",
+          "playerLeftSlug": "filip-ciolek",
+          "playerRightName": "Peter Watson",
+          "playerRightSlug": "peter-watson",
+          "playerRankChangeLeft": -7,
+          "playerRankChangeRight": 11,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Peter Watson",
+          "opponentSlug": "peter-watson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 17,
+            "name": "Whalley Harriers",
+            "slug": "whalley-harriers",
+            "divisionId": 4,
+            "division": null,
+            "rank": 703
+          },
+          "opponentDivision": null,
+          "opponentRank": 703
         },
         {
           "id": 40851,
@@ -391597,6 +391757,38 @@
           "opponentRank": 664
         },
         {
+          "id": 43564,
+          "season": 2026,
+          "ksbPlayer": "Stanley Smith",
+          "ksbPlayerSlug": "stanley-smith",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Stanley Smith",
+          "playerLeftSlug": "stanley-smith",
+          "playerRightName": "Peter Watson",
+          "playerRightSlug": "peter-watson",
+          "playerRankChangeLeft": -1,
+          "playerRankChangeRight": 2,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Peter Watson",
+          "opponentSlug": "peter-watson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 17,
+            "name": "Whalley Harriers",
+            "slug": "whalley-harriers",
+            "divisionId": 4,
+            "division": null,
+            "rank": 703
+          },
+          "opponentDivision": null,
+          "opponentRank": 703
+        },
+        {
           "id": 42413,
           "season": 2025,
           "ksbPlayer": "Steve Armstead",
@@ -391691,6 +391883,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 664
+        },
+        {
+          "id": 43569,
+          "season": 2026,
+          "ksbPlayer": "Pawel Ciolek",
+          "ksbPlayerSlug": "pawel-ciolek",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Pawel Ciolek",
+          "playerLeftSlug": "pawel-ciolek",
+          "playerRightName": "Peter Watson",
+          "playerRightSlug": "peter-watson",
+          "playerRankChangeLeft": -2,
+          "playerRankChangeRight": 3,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Peter Watson",
+          "opponentSlug": "peter-watson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 17,
+            "name": "Whalley Harriers",
+            "slug": "whalley-harriers",
+            "divisionId": 4,
+            "division": null,
+            "rank": 703
+          },
+          "opponentDivision": null,
+          "opponentRank": 703
         }
       ],
       "apiStatus": "success",
@@ -429625,42 +429849,70 @@
         2026
       ],
       "ksbCareer": {
-        "played": 3,
-        "wins": 1,
+        "played": 6,
+        "wins": 4,
         "draws": 0,
         "losses": 2,
-        "winPercentage": 33.33,
-        "setsWon": 3,
-        "setsLost": 6,
-        "setDifference": -3
+        "winPercentage": 66.67,
+        "setsWon": 12,
+        "setsLost": 7,
+        "setDifference": 5
       },
       "ksbBySeason": {
         "2026": {
-          "played": 3,
-          "wins": 1,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
           "losses": 2,
-          "winPercentage": 33.33,
-          "setsWon": 3,
-          "setsLost": 6,
-          "setDifference": -3
+          "winPercentage": 66.67,
+          "setsWon": 12,
+          "setsLost": 7,
+          "setDifference": 5
         }
       },
       "ksbByTeam": {
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
-          "wins": 1,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
           "losses": 2,
-          "winPercentage": 33.33,
-          "setsWon": 3,
-          "setsLost": 6,
-          "setDifference": -3
+          "winPercentage": 66.67,
+          "setsWon": 12,
+          "setsLost": 7,
+          "setDifference": 5
         }
       },
       "ksbEncounters": [
+        {
+          "id": 43563,
+          "season": 2026,
+          "ksbPlayer": "Filip Ciolek",
+          "ksbPlayerSlug": "filip-ciolek",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Filip Ciolek",
+          "playerLeftSlug": "filip-ciolek",
+          "playerRightName": "Rory Wilson-Tidswell",
+          "playerRightSlug": "rory-wilson-tidswell",
+          "playerRankChangeLeft": 5,
+          "playerRankChangeRight": -3,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Rory Wilson-Tidswell",
+          "opponentSlug": "rory-wilson-tidswell",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Harriers",
+            "slug": "whalley-harriers"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
         {
           "id": 42801,
           "season": 2026,
@@ -429690,6 +429942,34 @@
           "opponentRank": null
         },
         {
+          "id": 43566,
+          "season": 2026,
+          "ksbPlayer": "Stanley Smith",
+          "ksbPlayerSlug": "stanley-smith",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 1,
+          "playerLeftName": "Stanley Smith",
+          "playerLeftSlug": "stanley-smith",
+          "playerRightName": "Rory Wilson-Tidswell",
+          "playerRightSlug": "rory-wilson-tidswell",
+          "playerRankChangeLeft": 33,
+          "playerRankChangeRight": -22,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Rory Wilson-Tidswell",
+          "opponentSlug": "rory-wilson-tidswell",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Harriers",
+            "slug": "whalley-harriers"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 42795,
           "season": 2026,
           "ksbPlayer": "Francis Barker",
@@ -429707,6 +429987,34 @@
           "ksbPlayerScore": 0,
           "opponentScore": 3,
           "resultForKSBPlayer": "L",
+          "opponent": "Rory Wilson-Tidswell",
+          "opponentSlug": "rory-wilson-tidswell",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Harriers",
+            "slug": "whalley-harriers"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 43571,
+          "season": 2026,
+          "ksbPlayer": "Pawel Ciolek",
+          "ksbPlayerSlug": "pawel-ciolek",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Pawel Ciolek",
+          "playerLeftSlug": "pawel-ciolek",
+          "playerRightName": "Rory Wilson-Tidswell",
+          "playerRightSlug": "rory-wilson-tidswell",
+          "playerRankChangeLeft": 21,
+          "playerRankChangeRight": -14,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
           "opponent": "Rory Wilson-Tidswell",
           "opponentSlug": "rory-wilson-tidswell",
           "fixtureKey": null,
@@ -534793,14 +535101,14 @@
         "2024": 54,
         "2022": 39,
         "2023": 54,
-        "2026": 9
+        "2026": 18
       },
-      "played": 246,
-      "wins": 139,
+      "played": 255,
+      "wins": 145,
       "draws": 0,
-      "losses": 107,
-      "setsWon": 497,
-      "setsLost": 412,
+      "losses": 110,
+      "setsWon": 515,
+      "setsLost": 424,
       "ksbPlayers": {
         "adam-najduch": {
           "name": "Adam Najduch",
@@ -534989,6 +535297,17 @@
           "setsLost": 0,
           "setDifference": 9
         },
+        "filip-ciolek": {
+          "name": "Filip Ciolek",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 6,
+          "setsLost": 3,
+          "setDifference": 3
+        },
         "francis-barker": {
           "name": "Francis Barker",
           "played": 3,
@@ -535143,6 +535462,17 @@
           "setsLost": 19,
           "setDifference": -8
         },
+        "pawel-ciolek": {
+          "name": "Pawel Ciolek",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 6,
+          "setsLost": 3,
+          "setDifference": 3
+        },
         "sam-hodgkinson": {
           "name": "Sam Hodgkinson",
           "played": 3,
@@ -535196,6 +535526,17 @@
           "winPercentage": 50.0,
           "setsWon": 11,
           "setsLost": 11,
+          "setDifference": 0
+        },
+        "stanley-smith": {
+          "name": "Stanley Smith",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 6,
+          "setsLost": 6,
           "setDifference": 0
         },
         "steve-armstead": {
@@ -535334,14 +535675,14 @@
         },
         "joe-mason": {
           "name": "Joe Mason",
-          "played": 3,
-          "wins": 1,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
           "losses": 2,
-          "winPercentage": 33.33,
-          "setsWon": 3,
-          "setsLost": 7,
-          "setDifference": -4
+          "winPercentage": 66.67,
+          "setsWon": 12,
+          "setsLost": 9,
+          "setDifference": 3
         },
         "khurram-karim": {
           "name": "Khurram Karim",
@@ -535409,20 +535750,31 @@
           "setsLost": 11,
           "setDifference": 0
         },
+        "peter-watson": {
+          "name": "Peter Watson",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "winPercentage": 0.0,
+          "setsWon": 0,
+          "setsLost": 9,
+          "setDifference": -9
+        },
         "rory-wilson-tidswell": {
           "name": "Rory Wilson-Tidswell",
-          "played": 3,
-          "wins": 1,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
           "losses": 2,
-          "winPercentage": 33.33,
-          "setsWon": 3,
-          "setsLost": 6,
-          "setDifference": -3
+          "winPercentage": 66.67,
+          "setsWon": 12,
+          "setsLost": 7,
+          "setDifference": 5
         }
       },
-      "winPercentage": 56.5,
-      "setDifference": 85
+      "winPercentage": 56.86,
+      "setDifference": 91
     },
     "whalley-hawks": {
       "name": "Whalley Hawks",
@@ -540083,7 +540435,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-10-20T06:04:25.720995+00:00",
+    "generatedAt": "2026-10-20T11:38:14.476938+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
