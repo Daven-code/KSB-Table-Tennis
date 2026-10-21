@@ -6842,5 +6842,25 @@
   "2026:scott-fleming": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/scott-fleming",
     "status": "success"
+  },
+  "2026:andy-cretney": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/andy-cretney",
+    "status": "success"
+  },
+  "2026:jackson-boldy": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/jackson-boldy",
+    "status": "success"
+  },
+  "2026:jacob-milnes": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/jacob-milnes",
+    "status": "success"
+  },
+  "2026:john-hayhurst": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/john-hayhurst",
+    "status": "success"
+  },
+  "2026:lee-ash": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/lee-ash",
+    "status": "success"
   }
 }
