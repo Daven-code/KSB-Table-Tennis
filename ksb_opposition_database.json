@@ -25,11 +25,11 @@
     "currentSeason": 2026,
     "oppositionPlayerCount": 479,
     "oppositionTeamCount": 111,
-    "ksbEncounterCount": 12979,
-    "enrichedEncounterCount": 12979,
+    "ksbEncounterCount": 12988,
+    "enrichedEncounterCount": 12988,
     "successfulApiLookupsThisRun": 0,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-10-22T04:48:11.841228+00:00"
+    "lastUpdated": "2026-10-22T10:12:33.135133+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -79,13 +79,13 @@
         2026
       ],
       "ksbCareer": {
-        "played": 21,
-        "wins": 14,
+        "played": 24,
+        "wins": 16,
         "draws": 0,
-        "losses": 7,
+        "losses": 8,
         "winPercentage": 66.67,
-        "setsWon": 51,
-        "setsLost": 31,
+        "setsWon": 57,
+        "setsLost": 37,
         "setDifference": 20
       },
       "ksbBySeason": {
@@ -100,13 +100,13 @@
           "setDifference": 12
         },
         "2026": {
-          "played": 3,
-          "wins": 3,
+          "played": 6,
+          "wins": 5,
           "draws": 0,
-          "losses": 0,
-          "winPercentage": 100.0,
-          "setsWon": 9,
-          "setsLost": 1,
+          "losses": 1,
+          "winPercentage": 83.33,
+          "setsWon": 15,
+          "setsLost": 7,
           "setDifference": 8
         }
       },
@@ -150,13 +150,13 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
-          "wins": 3,
+          "played": 6,
+          "wins": 5,
           "draws": 0,
-          "losses": 0,
-          "winPercentage": 100.0,
-          "setsWon": 9,
-          "setsLost": 1,
+          "losses": 1,
+          "winPercentage": 83.33,
+          "setsWon": 15,
+          "setsLost": 7,
           "setDifference": 8
         }
       },
@@ -322,6 +322,34 @@
           "opponentRank": 1706
         },
         {
+          "id": 43689,
+          "season": 2026,
+          "ksbPlayer": "Carlton Cooper",
+          "ksbPlayerSlug": "carlton-cooper",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Carlton Cooper",
+          "playerLeftSlug": "carlton-cooper",
+          "playerRightName": "Aamir Gondal",
+          "playerRightSlug": "aamir-gondal",
+          "playerRankChangeLeft": -14,
+          "playerRankChangeRight": 21,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Aamir Gondal",
+          "opponentSlug": "aamir-gondal",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Falcons",
+            "slug": "whalley-falcons"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 40963,
           "season": 2025,
           "ksbPlayer": "David Greenwood",
@@ -476,6 +504,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1706
+        },
+        {
+          "id": 43684,
+          "season": 2026,
+          "ksbPlayer": "Mark Gavin",
+          "ksbPlayerSlug": "mark-gavin",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 1,
+          "playerLeftName": "Mark Gavin",
+          "playerLeftSlug": "mark-gavin",
+          "playerRightName": "Aamir Gondal",
+          "playerRightSlug": "aamir-gondal",
+          "playerRankChangeLeft": 5,
+          "playerRankChangeRight": -3,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Aamir Gondal",
+          "opponentSlug": "aamir-gondal",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Falcons",
+            "slug": "whalley-falcons"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 39281,
@@ -788,6 +844,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1706
+        },
+        {
+          "id": 43692,
+          "season": 2026,
+          "ksbPlayer": "Steve Horner",
+          "ksbPlayerSlug": "steve-horner",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 2,
+          "playerLeftName": "Steve Horner",
+          "playerLeftSlug": "steve-horner",
+          "playerRightName": "Aamir Gondal",
+          "playerRightSlug": "aamir-gondal",
+          "playerRankChangeLeft": 6,
+          "playerRankChangeRight": -4,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "Aamir Gondal",
+          "opponentSlug": "aamir-gondal",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Falcons",
+            "slug": "whalley-falcons"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 41655,
@@ -199995,14 +200079,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 59,
-        "wins": 18,
+        "played": 62,
+        "wins": 19,
         "draws": 0,
-        "losses": 41,
-        "winPercentage": 30.51,
-        "setsWon": 83,
-        "setsLost": 138,
-        "setDifference": -55
+        "losses": 43,
+        "winPercentage": 30.65,
+        "setsWon": 86,
+        "setsLost": 144,
+        "setDifference": -58
       },
       "ksbBySeason": {
         "2024": {
@@ -200026,14 +200110,14 @@
           "setDifference": -51
         },
         "2026": {
-          "played": 6,
-          "wins": 2,
+          "played": 9,
+          "wins": 3,
           "draws": 0,
-          "losses": 4,
+          "losses": 6,
           "winPercentage": 33.33,
-          "setsWon": 6,
-          "setsLost": 15,
-          "setDifference": -9
+          "setsWon": 9,
+          "setsLost": 21,
+          "setDifference": -12
         }
       },
       "ksbByTeam": {
@@ -200184,14 +200268,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 6,
-          "wins": 2,
+          "played": 9,
+          "wins": 3,
           "draws": 0,
-          "losses": 4,
+          "losses": 6,
           "winPercentage": 33.33,
-          "setsWon": 6,
-          "setsLost": 15,
-          "setDifference": -9
+          "setsWon": 9,
+          "setsLost": 21,
+          "setDifference": -12
         }
       },
       "ksbEncounters": [
@@ -200478,6 +200562,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1316
+        },
+        {
+          "id": 43685,
+          "season": 2026,
+          "ksbPlayer": "Carlton Cooper",
+          "ksbPlayerSlug": "carlton-cooper",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Carlton Cooper",
+          "playerLeftSlug": "carlton-cooper",
+          "playerRightName": "James Astle",
+          "playerRightSlug": "james-astle",
+          "playerRankChangeLeft": -30,
+          "playerRankChangeRight": 45,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "James Astle",
+          "opponentSlug": "james-astle",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Falcons",
+            "slug": "whalley-falcons"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 42567,
@@ -201588,6 +201700,34 @@
           "opponentRank": 1316
         },
         {
+          "id": 43690,
+          "season": 2026,
+          "ksbPlayer": "Mark Gavin",
+          "ksbPlayerSlug": "mark-gavin",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Mark Gavin",
+          "playerLeftSlug": "mark-gavin",
+          "playerRightName": "James Astle",
+          "playerRightSlug": "james-astle",
+          "playerRankChangeLeft": 3,
+          "playerRankChangeRight": -2,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "James Astle",
+          "opponentSlug": "james-astle",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Falcons",
+            "slug": "whalley-falcons"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 38602,
           "season": 2024,
           "ksbPlayer": "Mollie McLean",
@@ -201982,6 +202122,34 @@
           "playerRightSlug": "steve-armstead",
           "playerRankChangeLeft": 17,
           "playerRankChangeRight": -11,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "James Astle",
+          "opponentSlug": "james-astle",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Falcons",
+            "slug": "whalley-falcons"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 43687,
+          "season": 2026,
+          "ksbPlayer": "Steve Horner",
+          "ksbPlayerSlug": "steve-horner",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Steve Horner",
+          "playerLeftSlug": "steve-horner",
+          "playerRightName": "James Astle",
+          "playerRightSlug": "james-astle",
+          "playerRankChangeLeft": -40,
+          "playerRankChangeRight": 60,
           "ksbPlayerScore": 0,
           "opponentScore": 3,
           "resultForKSBPlayer": "L",
@@ -403910,14 +404078,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 33,
-        "wins": 19,
+        "played": 36,
+        "wins": 21,
         "draws": 0,
-        "losses": 14,
-        "winPercentage": 57.58,
-        "setsWon": 69,
-        "setsLost": 56,
-        "setDifference": 13
+        "losses": 15,
+        "winPercentage": 58.33,
+        "setsWon": 76,
+        "setsLost": 60,
+        "setDifference": 16
       },
       "ksbBySeason": {
         "2022": {
@@ -403941,14 +404109,14 @@
           "setDifference": 26
         },
         "2026": {
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "winPercentage": 66.67,
-          "setsWon": 8,
-          "setsLost": 3,
-          "setDifference": 5
+          "setsWon": 15,
+          "setsLost": 7,
+          "setDifference": 8
         }
       },
       "ksbByTeam": {
@@ -404003,14 +404171,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "winPercentage": 66.67,
-          "setsWon": 8,
-          "setsLost": 3,
-          "setDifference": 5
+          "setsWon": 15,
+          "setsLost": 7,
+          "setDifference": 8
         }
       },
       "ksbEncounters": [
@@ -404205,6 +404373,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1614
+        },
+        {
+          "id": 43691,
+          "season": 2026,
+          "ksbPlayer": "Carlton Cooper",
+          "ksbPlayerSlug": "carlton-cooper",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Carlton Cooper",
+          "playerLeftSlug": "carlton-cooper",
+          "playerRightName": "Rafeeq Sulaiman",
+          "playerRightSlug": "rafeeq-sulaiman",
+          "playerRankChangeLeft": -22,
+          "playerRankChangeRight": 33,
+          "ksbPlayerScore": 1,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Rafeeq Sulaiman",
+          "opponentSlug": "rafeeq-sulaiman",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Falcons",
+            "slug": "whalley-falcons"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 31596,
@@ -404521,6 +404717,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1614
+        },
+        {
+          "id": 43686,
+          "season": 2026,
+          "ksbPlayer": "Mark Gavin",
+          "ksbPlayerSlug": "mark-gavin",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Mark Gavin",
+          "playerLeftSlug": "mark-gavin",
+          "playerRightName": "Rafeeq Sulaiman",
+          "playerRightSlug": "rafeeq-sulaiman",
+          "playerRankChangeLeft": 3,
+          "playerRankChangeRight": -2,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Rafeeq Sulaiman",
+          "opponentSlug": "rafeeq-sulaiman",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Falcons",
+            "slug": "whalley-falcons"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 39273,
@@ -404993,6 +405217,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1614
+        },
+        {
+          "id": 43683,
+          "season": 2026,
+          "ksbPlayer": "Steve Horner",
+          "ksbPlayerSlug": "steve-horner",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 1,
+          "playerLeftName": "Steve Horner",
+          "playerLeftSlug": "steve-horner",
+          "playerRightName": "Rafeeq Sulaiman",
+          "playerRightSlug": "rafeeq-sulaiman",
+          "playerRankChangeLeft": 3,
+          "playerRankChangeRight": -2,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Rafeeq Sulaiman",
+          "opponentSlug": "rafeeq-sulaiman",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Falcons",
+            "slug": "whalley-falcons"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 41657,
@@ -537177,14 +537429,14 @@
         "2015": 21,
         "2014": 18,
         "2013": 33,
-        "2026": 12
+        "2026": 21
       },
-      "played": 84,
-      "wins": 41,
+      "played": 93,
+      "wins": 46,
       "draws": 0,
-      "losses": 43,
-      "setsWon": 159,
-      "setsLost": 152,
+      "losses": 47,
+      "setsWon": 175,
+      "setsLost": 168,
       "ksbPlayers": {
         "andy-cretney": {
           "name": "Andy Cretney",
@@ -537230,6 +537482,17 @@
           "setsLost": 12,
           "setDifference": -9
         },
+        "carlton-cooper": {
+          "name": "Carlton Cooper",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "winPercentage": 0.0,
+          "setsWon": 1,
+          "setsLost": 9,
+          "setDifference": -8
+        },
         "david-mottershead": {
           "name": "David Mottershead",
           "played": 3,
@@ -537273,6 +537536,17 @@
           "setsWon": 0,
           "setsLost": 3,
           "setDifference": -3
+        },
+        "mark-gavin": {
+          "name": "Mark Gavin",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 1,
+          "setDifference": 8
         },
         "paul-dooley": {
           "name": "Paul Dooley",
@@ -537340,6 +537614,17 @@
           "setsLost": 7,
           "setDifference": -2
         },
+        "steve-horner": {
+          "name": "Steve Horner",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 6,
+          "setsLost": 6,
+          "setDifference": 0
+        },
         "will-cooper": {
           "name": "Will Cooper",
           "played": 12,
@@ -537355,13 +537640,13 @@
       "oppositionPlayers": {
         "aamir-gondal": {
           "name": "Aamir Gondal",
-          "played": 3,
-          "wins": 3,
+          "played": 6,
+          "wins": 5,
           "draws": 0,
-          "losses": 0,
-          "winPercentage": 100.0,
-          "setsWon": 9,
-          "setsLost": 1,
+          "losses": 1,
+          "winPercentage": 83.33,
+          "setsWon": 15,
+          "setsLost": 7,
           "setDifference": 8
         },
         "anthony-richardson": {
@@ -537388,14 +537673,14 @@
         },
         "james-astle": {
           "name": "James Astle",
-          "played": 6,
-          "wins": 2,
+          "played": 9,
+          "wins": 3,
           "draws": 0,
-          "losses": 4,
+          "losses": 6,
           "winPercentage": 33.33,
-          "setsWon": 6,
-          "setsLost": 15,
-          "setDifference": -9
+          "setsWon": 9,
+          "setsLost": 21,
+          "setDifference": -12
         },
         "joe-tattersall": {
           "name": "Joe Tattersall",
@@ -537443,14 +537728,14 @@
         },
         "rafeeq-sulaiman": {
           "name": "Rafeeq Sulaiman",
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "winPercentage": 66.67,
-          "setsWon": 8,
-          "setsLost": 3,
-          "setDifference": 5
+          "setsWon": 15,
+          "setsLost": 7,
+          "setDifference": 8
         },
         "ryan-gibbons": {
           "name": "Ryan Gibbons",
@@ -537486,7 +537771,7 @@
           "setDifference": 9
         }
       },
-      "winPercentage": 48.81,
+      "winPercentage": 49.46,
       "setDifference": 7
     },
     "whalley-harriers": {
@@ -542833,7 +543118,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-10-22T04:48:11.841520+00:00",
+    "generatedAt": "2026-10-22T10:12:33.135343+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }

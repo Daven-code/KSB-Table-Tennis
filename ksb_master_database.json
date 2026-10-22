@@ -23,9 +23,9 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-10-22T04:48:10.592109+00:00",
+    "lastUpdated": "2026-10-22T10:12:31.947567+00:00",
     "livePlayerCount": 69,
-    "liveEncounterCount": 519
+    "liveEncounterCount": 528
   },
   "historic": {
     "seasons": {
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-10-22T04:48:09.135415+00:00",
+    "lastUpdated": "2026-10-22T10:12:30.705972+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -35728,12 +35728,12 @@
         "players": [
           {
             "name": "Steve Horner",
-            "rank": 1920,
+            "rank": 1889,
             "slug": "steve-horner"
           },
           {
             "name": "Carlton Cooper",
-            "rank": 1861,
+            "rank": 1795,
             "slug": "carlton-cooper"
           },
           {
@@ -35743,7 +35743,7 @@
           },
           {
             "name": "Mark Gavin",
-            "rank": 1905,
+            "rank": 1916,
             "slug": "mark-gavin"
           }
         ],
@@ -35881,11 +35881,11 @@
             "venueName": "Kay Street Baptist Church",
             "venueSlug": "kay-street-baptist-church",
             "venueLocation": "https://maps.app.goo.gl/8Ji4FG42vFkCKJiw6",
-            "scoreLeft": null,
+            "scoreLeft": 19,
             "teamRightName": "Whalley Falcons",
             "teamRightSlug": "whalley-falcons",
-            "scoreRight": null,
-            "timeFulfilled": null,
+            "scoreRight": 16,
+            "timeFulfilled": 1792656729,
             "weekId": 6
           },
           {
@@ -36104,11 +36104,11 @@
                 "venueName": "Kay Street Baptist Church",
                 "venueSlug": "kay-street-baptist-church",
                 "venueLocation": "https://maps.app.goo.gl/8Ji4FG42vFkCKJiw6",
-                "scoreLeft": null,
+                "scoreLeft": 19,
                 "teamRightName": "Whalley Falcons",
                 "teamRightSlug": "whalley-falcons",
-                "scoreRight": null,
-                "timeFulfilled": null,
+                "scoreRight": 16,
+                "timeFulfilled": 1792656729,
                 "weekId": 6
               }
             ]
@@ -45651,7 +45651,7 @@
           "id": 146,
           "name": "Carlton Cooper",
           "slug": "carlton-cooper",
-          "rank": 1861,
+          "rank": 1795,
           "phoneMobile": "07736563238",
           "phoneLandline": "",
           "teamId": 20,
@@ -45661,15 +45661,24 @@
         },
         "team": {},
         "statistics": {
-          "played": 6,
+          "played": 9,
           "wins": 2,
           "draws": 0,
-          "losses": 4,
-          "winPercentage": 33.33,
-          "setsWon": 8,
-          "setsLost": 15,
-          "setDifference": -7,
+          "losses": 7,
+          "winPercentage": 22.22,
+          "setsWon": 9,
+          "setsLost": 24,
+          "setDifference": -15,
           "opponents": [
+            {
+              "name": "Aamir Gondal",
+              "slug": "aamir-gondal",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
             {
               "name": "Andy Cretney",
               "slug": "andy-cretney",
@@ -45698,6 +45707,15 @@
               "winPercentage": 0.0
             },
             {
+              "name": "James Astle",
+              "slug": "james-astle",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
               "name": "Paul Dooley",
               "slug": "paul-dooley",
               "played": 1,
@@ -45705,6 +45723,15 @@
               "draws": 0,
               "losses": 0,
               "winPercentage": 100.0
+            },
+            {
+              "name": "Rafeeq Sulaiman",
+              "slug": "rafeeq-sulaiman",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
             },
             {
               "name": "Shamir Bose",
@@ -45779,6 +45806,63 @@
               "opponent": "Dan Chamberlain",
               "opponentSlug": "dan-chamberlain",
               "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 43685,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Carlton Cooper",
+              "playerLeftSlug": "carlton-cooper",
+              "playerRightName": "James Astle",
+              "playerRightSlug": "james-astle",
+              "playerRankChangeLeft": -30,
+              "playerRankChangeRight": 45,
+              "player": "Carlton Cooper",
+              "playerSlug": "carlton-cooper",
+              "opponent": "James Astle",
+              "opponentSlug": "james-astle",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 43689,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Carlton Cooper",
+              "playerLeftSlug": "carlton-cooper",
+              "playerRightName": "Aamir Gondal",
+              "playerRightSlug": "aamir-gondal",
+              "playerRankChangeLeft": -14,
+              "playerRankChangeRight": 21,
+              "player": "Carlton Cooper",
+              "playerSlug": "carlton-cooper",
+              "opponent": "Aamir Gondal",
+              "opponentSlug": "aamir-gondal",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 43691,
+              "scoreLeft": 1,
+              "scoreRight": 3,
+              "playerLeftName": "Carlton Cooper",
+              "playerLeftSlug": "carlton-cooper",
+              "playerRightName": "Rafeeq Sulaiman",
+              "playerRightSlug": "rafeeq-sulaiman",
+              "playerRankChangeLeft": -22,
+              "playerRankChangeRight": 33,
+              "player": "Carlton Cooper",
+              "playerSlug": "carlton-cooper",
+              "opponent": "Rafeeq Sulaiman",
+              "opponentSlug": "rafeeq-sulaiman",
+              "playerScore": 1,
               "opponentScore": 3,
               "result": "L",
               "fixtureKey": null
@@ -52829,7 +52913,7 @@
           "id": 692,
           "name": "Mark Gavin",
           "slug": "mark-gavin",
-          "rank": 1905,
+          "rank": 1916,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 20,
@@ -52839,15 +52923,24 @@
         },
         "team": {},
         "statistics": {
-          "played": 12,
-          "wins": 7,
+          "played": 15,
+          "wins": 10,
           "draws": 0,
           "losses": 5,
-          "winPercentage": 58.33,
-          "setsWon": 25,
-          "setsLost": 21,
-          "setDifference": 4,
+          "winPercentage": 66.67,
+          "setsWon": 34,
+          "setsLost": 22,
+          "setDifference": 12,
           "opponents": [
+            {
+              "name": "Aamir Gondal",
+              "slug": "aamir-gondal",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
             {
               "name": "Andy Cretney",
               "slug": "andy-cretney",
@@ -52885,6 +52978,15 @@
               "winPercentage": 0.0
             },
             {
+              "name": "James Astle",
+              "slug": "james-astle",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
               "name": "Mohan Attanayaka",
               "slug": "mohan-attanayaka",
               "played": 1,
@@ -52905,6 +53007,15 @@
             {
               "name": "Paul Dooley",
               "slug": "paul-dooley",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
+              "name": "Rafeeq Sulaiman",
+              "slug": "rafeeq-sulaiman",
               "played": 1,
               "wins": 1,
               "draws": 0,
@@ -53124,6 +53235,63 @@
               "playerSlug": "mark-gavin",
               "opponent": "Sam Richardson",
               "opponentSlug": "sam-richardson",
+              "playerScore": 3,
+              "opponentScore": 0,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 43684,
+              "scoreLeft": 3,
+              "scoreRight": 1,
+              "playerLeftName": "Mark Gavin",
+              "playerLeftSlug": "mark-gavin",
+              "playerRightName": "Aamir Gondal",
+              "playerRightSlug": "aamir-gondal",
+              "playerRankChangeLeft": 5,
+              "playerRankChangeRight": -3,
+              "player": "Mark Gavin",
+              "playerSlug": "mark-gavin",
+              "opponent": "Aamir Gondal",
+              "opponentSlug": "aamir-gondal",
+              "playerScore": 3,
+              "opponentScore": 1,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 43686,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Mark Gavin",
+              "playerLeftSlug": "mark-gavin",
+              "playerRightName": "Rafeeq Sulaiman",
+              "playerRightSlug": "rafeeq-sulaiman",
+              "playerRankChangeLeft": 3,
+              "playerRankChangeRight": -2,
+              "player": "Mark Gavin",
+              "playerSlug": "mark-gavin",
+              "opponent": "Rafeeq Sulaiman",
+              "opponentSlug": "rafeeq-sulaiman",
+              "playerScore": 3,
+              "opponentScore": 0,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 43690,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Mark Gavin",
+              "playerLeftSlug": "mark-gavin",
+              "playerRightName": "James Astle",
+              "playerRightSlug": "james-astle",
+              "playerRankChangeLeft": 3,
+              "playerRankChangeRight": -2,
+              "player": "Mark Gavin",
+              "playerSlug": "mark-gavin",
+              "opponent": "James Astle",
+              "opponentSlug": "james-astle",
               "playerScore": 3,
               "opponentScore": 0,
               "result": "W",
@@ -58376,7 +58544,7 @@
           "id": 107,
           "name": "Steve Horner",
           "slug": "steve-horner",
-          "rank": 1920,
+          "rank": 1889,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 20,
@@ -58386,15 +58554,24 @@
         },
         "team": {},
         "statistics": {
-          "played": 9,
-          "wins": 4,
+          "played": 12,
+          "wins": 6,
           "draws": 0,
-          "losses": 5,
-          "winPercentage": 44.44,
-          "setsWon": 17,
-          "setsLost": 18,
+          "losses": 6,
+          "winPercentage": 50.0,
+          "setsWon": 23,
+          "setsLost": 24,
           "setDifference": -1,
           "opponents": [
+            {
+              "name": "Aamir Gondal",
+              "slug": "aamir-gondal",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
             {
               "name": "Andy Cretney",
               "slug": "andy-cretney",
@@ -58432,6 +58609,15 @@
               "winPercentage": 0.0
             },
             {
+              "name": "James Astle",
+              "slug": "james-astle",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
               "name": "Mohan Attanayaka",
               "slug": "mohan-attanayaka",
               "played": 1,
@@ -58443,6 +58629,15 @@
             {
               "name": "Neil Hepworth",
               "slug": "neil-hepworth",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
+              "name": "Rafeeq Sulaiman",
+              "slug": "rafeeq-sulaiman",
               "played": 1,
               "wins": 1,
               "draws": 0,
@@ -58647,6 +58842,63 @@
               "playerScore": 2,
               "opponentScore": 3,
               "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 43683,
+              "scoreLeft": 3,
+              "scoreRight": 1,
+              "playerLeftName": "Steve Horner",
+              "playerLeftSlug": "steve-horner",
+              "playerRightName": "Rafeeq Sulaiman",
+              "playerRightSlug": "rafeeq-sulaiman",
+              "playerRankChangeLeft": 3,
+              "playerRankChangeRight": -2,
+              "player": "Steve Horner",
+              "playerSlug": "steve-horner",
+              "opponent": "Rafeeq Sulaiman",
+              "opponentSlug": "rafeeq-sulaiman",
+              "playerScore": 3,
+              "opponentScore": 1,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 43687,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Steve Horner",
+              "playerLeftSlug": "steve-horner",
+              "playerRightName": "James Astle",
+              "playerRightSlug": "james-astle",
+              "playerRankChangeLeft": -40,
+              "playerRankChangeRight": 60,
+              "player": "Steve Horner",
+              "playerSlug": "steve-horner",
+              "opponent": "James Astle",
+              "opponentSlug": "james-astle",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 43692,
+              "scoreLeft": 3,
+              "scoreRight": 2,
+              "playerLeftName": "Steve Horner",
+              "playerLeftSlug": "steve-horner",
+              "playerRightName": "Aamir Gondal",
+              "playerRightSlug": "aamir-gondal",
+              "playerRankChangeLeft": 6,
+              "playerRankChangeRight": -4,
+              "player": "Steve Horner",
+              "playerSlug": "steve-horner",
+              "opponent": "Aamir Gondal",
+              "opponentSlug": "aamir-gondal",
+              "playerScore": 3,
+              "opponentScore": 2,
+              "result": "W",
               "fixtureKey": null
             }
           ]
@@ -61462,6 +61714,63 @@
         "opponent": "Dan Chamberlain",
         "opponentSlug": "dan-chamberlain",
         "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 43685,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Carlton Cooper",
+        "playerLeftSlug": "carlton-cooper",
+        "playerRightName": "James Astle",
+        "playerRightSlug": "james-astle",
+        "playerRankChangeLeft": -30,
+        "playerRankChangeRight": 45,
+        "player": "Carlton Cooper",
+        "playerSlug": "carlton-cooper",
+        "opponent": "James Astle",
+        "opponentSlug": "james-astle",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 43689,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Carlton Cooper",
+        "playerLeftSlug": "carlton-cooper",
+        "playerRightName": "Aamir Gondal",
+        "playerRightSlug": "aamir-gondal",
+        "playerRankChangeLeft": -14,
+        "playerRankChangeRight": 21,
+        "player": "Carlton Cooper",
+        "playerSlug": "carlton-cooper",
+        "opponent": "Aamir Gondal",
+        "opponentSlug": "aamir-gondal",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 43691,
+        "scoreLeft": 1,
+        "scoreRight": 3,
+        "playerLeftName": "Carlton Cooper",
+        "playerLeftSlug": "carlton-cooper",
+        "playerRightName": "Rafeeq Sulaiman",
+        "playerRightSlug": "rafeeq-sulaiman",
+        "playerRankChangeLeft": -22,
+        "playerRankChangeRight": 33,
+        "player": "Carlton Cooper",
+        "playerSlug": "carlton-cooper",
+        "opponent": "Rafeeq Sulaiman",
+        "opponentSlug": "rafeeq-sulaiman",
+        "playerScore": 1,
         "opponentScore": 3,
         "result": "L",
         "fixtureKey": null
@@ -65742,6 +66051,63 @@
         "fixtureKey": null
       },
       {
+        "id": 43684,
+        "scoreLeft": 3,
+        "scoreRight": 1,
+        "playerLeftName": "Mark Gavin",
+        "playerLeftSlug": "mark-gavin",
+        "playerRightName": "Aamir Gondal",
+        "playerRightSlug": "aamir-gondal",
+        "playerRankChangeLeft": 5,
+        "playerRankChangeRight": -3,
+        "player": "Mark Gavin",
+        "playerSlug": "mark-gavin",
+        "opponent": "Aamir Gondal",
+        "opponentSlug": "aamir-gondal",
+        "playerScore": 3,
+        "opponentScore": 1,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 43686,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Mark Gavin",
+        "playerLeftSlug": "mark-gavin",
+        "playerRightName": "Rafeeq Sulaiman",
+        "playerRightSlug": "rafeeq-sulaiman",
+        "playerRankChangeLeft": 3,
+        "playerRankChangeRight": -2,
+        "player": "Mark Gavin",
+        "playerSlug": "mark-gavin",
+        "opponent": "Rafeeq Sulaiman",
+        "opponentSlug": "rafeeq-sulaiman",
+        "playerScore": 3,
+        "opponentScore": 0,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 43690,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Mark Gavin",
+        "playerLeftSlug": "mark-gavin",
+        "playerRightName": "James Astle",
+        "playerRightSlug": "james-astle",
+        "playerRankChangeLeft": 3,
+        "playerRankChangeRight": -2,
+        "player": "Mark Gavin",
+        "playerSlug": "mark-gavin",
+        "opponent": "James Astle",
+        "opponentSlug": "james-astle",
+        "playerScore": 3,
+        "opponentScore": 0,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
         "id": 43444,
         "scoreLeft": 0,
         "scoreRight": 3,
@@ -68991,6 +69357,63 @@
         "fixtureKey": null
       },
       {
+        "id": 43683,
+        "scoreLeft": 3,
+        "scoreRight": 1,
+        "playerLeftName": "Steve Horner",
+        "playerLeftSlug": "steve-horner",
+        "playerRightName": "Rafeeq Sulaiman",
+        "playerRightSlug": "rafeeq-sulaiman",
+        "playerRankChangeLeft": 3,
+        "playerRankChangeRight": -2,
+        "player": "Steve Horner",
+        "playerSlug": "steve-horner",
+        "opponent": "Rafeeq Sulaiman",
+        "opponentSlug": "rafeeq-sulaiman",
+        "playerScore": 3,
+        "opponentScore": 1,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 43687,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Steve Horner",
+        "playerLeftSlug": "steve-horner",
+        "playerRightName": "James Astle",
+        "playerRightSlug": "james-astle",
+        "playerRankChangeLeft": -40,
+        "playerRankChangeRight": 60,
+        "player": "Steve Horner",
+        "playerSlug": "steve-horner",
+        "opponent": "James Astle",
+        "opponentSlug": "james-astle",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 43692,
+        "scoreLeft": 3,
+        "scoreRight": 2,
+        "playerLeftName": "Steve Horner",
+        "playerLeftSlug": "steve-horner",
+        "playerRightName": "Aamir Gondal",
+        "playerRightSlug": "aamir-gondal",
+        "playerRankChangeLeft": 6,
+        "playerRankChangeRight": -4,
+        "player": "Steve Horner",
+        "playerSlug": "steve-horner",
+        "opponent": "Aamir Gondal",
+        "opponentSlug": "aamir-gondal",
+        "playerScore": 3,
+        "opponentScore": 2,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
         "id": 43073,
         "scoreLeft": 0,
         "scoreRight": 3,
@@ -70508,11 +70931,11 @@
         "venueName": "Kay Street Baptist Church",
         "venueSlug": "kay-street-baptist-church",
         "venueLocation": "https://maps.app.goo.gl/8Ji4FG42vFkCKJiw6",
-        "scoreLeft": null,
+        "scoreLeft": 19,
         "teamRightName": "Whalley Falcons",
         "teamRightSlug": "whalley-falcons",
-        "scoreRight": null,
-        "timeFulfilled": null,
+        "scoreRight": 16,
+        "timeFulfilled": 1792656729,
         "weekId": 6
       },
       {
@@ -74205,11 +74628,11 @@
             "venueName": "Kay Street Baptist Church",
             "venueSlug": "kay-street-baptist-church",
             "venueLocation": "https://maps.app.goo.gl/8Ji4FG42vFkCKJiw6",
-            "scoreLeft": null,
+            "scoreLeft": 19,
             "teamRightName": "Whalley Falcons",
             "teamRightSlug": "whalley-falcons",
-            "scoreRight": null,
-            "timeFulfilled": null,
+            "scoreRight": 16,
+            "timeFulfilled": 1792656729,
             "weekId": 6
           }
         ]
@@ -78494,9 +78917,9 @@
           "t": "Spartans",
           "w": 4,
           "d": 0,
-          "l": 0,
-          "pl": 4,
-          "pts": 104
+          "l": 1,
+          "pl": 5,
+          "pts": 123
         },
         {
           "p": 2,
@@ -78518,6 +78941,15 @@
         },
         {
           "p": 4,
+          "t": "Gladiators",
+          "w": 3,
+          "d": 0,
+          "l": 2,
+          "pl": 5,
+          "pts": 85
+        },
+        {
+          "p": 5,
           "t": "KSB B",
           "w": 2,
           "d": 0,
@@ -78526,7 +78958,7 @@
           "pts": 81
         },
         {
-          "p": 5,
+          "p": 6,
           "t": "Whalley Eagles",
           "w": 3,
           "d": 0,
@@ -78535,7 +78967,7 @@
           "pts": 77
         },
         {
-          "p": 6,
+          "p": 7,
           "t": "KSB C",
           "w": 1,
           "d": 0,
@@ -78544,22 +78976,13 @@
           "pts": 74
         },
         {
-          "p": 7,
+          "p": 8,
           "t": "Burnley Black Widows",
           "w": 2,
           "d": 0,
           "l": 3,
           "pl": 5,
           "pts": 71
-        },
-        {
-          "p": 8,
-          "t": "Gladiators",
-          "w": 2,
-          "d": 0,
-          "l": 2,
-          "pl": 4,
-          "pts": 64
         },
         {
           "p": 9,
@@ -78628,30 +79051,30 @@
         },
         {
           "p": 6,
-          "t": "Burnley Hornets",
+          "t": "KSB D",
           "w": 2,
           "d": 0,
-          "l": 2,
-          "pl": 4,
-          "pts": 79
+          "l": 3,
+          "pl": 5,
+          "pts": 85
         },
         {
           "p": 7,
           "t": "Whalley Falcons",
           "w": 0,
           "d": 0,
-          "l": 4,
-          "pl": 4,
-          "pts": 67
+          "l": 5,
+          "pl": 5,
+          "pts": 83
         },
         {
           "p": 8,
-          "t": "KSB D",
-          "w": 1,
+          "t": "Burnley Hornets",
+          "w": 2,
           "d": 0,
-          "l": 3,
+          "l": 2,
           "pl": 4,
-          "pts": 66
+          "pts": 79
         },
         {
           "p": 9,
@@ -78738,6 +79161,15 @@
         },
         {
           "p": 8,
+          "t": "Whalley Hawks",
+          "w": 1,
+          "d": 0,
+          "l": 4,
+          "pl": 5,
+          "pts": 71
+        },
+        {
+          "p": 9,
           "t": "Burnley Bees",
           "w": 1,
           "d": 0,
@@ -78746,22 +79178,13 @@
           "pts": 64
         },
         {
-          "p": 9,
-          "t": "Whalley Hawks",
-          "w": 0,
-          "d": 0,
-          "l": 4,
-          "pl": 4,
-          "pts": 49
-        },
-        {
           "p": 10,
           "t": "Brierfield",
           "w": 0,
           "d": 0,
-          "l": 3,
-          "pl": 3,
-          "pts": 38
+          "l": 4,
+          "pl": 4,
+          "pts": 57
         }
       ],
       "third": [
@@ -162972,24 +163395,24 @@
         "setDifference": 310
       },
       "currentSeason": {
-        "played": 6,
+        "played": 9,
         "wins": 2,
         "draws": 0,
-        "losses": 4,
-        "winPercentage": 33.33,
-        "setsWon": 8,
-        "setsLost": 15,
-        "setDifference": -7
+        "losses": 7,
+        "winPercentage": 22.22,
+        "setsWon": 9,
+        "setsLost": 24,
+        "setDifference": -15
       },
       "career": {
-        "played": 432,
+        "played": 435,
         "wins": 275,
         "draws": 1,
-        "losses": 156,
-        "setsWon": 956,
-        "setsLost": 653,
-        "winPercentage": 63.66,
-        "setDifference": 303
+        "losses": 159,
+        "setsWon": 957,
+        "setsLost": 662,
+        "winPercentage": 63.22,
+        "setDifference": 295
       },
       "seasons": {
         "2013": {
@@ -177400,7 +177823,7 @@
             "id": 146,
             "name": "Carlton Cooper",
             "slug": "carlton-cooper",
-            "rank": 1861,
+            "rank": 1795,
             "phoneMobile": "07736563238",
             "phoneLandline": "",
             "teamId": 20,
@@ -177410,15 +177833,24 @@
           },
           "team": {},
           "statistics": {
-            "played": 6,
+            "played": 9,
             "wins": 2,
             "draws": 0,
-            "losses": 4,
-            "winPercentage": 33.33,
-            "setsWon": 8,
-            "setsLost": 15,
-            "setDifference": -7,
+            "losses": 7,
+            "winPercentage": 22.22,
+            "setsWon": 9,
+            "setsLost": 24,
+            "setDifference": -15,
             "opponents": [
+              {
+                "name": "Aamir Gondal",
+                "slug": "aamir-gondal",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
               {
                 "name": "Andy Cretney",
                 "slug": "andy-cretney",
@@ -177447,6 +177879,15 @@
                 "winPercentage": 0.0
               },
               {
+                "name": "James Astle",
+                "slug": "james-astle",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
                 "name": "Paul Dooley",
                 "slug": "paul-dooley",
                 "played": 1,
@@ -177454,6 +177895,15 @@
                 "draws": 0,
                 "losses": 0,
                 "winPercentage": 100.0
+              },
+              {
+                "name": "Rafeeq Sulaiman",
+                "slug": "rafeeq-sulaiman",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
               },
               {
                 "name": "Shamir Bose",
@@ -177528,6 +177978,63 @@
                 "opponent": "Dan Chamberlain",
                 "opponentSlug": "dan-chamberlain",
                 "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 43685,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Carlton Cooper",
+                "playerLeftSlug": "carlton-cooper",
+                "playerRightName": "James Astle",
+                "playerRightSlug": "james-astle",
+                "playerRankChangeLeft": -30,
+                "playerRankChangeRight": 45,
+                "player": "Carlton Cooper",
+                "playerSlug": "carlton-cooper",
+                "opponent": "James Astle",
+                "opponentSlug": "james-astle",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 43689,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Carlton Cooper",
+                "playerLeftSlug": "carlton-cooper",
+                "playerRightName": "Aamir Gondal",
+                "playerRightSlug": "aamir-gondal",
+                "playerRankChangeLeft": -14,
+                "playerRankChangeRight": 21,
+                "player": "Carlton Cooper",
+                "playerSlug": "carlton-cooper",
+                "opponent": "Aamir Gondal",
+                "opponentSlug": "aamir-gondal",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 43691,
+                "scoreLeft": 1,
+                "scoreRight": 3,
+                "playerLeftName": "Carlton Cooper",
+                "playerLeftSlug": "carlton-cooper",
+                "playerRightName": "Rafeeq Sulaiman",
+                "playerRightSlug": "rafeeq-sulaiman",
+                "playerRankChangeLeft": -22,
+                "playerRankChangeRight": 33,
+                "player": "Carlton Cooper",
+                "playerSlug": "carlton-cooper",
+                "opponent": "Rafeeq Sulaiman",
+                "opponentSlug": "rafeeq-sulaiman",
+                "playerScore": 1,
                 "opponentScore": 3,
                 "result": "L",
                 "fixtureKey": null
@@ -426943,24 +427450,24 @@
         "setDifference": 135
       },
       "currentSeason": {
-        "played": 12,
-        "wins": 7,
+        "played": 15,
+        "wins": 10,
         "draws": 0,
         "losses": 5,
-        "winPercentage": 58.33,
-        "setsWon": 25,
-        "setsLost": 21,
-        "setDifference": 4
+        "winPercentage": 66.67,
+        "setsWon": 34,
+        "setsLost": 22,
+        "setDifference": 12
       },
       "career": {
-        "played": 99,
-        "wins": 77,
+        "played": 102,
+        "wins": 80,
         "draws": 0,
         "losses": 22,
-        "setsWon": 246,
-        "setsLost": 107,
-        "winPercentage": 77.78,
-        "setDifference": 139
+        "setsWon": 255,
+        "setsLost": 108,
+        "winPercentage": 78.43,
+        "setDifference": 147
       },
       "seasons": {
         "2024": {
@@ -430185,7 +430692,7 @@
             "id": 692,
             "name": "Mark Gavin",
             "slug": "mark-gavin",
-            "rank": 1905,
+            "rank": 1916,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 20,
@@ -430195,15 +430702,24 @@
           },
           "team": {},
           "statistics": {
-            "played": 12,
-            "wins": 7,
+            "played": 15,
+            "wins": 10,
             "draws": 0,
             "losses": 5,
-            "winPercentage": 58.33,
-            "setsWon": 25,
-            "setsLost": 21,
-            "setDifference": 4,
+            "winPercentage": 66.67,
+            "setsWon": 34,
+            "setsLost": 22,
+            "setDifference": 12,
             "opponents": [
+              {
+                "name": "Aamir Gondal",
+                "slug": "aamir-gondal",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
               {
                 "name": "Andy Cretney",
                 "slug": "andy-cretney",
@@ -430241,6 +430757,15 @@
                 "winPercentage": 0.0
               },
               {
+                "name": "James Astle",
+                "slug": "james-astle",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
                 "name": "Mohan Attanayaka",
                 "slug": "mohan-attanayaka",
                 "played": 1,
@@ -430261,6 +430786,15 @@
               {
                 "name": "Paul Dooley",
                 "slug": "paul-dooley",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
+                "name": "Rafeeq Sulaiman",
+                "slug": "rafeeq-sulaiman",
                 "played": 1,
                 "wins": 1,
                 "draws": 0,
@@ -430480,6 +431014,63 @@
                 "playerSlug": "mark-gavin",
                 "opponent": "Sam Richardson",
                 "opponentSlug": "sam-richardson",
+                "playerScore": 3,
+                "opponentScore": 0,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 43684,
+                "scoreLeft": 3,
+                "scoreRight": 1,
+                "playerLeftName": "Mark Gavin",
+                "playerLeftSlug": "mark-gavin",
+                "playerRightName": "Aamir Gondal",
+                "playerRightSlug": "aamir-gondal",
+                "playerRankChangeLeft": 5,
+                "playerRankChangeRight": -3,
+                "player": "Mark Gavin",
+                "playerSlug": "mark-gavin",
+                "opponent": "Aamir Gondal",
+                "opponentSlug": "aamir-gondal",
+                "playerScore": 3,
+                "opponentScore": 1,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 43686,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Mark Gavin",
+                "playerLeftSlug": "mark-gavin",
+                "playerRightName": "Rafeeq Sulaiman",
+                "playerRightSlug": "rafeeq-sulaiman",
+                "playerRankChangeLeft": 3,
+                "playerRankChangeRight": -2,
+                "player": "Mark Gavin",
+                "playerSlug": "mark-gavin",
+                "opponent": "Rafeeq Sulaiman",
+                "opponentSlug": "rafeeq-sulaiman",
+                "playerScore": 3,
+                "opponentScore": 0,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 43690,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Mark Gavin",
+                "playerLeftSlug": "mark-gavin",
+                "playerRightName": "James Astle",
+                "playerRightSlug": "james-astle",
+                "playerRankChangeLeft": 3,
+                "playerRankChangeRight": -2,
+                "player": "Mark Gavin",
+                "playerSlug": "mark-gavin",
+                "opponent": "James Astle",
+                "opponentSlug": "james-astle",
                 "playerScore": 3,
                 "opponentScore": 0,
                 "result": "W",
@@ -576424,23 +577015,23 @@
         "setDifference": 211
       },
       "currentSeason": {
-        "played": 9,
-        "wins": 4,
+        "played": 12,
+        "wins": 6,
         "draws": 0,
-        "losses": 5,
-        "winPercentage": 44.44,
-        "setsWon": 17,
-        "setsLost": 18,
+        "losses": 6,
+        "winPercentage": 50.0,
+        "setsWon": 23,
+        "setsLost": 24,
         "setDifference": -1
       },
       "career": {
-        "played": 483,
-        "wins": 282,
+        "played": 486,
+        "wins": 284,
         "draws": 1,
-        "losses": 200,
-        "setsWon": 1039,
-        "setsLost": 829,
-        "winPercentage": 58.39,
+        "losses": 201,
+        "setsWon": 1045,
+        "setsLost": 835,
+        "winPercentage": 58.44,
         "setDifference": 210
       },
       "seasons": {
@@ -592069,7 +592660,7 @@
             "id": 107,
             "name": "Steve Horner",
             "slug": "steve-horner",
-            "rank": 1920,
+            "rank": 1889,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 20,
@@ -592079,15 +592670,24 @@
           },
           "team": {},
           "statistics": {
-            "played": 9,
-            "wins": 4,
+            "played": 12,
+            "wins": 6,
             "draws": 0,
-            "losses": 5,
-            "winPercentage": 44.44,
-            "setsWon": 17,
-            "setsLost": 18,
+            "losses": 6,
+            "winPercentage": 50.0,
+            "setsWon": 23,
+            "setsLost": 24,
             "setDifference": -1,
             "opponents": [
+              {
+                "name": "Aamir Gondal",
+                "slug": "aamir-gondal",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
               {
                 "name": "Andy Cretney",
                 "slug": "andy-cretney",
@@ -592125,6 +592725,15 @@
                 "winPercentage": 0.0
               },
               {
+                "name": "James Astle",
+                "slug": "james-astle",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
                 "name": "Mohan Attanayaka",
                 "slug": "mohan-attanayaka",
                 "played": 1,
@@ -592136,6 +592745,15 @@
               {
                 "name": "Neil Hepworth",
                 "slug": "neil-hepworth",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
+                "name": "Rafeeq Sulaiman",
+                "slug": "rafeeq-sulaiman",
                 "played": 1,
                 "wins": 1,
                 "draws": 0,
@@ -592340,6 +592958,63 @@
                 "playerScore": 2,
                 "opponentScore": 3,
                 "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 43683,
+                "scoreLeft": 3,
+                "scoreRight": 1,
+                "playerLeftName": "Steve Horner",
+                "playerLeftSlug": "steve-horner",
+                "playerRightName": "Rafeeq Sulaiman",
+                "playerRightSlug": "rafeeq-sulaiman",
+                "playerRankChangeLeft": 3,
+                "playerRankChangeRight": -2,
+                "player": "Steve Horner",
+                "playerSlug": "steve-horner",
+                "opponent": "Rafeeq Sulaiman",
+                "opponentSlug": "rafeeq-sulaiman",
+                "playerScore": 3,
+                "opponentScore": 1,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 43687,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Steve Horner",
+                "playerLeftSlug": "steve-horner",
+                "playerRightName": "James Astle",
+                "playerRightSlug": "james-astle",
+                "playerRankChangeLeft": -40,
+                "playerRankChangeRight": 60,
+                "player": "Steve Horner",
+                "playerSlug": "steve-horner",
+                "opponent": "James Astle",
+                "opponentSlug": "james-astle",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 43692,
+                "scoreLeft": 3,
+                "scoreRight": 2,
+                "playerLeftName": "Steve Horner",
+                "playerLeftSlug": "steve-horner",
+                "playerRightName": "Aamir Gondal",
+                "playerRightSlug": "aamir-gondal",
+                "playerRankChangeLeft": 6,
+                "playerRankChangeRight": -4,
+                "player": "Steve Horner",
+                "playerSlug": "steve-horner",
+                "opponent": "Aamir Gondal",
+                "opponentSlug": "aamir-gondal",
+                "playerScore": 3,
+                "opponentScore": 2,
+                "result": "W",
                 "fixtureKey": null
               }
             ]
