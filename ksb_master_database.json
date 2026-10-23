@@ -23,7 +23,7 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-10-22T22:25:29.573612+00:00",
+    "lastUpdated": "2026-10-23T01:33:01.288687+00:00",
     "livePlayerCount": 69,
     "liveEncounterCount": 528
   },
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-10-22T22:25:26.407265+00:00",
+    "lastUpdated": "2026-10-23T01:32:59.372108+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -79107,6 +79107,15 @@
         },
         {
           "p": 2,
+          "t": "Whalley Ospreys",
+          "w": 5,
+          "d": 0,
+          "l": 0,
+          "pl": 5,
+          "pts": 121
+        },
+        {
+          "p": 3,
           "t": "Hyndburn TTC A",
           "w": 3,
           "d": 0,
@@ -79115,7 +79124,7 @@
           "pts": 110
         },
         {
-          "p": 3,
+          "p": 4,
           "t": "KSB Lions",
           "w": 3,
           "d": 0,
@@ -79124,31 +79133,22 @@
           "pts": 102
         },
         {
-          "p": 4,
-          "t": "Whalley Ospreys",
-          "w": 4,
+          "p": 5,
+          "t": "Slayers",
+          "w": 2,
           "d": 0,
-          "l": 0,
-          "pl": 4,
-          "pts": 96
+          "l": 3,
+          "pl": 5,
+          "pts": 101
         },
         {
-          "p": 5,
+          "p": 6,
           "t": "KSB Tigers",
           "w": 2,
           "d": 0,
           "l": 3,
           "pl": 5,
           "pts": 91
-        },
-        {
-          "p": 6,
-          "t": "Slayers",
-          "w": 2,
-          "d": 0,
-          "l": 2,
-          "pl": 4,
-          "pts": 90
         },
         {
           "p": 7,
