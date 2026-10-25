@@ -29,7 +29,7 @@
     "enrichedEncounterCount": 12988,
     "successfulApiLookupsThisRun": 0,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-10-25T19:38:40.509067+00:00"
+    "lastUpdated": "2026-10-25T22:35:10.654651+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -543118,7 +543118,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-10-25T19:38:40.509360+00:00",
+    "generatedAt": "2026-10-25T22:35:10.654783+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
