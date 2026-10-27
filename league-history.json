@@ -3888,14 +3888,23 @@
         {
           "p": 1,
           "t": "KSB Jaguars",
-          "w": 4,
+          "w": 5,
           "d": 0,
           "l": 1,
-          "pl": 5,
-          "pts": 123
+          "pl": 6,
+          "pts": 144
         },
         {
           "p": 2,
+          "t": "Hyndburn TTC A",
+          "w": 3,
+          "d": 0,
+          "l": 3,
+          "pl": 6,
+          "pts": 124
+        },
+        {
+          "p": 3,
           "t": "Whalley Ospreys",
           "w": 5,
           "d": 0,
@@ -3904,16 +3913,16 @@
           "pts": 121
         },
         {
-          "p": 3,
-          "t": "Hyndburn TTC A",
+          "p": 4,
+          "t": "KSB Tigers",
           "w": 3,
           "d": 0,
-          "l": 2,
-          "pl": 5,
-          "pts": 110
+          "l": 3,
+          "pl": 6,
+          "pts": 118
         },
         {
-          "p": 4,
+          "p": 5,
           "t": "KSB Lions",
           "w": 3,
           "d": 0,
@@ -3922,7 +3931,7 @@
           "pts": 102
         },
         {
-          "p": 5,
+          "p": 6,
           "t": "Slayers",
           "w": 2,
           "d": 0,
@@ -3931,22 +3940,13 @@
           "pts": 101
         },
         {
-          "p": 6,
-          "t": "KSB Tigers",
-          "w": 2,
-          "d": 0,
-          "l": 3,
-          "pl": 5,
-          "pts": 91
-        },
-        {
           "p": 7,
           "t": "KSB G",
           "w": 3,
           "d": 0,
-          "l": 2,
-          "pl": 5,
-          "pts": 79
+          "l": 3,
+          "pl": 6,
+          "pts": 95
         },
         {
           "p": 8,
@@ -3979,16 +3979,16 @@
       "third": [
         {
           "p": 1,
-          "t": "Burnley Wasps",
-          "w": 5,
+          "t": "Vanguard Typhoons",
+          "w": 6,
           "d": 0,
           "l": 0,
-          "pl": 5,
-          "pts": 128
+          "pl": 6,
+          "pts": 158
         },
         {
           "p": 2,
-          "t": "Vanguard Typhoons",
+          "t": "Burnley Wasps",
           "w": 5,
           "d": 0,
           "l": 0,
@@ -4009,9 +4009,9 @@
           "t": "KSB Pumas (Jun)",
           "w": 4,
           "d": 0,
-          "l": 1,
-          "pl": 5,
-          "pts": 96
+          "l": 2,
+          "pl": 6,
+          "pts": 100
         },
         {
           "p": 5,
@@ -4051,21 +4051,21 @@
         },
         {
           "p": 9,
-          "t": "KSB Leopards (Jun)",
-          "w": 0,
+          "t": "KSB Panthers (Jun)",
+          "w": 1,
           "d": 0,
           "l": 5,
-          "pl": 5,
-          "pts": 32
+          "pl": 6,
+          "pts": 59
         },
         {
           "p": 10,
-          "t": "KSB Panthers (Jun)",
+          "t": "KSB Leopards (Jun)",
           "w": 0,
           "d": 0,
-          "l": 5,
-          "pl": 5,
-          "pts": 32
+          "l": 6,
+          "pl": 6,
+          "pts": 41
         }
       ]
     }
@@ -4185,5 +4185,5 @@
     }
   },
   "currentSeason": 2026,
-  "lastUpdated": "2026-10-27T10:35:43.802250+00:00"
+  "lastUpdated": "2026-10-27T16:40:28.936381+00:00"
 }

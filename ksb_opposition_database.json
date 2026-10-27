@@ -23,13 +23,13 @@
     "historicStartSeason": 2013,
     "historicEndSeason": 2025,
     "currentSeason": 2026,
-    "oppositionPlayerCount": 479,
+    "oppositionPlayerCount": 482,
     "oppositionTeamCount": 111,
-    "ksbEncounterCount": 12988,
-    "enrichedEncounterCount": 12988,
-    "successfulApiLookupsThisRun": 0,
+    "ksbEncounterCount": 13015,
+    "enrichedEncounterCount": 13015,
+    "successfulApiLookupsThisRun": 4,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-10-27T10:35:44.891026+00:00"
+    "lastUpdated": "2026-10-27T16:40:32.361396+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -23297,6 +23297,110 @@
           },
           "opponentDivision": null,
           "opponentRank": 625
+        }
+      ],
+      "apiStatus": "success",
+      "teamHistoryComplete": true
+    },
+    "alice-hodgkinson": {
+      "name": "Alice Hodgkinson",
+      "slug": "alice-hodgkinson",
+      "firstKnownKSBSeason": 2026,
+      "lastKnownKSBSeason": 2026,
+      "teamHistory": [
+        {
+          "season": 2026,
+          "player": {
+            "id": 778,
+            "name": "Alice Hodgkinson",
+            "slug": "alice-hodgkinson",
+            "rank": 76
+          },
+          "team": {
+            "id": 101,
+            "name": "KSB Panthers (Jun)",
+            "slug": "ksb-panthers-jun",
+            "divisionId": 4,
+            "division": null,
+            "rank": 76
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/alice-hodgkinson",
+            "status": "success"
+          }
+        }
+      ],
+      "ksbSeasons": [
+        2026
+      ],
+      "ksbCareer": {
+        "played": 1,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "winPercentage": 0.0,
+        "setsWon": 1,
+        "setsLost": 3,
+        "setDifference": -2
+      },
+      "ksbBySeason": {
+        "2026": {
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 0.0,
+          "setsWon": 1,
+          "setsLost": 3,
+          "setDifference": -2
+        }
+      },
+      "ksbByTeam": {
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 0.0,
+          "setsWon": 1,
+          "setsLost": 3,
+          "setDifference": -2
+        }
+      },
+      "ksbEncounters": [
+        {
+          "id": 43787,
+          "season": 2026,
+          "ksbPlayer": "Oliver Ingham",
+          "ksbPlayerSlug": "oliver-ingham",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Oliver Ingham",
+          "playerLeftSlug": "oliver-ingham",
+          "playerRightName": "Alice Hodgkinson",
+          "playerRightSlug": "alice-hodgkinson",
+          "playerRankChangeLeft": -9,
+          "playerRankChangeRight": 14,
+          "ksbPlayerScore": 1,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Alice Hodgkinson",
+          "opponentSlug": "alice-hodgkinson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 101,
+            "name": "KSB Panthers (Jun)",
+            "slug": "ksb-panthers-jun",
+            "divisionId": 4,
+            "division": null,
+            "rank": 76
+          },
+          "opponentDivision": null,
+          "opponentRank": 76
         }
       ],
       "apiStatus": "success",
@@ -74642,14 +74746,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 21,
-        "wins": 10,
+        "played": 24,
+        "wins": 11,
         "draws": 0,
-        "losses": 11,
-        "winPercentage": 47.62,
-        "setsWon": 37,
-        "setsLost": 35,
-        "setDifference": 2
+        "losses": 13,
+        "winPercentage": 45.83,
+        "setsWon": 43,
+        "setsLost": 43,
+        "setDifference": 0
       },
       "ksbBySeason": {
         "2018": {
@@ -74703,14 +74807,14 @@
           "setDifference": -3
         },
         "2026": {
-          "played": 6,
-          "wins": 3,
+          "played": 9,
+          "wins": 4,
           "draws": 0,
-          "losses": 3,
-          "winPercentage": 50.0,
-          "setsWon": 13,
-          "setsLost": 9,
-          "setDifference": 4
+          "losses": 5,
+          "winPercentage": 44.44,
+          "setsWon": 19,
+          "setsLost": 17,
+          "setDifference": 2
         }
       },
       "ksbByTeam": {
@@ -74801,14 +74905,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 6,
-          "wins": 3,
+          "played": 9,
+          "wins": 4,
           "draws": 0,
-          "losses": 3,
-          "winPercentage": 50.0,
-          "setsWon": 13,
-          "setsLost": 9,
-          "setDifference": 4
+          "losses": 5,
+          "winPercentage": 44.44,
+          "setsWon": 19,
+          "setsLost": 17,
+          "setDifference": 2
         }
       },
       "ksbEncounters": [
@@ -75349,6 +75453,62 @@
           "opponentRank": null
         },
         {
+          "id": 43773,
+          "season": 2026,
+          "ksbPlayer": "Frank Boldy",
+          "ksbPlayerSlug": "frank-boldy",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 2,
+          "playerLeftName": "Frank Boldy",
+          "playerLeftSlug": "frank-boldy",
+          "playerRightName": "Daniel Vickers",
+          "playerRightSlug": "daniel-vickers",
+          "playerRankChangeLeft": 33,
+          "playerRankChangeRight": -22,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "Daniel Vickers",
+          "opponentSlug": "daniel-vickers",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "KSB Tigers",
+            "slug": "ksb-tigers"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 43776,
+          "season": 2026,
+          "ksbPlayer": "Iain Clements",
+          "ksbPlayerSlug": "iain-clements",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 2,
+          "scoreRight": 3,
+          "playerLeftName": "Iain Clements",
+          "playerLeftSlug": "iain-clements",
+          "playerRightName": "Daniel Vickers",
+          "playerRightSlug": "daniel-vickers",
+          "playerRankChangeLeft": -2,
+          "playerRankChangeRight": 3,
+          "ksbPlayerScore": 2,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Daniel Vickers",
+          "opponentSlug": "daniel-vickers",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "KSB Tigers",
+            "slug": "ksb-tigers"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 43011,
           "season": 2026,
           "ksbPlayer": "Jackson Boldy",
@@ -75420,6 +75580,34 @@
           "playerRankChangeLeft": 33,
           "playerRankChangeRight": -22,
           "ksbPlayerScore": 2,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Daniel Vickers",
+          "opponentSlug": "daniel-vickers",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "KSB Tigers",
+            "slug": "ksb-tigers"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 43781,
+          "season": 2026,
+          "ksbPlayer": "Lee Ash",
+          "ksbPlayerSlug": "lee-ash",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Lee Ash",
+          "playerLeftSlug": "lee-ash",
+          "playerRightName": "Daniel Vickers",
+          "playerRightSlug": "daniel-vickers",
+          "playerRankChangeLeft": -1,
+          "playerRankChangeRight": 2,
+          "ksbPlayerScore": 1,
           "opponentScore": 3,
           "resultForKSBPlayer": "L",
           "opponent": "Daniel Vickers",
@@ -118885,14 +119073,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 15,
-        "wins": 5,
+        "played": 18,
+        "wins": 6,
         "draws": 0,
-        "losses": 10,
+        "losses": 12,
         "winPercentage": 33.33,
-        "setsWon": 20,
-        "setsLost": 36,
-        "setDifference": -16
+        "setsWon": 23,
+        "setsLost": 43,
+        "setDifference": -20
       },
       "ksbBySeason": {
         "2025": {
@@ -118906,14 +119094,14 @@
           "setDifference": -17
         },
         "2026": {
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 3,
           "draws": 0,
-          "losses": 1,
-          "winPercentage": 66.67,
-          "setsWon": 6,
-          "setsLost": 5,
-          "setDifference": 1
+          "losses": 3,
+          "winPercentage": 50.0,
+          "setsWon": 9,
+          "setsLost": 12,
+          "setDifference": -3
         }
       },
       "ksbByTeam": {
@@ -118944,14 +119132,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 3,
           "draws": 0,
-          "losses": 1,
-          "winPercentage": 66.67,
-          "setsWon": 6,
-          "setsLost": 5,
-          "setDifference": 1
+          "losses": 3,
+          "winPercentage": 50.0,
+          "setsWon": 9,
+          "setsLost": 12,
+          "setDifference": -3
         }
       },
       "ksbEncounters": [
@@ -119140,6 +119328,34 @@
           "opponentRank": null
         },
         {
+          "id": 43753,
+          "season": 2026,
+          "ksbPlayer": "Jackson Boldy",
+          "ksbPlayerSlug": "jackson-boldy",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Eric Yuan Shi",
+          "playerLeftSlug": "eric-yuan-shi",
+          "playerRightName": "Jackson Boldy",
+          "playerRightSlug": "jackson-boldy",
+          "playerRankChangeLeft": 11,
+          "playerRankChangeRight": -7,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Eric Yuan Shi",
+          "opponentSlug": "eric-yuan-shi",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Hyndburn TTC A",
+            "slug": "hyndburn-ttc-a"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 42214,
           "season": 2025,
           "ksbPlayer": "Jacob Milnes",
@@ -119202,6 +119418,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 916
+        },
+        {
+          "id": 43762,
+          "season": 2026,
+          "ksbPlayer": "Jacob Milnes",
+          "ksbPlayerSlug": "jacob-milnes",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Eric Yuan Shi",
+          "playerLeftSlug": "eric-yuan-shi",
+          "playerRightName": "Jacob Milnes",
+          "playerRightSlug": "jacob-milnes",
+          "playerRankChangeLeft": 5,
+          "playerRankChangeRight": -3,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Eric Yuan Shi",
+          "opponentSlug": "eric-yuan-shi",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Hyndburn TTC A",
+            "slug": "hyndburn-ttc-a"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 39525,
@@ -119422,6 +119666,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 916
+        },
+        {
+          "id": 43757,
+          "season": 2026,
+          "ksbPlayer": "Roman Mychajlshyn",
+          "ksbPlayerSlug": "roman-mychajlshyn",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Eric Yuan Shi",
+          "playerLeftSlug": "eric-yuan-shi",
+          "playerRightName": "Roman Mychajlshyn",
+          "playerRightSlug": "roman-mychajlshyn",
+          "playerRankChangeLeft": -4,
+          "playerRankChangeRight": 6,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Eric Yuan Shi",
+          "opponentSlug": "eric-yuan-shi",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Hyndburn TTC A",
+            "slug": "hyndburn-ttc-a"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -137383,6 +137655,174 @@
           },
           "opponentDivision": null,
           "opponentRank": 1509
+        }
+      ],
+      "apiStatus": "success",
+      "teamHistoryComplete": true
+    },
+    "freya-harter": {
+      "name": "Freya Harter",
+      "slug": "freya-harter",
+      "firstKnownKSBSeason": 2026,
+      "lastKnownKSBSeason": 2026,
+      "teamHistory": [
+        {
+          "season": 2026,
+          "player": {
+            "id": 786,
+            "name": "Freya Harter",
+            "slug": "freya-harter",
+            "rank": 75
+          },
+          "team": {
+            "id": 86,
+            "name": "KSB Leopards (Jun)",
+            "slug": "ksb-leopards-jun",
+            "divisionId": 4,
+            "division": null,
+            "rank": 75
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/freya-harter",
+            "status": "success"
+          }
+        }
+      ],
+      "ksbSeasons": [
+        2026
+      ],
+      "ksbCareer": {
+        "played": 3,
+        "wins": 2,
+        "draws": 0,
+        "losses": 1,
+        "winPercentage": 66.67,
+        "setsWon": 6,
+        "setsLost": 5,
+        "setDifference": 1
+      },
+      "ksbBySeason": {
+        "2026": {
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 6,
+          "setsLost": 5,
+          "setDifference": 1
+        }
+      },
+      "ksbByTeam": {
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 6,
+          "setsLost": 5,
+          "setDifference": 1
+        }
+      },
+      "ksbEncounters": [
+        {
+          "id": 43789,
+          "season": 2026,
+          "ksbPlayer": "Issy Emberton",
+          "ksbPlayerSlug": "issy-emberton",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Freya Harter",
+          "playerLeftSlug": "freya-harter",
+          "playerRightName": "Issy Emberton",
+          "playerRightSlug": "issy-emberton",
+          "playerRankChangeLeft": -8,
+          "playerRankChangeRight": 12,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Freya Harter",
+          "opponentSlug": "freya-harter",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 86,
+            "name": "KSB Leopards (Jun)",
+            "slug": "ksb-leopards-jun",
+            "divisionId": 4,
+            "division": null,
+            "rank": 75
+          },
+          "opponentDivision": null,
+          "opponentRank": 75
+        },
+        {
+          "id": 43791,
+          "season": 2026,
+          "ksbPlayer": "Rosie Bacon",
+          "ksbPlayerSlug": "rosie-bacon",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Freya Harter",
+          "playerLeftSlug": "freya-harter",
+          "playerRightName": "Rosie Bacon",
+          "playerRightSlug": "rosie-bacon",
+          "playerRankChangeLeft": -5,
+          "playerRankChangeRight": 8,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Freya Harter",
+          "opponentSlug": "freya-harter",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 86,
+            "name": "KSB Leopards (Jun)",
+            "slug": "ksb-leopards-jun",
+            "divisionId": 4,
+            "division": null,
+            "rank": 75
+          },
+          "opponentDivision": null,
+          "opponentRank": 75
+        },
+        {
+          "id": 43785,
+          "season": 2026,
+          "ksbPlayer": "Alice Hodgkinson",
+          "ksbPlayerSlug": "alice-hodgkinson",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Freya Harter",
+          "playerLeftSlug": "freya-harter",
+          "playerRightName": "Alice Hodgkinson",
+          "playerRightSlug": "alice-hodgkinson",
+          "playerRankChangeLeft": 12,
+          "playerRankChangeRight": -8,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Freya Harter",
+          "opponentSlug": "freya-harter",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 86,
+            "name": "KSB Leopards (Jun)",
+            "slug": "ksb-leopards-jun",
+            "divisionId": 4,
+            "division": null,
+            "rank": 75
+          },
+          "opponentDivision": null,
+          "opponentRank": 75
         }
       ],
       "apiStatus": "success",
@@ -194507,14 +194947,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 30,
-        "wins": 13,
+        "played": 33,
+        "wins": 16,
         "draws": 0,
         "losses": 17,
-        "winPercentage": 43.33,
-        "setsWon": 53,
-        "setsLost": 63,
-        "setDifference": -10
+        "winPercentage": 48.48,
+        "setsWon": 62,
+        "setsLost": 64,
+        "setDifference": -2
       },
       "ksbBySeason": {
         "2025": {
@@ -194528,14 +194968,14 @@
           "setDifference": -13
         },
         "2026": {
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 5,
           "draws": 0,
           "losses": 1,
-          "winPercentage": 66.67,
-          "setsWon": 8,
-          "setsLost": 5,
-          "setDifference": 3
+          "winPercentage": 83.33,
+          "setsWon": 17,
+          "setsLost": 6,
+          "setDifference": 11
         }
       },
       "ksbByTeam": {
@@ -194602,14 +195042,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 5,
           "draws": 0,
           "losses": 1,
-          "winPercentage": 66.67,
-          "setsWon": 8,
-          "setsLost": 5,
-          "setDifference": 3
+          "winPercentage": 83.33,
+          "setsWon": 17,
+          "setsLost": 6,
+          "setDifference": 11
         }
       },
       "ksbEncounters": [
@@ -195054,6 +195494,34 @@
           "opponentRank": 730
         },
         {
+          "id": 43761,
+          "season": 2026,
+          "ksbPlayer": "Jackson Boldy",
+          "ksbPlayerSlug": "jackson-boldy",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Jacob Atkinson",
+          "playerLeftSlug": "jacob_atkinson",
+          "playerRightName": "Jackson Boldy",
+          "playerRightSlug": "jackson-boldy",
+          "playerRankChangeLeft": -3,
+          "playerRankChangeRight": 5,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Jacob Atkinson",
+          "opponentSlug": "jacob_atkinson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Hyndburn TTC A",
+            "slug": "hyndburn-ttc-a"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 42220,
           "season": 2025,
           "ksbPlayer": "Jacob Milnes",
@@ -195116,6 +195584,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 730
+        },
+        {
+          "id": 43759,
+          "season": 2026,
+          "ksbPlayer": "Jacob Milnes",
+          "ksbPlayerSlug": "jacob-milnes",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Jacob Atkinson",
+          "playerLeftSlug": "jacob_atkinson",
+          "playerRightName": "Jacob Milnes",
+          "playerRightSlug": "jacob-milnes",
+          "playerRankChangeLeft": -6,
+          "playerRankChangeRight": 9,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Jacob Atkinson",
+          "opponentSlug": "jacob_atkinson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Hyndburn TTC A",
+            "slug": "hyndburn-ttc-a"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 40414,
@@ -195560,6 +196056,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 730
+        },
+        {
+          "id": 43755,
+          "season": 2026,
+          "ksbPlayer": "Roman Mychajlshyn",
+          "ksbPlayerSlug": "roman-mychajlshyn",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Jacob Atkinson",
+          "playerLeftSlug": "jacob_atkinson",
+          "playerRightName": "Roman Mychajlshyn",
+          "playerRightSlug": "roman-mychajlshyn",
+          "playerRankChangeLeft": -1,
+          "playerRankChangeRight": 2,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Jacob Atkinson",
+          "opponentSlug": "jacob_atkinson",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Hyndburn TTC A",
+            "slug": "hyndburn-ttc-a"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -354646,7 +355170,7 @@
       "name": "Oliver Ingham",
       "slug": "oliver-ingham",
       "firstKnownKSBSeason": 2025,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2025,
@@ -354668,20 +355192,42 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/oliver-ingham",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "id": 752,
+            "name": "Oliver Ingham",
+            "slug": "oliver-ingham",
+            "rank": 69
+          },
+          "team": {
+            "id": 86,
+            "name": "KSB Leopards (Jun)",
+            "slug": "ksb-leopards-jun",
+            "divisionId": 4,
+            "division": null,
+            "rank": 69
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/oliver-ingham",
+            "status": "success"
+          }
         }
       ],
       "ksbSeasons": [
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 3,
-        "wins": 3,
+        "played": 4,
+        "wins": 4,
         "draws": 0,
         "losses": 0,
         "winPercentage": 100.0,
-        "setsWon": 9,
-        "setsLost": 0,
-        "setDifference": 9
+        "setsWon": 12,
+        "setsLost": 2,
+        "setDifference": 10
       },
       "ksbBySeason": {
         "2025": {
@@ -354693,6 +355239,16 @@
           "setsWon": 9,
           "setsLost": 0,
           "setDifference": 9
+        },
+        "2026": {
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 3,
+          "setsLost": 2,
+          "setDifference": 1
         }
       },
       "ksbByTeam": {
@@ -354707,6 +355263,18 @@
           "setsWon": 9,
           "setsLost": 0,
           "setDifference": 9
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 3,
+          "setsLost": 2,
+          "setDifference": 1
         }
       },
       "ksbEncounters": [
@@ -354773,6 +355341,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 112
+        },
+        {
+          "id": 43792,
+          "season": 2026,
+          "ksbPlayer": "Issy Emberton",
+          "ksbPlayerSlug": "issy-emberton",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 2,
+          "scoreRight": 3,
+          "playerLeftName": "Oliver Ingham",
+          "playerLeftSlug": "oliver-ingham",
+          "playerRightName": "Issy Emberton",
+          "playerRightSlug": "issy-emberton",
+          "playerRankChangeLeft": -8,
+          "playerRankChangeRight": 12,
+          "ksbPlayerScore": 3,
+          "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "Oliver Ingham",
+          "opponentSlug": "oliver-ingham",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 86,
+            "name": "KSB Leopards (Jun)",
+            "slug": "ksb-leopards-jun",
+            "divisionId": 4,
+            "division": null,
+            "rank": 69
+          },
+          "opponentDivision": null,
+          "opponentRank": 69
         },
         {
           "id": 40316,
@@ -355037,14 +355637,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 25,
+        "played": 28,
         "wins": 17,
         "draws": 0,
-        "losses": 8,
-        "winPercentage": 68.0,
-        "setsWon": 58,
-        "setsLost": 36,
-        "setDifference": 22
+        "losses": 11,
+        "winPercentage": 60.71,
+        "setsWon": 63,
+        "setsLost": 45,
+        "setDifference": 18
       },
       "ksbBySeason": {
         "2023": {
@@ -355078,14 +355678,14 @@
           "setDifference": 12
         },
         "2026": {
-          "played": 6,
+          "played": 9,
           "wins": 4,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 66.67,
-          "setsWon": 16,
-          "setsLost": 8,
-          "setDifference": 8
+          "losses": 5,
+          "winPercentage": 44.44,
+          "setsWon": 21,
+          "setsLost": 17,
+          "setDifference": 4
         }
       },
       "ksbByTeam": {
@@ -355164,14 +355764,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 6,
+          "played": 9,
           "wins": 4,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 66.67,
-          "setsWon": 16,
-          "setsLost": 8,
-          "setDifference": 8
+          "losses": 5,
+          "winPercentage": 44.44,
+          "setsWon": 21,
+          "setsLost": 17,
+          "setDifference": 4
         }
       },
       "ksbEncounters": [
@@ -355584,6 +356184,62 @@
           "opponentRank": 297
         },
         {
+          "id": 43782,
+          "season": 2026,
+          "ksbPlayer": "Frank Boldy",
+          "ksbPlayerSlug": "frank-boldy",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 2,
+          "scoreRight": 3,
+          "playerLeftName": "Frank Boldy",
+          "playerLeftSlug": "frank-boldy",
+          "playerRightName": "Ollie Bradshaw",
+          "playerRightSlug": "ollie-bradshaw",
+          "playerRankChangeLeft": -5,
+          "playerRankChangeRight": 8,
+          "ksbPlayerScore": 2,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Ollie Bradshaw",
+          "opponentSlug": "ollie-bradshaw",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "KSB Tigers",
+            "slug": "ksb-tigers"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 43774,
+          "season": 2026,
+          "ksbPlayer": "Iain Clements",
+          "ksbPlayerSlug": "iain-clements",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 2,
+          "scoreRight": 3,
+          "playerLeftName": "Iain Clements",
+          "playerLeftSlug": "iain-clements",
+          "playerRightName": "Ollie Bradshaw",
+          "playerRightSlug": "ollie-bradshaw",
+          "playerRankChangeLeft": -3,
+          "playerRankChangeRight": 5,
+          "ksbPlayerScore": 2,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Ollie Bradshaw",
+          "opponentSlug": "ollie-bradshaw",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "KSB Tigers",
+            "slug": "ksb-tigers"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 43006,
           "season": 2026,
           "ksbPlayer": "Jackson Boldy",
@@ -355849,6 +356505,34 @@
           "ksbPlayerScore": 3,
           "opponentScore": 0,
           "resultForKSBPlayer": "W",
+          "opponent": "Ollie Bradshaw",
+          "opponentSlug": "ollie-bradshaw",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "KSB Tigers",
+            "slug": "ksb-tigers"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 43779,
+          "season": 2026,
+          "ksbPlayer": "Lee Ash",
+          "ksbPlayerSlug": "lee-ash",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Lee Ash",
+          "playerLeftSlug": "lee-ash",
+          "playerRightName": "Ollie Bradshaw",
+          "playerRightSlug": "ollie-bradshaw",
+          "playerRankChangeLeft": -2,
+          "playerRankChangeRight": 3,
+          "ksbPlayerScore": 1,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
           "opponent": "Ollie Bradshaw",
           "opponentSlug": "ollie-bradshaw",
           "fixtureKey": null,
@@ -425396,6 +426080,174 @@
       "apiStatus": "success",
       "teamHistoryComplete": true
     },
+    "robyn-west": {
+      "name": "Robyn West",
+      "slug": "robyn-west",
+      "firstKnownKSBSeason": 2026,
+      "lastKnownKSBSeason": 2026,
+      "teamHistory": [
+        {
+          "season": 2026,
+          "player": {
+            "id": 781,
+            "name": "Robyn West",
+            "slug": "robyn-west",
+            "rank": 55
+          },
+          "team": {
+            "id": 86,
+            "name": "KSB Leopards (Jun)",
+            "slug": "ksb-leopards-jun",
+            "divisionId": 4,
+            "division": null,
+            "rank": 55
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/robyn-west",
+            "status": "success"
+          }
+        }
+      ],
+      "ksbSeasons": [
+        2026
+      ],
+      "ksbCareer": {
+        "played": 3,
+        "wins": 3,
+        "draws": 0,
+        "losses": 0,
+        "winPercentage": 100.0,
+        "setsWon": 9,
+        "setsLost": 1,
+        "setDifference": 8
+      },
+      "ksbBySeason": {
+        "2026": {
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 1,
+          "setDifference": 8
+        }
+      },
+      "ksbByTeam": {
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 1,
+          "setDifference": 8
+        }
+      },
+      "ksbEncounters": [
+        {
+          "id": 43784,
+          "season": 2026,
+          "ksbPlayer": "Issy Emberton",
+          "ksbPlayerSlug": "issy-emberton",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Robyn West",
+          "playerLeftSlug": "robyn-west",
+          "playerRightName": "Issy Emberton",
+          "playerRightSlug": "issy-emberton",
+          "playerRankChangeLeft": -8,
+          "playerRankChangeRight": 12,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Robyn West",
+          "opponentSlug": "robyn-west",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 86,
+            "name": "KSB Leopards (Jun)",
+            "slug": "ksb-leopards-jun",
+            "divisionId": 4,
+            "division": null,
+            "rank": 55
+          },
+          "opponentDivision": null,
+          "opponentRank": 55
+        },
+        {
+          "id": 43786,
+          "season": 2026,
+          "ksbPlayer": "Rosie Bacon",
+          "ksbPlayerSlug": "rosie-bacon",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Robyn West",
+          "playerLeftSlug": "robyn-west",
+          "playerRightName": "Rosie Bacon",
+          "playerRightSlug": "rosie-bacon",
+          "playerRankChangeLeft": -5,
+          "playerRankChangeRight": 8,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Robyn West",
+          "opponentSlug": "robyn-west",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 86,
+            "name": "KSB Leopards (Jun)",
+            "slug": "ksb-leopards-jun",
+            "divisionId": 4,
+            "division": null,
+            "rank": 55
+          },
+          "opponentDivision": null,
+          "opponentRank": 55
+        },
+        {
+          "id": 43790,
+          "season": 2026,
+          "ksbPlayer": "Alice Hodgkinson",
+          "ksbPlayerSlug": "alice-hodgkinson",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Robyn West",
+          "playerLeftSlug": "robyn-west",
+          "playerRightName": "Alice Hodgkinson",
+          "playerRightSlug": "alice-hodgkinson",
+          "playerRankChangeLeft": -8,
+          "playerRankChangeRight": 12,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Robyn West",
+          "opponentSlug": "robyn-west",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 86,
+            "name": "KSB Leopards (Jun)",
+            "slug": "ksb-leopards-jun",
+            "divisionId": 4,
+            "division": null,
+            "rank": 55
+          },
+          "opponentDivision": null,
+          "opponentRank": 55
+        }
+      ],
+      "apiStatus": "success",
+      "teamHistoryComplete": true
+    },
     "rogermeakin": {
       "name": "Roger Meakin",
       "slug": "rogermeakin",
@@ -432026,14 +432878,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 19,
+        "played": 20,
         "wins": 16,
         "draws": 0,
-        "losses": 3,
-        "winPercentage": 84.21,
+        "losses": 4,
+        "winPercentage": 80.0,
         "setsWon": 51,
-        "setsLost": 15,
-        "setDifference": 36
+        "setsLost": 18,
+        "setDifference": 33
       },
       "ksbBySeason": {
         "2024": {
@@ -432057,14 +432909,14 @@
           "setDifference": 10
         },
         "2026": {
-          "played": 2,
+          "played": 3,
           "wins": 2,
           "draws": 0,
-          "losses": 0,
-          "winPercentage": 100.0,
+          "losses": 1,
+          "winPercentage": 66.67,
           "setsWon": 6,
-          "setsLost": 3,
-          "setDifference": 3
+          "setsLost": 6,
+          "setDifference": 0
         }
       },
       "ksbByTeam": {
@@ -432119,14 +432971,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 2,
+          "played": 3,
           "wins": 2,
           "draws": 0,
-          "losses": 0,
-          "winPercentage": 100.0,
+          "losses": 1,
+          "winPercentage": 66.67,
           "setsWon": 6,
-          "setsLost": 3,
-          "setDifference": 3
+          "setsLost": 6,
+          "setDifference": 0
         }
       },
       "ksbEncounters": [
@@ -432729,6 +433581,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 164
+        },
+        {
+          "id": 43783,
+          "season": 2026,
+          "ksbPlayer": "Oliver Ingham",
+          "ksbPlayerSlug": "oliver-ingham",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Oliver Ingham",
+          "playerLeftSlug": "oliver-ingham",
+          "playerRightName": "Rosie Bacon",
+          "playerRightSlug": "rosie-bacon",
+          "playerRankChangeLeft": -6,
+          "playerRankChangeRight": 9,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Rosie Bacon",
+          "opponentSlug": "rosie-bacon",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "KSB Pumas (Jun)",
+            "slug": "ksb-pumas-jun"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -441487,14 +442367,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 25,
+        "played": 28,
         "wins": 14,
         "draws": 0,
-        "losses": 11,
-        "winPercentage": 56.0,
-        "setsWon": 47,
-        "setsLost": 47,
-        "setDifference": 0
+        "losses": 14,
+        "winPercentage": 50.0,
+        "setsWon": 49,
+        "setsLost": 56,
+        "setDifference": -7
       },
       "ksbBySeason": {
         "2023": {
@@ -441528,14 +442408,14 @@
           "setDifference": -2
         },
         "2026": {
-          "played": 6,
+          "played": 9,
           "wins": 5,
           "draws": 0,
-          "losses": 1,
-          "winPercentage": 83.33,
-          "setsWon": 16,
-          "setsLost": 11,
-          "setDifference": 5
+          "losses": 4,
+          "winPercentage": 55.56,
+          "setsWon": 18,
+          "setsLost": 20,
+          "setDifference": -2
         }
       },
       "ksbByTeam": {
@@ -441614,14 +442494,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 6,
+          "played": 9,
           "wins": 5,
           "draws": 0,
-          "losses": 1,
-          "winPercentage": 83.33,
-          "setsWon": 16,
-          "setsLost": 11,
-          "setDifference": 5
+          "losses": 4,
+          "winPercentage": 55.56,
+          "setsWon": 18,
+          "setsLost": 20,
+          "setDifference": -2
         }
       },
       "ksbEncounters": [
@@ -441978,6 +442858,70 @@
           "opponentRank": 726
         },
         {
+          "id": 43777,
+          "season": 2026,
+          "ksbPlayer": "Frank Boldy",
+          "ksbPlayerSlug": "frank-boldy",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Frank Boldy",
+          "playerLeftSlug": "frank-boldy",
+          "playerRightName": "Sam Bradshaw",
+          "playerRightSlug": "sam-bradshaw",
+          "playerRankChangeLeft": -3,
+          "playerRankChangeRight": 5,
+          "ksbPlayerScore": 1,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Sam Bradshaw",
+          "opponentSlug": "sam-bradshaw",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 84,
+            "name": "KSB Tigers",
+            "slug": "ksb-tigers",
+            "divisionId": 3,
+            "division": null,
+            "rank": 1169
+          },
+          "opponentDivision": null,
+          "opponentRank": 1169
+        },
+        {
+          "id": 43780,
+          "season": 2026,
+          "ksbPlayer": "Iain Clements",
+          "ksbPlayerSlug": "iain-clements",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Iain Clements",
+          "playerLeftSlug": "iain-clements",
+          "playerRightName": "Sam Bradshaw",
+          "playerRightSlug": "sam-bradshaw",
+          "playerRankChangeLeft": -1,
+          "playerRankChangeRight": 2,
+          "ksbPlayerScore": 1,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Sam Bradshaw",
+          "opponentSlug": "sam-bradshaw",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 84,
+            "name": "KSB Tigers",
+            "slug": "ksb-tigers",
+            "divisionId": 3,
+            "division": null,
+            "rank": 1169
+          },
+          "opponentDivision": null,
+          "opponentRank": 1169
+        },
+        {
           "id": 33922,
           "season": 2023,
           "ksbPlayer": "Issy Sinkinson",
@@ -442251,6 +443195,38 @@
           "ksbPlayerScore": 3,
           "opponentScore": 1,
           "resultForKSBPlayer": "W",
+          "opponent": "Sam Bradshaw",
+          "opponentSlug": "sam-bradshaw",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 84,
+            "name": "KSB Tigers",
+            "slug": "ksb-tigers",
+            "divisionId": 3,
+            "division": null,
+            "rank": 1169
+          },
+          "opponentDivision": null,
+          "opponentRank": 1169
+        },
+        {
+          "id": 43775,
+          "season": 2026,
+          "ksbPlayer": "Lee Ash",
+          "ksbPlayerSlug": "lee-ash",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Lee Ash",
+          "playerLeftSlug": "lee-ash",
+          "playerRightName": "Sam Bradshaw",
+          "playerRightSlug": "sam-bradshaw",
+          "playerRankChangeLeft": -1,
+          "playerRankChangeRight": 2,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
           "opponent": "Sam Bradshaw",
           "opponentSlug": "sam-bradshaw",
           "fixtureKey": null,
@@ -485356,14 +486332,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 30,
-        "wins": 13,
+        "played": 33,
+        "wins": 15,
         "draws": 0,
-        "losses": 17,
-        "winPercentage": 43.33,
-        "setsWon": 50,
-        "setsLost": 63,
-        "setDifference": -13
+        "losses": 18,
+        "winPercentage": 45.45,
+        "setsWon": 56,
+        "setsLost": 68,
+        "setDifference": -12
       },
       "ksbBySeason": {
         "2024": {
@@ -485387,14 +486363,14 @@
           "setDifference": -1
         },
         "2026": {
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "winPercentage": 66.67,
-          "setsWon": 6,
-          "setsLost": 5,
-          "setDifference": 1
+          "setsWon": 12,
+          "setsLost": 10,
+          "setDifference": 2
         }
       },
       "ksbByTeam": {
@@ -485473,14 +486449,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "winPercentage": 66.67,
-          "setsWon": 6,
-          "setsLost": 5,
-          "setDifference": 1
+          "setsWon": 12,
+          "setsLost": 10,
+          "setDifference": 2
         }
       },
       "ksbEncounters": [
@@ -485893,6 +486869,34 @@
           "opponentRank": 520
         },
         {
+          "id": 43756,
+          "season": 2026,
+          "ksbPlayer": "Jackson Boldy",
+          "ksbPlayerSlug": "jackson-boldy",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Thomas Sheard",
+          "playerLeftSlug": "thomas-sheard",
+          "playerRightName": "Jackson Boldy",
+          "playerRightSlug": "jackson-boldy",
+          "playerRankChangeLeft": -6,
+          "playerRankChangeRight": 9,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Thomas Sheard",
+          "opponentSlug": "thomas-sheard",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Hyndburn TTC A",
+            "slug": "hyndburn-ttc-a"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 35722,
           "season": 2024,
           "ksbPlayer": "Jacob Milnes",
@@ -486019,6 +487023,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 874
+        },
+        {
+          "id": 43754,
+          "season": 2026,
+          "ksbPlayer": "Jacob Milnes",
+          "ksbPlayerSlug": "jacob-milnes",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Thomas Sheard",
+          "playerLeftSlug": "thomas-sheard",
+          "playerRightName": "Jacob Milnes",
+          "playerRightSlug": "jacob-milnes",
+          "playerRankChangeLeft": 9,
+          "playerRankChangeRight": -6,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Thomas Sheard",
+          "opponentSlug": "thomas-sheard",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Hyndburn TTC A",
+            "slug": "hyndburn-ttc-a"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 39531,
@@ -486431,6 +487463,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 874
+        },
+        {
+          "id": 43760,
+          "season": 2026,
+          "ksbPlayer": "Roman Mychajlshyn",
+          "ksbPlayerSlug": "roman-mychajlshyn",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Thomas Sheard",
+          "playerLeftSlug": "thomas-sheard",
+          "playerRightName": "Roman Mychajlshyn",
+          "playerRightSlug": "roman-mychajlshyn",
+          "playerRankChangeLeft": -3,
+          "playerRankChangeRight": 5,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Thomas Sheard",
+          "opponentSlug": "thomas-sheard",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Hyndburn TTC A",
+            "slug": "hyndburn-ttc-a"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         }
       ],
       "apiStatus": "success",
@@ -516725,18 +517785,18 @@
         "2019": 18,
         "2021": 18,
         "2023": 18,
-        "2026": 19,
+        "2026": 28,
         "2018": 18,
         "2022": 27,
         "2017": 3,
         "2013": 15
       },
-      "played": 136,
-      "wins": 82,
+      "played": 145,
+      "wins": 88,
       "draws": 0,
-      "losses": 54,
-      "setsWon": 286,
-      "setsLost": 212,
+      "losses": 57,
+      "setsWon": 304,
+      "setsLost": 225,
       "ksbPlayers": {
         "alan-meltzer": {
           "name": "Alan Meltzer",
@@ -516848,6 +517908,28 @@
           "setsLost": 3,
           "setDifference": -3
         },
+        "jackson-boldy": {
+          "name": "Jackson Boldy",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 6,
+          "setsLost": 5,
+          "setDifference": 1
+        },
+        "jacob-milnes": {
+          "name": "Jacob Milnes",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "winPercentage": 33.33,
+          "setsWon": 3,
+          "setsLost": 6,
+          "setDifference": -3
+        },
         "john-hayhurst": {
           "name": "John Hayhurst",
           "played": 3,
@@ -516925,6 +518007,17 @@
           "setsLost": 21,
           "setDifference": -15
         },
+        "roman-mychajlshyn": {
+          "name": "Roman Mychajlshyn",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 2,
+          "setDifference": 7
+        },
         "simon-kavanagh": {
           "name": "Simon Kavanagh",
           "played": 3,
@@ -516995,14 +518088,14 @@
         },
         "eric-yuan-shi": {
           "name": "Eric Yuan Shi",
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 3,
           "draws": 0,
-          "losses": 1,
-          "winPercentage": 66.67,
-          "setsWon": 6,
-          "setsLost": 5,
-          "setDifference": 1
+          "losses": 3,
+          "winPercentage": 50.0,
+          "setsWon": 9,
+          "setsLost": 12,
+          "setDifference": -3
         },
         "felicity-pickard": {
           "name": "Felicity Pickard",
@@ -517039,14 +518132,14 @@
         },
         "jacob_atkinson": {
           "name": "Jacob Atkinson",
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 5,
           "draws": 0,
           "losses": 1,
-          "winPercentage": 66.67,
-          "setsWon": 8,
-          "setsLost": 5,
-          "setDifference": 3
+          "winPercentage": 83.33,
+          "setsWon": 17,
+          "setsLost": 6,
+          "setDifference": 11
         },
         "jason-pilling": {
           "name": "Jason Pilling",
@@ -517138,14 +518231,14 @@
         },
         "thomas-sheard": {
           "name": "Thomas Sheard",
-          "played": 3,
-          "wins": 2,
+          "played": 6,
+          "wins": 4,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "winPercentage": 66.67,
-          "setsWon": 6,
-          "setsLost": 5,
-          "setDifference": 1
+          "setsWon": 12,
+          "setsLost": 10,
+          "setDifference": 2
         },
         "timothy-vaughan": {
           "name": "Timothy Vaughan",
@@ -517159,8 +518252,8 @@
           "setDifference": -10
         }
       },
-      "winPercentage": 60.29,
-      "setDifference": 74
+      "winPercentage": 60.69,
+      "setDifference": 79
     },
     "hyndburn-ttc-b": {
       "name": "Hyndburn TTC B",
@@ -525662,14 +526755,14 @@
       "divisions": {},
       "seasons": {
         "2025": 50,
-        "2026": 4
+        "2026": 11
       },
-      "played": 54,
-      "wins": 36,
+      "played": 61,
+      "wins": 42,
       "draws": 0,
-      "losses": 18,
-      "setsWon": 116,
-      "setsLost": 76,
+      "losses": 19,
+      "setsWon": 134,
+      "setsLost": 84,
       "ksbPlayers": {
         "alex-gavin": {
           "name": "Alex Gavin",
@@ -525681,6 +526774,17 @@
           "setsWon": 18,
           "setsLost": 4,
           "setDifference": 14
+        },
+        "alice-hodgkinson": {
+          "name": "Alice Hodgkinson",
+          "played": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 50.0,
+          "setsWon": 3,
+          "setsLost": 3,
+          "setDifference": 0
         },
         "chloe-smith": {
           "name": "Chloe Smith",
@@ -525772,14 +526876,14 @@
         },
         "issy-emberton": {
           "name": "Issy Emberton",
-          "played": 5,
-          "wins": 0,
+          "played": 8,
+          "wins": 3,
           "draws": 0,
           "losses": 5,
-          "winPercentage": 0.0,
-          "setsWon": 0,
-          "setsLost": 15,
-          "setDifference": -15
+          "winPercentage": 37.5,
+          "setsWon": 9,
+          "setsLost": 19,
+          "setDifference": -10
         },
         "issy-sinkinson": {
           "name": "Issy Sinkinson",
@@ -525869,6 +526973,17 @@
           "setsLost": 9,
           "setDifference": -8
         },
+        "rosie-bacon": {
+          "name": "Rosie Bacon",
+          "played": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 6,
+          "setsLost": 1,
+          "setDifference": 5
+        },
         "stanley-smith": {
           "name": "Stanley Smith",
           "played": 1,
@@ -525904,6 +527019,17 @@
           "setsLost": 0,
           "setDifference": 6
         },
+        "freya-harter": {
+          "name": "Freya Harter",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 66.67,
+          "setsWon": 6,
+          "setsLost": 5,
+          "setDifference": 1
+        },
         "joel-kirk": {
           "name": "Joel Kirk",
           "played": 11,
@@ -525926,6 +527052,17 @@
           "setsLost": 0,
           "setDifference": 9
         },
+        "oliver-ingham": {
+          "name": "Oliver Ingham",
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 3,
+          "setsLost": 2,
+          "setDifference": 1
+        },
         "olivia-sanders": {
           "name": "Olivia Sanders",
           "played": 2,
@@ -525936,6 +527073,17 @@
           "setsWon": 6,
           "setsLost": 0,
           "setDifference": 6
+        },
+        "robyn-west": {
+          "name": "Robyn West",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 1,
+          "setDifference": 8
         },
         "sophie-rae-edwards": {
           "name": "Sophie-Rae Edwards",
@@ -525960,8 +527108,8 @@
           "setDifference": 2
         }
       },
-      "winPercentage": 66.67,
-      "setDifference": 40
+      "winPercentage": 68.85,
+      "setDifference": 50
     },
     "ksb-lions": {
       "name": "KSB Lions",
@@ -526055,14 +527203,15 @@
       "slug": "ksb-panthers-jun",
       "divisions": {},
       "seasons": {
-        "2025": 45
+        "2025": 45,
+        "2026": 1
       },
-      "played": 45,
+      "played": 46,
       "wins": 40,
       "draws": 0,
-      "losses": 5,
-      "setsWon": 124,
-      "setsLost": 21,
+      "losses": 6,
+      "setsWon": 125,
+      "setsLost": 24,
       "ksbPlayers": {
         "alex-gavin": {
           "name": "Alex Gavin",
@@ -526217,9 +527366,31 @@
           "setsWon": 3,
           "setsLost": 0,
           "setDifference": 3
+        },
+        "oliver-ingham": {
+          "name": "Oliver Ingham",
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 0.0,
+          "setsWon": 1,
+          "setsLost": 3,
+          "setDifference": -2
         }
       },
       "oppositionPlayers": {
+        "alice-hodgkinson": {
+          "name": "Alice Hodgkinson",
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 0.0,
+          "setsWon": 1,
+          "setsLost": 3,
+          "setDifference": -2
+        },
         "ava-cretney": {
           "name": "Ava Cretney",
           "played": 1,
@@ -526320,8 +527491,8 @@
           "setDifference": 10
         }
       },
-      "winPercentage": 88.89,
-      "setDifference": 103
+      "winPercentage": 86.96,
+      "setDifference": 101
     },
     "ksb-pumas-jun": {
       "name": "KSB Pumas (Jun)",
@@ -526329,14 +527500,14 @@
       "divisions": {},
       "seasons": {
         "2025": 19,
-        "2026": 11
+        "2026": 12
       },
-      "played": 30,
+      "played": 31,
       "wins": 17,
       "draws": 0,
-      "losses": 13,
+      "losses": 14,
       "setsWon": 55,
-      "setsLost": 44,
+      "setsLost": 47,
       "ksbPlayers": {
         "alex-gavin": {
           "name": "Alex Gavin",
@@ -526436,6 +527607,17 @@
           "setsWon": 3,
           "setsLost": 1,
           "setDifference": 2
+        },
+        "oliver-ingham": {
+          "name": "Oliver Ingham",
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "winPercentage": 0.0,
+          "setsWon": 0,
+          "setsLost": 3,
+          "setDifference": -3
         },
         "olivia-sanders": {
           "name": "Olivia Sanders",
@@ -526540,14 +527722,14 @@
         },
         "rosie-bacon": {
           "name": "Rosie Bacon",
-          "played": 2,
+          "played": 3,
           "wins": 2,
           "draws": 0,
-          "losses": 0,
-          "winPercentage": 100.0,
+          "losses": 1,
+          "winPercentage": 66.67,
           "setsWon": 6,
-          "setsLost": 3,
-          "setDifference": 3
+          "setsLost": 6,
+          "setDifference": 0
         },
         "ryan-halstead": {
           "name": "Ryan Halstead",
@@ -526561,22 +527743,22 @@
           "setDifference": -2
         }
       },
-      "winPercentage": 56.67,
-      "setDifference": 11
+      "winPercentage": 54.84,
+      "setDifference": 8
     },
     "ksb-tigers": {
       "name": "KSB Tigers",
       "slug": "ksb-tigers",
       "divisions": {},
       "seasons": {
-        "2026": 21
+        "2026": 30
       },
-      "played": 21,
-      "wins": 14,
+      "played": 30,
+      "wins": 15,
       "draws": 0,
-      "losses": 7,
-      "setsWon": 52,
-      "setsLost": 34,
+      "losses": 15,
+      "setsWon": 65,
+      "setsLost": 60,
       "ksbPlayers": {
         "alex-gavin": {
           "name": "Alex Gavin",
@@ -526599,6 +527781,28 @@
           "setsWon": 5,
           "setsLost": 8,
           "setDifference": -3
+        },
+        "frank-boldy": {
+          "name": "Frank Boldy",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "winPercentage": 33.33,
+          "setsWon": 6,
+          "setsLost": 8,
+          "setDifference": -2
+        },
+        "iain-clements": {
+          "name": "Iain Clements",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "winPercentage": 0.0,
+          "setsWon": 5,
+          "setsLost": 9,
+          "setDifference": -4
         },
         "jackson-boldy": {
           "name": "Jackson Boldy",
@@ -526632,6 +527836,17 @@
           "setsWon": 8,
           "setsLost": 4,
           "setDifference": 4
+        },
+        "lee-ash": {
+          "name": "Lee Ash",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "winPercentage": 0.0,
+          "setsWon": 2,
+          "setsLost": 9,
+          "setDifference": -7
         },
         "roman-mychajlshyn": {
           "name": "Roman Mychajlshyn",
@@ -526670,40 +527885,40 @@
         },
         "daniel-vickers": {
           "name": "Daniel Vickers",
-          "played": 6,
-          "wins": 3,
+          "played": 9,
+          "wins": 4,
           "draws": 0,
-          "losses": 3,
-          "winPercentage": 50.0,
-          "setsWon": 13,
-          "setsLost": 9,
-          "setDifference": 4
+          "losses": 5,
+          "winPercentage": 44.44,
+          "setsWon": 19,
+          "setsLost": 17,
+          "setDifference": 2
         },
         "ollie-bradshaw": {
           "name": "Ollie Bradshaw",
-          "played": 6,
+          "played": 9,
           "wins": 4,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 66.67,
-          "setsWon": 16,
-          "setsLost": 8,
-          "setDifference": 8
+          "losses": 5,
+          "winPercentage": 44.44,
+          "setsWon": 21,
+          "setsLost": 17,
+          "setDifference": 4
         },
         "sam-bradshaw": {
           "name": "Sam Bradshaw",
-          "played": 6,
+          "played": 9,
           "wins": 5,
           "draws": 0,
-          "losses": 1,
-          "winPercentage": 83.33,
-          "setsWon": 16,
-          "setsLost": 11,
-          "setDifference": 5
+          "losses": 4,
+          "winPercentage": 55.56,
+          "setsWon": 18,
+          "setsLost": 20,
+          "setDifference": -2
         }
       },
-      "winPercentage": 66.67,
-      "setDifference": 18
+      "winPercentage": 50.0,
+      "setDifference": 5
     },
     "ksb-tigers-jun": {
       "name": "KSB Tigers (Jun)",
@@ -543118,7 +544333,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-10-27T10:35:44.891190+00:00",
+    "generatedAt": "2026-10-27T16:40:32.361582+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }

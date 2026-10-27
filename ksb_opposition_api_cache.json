@@ -6862,5 +6862,21 @@
   "2026:lee-ash": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/lee-ash",
     "status": "success"
+  },
+  "2026:alice-hodgkinson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/alice-hodgkinson",
+    "status": "success"
+  },
+  "2026:freya-harter": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/freya-harter",
+    "status": "success"
+  },
+  "2026:oliver-ingham": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/oliver-ingham",
+    "status": "success"
+  },
+  "2026:robyn-west": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/robyn-west",
+    "status": "success"
   }
 }
