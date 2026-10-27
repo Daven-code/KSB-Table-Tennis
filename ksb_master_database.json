@@ -23,7 +23,7 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-10-27T05:06:48.676524+00:00",
+    "lastUpdated": "2026-10-27T10:35:43.805893+00:00",
     "livePlayerCount": 69,
     "liveEncounterCount": 528
   },
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-10-27T05:06:45.931238+00:00",
+    "lastUpdated": "2026-10-27T10:35:42.782949+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -78923,6 +78923,15 @@
         },
         {
           "p": 2,
+          "t": "Whalley Eagles",
+          "w": 4,
+          "d": 0,
+          "l": 1,
+          "pl": 5,
+          "pts": 102
+        },
+        {
+          "p": 3,
           "t": "KSB A",
           "w": 3,
           "d": 0,
@@ -78931,7 +78940,7 @@
           "pts": 101
         },
         {
-          "p": 3,
+          "p": 4,
           "t": "Rovers",
           "w": 3,
           "d": 0,
@@ -78940,7 +78949,7 @@
           "pts": 101
         },
         {
-          "p": 4,
+          "p": 5,
           "t": "Gladiators",
           "w": 3,
           "d": 0,
@@ -78949,7 +78958,7 @@
           "pts": 85
         },
         {
-          "p": 5,
+          "p": 6,
           "t": "KSB B",
           "w": 2,
           "d": 0,
@@ -78958,16 +78967,16 @@
           "pts": 81
         },
         {
-          "p": 6,
-          "t": "Whalley Eagles",
-          "w": 3,
+          "p": 7,
+          "t": "Vanguard Raptors",
+          "w": 1,
           "d": 0,
-          "l": 1,
-          "pl": 4,
-          "pts": 77
+          "l": 4,
+          "pl": 5,
+          "pts": 78
         },
         {
-          "p": 7,
+          "p": 8,
           "t": "KSB C",
           "w": 1,
           "d": 0,
@@ -78976,22 +78985,13 @@
           "pts": 74
         },
         {
-          "p": 8,
+          "p": 9,
           "t": "Burnley Black Widows",
           "w": 2,
           "d": 0,
           "l": 3,
           "pl": 5,
           "pts": 71
-        },
-        {
-          "p": 9,
-          "t": "Vanguard Raptors",
-          "w": 1,
-          "d": 0,
-          "l": 3,
-          "pl": 4,
-          "pts": 60
         },
         {
           "p": 10,
