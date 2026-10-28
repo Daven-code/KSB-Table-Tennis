@@ -23,7 +23,7 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-10-28T08:34:41.177715+00:00",
+    "lastUpdated": "2026-10-28T16:04:54.421828+00:00",
     "livePlayerCount": 69,
     "liveEncounterCount": 564
   },
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-10-28T08:34:40.016498+00:00",
+    "lastUpdated": "2026-10-28T16:04:53.186293+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -80699,11 +80699,11 @@
         {
           "p": 1,
           "t": "Vanguard Jets",
-          "w": 6,
+          "w": 7,
           "d": 0,
           "l": 0,
-          "pl": 6,
-          "pts": 148
+          "pl": 7,
+          "pts": 178
         },
         {
           "p": 2,
@@ -80764,9 +80764,9 @@
           "t": "Whalley Falcons",
           "w": 0,
           "d": 0,
-          "l": 5,
-          "pl": 5,
-          "pts": 83
+          "l": 6,
+          "pl": 6,
+          "pts": 85
         },
         {
           "p": 9,
