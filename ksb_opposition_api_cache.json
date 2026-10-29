@@ -6882,5 +6882,21 @@
   "2026:ian-mills": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/ian-mills",
     "status": "success"
+  },
+  "2026:andrea-harrison": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/andrea-harrison",
+    "status": "success"
+  },
+  "2026:ged-simpson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/ged-simpson",
+    "status": "success"
+  },
+  "2026:mark-ramsbottom": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/mark-ramsbottom",
+    "status": "success"
+  },
+  "2026:matt-nettleton": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/matt-nettleton",
+    "status": "success"
   }
 }
