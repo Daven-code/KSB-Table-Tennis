@@ -23,7 +23,7 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-10-30T07:07:53.772054+00:00",
+    "lastUpdated": "2026-10-30T14:10:29.094328+00:00",
     "livePlayerCount": 69,
     "liveEncounterCount": 636
   },
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-10-30T07:07:51.979674+00:00",
+    "lastUpdated": "2026-10-30T14:10:26.917774+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -84093,6 +84093,15 @@
         },
         {
           "p": 4,
+          "t": "Burnley Hornets",
+          "w": 3,
+          "d": 0,
+          "l": 3,
+          "pl": 6,
+          "pts": 119
+        },
+        {
+          "p": 5,
           "t": "Past Masters",
           "w": 4,
           "d": 0,
@@ -84101,22 +84110,13 @@
           "pts": 115
         },
         {
-          "p": 5,
+          "p": 6,
           "t": "KSB D",
           "w": 3,
           "d": 0,
           "l": 3,
           "pl": 6,
           "pts": 109
-        },
-        {
-          "p": 6,
-          "t": "Burnley Hornets",
-          "w": 3,
-          "d": 0,
-          "l": 2,
-          "pl": 5,
-          "pts": 104
         },
         {
           "p": 7,
@@ -84148,11 +84148,11 @@
         {
           "p": 10,
           "t": "Misfits",
-          "w": 1,
+          "w": 2,
           "d": 0,
           "l": 3,
-          "pl": 4,
-          "pts": 52
+          "pl": 5,
+          "pts": 76
         }
       ],
       "second": [
