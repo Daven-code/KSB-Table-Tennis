@@ -6898,5 +6898,17 @@
   "2026:matt-nettleton": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/matt-nettleton",
     "status": "success"
+  },
+  "2026:adam-simcock": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/adam-simcock",
+    "status": "success"
+  },
+  "2026:michael-carney": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/michael-carney",
+    "status": "success"
+  },
+  "2026:paulina_gaweda": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/paulina_gaweda",
+    "status": "success"
   }
 }
