@@ -6910,5 +6910,37 @@
   "2026:paulina_gaweda": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/paulina_gaweda",
     "status": "success"
+  },
+  "2026:dave-kay": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/dave-kay",
+    "status": "success"
+  },
+  "2026:geoff-ireland": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/geoff-ireland",
+    "status": "success"
+  },
+  "2026:keith-ward": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/keith-ward",
+    "status": "success"
+  },
+  "2026:martin-campbell": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/martin-campbell",
+    "status": "success"
+  },
+  "2026:martin-ormsby": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/martin-ormsby",
+    "status": "success"
+  },
+  "2026:max-bowie": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/max-bowie",
+    "status": "success"
+  },
+  "2026:robert-williams": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/robert-williams",
+    "status": "success"
+  },
+  "2026:simon-milnes": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/simon-milnes",
+    "status": "success"
   }
 }
