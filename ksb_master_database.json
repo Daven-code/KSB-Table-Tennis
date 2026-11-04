@@ -23,7 +23,7 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-11-04T09:14:40.828593+00:00",
+    "lastUpdated": "2026-11-04T17:17:52.510582+00:00",
     "livePlayerCount": 69,
     "liveEncounterCount": 714
   },
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-11-04T09:14:39.019737+00:00",
+    "lastUpdated": "2026-11-04T17:17:50.565524+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -87912,18 +87912,18 @@
           "t": "Vanguard Typhoons",
           "w": 6,
           "d": 0,
-          "l": 0,
-          "pl": 6,
-          "pts": 158
+          "l": 1,
+          "pl": 7,
+          "pts": 173
         },
         {
           "p": 3,
           "t": "Hyndburn TTC B",
-          "w": 4,
+          "w": 5,
           "d": 0,
           "l": 2,
-          "pl": 6,
-          "pts": 126
+          "pl": 7,
+          "pts": 148
         },
         {
           "p": 4,
