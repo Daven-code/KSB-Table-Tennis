@@ -6942,5 +6942,17 @@
   "2026:simon-milnes": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/simon-milnes",
     "status": "success"
+  },
+  "2026:ben-farrar": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/ben-farrar",
+    "status": "success"
+  },
+  "2026:mick-o'connor": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/mick-o'connor",
+    "status": "success"
+  },
+  "2026:tomasz-orzechowski": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/tomasz-orzechowski",
+    "status": "success"
   }
 }
