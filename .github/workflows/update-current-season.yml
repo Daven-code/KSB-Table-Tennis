@@ -2,6 +2,11 @@ name: Update KSB current-season data
 
 on:
   workflow_dispatch:
+    inputs:
+      season:
+        description: "Optional season override, for example 2026"
+        required: false
+        default: ""
   schedule:
     # GitHub schedules use UTC. Run every hour at 17 minutes past.
     - cron: "17 * * * *"
@@ -16,7 +21,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 90
 
     steps:
       - name: Check out website
@@ -29,46 +34,112 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Update current teams, players and league tables
+      - name: Update KSB current-season database
         run: python update_ksb_database.py --timeout 60 --attempts 4 --retry-delay 5
 
-      - name: Update opposition enrichment
+      - name: Update KSB opposition enrichment
         run: python update_ksb_opposition_database.py --timeout 60
 
-      - name: Validate generated current-season data
+      - name: Update full league current season
+        shell: bash
+        run: |
+          SEASON="${{ github.event.inputs.season || '' }}"
+          if [ -n "$SEASON" ]; then
+            python update_league_database.py --mode incremental --season "$SEASON" --timeout 60 --attempts 4
+          else
+            python update_league_database.py --mode incremental --timeout 60 --attempts 4
+          fi
+
+      - name: Compact full league database
+        shell: bash
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
+
+          path = Path("league_database.json")
+          data = json.loads(path.read_text(encoding="utf-8"))
+          path.write_text(
+              json.dumps(data, ensure_ascii=False, separators=(",", ":")),
+              encoding="utf-8",
+          )
+
+          size_mb = path.stat().st_size / (1024 * 1024)
+          print(f"Compacted league_database.json: {size_mb:.2f} MB")
+          if size_mb >= 100:
+              raise SystemExit(
+                  "league_database.json is 100 MB or larger after compaction; "
+                  "GitHub would reject the push."
+              )
+          PY
+
+      - name: Validate generated databases
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
           master = json.loads(Path("ksb_master_database.json").read_text(encoding="utf-8"))
           season = str(master["coverage"]["currentSeason"])
           current = master["currentSeason"]
           teams = current.get("teams", {})
           players = current.get("players", {})
           leagues = current.get("leagues", {})
+
           if str(current.get("season")) != season:
-              raise SystemExit("Current-season key does not match currentSeason coverage")
+              raise SystemExit("KSB current-season key does not match coverage")
           if set(leagues) != {"premier", "first", "second", "third"}:
-              raise SystemExit("All four league division keys must be retained")
+              raise SystemExit("All four KSB league division keys must be retained")
           if not teams:
-              raise SystemExit("No current team records or placeholders were generated")
+              raise SystemExit("No current KSB team records were generated")
+
           historic_end = int(master["coverage"]["historicEndSeason"])
           historic = master.get("historic", {}).get("seasons", {})
           if any(int(year) > historic_end for year in historic):
-              raise SystemExit("Current data has leaked into the historic archive")
-          missing = [slug for slug in players if season not in master["players"].get(slug, {}).get("seasons", {})]
+              raise SystemExit("Current KSB data has leaked into the historic archive")
+
+          missing = [
+              slug for slug in players
+              if season not in master["players"].get(slug, {}).get("seasons", {})
+          ]
           if missing:
-              raise SystemExit(f"Published current players missing from master profiles: {missing}")
-          updated = sum(team.get("updateStatus") == "updated" for team in teams.values())
-          retained = sum(team.get("updateStatus") == "retained-previous" for team in teams.values())
-          pending = sum(team.get("updateStatus") == "not-published" for team in teams.values())
-          print(f"Validated season {season}: {len(teams)} team records, {len(players)} available players; updated={updated}, retained={retained}, pending={pending}")
+              raise SystemExit(
+                  f"Published current KSB players missing from profiles: {missing}"
+              )
+
+          league = json.loads(Path("league_database.json").read_text(encoding="utf-8"))
+          active = str(league["coverage"]["currentSeason"])
+          season_data = league.get("seasons", {}).get(active)
+          if not season_data or not season_data.get("teams"):
+              raise SystemExit(f"Full league season {active} has no team data")
+          if not league.get("players"):
+              raise SystemExit("Full league database has no player index")
+
+          print(
+              f"Validated KSB season {season}: {len(teams)} teams, "
+              f"{len(players)} players"
+          )
+          print(
+              f"Validated full league season {active}: "
+              f"{len(season_data['teams'])} teams, "
+              f"{len(league['players'])} indexed players"
+          )
           PY
+
       - name: Commit refreshed JSON
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ksb_master_database.json league-history.json ksb_opposition_database.json ksb_opposition_api_cache.json
+
+          git add \
+            ksb_master_database.json \
+            league-history.json \
+            ksb_opposition_database.json \
+            ksb_opposition_api_cache.json \
+            league_database.json
+
           if git diff --cached --quiet; then
             echo "League APIs returned no changes."
           else
