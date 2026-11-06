@@ -1,64 +1,18 @@
-const DIVISIONS = ["premier", "first", "second", "third"];
-const LABELS = { premier: "Premier", first: "First", second: "Second", third: "Third" };
-const escapeLeagueHtml = value => String(value ?? "").replace(/[&<>"']/g, character => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"})[character]);
-
-function normaliseLeagueRow(row, index) {
-  const played = Number(row.pl ?? row.played ?? row.matchesPlayed ?? 0);
-  const wins = Number(row.w ?? row.won ?? row.wins ?? row.matchesWon ?? 0);
-  const draws = Number(row.d ?? row.drawn ?? row.draws ?? row.matchesDrawn ?? 0);
-  const explicitLosses = row.l ?? row.lost ?? row.losses ?? row.matchesLost;
-  const calculatedLosses = Math.max(0, played - wins - draws);
-  const suppliedLosses = explicitLosses == null ? calculatedLosses : Number(explicitLosses);
-  const losses = played === wins + draws + suppliedLosses ? suppliedLosses : calculatedLosses;
-  return {
-    p: Number(row.p ?? row.position ?? row.pos ?? index + 1),
-    t: row.t ?? row.team?.name ?? row.teamName ?? row.name ?? "Unknown team",
-    pl: played,
-    w: wins,
-    d: draws,
-    l: losses,
-    pts: Number(row.pts ?? row.points ?? row.score ?? 0)
-  };
-}
-
-function renderLeagueTable(rows, division, season) {
-  const host = document.getElementById("leagueTableHost");
-  const data = (rows || []).map(normaliseLeagueRow).sort((a,b) => a.p - b.p);
-  if (!data.length) {
-    host.innerHTML = `<div class="league-empty"><h3>${LABELS[division]} Division</h3><p>No teams are listed yet for ${season}. The table will update automatically after results are published.</p></div>`;
-    return;
-  }
-  const body = data.map(team => {
-    const ksb = /^KSB(?:\s|$)/i.test(team.t);
-    const winRate = team.pl ? Math.round(team.w / team.pl * 100) : 0;
-    return `<tr class="${ksb ? "league-row-ksb" : ""}"><td><span class="position-badge">${team.p}</span></td><td class="text-start">${escapeLeagueHtml(team.t)}</td><td>${team.pl}</td><td>${team.w}</td><td>${team.d}</td><td>${team.l}</td><td>${winRate}%</td><td><strong>${team.pts}</strong></td></tr>`;
-  }).join("");
-  host.innerHTML = `<div class="league-table-heading"><div><span class="league-kicker">${season} season</span><h2>${LABELS[division]} Division Table</h2></div><span>${data.length} teams listed</span></div><div class="table-responsive"><table class="table table-dark table-striped table-hover align-middle league-page-table"><thead><tr><th>Pos</th><th class="text-start">Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>Win %</th><th>Pts</th></tr></thead><tbody>${body}</tbody></table></div>`;
-}
-
-async function initialiseLeaguePage() {
-  const host = document.getElementById("leagueTableHost");
-  try {
-    const response = await fetch("league-history.json", { cache: "no-cache" });
-    if (!response.ok) throw new Error(`Could not load league-history.json (${response.status}).`);
-    const archive = await response.json();
-    const seasons = Object.keys(archive.data || {}).map(Number).sort((a,b) => b-a);
-    const currentSeason = Number(archive.currentSeason || seasons[0]);
-    const seasonSelect = document.getElementById("leagueSeasonSelect");
-    seasonSelect.innerHTML = seasons.map(season => `<option value="${season}">${season}</option>`).join("");
-    seasonSelect.value = String(currentSeason);
-    let division = "premier";
-    const draw = () => renderLeagueTable(archive.data?.[seasonSelect.value]?.[division] || [], division, seasonSelect.value);
-    document.querySelectorAll("[data-league-division]").forEach(button => button.addEventListener("click", () => {
-      document.querySelectorAll("[data-league-division]").forEach(item => item.classList.toggle("active", item === button));
-      division = button.dataset.leagueDivision;
-      draw();
-    }));
-    seasonSelect.addEventListener("change", draw);
-    draw();
-  } catch (error) {
-    host.innerHTML = `<div class="league-empty league-error"><h3>League tables unavailable</h3><p>${escapeLeagueHtml(error.message)}</p></div>`;
-  }
-}
-
-document.addEventListener("DOMContentLoaded", initialiseLeaguePage);
+const LEAGUE_DATABASE_FILE="league_database.json";
+const DIVISIONS=["premier","first","second","third"];
+const LABELS={premier:"Premier",first:"First",second:"Second",third:"Third"};
+const lh=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"})[c]);
+const playerUrl=slug=>`player.html?id=${encodeURIComponent(slug)}&scope=league`;
+const teamUrl=slug=>`league-team.html?id=${encodeURIComponent(slug)}`;
+let leagueDb, selectedDivision="premier";
+function normaliseLeagueRow(row,index){const played=Number(row.pl??row.played??0),wins=Number(row.w??row.won??0),draws=Number(row.d??row.draw??0);return{p:index+1,t:row.t??row.team?.name??"Unknown team",slug:row.team?.slug,pl:played,w:wins,d:draws,l:Number(row.l??Math.max(0,played-wins-draws)),pts:Number(row.pts??row.points??0)}}
+function seasons(){return Object.keys(leagueDb.seasons||{}).sort((a,b)=>Number(b)-Number(a));}
+function divisionButtons(){return DIVISIONS.map((d,i)=>`<button class="${i===0?"active":""}" data-division="${d}">${LABELS[d]}</button>`).join("");}
+function fillSeasons(select){select.innerHTML=seasons().map(s=>`<option>${s}</option>`).join("");select.value=String(leagueDb.coverage?.currentSeason||seasons()[0]);}
+function renderLeague(){const season=document.getElementById("leagueSeasonSelect").value,raw=leagueDb.seasons?.[season]?.divisions?.[selectedDivision]||[],rows=raw.map(normaliseLeagueRow).sort((a,b)=>b.pts-a.pts||b.w-a.w).map((r,i)=>({...r,p:i+1}));const host=document.getElementById("leagueTableHost");if(!rows.length){host.innerHTML=`<div class="league-empty"><h3>No table available</h3><p>No ${lh(LABELS[selectedDivision])} Division table is recorded for ${season}.</p></div>`;return;}host.innerHTML=`<div class="league-table-heading"><div><span class="league-kicker">${season} season</span><h2>${LABELS[selectedDivision]} Division Table</h2></div><span>${rows.length} teams</span></div><div class="table-responsive"><table class="table table-dark table-striped table-hover league-page-table"><thead><tr><th>Pos</th><th class="text-start">Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>Win %</th><th>Pts</th></tr></thead><tbody>${rows.map(r=>`<tr class="${/^KSB(?:\s|$)/i.test(r.t)?"league-row-ksb":""}"><td><span class="position-badge">${r.p}</span></td><td class="text-start">${r.slug?`<a class="league-profile-link" href="${teamUrl(r.slug)}">${lh(r.t)}</a>`:lh(r.t)}</td><td>${r.pl}</td><td>${r.w}</td><td>${r.d}</td><td>${r.l}</td><td>${r.pl?Math.round(r.w/r.pl*100):0}%</td><td><strong>${r.pts}</strong></td></tr>`).join("")}</tbody></table></div>`;}
+function meritRows(season,division){return Object.values(leagueDb.players||{}).map(p=>{const s=p.seasons?.[season];if(!s||s.team?.division!==division)return null;const st=s.statistics||{},setsWon=Number(st.setsWon||0),setsLost=Number(st.setsLost||0),totalSets=setsWon+setsLost;return{slug:p.slug,name:p.name,team:s.team?.name||"-",teamSlug:s.team?.slug,rank:s.player?.rank??0,matches:Number(st.played||0),wins:Number(st.wins||0),losses:Number(st.losses||0),setsWon,setsLost,merit:totalSets?Math.round(setsWon*10000/totalSets)/100:0}}).filter(Boolean).sort((a,b)=>b.merit-a.merit||b.setsWon-a.setsWon||b.wins-a.wins||b.rank-a.rank);}
+function renderMerit(){const season=document.getElementById("meritSeasonSelect").value,rows=meritRows(season,selectedDivision),host=document.getElementById("meritTableHost");if(!rows.length){host.innerHTML=`<div class="league-empty"><h3>No merit records</h3><p>No player records are available for this division and season.</p></div>`;return;}host.innerHTML=`<div class="league-table-heading"><div><span class="league-kicker">${season} season</span><h2>${LABELS[selectedDivision]} Division Merit Table</h2></div><span>${rows.length} players</span></div><p class="merit-explanation">Merit percentage is sets won divided by total sets played. A 3-2 win contributes 60%. Match wins are shown separately.</p><div class="table-responsive"><table class="table table-dark table-striped table-hover merit-table"><thead><tr><th>Pos</th><th class="text-start">Player</th><th class="text-start">Team</th><th>Rank</th><th>Matches</th><th>Match W</th><th>Match L</th><th>Sets W-L</th><th>Merit %</th></tr></thead><tbody>${rows.map((r,i)=>`<tr><td><span class="position-badge">${i+1}</span></td><td class="text-start"><a class="league-profile-link" href="${playerUrl(r.slug)}">${lh(r.name)}</a></td><td class="text-start">${r.teamSlug?`<a class="league-profile-link secondary" href="${teamUrl(r.teamSlug)}">${lh(r.team)}</a>`:lh(r.team)}</td><td>${r.rank||"-"}</td><td>${r.matches}</td><td>${r.wins}</td><td>${r.losses}</td><td>${r.setsWon}-${r.setsLost}</td><td><strong>${r.merit}%</strong></td></tr>`).join("")}</tbody></table></div>`;}
+function renderDirectory(){const season=document.getElementById("directorySeasonSelect").value,q=document.getElementById("leagueDirectorySearch").value.trim().toLowerCase(),data=leagueDb.seasons?.[season],host=document.getElementById("leagueDirectoryHost");let teams=Object.values(data?.teams||{}).filter(t=>t.division===selectedDivision).sort((a,b)=>a.team.name.localeCompare(b.team.name));teams=teams.filter(t=>!q||t.team.name.toLowerCase().includes(q)||(t.players||[]).some(p=>p.name.toLowerCase().includes(q)));host.innerHTML=teams.length?`<div class="league-directory-summary">${teams.length} teams · ${teams.reduce((n,t)=>n+t.players.length,0)} registered players</div><div class="league-directory-results">${teams.map(t=>`<article class="league-directory-team"><a class="league-team-card-heading" href="${teamUrl(t.team.slug)}"><span><strong>${lh(t.team.name)}</strong><small>${lh(t.team.venueName||LABELS[t.division])}</small></span><span class="league-card-arrow">›</span></a><div class="league-player-list">${[...t.players].sort((a,b)=>(b.rank||0)-(a.rank||0)).map(p=>`<a href="${playerUrl(p.slug)}"><span>${lh(p.name)}</span><small>${p.rank??"-"}</small></a>`).join("")}</div></article>`).join("")}</div>`:`<div class="league-empty">No matching teams or players.</div>`;}
+function redraw(){renderLeague();renderMerit();renderDirectory();}
+async function initialiseLeaguePage(){try{const r=await fetch(LEAGUE_DATABASE_FILE,{cache:"no-cache"});if(!r.ok)throw new Error(`Could not load ${LEAGUE_DATABASE_FILE}.`);leagueDb=await r.json();document.querySelectorAll("[data-division-controls]").forEach(h=>h.innerHTML=divisionButtons());["leagueSeasonSelect","meritSeasonSelect","directorySeasonSelect"].forEach(id=>{const s=document.getElementById(id);fillSeasons(s);s.onchange=redraw;});document.querySelectorAll("[data-division]").forEach(b=>b.onclick=()=>{selectedDivision=b.dataset.division;document.querySelectorAll("[data-division]").forEach(x=>x.classList.toggle("active",x.dataset.division===selectedDivision));redraw();});document.getElementById("leagueDirectorySearch").oninput=renderDirectory;const updated=leagueDb.generatedAt?new Date(leagueDb.generatedAt).toLocaleString("en-GB"):"Database loaded";document.getElementById("leagueUpdatedBadge").textContent=`Updated ${updated}`;redraw();}catch(e){document.querySelectorAll(".league-empty").forEach(h=>h.innerHTML=`<h3>League data unavailable</h3><p>${lh(e.message)}</p>`);}}
+document.addEventListener("DOMContentLoaded",initialiseLeaguePage);

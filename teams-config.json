@@ -29,18 +29,18 @@
     }
   },
   "teamFiles": {
-    "KSB A": "KSB_A.html",
-    "KSB B": "KSB_B.html",
-    "KSB C": "KSB_C.html",
-    "KSB D": "KSB_D.html",
-    "KSB E": "KSB_E.html",
-    "KSB F": "KSB_F.html",
-    "KSB G": "KSB_G.html",
-    "KSB Lions": "KSB_Lions.html",
-    "KSB Tigers": "KSB_Tigers.html",
-    "KSB Jaguars": "KSB_Jaguars.html",
-    "KSB Leopards": "KSB_Leopards.html",
-    "KSB Pumas": "KSB_Pumas.html",
-    "KSB Panthers": "KSB_Panthers.html"
+    "KSB A": "league-team.html?id=ksb-a",
+    "KSB B": "league-team.html?id=ksb-b",
+    "KSB C": "league-team.html?id=ksb-c",
+    "KSB D": "league-team.html?id=ksb-d",
+    "KSB E": "league-team.html?id=ksb-e",
+    "KSB F": "league-team.html?id=ksb-f",
+    "KSB G": "league-team.html?id=ksb-g",
+    "KSB Lions": "league-team.html?id=ksb-lions",
+    "KSB Tigers": "league-team.html?id=ksb-tigers-jun",
+    "KSB Jaguars": "league-team.html?id=ksb-jaguars",
+    "KSB Leopards": "league-team.html?id=ksb-leopards-jun",
+    "KSB Pumas": "league-team.html?id=ksb-pumas-jun",
+    "KSB Panthers": "league-team.html?id=ksb-panthers-jun"
   }
 }

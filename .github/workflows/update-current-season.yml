@@ -3,7 +3,7 @@ name: Update KSB current-season data
 on:
   workflow_dispatch:
   schedule:
-    # GitHub schedules use UTC. Runs every three hours at 20 minutes past.
+    # GitHub schedules use UTC. Run every hour at 17 minutes past.
     - cron: "17 * * * *"
 
 permissions:

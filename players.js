@@ -1,6 +1,7 @@
 // KSB players and profiles. Single source of truth: ksb_master_database.json
 const DB_FILE = "ksb_master_database.json";
 const OPPOSITION_DB_FILE = "ksb_opposition_database.json";
+const LEAGUE_DB_FILE = "league_database.json";
 
 const esc = value => String(value ?? "").replace(/[&<>"']/g, char => ({
   "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;"
@@ -94,9 +95,10 @@ function opponentTeam(database, slug, season) {
   return teamName(seasonOf(opponent || {}, season)) || "Opponent not recorded";
 }
 
-function resultCards(encounters, database, season) {
+function resultCards(encounters, database, opposition, season) {
   if (!encounters.length) return '<div class="ksb-player-empty">No individual results recorded for this season.</div>';
-  return `<div class="scroll-card-list">${encounters.map(match => `<div class="mini-result-card"><div>${resultBadge(match.result)}<strong>${esc(hasRecordedOpponent(match) ? match.opponent : "Opponent not recorded")}</strong></div><span class="score-chip">${esc(match.playerScore)}-${esc(match.opponentScore)}</span></div>`).join("")}</div>`;
+  const rows = encounters.map(match => { const team = opponentTeam(database, match.opponentSlug, season) || oppositionTeamForSeason(opposition, match.opponentSlug, season, match) || "Team not recorded"; return `<tr><td>${resultBadge(match.result)}</td><td class="text-start">${match.opponentSlug ? `<a class="profile-player-link" href="player.html?id=${encodeURIComponent(match.opponentSlug)}&scope=league"><strong>${esc(hasRecordedOpponent(match) ? match.opponent : "Opponent not recorded")}</strong></a>` : `<strong>${esc(hasRecordedOpponent(match) ? match.opponent : "Opponent not recorded")}</strong>`}</td><td class="text-start">${esc(team)}</td><td><span class="score-chip">${esc(match.playerScore)}-${esc(match.opponentScore)}</span></td></tr>`; }).join("");
+  return `<div class="table-responsive individual-results-table-wrap"><table class="table table-dark table-striped table-hover individual-results-table"><thead><tr><th>Result</th><th class="text-start">Opponent</th><th class="text-start">Opponent team</th><th>Score</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 }
 
 function opponentCards(opponents, database, season) {
@@ -112,7 +114,7 @@ function seasonTable(seasons) {
 function teamContext(player, database, opposition) {
   const seasons = seasonsOf(player).filter(season => Number(season.season) <= Number(database.coverage?.historicEndSeason || 2025));
   const rows = seasons.map(season => {
-    const storedTeam = database.historic?.seasons?.[String(season.season)]?.teams?.[season.team?.slug];
+    const storedTeam = database.historic?.seasons?.[String(season.season)]?.teams?.[season.team?.slug] || database.seasons?.[String(season.season)]?.teams?.[season.team?.slug];
     const fixtures = (storedTeam?.fixtures || []).filter(fixture => fixture.scoreLeft != null && fixture.scoreRight != null);
     let won=0,drawn=0,lost=0;
     fixtures.forEach(fixture => { const left=fixture.teamLeftSlug===season.team?.slug; const ours=Number(left?fixture.scoreLeft:fixture.scoreRight), theirs=Number(left?fixture.scoreRight:fixture.scoreLeft); if(ours>theirs)won++; else if(ours===theirs)drawn++; else lost++; });
@@ -121,11 +123,11 @@ function teamContext(player, database, opposition) {
   return `<div class="profile-chart-grid"><section class="profile-panel"><h2>Ranking history</h2><div class="chart-box"><canvas id="teamRankChart"></canvas></div></section><section class="profile-panel"><h2>Team win rate by season</h2><div class="chart-box"><canvas id="teamRateChart"></canvas></div><p class="profile-help">Team results during seasons when this player appeared on the registered squad.</p></section></div><section class="profile-panel"><h2>Team season history</h2><div class="table-responsive"><table class="table table-dark table-striped align-middle player-history-table"><thead><tr><th>Season</th><th class="text-start">Team</th><th>Division</th><th>Rank</th><th>Team Played</th><th>Team Wins</th><th>Team Draws</th><th>Team Losses</th><th>Team Win %</th></tr></thead><tbody>${[...rows].reverse().map(row=>`<tr><td>${row.season}</td><td class="text-start">${esc(row.team)}</td><td>${esc(row.division)}</td><td>${row.rank}</td><td>${row.played}</td><td>${row.wins}</td><td>${row.draws}</td><td>${row.losses}</td><td>${row.winPercentage}%</td></tr>`).join("")}</tbody></table></div></section>${playerClubPanel(player,opposition,"team-context")}`;
 }
 
-function currentSeasonProfile(player, database) {
+function currentSeasonProfile(player, database, opposition) {
   const year = Number(database.coverage?.currentSeason || 2026);
   const season = seasonOf(player, year);
   if (!season) return `<section class="profile-panel"><h2>${year} current season</h2><div class="ksb-player-empty">This player has no current-season registration or results.</div></section>`;
-  return `<section class="profile-panel"><div class="season-heading"><div><h2>${year} current season</h2><p>${esc(teamName(season))} · Updated from the current league records</p></div></div>${metricTiles(season.statistics, true, rankOf(season))}<div class="two-scroll-panels"><div><h3>Opponent record</h3>${opponentCards(season.statistics?.opponents || [], database, year)}</div><div><h3>Individual results</h3>${resultCards(season.statistics?.encounters || [], database, year)}</div></div></section>`;
+  return `<section class="profile-panel"><div class="season-heading"><div><h2>${year} current season</h2><p>${esc(teamName(season))} · Updated from the current league records</p></div></div>${metricTiles(season.statistics, true, rankOf(season))}<div class="two-scroll-panels"><div><h3>Opponent record</h3>${opponentCards(season.statistics?.opponents || [], database, year)}</div><div><h3>Individual results</h3>${resultCards(season.statistics?.encounters || [], database, opposition, year)}</div></div></section>`;
 }
 
 function pastSeasons(player, database) {
@@ -274,15 +276,16 @@ function bindClubInsights(database, opposition) {
 async function initProfile() {
   const host = document.getElementById("playerProfile"); if (!host) return;
   try {
-    const [database, opposition] = await Promise.all([loadDatabase(), loadOppositionDatabase()]);
-    const slug = new URLSearchParams(location.search).get("id");
-    const player = database.players?.[slug]; if (!player) throw new Error("Player profile not found.");
-    const seasons = seasonsOf(player), latest = seasons.at(-1), currentYear = Number(database.coverage?.currentSeason || 2026);
+    const params = new URLSearchParams(location.search); const leagueScope = params.get("scope") === "league";
+    const [database, opposition] = await Promise.all([leagueScope ? fetch(LEAGUE_DB_FILE,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Could not load league_database.json.");return r.json();}) : loadDatabase(), leagueScope ? Promise.resolve({players:{},oppositionTeams:{}}) : loadOppositionDatabase()]);
+    const slug = params.get("id"); const player = database.players?.[slug]; if (!player) throw new Error("Player profile not found.");
+    const back=document.getElementById("playerBackLink"); if(leagueScope&&back){back.href=`league-team.html?id=${encodeURIComponent(seasonsOf(player).at(-1)?.team?.slug||"")}`;back.textContent="Back to Team";}
+    const seasons = seasonsOf(player), latest = seasons.at(-1), currentYear = Number(database.coverage?.currentSeason || database.coverage?.endSeason || 2026);
     document.title = `${player.name} - KSB Table Tennis Club`;
     host.className = "player-profile";
-    host.innerHTML = `<header class="player-profile-hero"><div><p class="profile-kicker">KSB player profile</p><h1>${esc(player.name)}</h1><p>${seasons[0]?.season} to ${latest?.season} · ${seasons.length} recorded seasons</p><p class="records-start-note">Club records begin in 2013. Earlier seasons were not recorded and are not shown.</p></div><div class="profile-rank"><strong>${esc(rankOf(latest))}</strong><span>Latest rank</span></div></header>
+    host.innerHTML = `<header class="player-profile-hero"><div><p class="profile-kicker">${leagueScope ? "East Lancashire player profile" : "KSB player profile"}</p><h1>${esc(player.name)}</h1><p>${seasons[0]?.season} to ${latest?.season} · ${seasons.length} recorded seasons</p><p class="records-start-note">Club records begin in 2013. Earlier seasons were not recorded and are not shown.</p></div><div class="profile-rank"><strong>${esc(rankOf(latest))}</strong><span>Latest rank</span></div></header>
       <nav class="profile-main-tabs"><button class="active" data-main-tab="current">Current season</button><button data-main-tab="team">Team context</button><button data-main-tab="past">Past seasons</button><button data-main-tab="lookup">Career lookup</button><button data-main-tab="extra">Extra stats</button></nav>
-      <section class="profile-main-panel active" data-main-panel="current">${currentSeasonProfile(player,database)}</section><section class="profile-main-panel" data-main-panel="team">${teamContext(player,database,opposition)}</section>
+      <section class="profile-main-panel active" data-main-panel="current">${currentSeasonProfile(player,database,opposition)}</section><section class="profile-main-panel" data-main-panel="team">${teamContext(player,database,opposition)}</section>
       <section class="profile-main-panel" data-main-panel="past">${pastSeasons(player,database)}</section>
       <section class="profile-main-panel" data-main-panel="lookup">${careerLookup(player,database)}</section>
       <section class="profile-main-panel" data-main-panel="extra">${extraPlayerStats(player,database,opposition)}${playerClubPanel(player,opposition)}</section>`;
@@ -290,7 +293,7 @@ async function initProfile() {
     host.querySelectorAll("[data-main-tab]").forEach(button => button.onclick = () => { host.querySelectorAll("[data-main-tab]").forEach(item=>item.classList.toggle("active",item===button)); host.querySelectorAll("[data-main-panel]").forEach(panel=>panel.classList.toggle("active",panel.dataset.mainPanel===button.dataset.mainTab)); });
     host.querySelectorAll("[data-subtab]").forEach(button => button.onclick = () => { host.querySelectorAll("[data-subtab]").forEach(item=>item.classList.toggle("active",item===button)); host.querySelectorAll("[data-subpanel]").forEach(panel=>panel.classList.toggle("active",panel.dataset.subpanel===button.dataset.subtab)); });
 
-    const historical = seasons.filter(s=>Number(s.season)<=Number(database.coverage?.historicEndSeason||2025));
+    const historical = seasons.filter(s=>Number(s.season)<=Number(database.coverage?.historicEndSeason ?? database.coverage?.currentSeason ?? 2025));
     const teamRows = historical.map(s=>{const t=database.historic?.seasons?.[String(s.season)]?.teams?.[s.team?.slug],f=(t?.fixtures||[]).filter(x=>x.scoreLeft!=null&&x.scoreRight!=null);let w=0;f.forEach(x=>{const left=x.teamLeftSlug===s.team?.slug;if(Number(left?x.scoreLeft:x.scoreRight)>Number(left?x.scoreRight:x.scoreLeft))w++});return {season:s.season,rank:rankOf(s),rate:pct(w,f.length)}});
     createChart("teamRankChart",teamRows.map(x=>x.season),teamRows.map(x=>x.rank),"#66b3ff","Ranking points");
     createChart("teamRateChart",teamRows.map(x=>x.season),teamRows.map(x=>x.rate),"#45c486","Team win %",true);
@@ -298,7 +301,7 @@ async function initProfile() {
     createChart("setWinChart",historical.map(s=>s.season),historical.map(s=>setPct(s.statistics)),"#d69b4b","Sets won %",true);
     createChart("extraSeasonChart",historical.map(s=>s.season),historical.map(s=>stat(s,"winPercentage")),"#9b7be5","Individual win %",true);
 
-    const drawSeason = () => { const season=seasonOf(player,document.getElementById("seasonSelect").value); document.getElementById("seasonDetail").innerHTML=`${metricTiles(season.statistics,true,rankOf(season))}<div class="two-scroll-panels"><div><h3>Opponent record</h3>${opponentCards(season.statistics?.opponents||[],database,season.season)}</div><div><h3>Individual results</h3>${resultCards(season.statistics?.encounters||[],database,season.season)}</div></div>`; };
+    const drawSeason = () => { const season=seasonOf(player,document.getElementById("seasonSelect").value); document.getElementById("seasonDetail").innerHTML=`${metricTiles(season.statistics,true,rankOf(season))}<div class="two-scroll-panels"><div><h3>Opponent record</h3>${opponentCards(season.statistics?.opponents||[],database,season.season)}</div><div><h3>Individual results</h3>${resultCards(season.statistics?.encounters||[],database,opposition,season.season)}</div></div>`; };
     document.getElementById("seasonSelect")?.addEventListener("change",drawSeason); if(document.getElementById("seasonSelect")) drawSeason();
 
     const opponentData=careerOpponentMap(player,database,opposition), oppSearch=document.getElementById("careerOpponentSearch"), lookupOut=document.getElementById("careerLookupResults");
@@ -308,4 +311,4 @@ async function initProfile() {
   } catch(error) { host.className="status-panel error"; host.textContent=error.message; }
 }
 
-document.addEventListener("DOMContentLoaded",()=>{initPlayersPage();initProfile();});
+document.addEventListener("DOMContentLoaded",initPlayersPage);

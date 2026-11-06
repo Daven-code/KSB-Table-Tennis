@@ -3,6 +3,9 @@
 // No API request or separate JSON file is required.
 // Change this one value to 2027 next season.
 let CURRENT_SEASON = 2026;
+// Legacy KSB pages now use the same connected team view as every other club.
+(function redirectLegacyTeamPage(){const slug=(typeof teamSlugs!=="undefined"&&typeof teamName!=="undefined")?teamSlugs[teamName]:null;if(slug&&!new URLSearchParams(location.search).has("legacy")){location.replace(`league-team.html?id=${encodeURIComponent(slug)}`);}})();
+
 const DIVISIONS = ["premier", "first", "second", "third"];
 
 // Current team allocation. Individual team pages now only provide teamName,
@@ -206,23 +209,21 @@ function prepareMembers() {
   membersLink.href = `https://eastlancstt.org.uk/result/${CURRENT_SEASON}/team/${teamSlugs[teamName] || "ksb-a"}`;
 }
 
+function ensureResultsShell(){const tabs=document.querySelector(".nav-tabs"),content=document.querySelector(".tab-content");if(!tabs||!content)return null;let button=document.getElementById("results-tab");if(!button){const item=document.createElement("li");item.className="nav-item";item.innerHTML=`<button class="nav-link" id="results-tab" data-bs-toggle="tab" data-bs-target="#results" type="button" role="tab">Results</button>`;const league=tabs.querySelector('[data-bs-target="#league"]')?.closest("li");league?tabs.insertBefore(item,league):tabs.appendChild(item);}let pane=document.getElementById("results");if(!pane){pane=document.createElement("div");pane.className="tab-pane fade";pane.id="results";pane.setAttribute("role","tabpanel");content.appendChild(pane);}if(!pane.innerHTML.trim())pane.innerHTML=`<div class="status-panel">Loading results...</div>`;return pane;}
+
 async function initialiseTeamMembers() {
   const host = document.getElementById("teamMembersContent");
   if (!host) return;
   try {
-    const [response, oppositionResponse] = await Promise.all([
-      fetch("ksb_master_database.json", { cache: "no-cache" }),
-      fetch("ksb_opposition_database.json", { cache: "no-cache" })
-    ]);
+    const [response, oppositionResponse, leagueResponse] = await Promise.all([fetch("ksb_master_database.json",{cache:"no-cache"}),fetch("ksb_opposition_database.json",{cache:"no-cache"}),fetch("league_database.json",{cache:"no-cache"})]);
     if (!response.ok) throw new Error("Could not load master database");
     const database = await response.json();
-    const opposition = oppositionResponse.ok ? await oppositionResponse.json() : { players:{} };
-    initialiseCurrentResults(database, opposition);
+    const opposition = oppositionResponse.ok ? await oppositionResponse.json() : {players:{}}; const leagueDatabase=leagueResponse.ok?await leagueResponse.json():{players:{}}; initialiseCurrentResults(database,opposition,leagueDatabase);
     const slug = teamSlugs[teamName];
     const year = database.coverage.currentSeason;
-    const live = database.currentSeason.teams?.[slug];
+    const live = leagueDatabase.seasons?.[String(year)]?.teams?.[slug] || database.currentSeason.teams?.[slug];
     const historic = database.historic.seasons || {};
-    const playerRecords = database.players || {};
+    const playerRecords = leagueDatabase.players || database.players || {};
     const historicYears = Object.keys(historic).filter(y => historic[y].teams?.[slug]?.players?.length).sort((a,b) => b-a);
     const profileLink = player => `player.html?id=${encodeURIComponent(player.slug)}`;
     const currentRow = player => {
@@ -277,79 +278,49 @@ function normaliseEncounter(match) {
 }
 
 function renderEncounterRows(encounters) {
-  if (!encounters.length) return `<p class="small-note mb-0">Individual results have not yet been included in the latest website data update.</p>`;
-  const sorted = [...encounters].sort((a,b) => String(a.player).localeCompare(String(b.player)));
-  return `<div class="table-responsive"><table class="table table-dark table-striped align-middle result-breakdown-table"><thead><tr><th class="text-start">KSB player</th><th class="text-start">Opponent</th><th>Score</th><th>Result</th></tr></thead><tbody>${sorted.map(raw => {
-    const match = normaliseEncounter(raw);
-    return `<tr><td class="text-start"><a href="player.html?id=${encodeURIComponent(match.playerSlug)}">${escapeHtml(match.player)}</a></td><td class="text-start">${escapeHtml(match.opponent || "Opponent not recorded")}</td><td>${match.playerScore ?? "-"}-${match.opponentScore ?? "-"}</td><td><span class="team-result-badge result-${String(match.result || "").toLowerCase()}">${escapeHtml(match.result || "-")}</span></td></tr>`;
-  }).join("")}</tbody></table></div>`;
+  if (!encounters.length) return `<p class="small-note mb-0">Individual results are not yet published for this fixture.</p>`;
+  const sorted=[...encounters].sort((a,b)=>String(a.player).localeCompare(String(b.player))||String(a.opponent).localeCompare(String(b.opponent)));
+  return `<div class="table-responsive"><table class="table table-dark table-striped align-middle team-result-breakdown-table"><thead><tr><th class="text-start">KSB player</th><th class="text-start">Opponent</th><th>Score</th><th>Result</th></tr></thead><tbody>${sorted.map(raw=>{const m=normaliseEncounter(raw);const opponent=m.opponentSlug?`<a href="player.html?id=${encodeURIComponent(m.opponentSlug)}&scope=league">${escapeHtml(m.opponent||"Opponent not recorded")}</a>`:escapeHtml(m.opponent||"Opponent not recorded");return `<tr><td class="text-start"><a href="player.html?id=${encodeURIComponent(m.playerSlug)}">${escapeHtml(m.player)}</a></td><td class="text-start">${opponent}</td><td>${m.playerScore??"-"}-${m.opponentScore??"-"}</td><td><span class="team-result-badge result-${String(m.result||"").toLowerCase()}">${escapeHtml(m.result||"-")}</span></td></tr>`;}).join("")}</tbody></table></div>`;
 }
-
-async function initialiseCurrentResults(database) {
-  const tabs = document.querySelector(".nav-tabs");
-  const tabContent = document.querySelector(".tab-content");
-  if (!tabs || !tabContent || document.getElementById("results-tab")) return;
-  const season = Number(database.coverage?.currentSeason || CURRENT_SEASON);
-  const teamSlug = teamSlugs[teamName];
-  const currentTeam = database.currentSeason?.teams?.[teamSlug];
-
-  const tabItem = document.createElement("li");
-  tabItem.className = "nav-item";
-  tabItem.innerHTML = `<button class="nav-link" id="results-tab" data-bs-toggle="tab" data-bs-target="#results" type="button" role="tab">Results</button>`;
-  const leagueItem = tabs.querySelector('[data-bs-target="#league"]')?.closest("li");
-  leagueItem ? tabs.insertBefore(tabItem, leagueItem) : tabs.appendChild(tabItem);
-  const pane = document.createElement("div");
-  pane.className = "tab-pane fade";
-  pane.id = "results";
-  pane.setAttribute("role", "tabpanel");
-  tabContent.appendChild(pane);
-
-  const completed = (currentTeam?.fixtures || []).filter(fixture => fixture.scoreLeft != null && fixture.scoreRight != null);
-  const players = currentTeam?.players || [];
-  const encounters = players.flatMap(player => database.players?.[player.slug]?.seasons?.[String(season)]?.statistics?.encounters || []);
-  const byFixture = new Map();
-  encounters.forEach(raw => {
-    const match = normaliseEncounter(raw);
-    if (!match.fixtureKey) return;
-    const list = byFixture.get(match.fixtureKey) || [];
-    if (!list.some(existing => existing.id === match.id && existing.playerSlug === match.playerSlug)) list.push(match);
-    byFixture.set(match.fixtureKey, list);
-  });
-
-  const cards = [...completed].sort((a,b) => Number(b.timeFulfilled || 0) - Number(a.timeFulfilled || 0)).map((fixture,index) => {
-    const linked = byFixture.get(canonicalFixtureKey(season,fixture)) || [];
-    const home = fixtureValue(fixture,"teamLeftName","homeTeamName") || "Home";
-    const away = fixtureValue(fixture,"teamRightName","awayTeamName") || "Away";
-    const homeScore = fixtureValue(fixture,"scoreLeft","homeScore");
-    const awayScore = fixtureValue(fixture,"scoreRight","awayScore");
-    const fulfilled = fixtureValue(fixture,"timeFulfilled");
-    const parsedDate = fulfilled ? new Date(Number(fulfilled) * 1000) : null;
-    const date = parsedDate && !Number.isNaN(parsedDate.getTime()) ? parsedDate.toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"}) : "Date not recorded";
-    return `<article class="team-result-card"><button class="team-result-summary" type="button" aria-expanded="false" aria-controls="result-detail-${index}"><span><small>${escapeHtml(date)}</small><strong>${escapeHtml(home)} ${homeScore} - ${awayScore} ${escapeHtml(away)}</strong></span><span class="result-expand">View match details</span></button><div class="team-result-detail" id="result-detail-${index}" hidden>${renderEncounterRows(linked)}</div></article>`;
-  }).join("");
-
-  pane.innerHTML = `<section class="team-results-panel"><div class="team-results-heading"><div><h2>${season} results</h2><p>Completed team matches and individual results from the current season.</p></div><span>${completed.length} completed</span></div>${cards || `<div class="current-season-empty"><h3>No team results recorded yet</h3><p>Results will appear after the scheduled data update following the first completed match.</p></div>`}</section>`;
-  pane.addEventListener("click", event => {
-    const button = event.target.closest(".team-result-summary");
-    if (!button) return;
-    const detail = document.getElementById(button.getAttribute("aria-controls"));
-    const open = button.getAttribute("aria-expanded") === "true";
-    button.setAttribute("aria-expanded", String(!open));
-    detail.hidden = open;
-    button.querySelector(".result-expand").textContent = open ? "View match details" : "Hide match details";
-  });
+async function initialiseCurrentResults(database,opposition,leagueDatabase){
+ const pane=ensureResultsShell();if(!pane)return;const season=Number(leagueDatabase.coverage?.currentSeason||database.coverage?.currentSeason||CURRENT_SEASON),teamSlug=teamSlugs[teamName];
+ const currentTeam=leagueDatabase.seasons?.[String(season)]?.teams?.[teamSlug]||database.currentSeason?.teams?.[teamSlug],completed=(currentTeam?.fixtures||[]).filter(f=>f.scoreLeft!=null&&f.scoreRight!=null),roster=currentTeam?.players||[];
+ const encounters=roster.flatMap(p=>leagueDatabase.players?.[p.slug]?.seasons?.[String(season)]?.statistics?.encounters||database.players?.[p.slug]?.seasons?.[String(season)]?.statistics?.encounters||[]),playerTeam=slug=>leagueDatabase.players?.[slug]?.seasons?.[String(season)]?.team?.slug||(opposition.players?.[slug]?.teamHistory||[]).find(r=>Number(r.season)===season)?.team?.slug||"";
+ const cards=[...completed].sort((a,b)=>Number(b.timeFulfilled||0)-Number(a.timeFulfilled||0)).map((f,i)=>{const home=f.teamLeftName||"Home",away=f.teamRightName||"Away",opposing=f.teamLeftSlug===teamSlug?f.teamRightSlug:f.teamLeftSlug,linked=[],seen=new Set();encounters.forEach(raw=>{const m=normaliseEncounter(raw);if(playerTeam(m.opponentSlug)!==opposing)return;const id=m.id!=null?`id:${m.id}`:`${m.playerSlug}|${m.opponentSlug}|${m.playerScore}|${m.opponentScore}`;if(!seen.has(id)){seen.add(id);linked.push(m);}});const date=f.timeFulfilled?new Date(Number(f.timeFulfilled)*1000).toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"}):"Date not recorded";return `<article class="team-result-card"><button class="team-result-summary" type="button" aria-expanded="false" aria-controls="result-detail-${i}"><span><small>${escapeHtml(date)}</small><strong>${escapeHtml(home)} ${f.scoreLeft} - ${f.scoreRight} ${escapeHtml(away)}</strong></span><span class="result-expand">View match details</span></button><div class="team-result-detail" id="result-detail-${i}" hidden>${renderEncounterRows(linked)}</div></article>`;}).join("");
+ pane.innerHTML=`<section class="team-results-panel"><div class="team-results-heading"><div><h2>${season} results</h2><p>Latest completed team matches and individual results from the hourly league database.</p></div><span>${completed.length} completed</span></div>${cards||`<div class="current-season-empty"><h3>No team results recorded yet</h3></div>`}</section>`;pane.onclick=e=>{const b=e.target.closest(".team-result-summary");if(!b)return;const d=document.getElementById(b.getAttribute("aria-controls")),open=b.getAttribute("aria-expanded")==="true";b.setAttribute("aria-expanded",String(!open));d.hidden=open;b.querySelector(".result-expand").textContent=open?"View match details":"Hide match details";};
 }
 
 async function loadLeagueHistory() {
-  const response = await fetch("league-history.json", { cache: "no-cache" });
-  if (!response.ok) throw new Error(`Could not load league-history.json (${response.status}).`);
-  const archive = await response.json();
+  const [historyResponse, leagueResponse] = await Promise.all([
+    fetch("league-history.json", { cache: "no-cache" }),
+    fetch("league_database.json", { cache: "no-cache" })
+  ]);
+  if (!historyResponse.ok) throw new Error(`Could not load league-history.json (${historyResponse.status}).`);
+  const archive = await historyResponse.json();
   leagueData = archive.data || {};
   leagueStatuses = archive.statuses || {};
-  CURRENT_SEASON = Number(archive.currentSeason || Math.max(...Object.keys(leagueData).map(Number))) || CURRENT_SEASON;
+  if (leagueResponse.ok) {
+    const full = await leagueResponse.json();
+    Object.entries(full.seasons || {}).forEach(([year, season]) => {
+      leagueData[year] = leagueData[year] || {};
+      Object.entries(season.divisions || {}).forEach(([division, rows]) => {
+        leagueData[year][division] = (rows || []).map((row, index) => ({
+          p:index + 1,
+          t:row.team?.name || row.t || "Unknown team",
+          w:Number(row.won ?? row.w ?? 0), d:Number(row.draw ?? row.d ?? 0),
+          l:Number(row.loss ?? row.l ?? 0), pl:Number(row.played ?? row.pl ?? 0),
+          pts:Number(row.points ?? row.pts ?? 0)
+        })).sort((a,b) => b.pts - a.pts).map((row,index) => ({...row,p:index+1}));
+      });
+    });
+    CURRENT_SEASON = Number(full.coverage?.currentSeason || archive.currentSeason || CURRENT_SEASON);
+  } else {
+    CURRENT_SEASON = Number(archive.currentSeason || Math.max(...Object.keys(leagueData).map(Number))) || CURRENT_SEASON;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
+  ensureResultsShell();
   initialiseMobileFixtureControls();
   loadFixtures();
   prepareMembers();
