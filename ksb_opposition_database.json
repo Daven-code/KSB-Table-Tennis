@@ -25,11 +25,11 @@
     "currentSeason": 2026,
     "oppositionPlayerCount": 484,
     "oppositionTeamCount": 111,
-    "ksbEncounterCount": 13189,
-    "enrichedEncounterCount": 13189,
+    "ksbEncounterCount": 13198,
+    "enrichedEncounterCount": 13198,
     "successfulApiLookupsThisRun": 0,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-11-06T01:34:51.526857+00:00"
+    "lastUpdated": "2026-11-06T09:26:52.070712+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -322257,14 +322257,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 116,
-        "wins": 74,
+        "played": 119,
+        "wins": 76,
         "draws": 0,
-        "losses": 42,
-        "winPercentage": 63.79,
-        "setsWon": 266,
-        "setsLost": 184,
-        "setDifference": 82
+        "losses": 43,
+        "winPercentage": 63.87,
+        "setsWon": 273,
+        "setsLost": 188,
+        "setDifference": 85
       },
       "ksbBySeason": {
         "2013": {
@@ -322388,14 +322388,14 @@
           "setDifference": 32
         },
         "2026": {
-          "played": 7,
-          "wins": 5,
+          "played": 10,
+          "wins": 7,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 71.43,
-          "setsWon": 17,
-          "setsLost": 13,
-          "setDifference": 4
+          "losses": 3,
+          "winPercentage": 70.0,
+          "setsWon": 24,
+          "setsLost": 17,
+          "setDifference": 7
         }
       },
       "ksbByTeam": {
@@ -322510,14 +322510,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 7,
-          "wins": 5,
+          "played": 10,
+          "wins": 7,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 71.43,
-          "setsWon": 17,
-          "setsLost": 13,
-          "setDifference": 4
+          "losses": 3,
+          "winPercentage": 70.0,
+          "setsWon": 24,
+          "setsLost": 17,
+          "setDifference": 7
         }
       },
       "ksbEncounters": [
@@ -322694,6 +322694,34 @@
           "playerRankChangeRight": -6,
           "ksbPlayerScore": 3,
           "opponentScore": 2,
+          "resultForKSBPlayer": "W",
+          "opponent": "Michael Rostron",
+          "opponentSlug": "michael-rostron",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 44146,
+          "season": 2026,
+          "ksbPlayer": "Andy Cretney",
+          "ksbPlayerSlug": "andy-cretney",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Michael Rostron",
+          "playerLeftSlug": "michael-rostron",
+          "playerRightName": "Andy Cretney",
+          "playerRightSlug": "andy-cretney",
+          "playerRankChangeLeft": 0,
+          "playerRankChangeRight": 0,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
           "resultForKSBPlayer": "W",
           "opponent": "Michael Rostron",
           "opponentSlug": "michael-rostron",
@@ -324142,6 +324170,34 @@
           "opponentRank": null
         },
         {
+          "id": 44144,
+          "season": 2026,
+          "ksbPlayer": "Frank Boldy",
+          "ksbPlayerSlug": "frank-boldy",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Michael Rostron",
+          "playerLeftSlug": "michael-rostron",
+          "playerRightName": "Frank Boldy",
+          "playerRightSlug": "frank-boldy",
+          "playerRankChangeLeft": -11,
+          "playerRankChangeRight": 17,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
+          "resultForKSBPlayer": "W",
+          "opponent": "Michael Rostron",
+          "opponentSlug": "michael-rostron",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 39916,
           "season": 2025,
           "ksbPlayer": "Graham Hoy",
@@ -324968,6 +325024,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1532
+        },
+        {
+          "id": 44150,
+          "season": 2026,
+          "ksbPlayer": "Lee Ash",
+          "ksbPlayerSlug": "lee-ash",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 1,
+          "playerLeftName": "Michael Rostron",
+          "playerLeftSlug": "michael-rostron",
+          "playerRightName": "Lee Ash",
+          "playerRightSlug": "lee-ash",
+          "playerRankChangeLeft": 5,
+          "playerRankChangeRight": -3,
+          "ksbPlayerScore": 1,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Michael Rostron",
+          "opponentSlug": "michael-rostron",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 9395,
@@ -390184,14 +390268,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 110,
-        "wins": 62,
+        "played": 113,
+        "wins": 63,
         "draws": 0,
-        "losses": 48,
-        "winPercentage": 56.36,
-        "setsWon": 225,
-        "setsLost": 195,
-        "setDifference": 30
+        "losses": 50,
+        "winPercentage": 55.75,
+        "setsWon": 228,
+        "setsLost": 202,
+        "setDifference": 26
       },
       "ksbBySeason": {
         "2013": {
@@ -390315,14 +390399,14 @@
           "setDifference": -3
         },
         "2026": {
-          "played": 6,
-          "wins": 4,
+          "played": 9,
+          "wins": 5,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 66.67,
-          "setsWon": 14,
-          "setsLost": 9,
-          "setDifference": 5
+          "losses": 4,
+          "winPercentage": 55.56,
+          "setsWon": 17,
+          "setsLost": 16,
+          "setDifference": 1
         }
       },
       "ksbByTeam": {
@@ -390425,14 +390509,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 6,
-          "wins": 4,
+          "played": 9,
+          "wins": 5,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 66.67,
-          "setsWon": 14,
-          "setsLost": 9,
-          "setDifference": 5
+          "losses": 4,
+          "winPercentage": 55.56,
+          "setsWon": 17,
+          "setsLost": 16,
+          "setDifference": 1
         }
       },
       "ksbEncounters": [
@@ -390609,6 +390693,34 @@
           "playerRankChangeRight": -9,
           "ksbPlayerScore": 3,
           "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Peter Howard",
+          "opponentSlug": "peter-howard",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 44143,
+          "season": 2026,
+          "ksbPlayer": "Andy Cretney",
+          "ksbPlayerSlug": "andy-cretney",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 1,
+          "scoreRight": 3,
+          "playerLeftName": "Peter Howard",
+          "playerLeftSlug": "peter-howard",
+          "playerRightName": "Andy Cretney",
+          "playerRightSlug": "andy-cretney",
+          "playerRankChangeLeft": 0,
+          "playerRankChangeRight": 0,
+          "ksbPlayerScore": 3,
+          "opponentScore": 1,
           "resultForKSBPlayer": "W",
           "opponent": "Peter Howard",
           "opponentSlug": "peter-howard",
@@ -391837,6 +391949,34 @@
           "opponentRank": 1296
         },
         {
+          "id": 44152,
+          "season": 2026,
+          "ksbPlayer": "Frank Boldy",
+          "ksbPlayerSlug": "frank-boldy",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Peter Howard",
+          "playerLeftSlug": "peter-howard",
+          "playerRightName": "Frank Boldy",
+          "playerRightSlug": "frank-boldy",
+          "playerRankChangeLeft": 5,
+          "playerRankChangeRight": -3,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Peter Howard",
+          "opponentSlug": "peter-howard",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 7842,
           "season": 2015,
           "ksbPlayer": "Grant Saggers",
@@ -392695,6 +392835,34 @@
           },
           "opponentDivision": null,
           "opponentRank": 1516
+        },
+        {
+          "id": 44147,
+          "season": 2026,
+          "ksbPlayer": "Lee Ash",
+          "ksbPlayerSlug": "lee-ash",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Peter Howard",
+          "playerLeftSlug": "peter-howard",
+          "playerRightName": "Lee Ash",
+          "playerRightSlug": "lee-ash",
+          "playerRankChangeLeft": 2,
+          "playerRankChangeRight": -1,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Peter Howard",
+          "opponentSlug": "peter-howard",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Brierfield",
+            "slug": "brierfield"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
         },
         {
           "id": 7834,
@@ -394232,14 +394400,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 111,
-        "wins": 64,
+        "played": 114,
+        "wins": 65,
         "draws": 0,
-        "losses": 47,
-        "winPercentage": 57.66,
-        "setsWon": 223,
-        "setsLost": 189,
-        "setDifference": 34
+        "losses": 49,
+        "winPercentage": 57.02,
+        "setsWon": 226,
+        "setsLost": 195,
+        "setDifference": 31
       },
       "ksbBySeason": {
         "2013": {
@@ -394363,14 +394531,14 @@
           "setDifference": 6
         },
         "2026": {
-          "played": 4,
-          "wins": 2,
+          "played": 7,
+          "wins": 3,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 50.0,
-          "setsWon": 7,
-          "setsLost": 6,
-          "setDifference": 1
+          "losses": 4,
+          "winPercentage": 42.86,
+          "setsWon": 10,
+          "setsLost": 12,
+          "setDifference": -2
         }
       },
       "ksbByTeam": {
@@ -394473,14 +394641,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 4,
-          "wins": 2,
+          "played": 7,
+          "wins": 3,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 50.0,
-          "setsWon": 7,
-          "setsLost": 6,
-          "setDifference": 1
+          "losses": 4,
+          "winPercentage": 42.86,
+          "setsWon": 10,
+          "setsLost": 12,
+          "setDifference": -2
         }
       },
       "ksbEncounters": [
@@ -394627,6 +394795,38 @@
           "playerRightSlug": "peter-marsland",
           "playerRankChangeLeft": 8,
           "playerRankChangeRight": -5,
+          "ksbPlayerScore": 3,
+          "opponentScore": 0,
+          "resultForKSBPlayer": "W",
+          "opponent": "Peter Marsland",
+          "opponentSlug": "peter-marsland",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 16,
+            "name": "Brierfield",
+            "slug": "brierfield",
+            "divisionId": 3,
+            "division": null,
+            "rank": 1205
+          },
+          "opponentDivision": null,
+          "opponentRank": 1205
+        },
+        {
+          "id": 44151,
+          "season": 2026,
+          "ksbPlayer": "Andy Cretney",
+          "ksbPlayerSlug": "andy-cretney",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 0,
+          "scoreRight": 3,
+          "playerLeftName": "Peter Marsland",
+          "playerLeftSlug": "peter-marsland",
+          "playerRightName": "Andy Cretney",
+          "playerRightSlug": "andy-cretney",
+          "playerRankChangeLeft": -1,
+          "playerRankChangeRight": 2,
           "ksbPlayerScore": 3,
           "opponentScore": 0,
           "resultForKSBPlayer": "W",
@@ -396085,6 +396285,38 @@
           "opponentRank": 1205
         },
         {
+          "id": 44149,
+          "season": 2026,
+          "ksbPlayer": "Frank Boldy",
+          "ksbPlayerSlug": "frank-boldy",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Peter Marsland",
+          "playerLeftSlug": "peter-marsland",
+          "playerRightName": "Frank Boldy",
+          "playerRightSlug": "frank-boldy",
+          "playerRankChangeLeft": 5,
+          "playerRankChangeRight": -3,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Peter Marsland",
+          "opponentSlug": "peter-marsland",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 16,
+            "name": "Brierfield",
+            "slug": "brierfield",
+            "divisionId": 3,
+            "division": null,
+            "rank": 1205
+          },
+          "opponentDivision": null,
+          "opponentRank": 1205
+        },
+        {
           "id": 21753,
           "season": 2018,
           "ksbPlayer": "Grant Saggers",
@@ -396915,6 +397147,38 @@
           },
           "opponentDivision": null,
           "opponentRank": 1476
+        },
+        {
+          "id": 44145,
+          "season": 2026,
+          "ksbPlayer": "Lee Ash",
+          "ksbPlayerSlug": "lee-ash",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Peter Marsland",
+          "playerLeftSlug": "peter-marsland",
+          "playerRightName": "Lee Ash",
+          "playerRightSlug": "lee-ash",
+          "playerRankChangeLeft": 2,
+          "playerRankChangeRight": -1,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Peter Marsland",
+          "opponentSlug": "peter-marsland",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 16,
+            "name": "Brierfield",
+            "slug": "brierfield",
+            "divisionId": 3,
+            "division": null,
+            "rank": 1205
+          },
+          "opponentDivision": null,
+          "opponentRank": 1205
         },
         {
           "id": 9397,
@@ -515504,19 +515768,19 @@
         "2019": 36,
         "2021": 33,
         "2025": 58,
-        "2026": 21,
+        "2026": 30,
         "2017": 36,
         "2018": 33,
         "2023": 36,
         "2022": 21,
         "2013": 18
       },
-      "played": 325,
-      "wins": 203,
+      "played": 334,
+      "wins": 207,
       "draws": 0,
-      "losses": 122,
-      "setsWon": 713,
-      "setsLost": 515,
+      "losses": 127,
+      "setsWon": 726,
+      "setsLost": 532,
       "ksbPlayers": {
         "adam-najduch": {
           "name": "Adam Najduch",
@@ -515539,6 +515803,17 @@
           "setsWon": 18,
           "setsLost": 5,
           "setDifference": 13
+        },
+        "andy-cretney": {
+          "name": "Andy Cretney",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 1,
+          "setDifference": 8
         },
         "andy-wood": {
           "name": "Andy Wood",
@@ -515694,6 +515969,17 @@
           "setsLost": 5,
           "setDifference": 1
         },
+        "frank-boldy": {
+          "name": "Frank Boldy",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "winPercentage": 33.33,
+          "setsWon": 3,
+          "setsLost": 7,
+          "setDifference": -4
+        },
         "graham-hoy": {
           "name": "Graham Hoy",
           "played": 1,
@@ -515803,6 +516089,17 @@
           "setsWon": 18,
           "setsLost": 2,
           "setDifference": 16
+        },
+        "lee-ash": {
+          "name": "Lee Ash",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "winPercentage": 0.0,
+          "setsWon": 1,
+          "setsLost": 9,
+          "setDifference": -8
         },
         "michael-mularky": {
           "name": "Michael Mularky",
@@ -516006,14 +516303,14 @@
         },
         "michael-rostron": {
           "name": "Michael Rostron",
-          "played": 95,
-          "wins": 65,
+          "played": 98,
+          "wins": 67,
           "draws": 0,
-          "losses": 30,
-          "winPercentage": 68.42,
-          "setsWon": 229,
-          "setsLost": 144,
-          "setDifference": 85
+          "losses": 31,
+          "winPercentage": 68.37,
+          "setsWon": 236,
+          "setsLost": 148,
+          "setDifference": 88
         },
         "michael-wrigley": {
           "name": "Michael Wrigley",
@@ -516061,25 +516358,25 @@
         },
         "peter-howard": {
           "name": "Peter Howard",
-          "played": 80,
-          "wins": 49,
+          "played": 83,
+          "wins": 50,
           "draws": 0,
-          "losses": 31,
-          "winPercentage": 61.25,
-          "setsWon": 174,
-          "setsLost": 132,
-          "setDifference": 42
+          "losses": 33,
+          "winPercentage": 60.24,
+          "setsWon": 177,
+          "setsLost": 139,
+          "setDifference": 38
         },
         "peter-marsland": {
           "name": "Peter Marsland",
-          "played": 84,
-          "wins": 50,
+          "played": 87,
+          "wins": 51,
           "draws": 0,
-          "losses": 34,
-          "winPercentage": 59.52,
-          "setsWon": 177,
-          "setsLost": 135,
-          "setDifference": 42
+          "losses": 36,
+          "winPercentage": 58.62,
+          "setsWon": 180,
+          "setsLost": 141,
+          "setDifference": 39
         },
         "tom-lacy": {
           "name": "Tom Lacy",
@@ -516093,8 +516390,8 @@
           "setDifference": 27
         }
       },
-      "winPercentage": 62.46,
-      "setDifference": 198
+      "winPercentage": 61.98,
+      "setDifference": 194
     },
     "brierfield-b": {
       "name": "Brierfield B",
@@ -551100,7 +551397,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-11-06T01:34:51.526988+00:00",
+    "generatedAt": "2026-11-06T09:26:52.070880+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }
