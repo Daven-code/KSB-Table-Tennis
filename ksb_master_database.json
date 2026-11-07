@@ -23,7 +23,7 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-11-07T16:28:46.124310+00:00",
+    "lastUpdated": "2026-11-07T20:54:48.371399+00:00",
     "livePlayerCount": 69,
     "liveEncounterCount": 750
   },
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-11-07T16:28:43.811475+00:00",
+    "lastUpdated": "2026-11-07T20:54:46.981017+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -34951,7 +34951,7 @@
           },
           {
             "name": "Paul Spencer",
-            "rank": 1933,
+            "rank": 2250,
             "slug": "paul-spencer"
           },
           {
@@ -36510,7 +36510,7 @@
         "players": [
           {
             "name": "Graham Young",
-            "rank": 2109,
+            "rank": 1900,
             "slug": "graham-young"
           },
           {
@@ -36530,7 +36530,7 @@
           },
           {
             "name": "Brian Bradshaw",
-            "rank": 1439,
+            "rank": 1650,
             "slug": "brian-bradshaw"
           },
           {
@@ -37302,12 +37302,12 @@
         "players": [
           {
             "name": "David Mottershead",
-            "rank": 1950,
+            "rank": 2050,
             "slug": "david-mottershead"
           },
           {
             "name": "Steve Armstead",
-            "rank": 1599,
+            "rank": 1675,
             "slug": "steve-armstead"
           },
           {
@@ -46170,7 +46170,7 @@
           "id": 620,
           "name": "Brian Bradshaw",
           "slug": "brian-bradshaw",
-          "rank": 1439,
+          "rank": 1650,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 90,
@@ -49171,7 +49171,7 @@
           "id": 388,
           "name": "David Mottershead",
           "slug": "david-mottershead",
-          "rank": 1950,
+          "rank": 2050,
           "phoneMobile": "07516004063",
           "phoneLandline": "",
           "teamId": 78,
@@ -51143,7 +51143,7 @@
           "id": 21,
           "name": "Graham Young",
           "slug": "graham-young",
-          "rank": 2109,
+          "rank": 1900,
           "phoneMobile": "07710 917055",
           "phoneLandline": "01706 220142",
           "teamId": 90,
@@ -58883,7 +58883,7 @@
           "id": 568,
           "name": "Paul Spencer",
           "slug": "paul-spencer",
-          "rank": 1933,
+          "rank": 2250,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 21,
@@ -63767,7 +63767,7 @@
           "id": 508,
           "name": "Steve Armstead",
           "slug": "steve-armstead",
-          "rank": 1599,
+          "rank": 1675,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 78,
@@ -174221,7 +174221,7 @@
             "id": 620,
             "name": "Brian Bradshaw",
             "slug": "brian-bradshaw",
-            "rank": 1439,
+            "rank": 1650,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 90,
@@ -284126,7 +284126,7 @@
             "id": 388,
             "name": "David Mottershead",
             "slug": "david-mottershead",
-            "rank": 1950,
+            "rank": 2050,
             "phoneMobile": "07516004063",
             "phoneLandline": "",
             "teamId": 78,
@@ -314670,7 +314670,7 @@
             "id": 21,
             "name": "Graham Young",
             "slug": "graham-young",
-            "rank": 2109,
+            "rank": 1900,
             "phoneMobile": "07710 917055",
             "phoneLandline": "01706 220142",
             "teamId": 90,
@@ -517872,7 +517872,7 @@
             "id": 568,
             "name": "Paul Spencer",
             "slug": "paul-spencer",
-            "rank": 1933,
+            "rank": 2250,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 21,
@@ -591410,7 +591410,7 @@
             "id": 508,
             "name": "Steve Armstead",
             "slug": "steve-armstead",
-            "rank": 1599,
+            "rank": 1675,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 78,
