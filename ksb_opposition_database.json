@@ -29,7 +29,7 @@
     "enrichedEncounterCount": 13198,
     "successfulApiLookupsThisRun": 0,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-11-07T10:10:13.461163+00:00"
+    "lastUpdated": "2026-11-07T16:28:47.268007+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -150492,7 +150492,7 @@
       },
       "ksbEncounters": [
         {
-          "id": 44101,
+          "id": 44161,
           "season": 2026,
           "ksbPlayer": "Bernard Milnes",
           "ksbPlayerSlug": "bernard-milnes",
@@ -150504,8 +150504,8 @@
           "playerLeftSlug": "bernard-milnes",
           "playerRightName": "Gustavs Saurins",
           "playerRightSlug": "gustavs_saurins",
-          "playerRankChangeLeft": 17,
-          "playerRankChangeRight": -11,
+          "playerRankChangeLeft": 14,
+          "playerRankChangeRight": -9,
           "ksbPlayerScore": 3,
           "opponentScore": 2,
           "resultForKSBPlayer": "W",
@@ -150604,7 +150604,7 @@
           "opponentRank": null
         },
         {
-          "id": 44093,
+          "id": 44153,
           "season": 2026,
           "ksbPlayer": "Mark Gavin",
           "ksbPlayerSlug": "mark-gavin",
@@ -150688,7 +150688,7 @@
           "opponentRank": null
         },
         {
-          "id": 44096,
+          "id": 44156,
           "season": 2026,
           "ksbPlayer": "Steve Horner",
           "ksbPlayerSlug": "steve-horner",
@@ -150700,8 +150700,8 @@
           "playerLeftSlug": "steve-horner",
           "playerRightName": "Gustavs Saurins",
           "playerRightSlug": "gustavs_saurins",
-          "playerRankChangeLeft": -17,
-          "playerRankChangeRight": 26,
+          "playerRankChangeLeft": 0,
+          "playerRankChangeRight": 0,
           "ksbPlayerScore": 1,
           "opponentScore": 3,
           "resultForKSBPlayer": "L",
@@ -275757,7 +275757,7 @@
           "opponentRank": 1796
         },
         {
-          "id": 44099,
+          "id": 44159,
           "season": 2026,
           "ksbPlayer": "Bernard Milnes",
           "ksbPlayerSlug": "bernard-milnes",
@@ -276317,7 +276317,7 @@
           "opponentRank": 1796
         },
         {
-          "id": 44102,
+          "id": 44162,
           "season": 2026,
           "ksbPlayer": "Mark Gavin",
           "ksbPlayerSlug": "mark-gavin",
@@ -276881,7 +276881,7 @@
           "opponentRank": 1796
         },
         {
-          "id": 44094,
+          "id": 44154,
           "season": 2026,
           "ksbPlayer": "Steve Horner",
           "ksbPlayerSlug": "steve-horner",
@@ -331939,7 +331939,7 @@
           "opponentRank": 1444
         },
         {
-          "id": 44095,
+          "id": 44155,
           "season": 2026,
           "ksbPlayer": "Bernard Milnes",
           "ksbPlayerSlug": "bernard-milnes",
@@ -332471,7 +332471,7 @@
           "opponentRank": 1276
         },
         {
-          "id": 44097,
+          "id": 44157,
           "season": 2026,
           "ksbPlayer": "Mark Gavin",
           "ksbPlayerSlug": "mark-gavin",
@@ -333043,7 +333043,7 @@
           "opponentRank": 1276
         },
         {
-          "id": 44100,
+          "id": 44160,
           "season": 2026,
           "ksbPlayer": "Steve Horner",
           "ksbPlayerSlug": "steve-horner",
@@ -333055,8 +333055,8 @@
           "playerLeftSlug": "steve-horner",
           "playerRightName": "Mick Swindells",
           "playerRightSlug": "mick-swindells",
-          "playerRankChangeLeft": -14,
-          "playerRankChangeRight": 21,
+          "playerRankChangeLeft": 0,
+          "playerRankChangeRight": 0,
           "ksbPlayerScore": 0,
           "opponentScore": 3,
           "resultForKSBPlayer": "L",
@@ -551397,7 +551397,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-11-07T10:10:13.461293+00:00",
+    "generatedAt": "2026-11-07T16:28:47.268344+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }

@@ -23,7 +23,7 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-11-07T10:10:12.735215+00:00",
+    "lastUpdated": "2026-11-07T16:28:46.124310+00:00",
     "livePlayerCount": 69,
     "liveEncounterCount": 750
   },
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-11-07T10:10:11.702520+00:00",
+    "lastUpdated": "2026-11-07T16:28:43.811475+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -35728,7 +35728,7 @@
         "players": [
           {
             "name": "Steve Horner",
-            "rank": 1847,
+            "rank": 1878,
             "slug": "steve-horner"
           },
           {
@@ -35738,7 +35738,7 @@
           },
           {
             "name": "Bernard Milnes",
-            "rank": 1677,
+            "rank": 1674,
             "slug": "bernard-milnes"
           },
           {
@@ -35857,7 +35857,7 @@
             "teamRightName": "Burnley Hornets",
             "teamRightSlug": "burnley-hornets",
             "scoreRight": 24,
-            "timeFulfilled": 1793864567,
+            "timeFulfilled": 1794060259,
             "weekId": 8
           },
           {
@@ -36150,7 +36150,7 @@
                 "teamRightName": "Burnley Hornets",
                 "teamRightSlug": "burnley-hornets",
                 "scoreRight": 24,
-                "timeFulfilled": 1793864567,
+                "timeFulfilled": 1794060259,
                 "weekId": 8
               }
             ]
@@ -45682,7 +45682,7 @@
           "id": 152,
           "name": "Bernard Milnes",
           "slug": "bernard-milnes",
-          "rank": 1677,
+          "rank": 1674,
           "phoneMobile": "07881610874",
           "phoneLandline": "",
           "teamId": 20,
@@ -45896,7 +45896,7 @@
               "fixtureKey": null
             },
             {
-              "id": 44095,
+              "id": 44155,
               "scoreLeft": 1,
               "scoreRight": 3,
               "playerLeftName": "Bernard Milnes",
@@ -45915,7 +45915,7 @@
               "fixtureKey": null
             },
             {
-              "id": 44099,
+              "id": 44159,
               "scoreLeft": 1,
               "scoreRight": 3,
               "playerLeftName": "Bernard Milnes",
@@ -45934,15 +45934,15 @@
               "fixtureKey": null
             },
             {
-              "id": 44101,
+              "id": 44161,
               "scoreLeft": 3,
               "scoreRight": 2,
               "playerLeftName": "Bernard Milnes",
               "playerLeftSlug": "bernard-milnes",
               "playerRightName": "Gustavs Saurins",
               "playerRightSlug": "gustavs_saurins",
-              "playerRankChangeLeft": 17,
-              "playerRankChangeRight": -11,
+              "playerRankChangeLeft": 14,
+              "playerRankChangeRight": -9,
               "player": "Bernard Milnes",
               "playerSlug": "bernard-milnes",
               "opponent": "Gustavs Saurins",
@@ -56984,7 +56984,7 @@
               "fixtureKey": null
             },
             {
-              "id": 44093,
+              "id": 44153,
               "scoreLeft": 3,
               "scoreRight": 1,
               "playerLeftName": "Mark Gavin",
@@ -57003,7 +57003,7 @@
               "fixtureKey": null
             },
             {
-              "id": 44097,
+              "id": 44157,
               "scoreLeft": 2,
               "scoreRight": 3,
               "playerLeftName": "Mark Gavin",
@@ -57022,7 +57022,7 @@
               "fixtureKey": null
             },
             {
-              "id": 44102,
+              "id": 44162,
               "scoreLeft": 1,
               "scoreRight": 3,
               "playerLeftName": "Mark Gavin",
@@ -64222,7 +64222,7 @@
           "id": 107,
           "name": "Steve Horner",
           "slug": "steve-horner",
-          "rank": 1847,
+          "rank": 1878,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 20,
@@ -64493,7 +64493,7 @@
               "fixtureKey": null
             },
             {
-              "id": 44094,
+              "id": 44154,
               "scoreLeft": 2,
               "scoreRight": 3,
               "playerLeftName": "Steve Horner",
@@ -64626,15 +64626,15 @@
               "fixtureKey": null
             },
             {
-              "id": 44096,
+              "id": 44156,
               "scoreLeft": 1,
               "scoreRight": 3,
               "playerLeftName": "Steve Horner",
               "playerLeftSlug": "steve-horner",
               "playerRightName": "Gustavs Saurins",
               "playerRightSlug": "gustavs_saurins",
-              "playerRankChangeLeft": -17,
-              "playerRankChangeRight": 26,
+              "playerRankChangeLeft": 0,
+              "playerRankChangeRight": 0,
               "player": "Steve Horner",
               "playerSlug": "steve-horner",
               "opponent": "Gustavs Saurins",
@@ -64645,15 +64645,15 @@
               "fixtureKey": null
             },
             {
-              "id": 44100,
+              "id": 44160,
               "scoreLeft": 0,
               "scoreRight": 3,
               "playerLeftName": "Steve Horner",
               "playerLeftSlug": "steve-horner",
               "playerRightName": "Mick Swindells",
               "playerRightSlug": "mick-swindells",
-              "playerRankChangeLeft": -14,
-              "playerRankChangeRight": 21,
+              "playerRankChangeLeft": 0,
+              "playerRankChangeRight": 0,
               "player": "Steve Horner",
               "playerSlug": "steve-horner",
               "opponent": "Mick Swindells",
@@ -68017,7 +68017,7 @@
         "fixtureKey": null
       },
       {
-        "id": 44095,
+        "id": 44155,
         "scoreLeft": 1,
         "scoreRight": 3,
         "playerLeftName": "Bernard Milnes",
@@ -68036,7 +68036,7 @@
         "fixtureKey": null
       },
       {
-        "id": 44099,
+        "id": 44159,
         "scoreLeft": 1,
         "scoreRight": 3,
         "playerLeftName": "Bernard Milnes",
@@ -68055,15 +68055,15 @@
         "fixtureKey": null
       },
       {
-        "id": 44101,
+        "id": 44161,
         "scoreLeft": 3,
         "scoreRight": 2,
         "playerLeftName": "Bernard Milnes",
         "playerLeftSlug": "bernard-milnes",
         "playerRightName": "Gustavs Saurins",
         "playerRightSlug": "gustavs_saurins",
-        "playerRankChangeLeft": 17,
-        "playerRankChangeRight": -11,
+        "playerRankChangeLeft": 14,
+        "playerRankChangeRight": -9,
         "player": "Bernard Milnes",
         "playerSlug": "bernard-milnes",
         "opponent": "Gustavs Saurins",
@@ -74743,7 +74743,7 @@
         "fixtureKey": null
       },
       {
-        "id": 44093,
+        "id": 44153,
         "scoreLeft": 3,
         "scoreRight": 1,
         "playerLeftName": "Mark Gavin",
@@ -74762,7 +74762,7 @@
         "fixtureKey": null
       },
       {
-        "id": 44097,
+        "id": 44157,
         "scoreLeft": 2,
         "scoreRight": 3,
         "playerLeftName": "Mark Gavin",
@@ -74781,7 +74781,7 @@
         "fixtureKey": null
       },
       {
-        "id": 44102,
+        "id": 44162,
         "scoreLeft": 1,
         "scoreRight": 3,
         "playerLeftName": "Mark Gavin",
@@ -79360,7 +79360,7 @@
         "fixtureKey": null
       },
       {
-        "id": 44094,
+        "id": 44154,
         "scoreLeft": 2,
         "scoreRight": 3,
         "playerLeftName": "Steve Horner",
@@ -79493,15 +79493,15 @@
         "fixtureKey": null
       },
       {
-        "id": 44096,
+        "id": 44156,
         "scoreLeft": 1,
         "scoreRight": 3,
         "playerLeftName": "Steve Horner",
         "playerLeftSlug": "steve-horner",
         "playerRightName": "Gustavs Saurins",
         "playerRightSlug": "gustavs_saurins",
-        "playerRankChangeLeft": -17,
-        "playerRankChangeRight": 26,
+        "playerRankChangeLeft": 0,
+        "playerRankChangeRight": 0,
         "player": "Steve Horner",
         "playerSlug": "steve-horner",
         "opponent": "Gustavs Saurins",
@@ -79512,15 +79512,15 @@
         "fixtureKey": null
       },
       {
-        "id": 44100,
+        "id": 44160,
         "scoreLeft": 0,
         "scoreRight": 3,
         "playerLeftName": "Steve Horner",
         "playerLeftSlug": "steve-horner",
         "playerRightName": "Mick Swindells",
         "playerRightSlug": "mick-swindells",
-        "playerRankChangeLeft": -14,
-        "playerRankChangeRight": 21,
+        "playerRankChangeLeft": 0,
+        "playerRankChangeRight": 0,
         "player": "Steve Horner",
         "playerSlug": "steve-horner",
         "opponent": "Mick Swindells",
@@ -81309,7 +81309,7 @@
         "teamRightName": "Burnley Hornets",
         "teamRightSlug": "burnley-hornets",
         "scoreRight": 24,
-        "timeFulfilled": 1793864567,
+        "timeFulfilled": 1794060259,
         "weekId": 8
       },
       {
@@ -85076,7 +85076,7 @@
             "teamRightName": "Burnley Hornets",
             "teamRightSlug": "burnley-hornets",
             "scoreRight": 24,
-            "timeFulfilled": 1793864567,
+            "timeFulfilled": 1794060259,
             "weekId": 8
           }
         ]
@@ -160162,7 +160162,7 @@
             "id": 152,
             "name": "Bernard Milnes",
             "slug": "bernard-milnes",
-            "rank": 1677,
+            "rank": 1674,
             "phoneMobile": "07881610874",
             "phoneLandline": "",
             "teamId": 20,
@@ -160376,7 +160376,7 @@
                 "fixtureKey": null
               },
               {
-                "id": 44095,
+                "id": 44155,
                 "scoreLeft": 1,
                 "scoreRight": 3,
                 "playerLeftName": "Bernard Milnes",
@@ -160395,7 +160395,7 @@
                 "fixtureKey": null
               },
               {
-                "id": 44099,
+                "id": 44159,
                 "scoreLeft": 1,
                 "scoreRight": 3,
                 "playerLeftName": "Bernard Milnes",
@@ -160414,15 +160414,15 @@
                 "fixtureKey": null
               },
               {
-                "id": 44101,
+                "id": 44161,
                 "scoreLeft": 3,
                 "scoreRight": 2,
                 "playerLeftName": "Bernard Milnes",
                 "playerLeftSlug": "bernard-milnes",
                 "playerRightName": "Gustavs Saurins",
                 "playerRightSlug": "gustavs_saurins",
-                "playerRankChangeLeft": 17,
-                "playerRankChangeRight": -11,
+                "playerRankChangeLeft": 14,
+                "playerRankChangeRight": -9,
                 "player": "Bernard Milnes",
                 "playerSlug": "bernard-milnes",
                 "opponent": "Gustavs Saurins",
@@ -444745,7 +444745,7 @@
                 "fixtureKey": null
               },
               {
-                "id": 44093,
+                "id": 44153,
                 "scoreLeft": 3,
                 "scoreRight": 1,
                 "playerLeftName": "Mark Gavin",
@@ -444764,7 +444764,7 @@
                 "fixtureKey": null
               },
               {
-                "id": 44097,
+                "id": 44157,
                 "scoreLeft": 2,
                 "scoreRight": 3,
                 "playerLeftName": "Mark Gavin",
@@ -444783,7 +444783,7 @@
                 "fixtureKey": null
               },
               {
-                "id": 44102,
+                "id": 44162,
                 "scoreLeft": 1,
                 "scoreRight": 3,
                 "playerLeftName": "Mark Gavin",
@@ -607816,7 +607816,7 @@
             "id": 107,
             "name": "Steve Horner",
             "slug": "steve-horner",
-            "rank": 1847,
+            "rank": 1878,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 20,
@@ -608087,7 +608087,7 @@
                 "fixtureKey": null
               },
               {
-                "id": 44094,
+                "id": 44154,
                 "scoreLeft": 2,
                 "scoreRight": 3,
                 "playerLeftName": "Steve Horner",
@@ -608220,15 +608220,15 @@
                 "fixtureKey": null
               },
               {
-                "id": 44096,
+                "id": 44156,
                 "scoreLeft": 1,
                 "scoreRight": 3,
                 "playerLeftName": "Steve Horner",
                 "playerLeftSlug": "steve-horner",
                 "playerRightName": "Gustavs Saurins",
                 "playerRightSlug": "gustavs_saurins",
-                "playerRankChangeLeft": -17,
-                "playerRankChangeRight": 26,
+                "playerRankChangeLeft": 0,
+                "playerRankChangeRight": 0,
                 "player": "Steve Horner",
                 "playerSlug": "steve-horner",
                 "opponent": "Gustavs Saurins",
@@ -608239,15 +608239,15 @@
                 "fixtureKey": null
               },
               {
-                "id": 44100,
+                "id": 44160,
                 "scoreLeft": 0,
                 "scoreRight": 3,
                 "playerLeftName": "Steve Horner",
                 "playerLeftSlug": "steve-horner",
                 "playerRightName": "Mick Swindells",
                 "playerRightSlug": "mick-swindells",
-                "playerRankChangeLeft": -14,
-                "playerRankChangeRight": 21,
+                "playerRankChangeLeft": 0,
+                "playerRankChangeRight": 0,
                 "player": "Steve Horner",
                 "playerSlug": "steve-horner",
                 "opponent": "Mick Swindells",
