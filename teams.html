@@ -106,14 +106,29 @@ async function loadTeamDivisions() {
 }
 
 function parseCSV(text) {
-  const rows = text.trim().split("\n");
+  const rows = text.trim().split(/\r?\n/);
   const headers = rows.shift().split(",");
   return rows.map(row => {
     const values = row.split(",");
     const obj = {};
-    headers.forEach((h, i) => obj[h.trim()] = values[i]?.trim());
+    headers.forEach((h, i) => obj[h.trim()] = values[i]?.trim() || "");
     return obj;
   });
+}
+
+function normaliseTeamName(value) {
+  return String(value ?? "").replace(/\s*\(Jun\)\s*/gi, " ").replace(/\s+/g, " ").trim();
+}
+
+function parseFixtureDate(value) {
+  const cleaned = String(value ?? "").trim().replace(/(\d{1,2})(st|nd|rd|th)/gi, "$1");
+  const match = cleaned.match(/^(\d{1,2})[-\s]([A-Za-z]{3,9})[-\s](\d{4})$/);
+  if (match) {
+    const parsed = new Date(`${match[1]} ${match[2]} ${match[3]} 00:00:00`);
+    return Number.isNaN(parsed.getTime()) ? null : parsed;
+  }
+  const parsed = new Date(cleaned);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
 }
 
 function isThisWeek(date) {
@@ -137,8 +152,12 @@ async function loadWeeklyFixtures() {
       const text = await res.text();
       const data = parseCSV(text);
       data.forEach(fix => {
-        const date = new Date(fix.Date);
-        if (isThisWeek(date)) allFixtures.push(fix);
+        const date = parseFixtureDate(fix.Date);
+        if (date && isThisWeek(date)) {
+          allFixtures.push({ ...fix, _date: date,
+            "Home Team": normaliseTeamName(fix["Home Team"]),
+            "Away Team": normaliseTeamName(fix["Away Team"]) });
+        }
       });
     } catch (err) {
       console.warn(`Error loading ${file}:`, err);
@@ -158,7 +177,7 @@ const uniqueFixtures = [];
 const seen = new Set();
 
 for (const f of allFixtures) {
-  const key = `${f.Date}|${f["Home Team"]}|${f["Away Team"]}|${f.Venue}`;
+  const key = `${f._date.toISOString().slice(0, 10)}|${normaliseTeamName(f["Home Team"]).toLowerCase()}|${normaliseTeamName(f["Away Team"]).toLowerCase()}|${String(f.Venue || "").trim().toLowerCase()}`;
   if (!seen.has(key)) {
     seen.add(key);
     uniqueFixtures.push(f);
@@ -166,11 +185,11 @@ for (const f of allFixtures) {
 }
 
 // Sort by date
-uniqueFixtures.sort((a, b) => new Date(a.Date) - new Date(b.Date));
+uniqueFixtures.sort((a, b) => a._date - b._date);
 
 // Display fixtures
 uniqueFixtures.forEach(f => {
-  const dateStr = new Date(f.Date).toLocaleDateString("en-GB", {
+  const dateStr = f._date.toLocaleDateString("en-GB", {
     day: "2-digit", month: "short", year: "numeric"
   });
   const row = document.createElement("tr");

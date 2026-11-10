@@ -4,7 +4,6 @@
 // Change this one value to 2027 next season.
 let CURRENT_SEASON = 2026;
 // Legacy KSB pages now use the same connected team view as every other club.
-(function redirectLegacyTeamPage(){const slug=(typeof teamSlugs!=="undefined"&&typeof teamName!=="undefined")?teamSlugs[teamName]:null;if(slug&&!new URLSearchParams(location.search).has("legacy")){location.replace(`league-team.html?id=${encodeURIComponent(slug)}`);}})();
 
 const DIVISIONS = ["premier", "first", "second", "third"];
 
@@ -35,6 +34,32 @@ const teamSlugs = {
   "KSB Leopards":"ksb-leopards-jun", "KSB Pumas":"ksb-pumas-jun",
   "KSB Panthers":"ksb-panthers-jun"
 };
+(function redirectLegacyTeamPage(){const slug=typeof teamName!=="undefined"?teamSlugForName(teamName):null;if(slug&&!new URLSearchParams(location.search).has("legacy")){location.replace(`league-team.html?id=${encodeURIComponent(slug)}`);}})();
+
+function normaliseKsbTeamName(value) {
+  return String(value ?? "").replace(/\s*\(Jun\)\s*/gi, " ").replace(/\s+/g, " ").trim();
+}
+function teamSlugForName(value) {
+  return teamSlugs[normaliseKsbTeamName(value)] || teamSlugs[value] || null;
+}
+function parseFixtureDate(value) {
+  const cleaned = String(value ?? "").trim().replace(/(\d{1,2})(st|nd|rd|th)/gi, "$1");
+  const match = cleaned.match(/^(\d{1,2})[-\s]([A-Za-z]{3,9})[-\s](\d{4})$/);
+  if (match) {
+    const parsed = new Date(`${match[1]} ${match[2]} ${match[3]} 00:00:00`);
+    return Number.isNaN(parsed.getTime()) ? null : parsed;
+  }
+  const parsed = new Date(cleaned);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+function removeLegacyJuniorLabels(root = document) {
+  document.title = normaliseKsbTeamName(document.title);
+  root.querySelectorAll("h1, h2, h3, .team-name, .team-title").forEach(element => {
+    element.childNodes.forEach(node => {
+      if (node.nodeType === Node.TEXT_NODE) node.textContent = normaliseKsbTeamName(node.textContent);
+    });
+  });
+}
 
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>"']/g, character => ({
@@ -104,8 +129,8 @@ function initialiseMobileFixtureControls() {
 function buildFixtureTable(fixtures, past = false) {
   if (!fixtures.length) return '<tbody><tr><td colspan="4"><em>No fixtures available.</em></td></tr></tbody>';
   const rows = fixtures.map(fixture => {
-    const parsedDate = new Date(fixture.Date);
-    const date = Number.isNaN(parsedDate.getTime()) ? fixture.Date : parsedDate.toLocaleDateString("en-GB", { day:"2-digit", month:"short", year:"numeric" });
+    const parsedDate = parseFixtureDate(fixture.Date);
+    const date = !parsedDate ? fixture.Date : parsedDate.toLocaleDateString("en-GB", { day:"2-digit", month:"short", year:"numeric" });
     return `<tr${past ? ' class="past-fixture"' : ""}><td>${escapeHtml(date)}</td><td>${escapeHtml(fixture["Home Team"])}</td><td>${escapeHtml(fixture["Away Team"])}</td><td>${escapeHtml(fixture.Venue)}</td></tr>`;
   }).join("");
   return `<thead><tr><th>Date</th><th>Home</th><th>Away</th><th>Venue</th></tr></thead><tbody>${rows}</tbody>`;
@@ -115,14 +140,21 @@ async function loadFixtures() {
   const upcomingTable = document.getElementById("upcomingTable");
   const pastTable = document.getElementById("pastTable");
   try {
-    const response = await fetch(`${teamName} Fixtures.csv`);
-    if (!response.ok) throw new Error(`Cannot load ${teamName} Fixtures.csv`);
+    const fixtureTeamName = normaliseKsbTeamName(teamName);
+    const fixtureFile = `${fixtureTeamName} Fixtures.csv`;
+    const response = await fetch(encodeURI(fixtureFile));
+    if (!response.ok) throw new Error(`Cannot load ${fixtureFile}`);
     const fixtures = parseCSV(await response.text());
     const today = new Date(); today.setHours(0,0,0,0);
     const past = [], upcoming = [];
     fixtures.forEach(fixture => {
-      const date = new Date(fixture.Date); date.setHours(0,0,0,0);
-      (date < today ? past : upcoming).push(fixture);
+      const date = parseFixtureDate(fixture.Date);
+      if (!date) return;
+      date.setHours(0,0,0,0);
+      const cleanedFixture = { ...fixture,
+        "Home Team": normaliseKsbTeamName(fixture["Home Team"]),
+        "Away Team": normaliseKsbTeamName(fixture["Away Team"]) };
+      (date < today ? past : upcoming).push(cleanedFixture);
     });
     upcomingTable.innerHTML = buildFixtureTable(upcoming);
     pastTable.innerHTML = buildFixtureTable(past.reverse(), true);
@@ -150,7 +182,7 @@ function populateSeasonOptions() {
 
 function teamDivisionForSeason(season) {
   const seasonData = leagueData[String(season)] || {};
-  return DIVISIONS.find(item => (seasonData[item] || []).some(entry => entry.t === teamName));
+  return DIVISIONS.find(item => (seasonData[item] || []).some(entry => normaliseKsbTeamName(entry.t) === normaliseKsbTeamName(teamName)));
 }
 
 function unavailableMessage(season, selectedDivision) {
@@ -171,12 +203,12 @@ function showNoLeagueData(season, selectedDivision) {
 function renderLeague(data, season, selectedDivision) {
   const host = document.getElementById("leagueContent");
   const sorted = [...data].sort((a,b) => a.p - b.p);
-  const currentTeam = sorted.find(entry => entry.t === teamName);
+  const currentTeam = sorted.find(entry => normaliseKsbTeamName(entry.t) === normaliseKsbTeamName(teamName));
   const winRate = currentTeam?.pl ? Math.round((currentTeam.w / currentTeam.pl) * 100) : 0;
-  const summary = currentTeam ? `<div class="summary-grid"><div class="summary-card"><span class="summary-label">Position</span><span class="summary-value">${currentTeam.p}</span></div><div class="summary-card"><span class="summary-label">Played</span><span class="summary-value">${currentTeam.pl}</span></div><div class="summary-card"><span class="summary-label">Wins</span><span class="summary-value">${currentTeam.w}</span></div><div class="summary-card"><span class="summary-label">Win rate</span><span class="summary-value">${winRate}%</span></div></div>` : `<p class="small-note">${escapeHtml(teamName)} is not listed in this table.</p>`;
+  const summary = currentTeam ? `<div class="summary-grid"><div class="summary-card"><span class="summary-label">Position</span><span class="summary-value">${currentTeam.p}</span></div><div class="summary-card"><span class="summary-label">Played</span><span class="summary-value">${currentTeam.pl}</span></div><div class="summary-card"><span class="summary-label">Wins</span><span class="summary-value">${currentTeam.w}</span></div><div class="summary-card"><span class="summary-label">Win rate</span><span class="summary-value">${winRate}%</span></div></div>` : `<p class="small-note">${escapeHtml(normaliseKsbTeamName(teamName))} is not listed in this table.</p>`;
   const rows = sorted.map(entry => {
     const isKsbTeam = /^KSB(?:\s|$)/i.test(String(entry.t).trim());
-    const classes = [isKsbTeam ? "league-row-ksb" : "", entry.t === teamName ? "league-row-current" : ""].filter(Boolean).join(" ");
+    const classes = [isKsbTeam ? "league-row-ksb" : "", normaliseKsbTeamName(entry.t) === normaliseKsbTeamName(teamName) ? "league-row-current" : ""].filter(Boolean).join(" ");
     const rate = entry.pl ? Math.round((entry.w / entry.pl) * 100) : 0;
     const calculatedLosses = Math.max(0, Number(entry.pl) - Number(entry.w) - Number(entry.d));
     const suppliedLosses = Number(entry.l ?? calculatedLosses);
@@ -206,7 +238,7 @@ async function loadLeague(season, selectedDivision) {
 function prepareMembers() {
   const membersLink = document.getElementById("membersLink");
   if (!membersLink) return;
-  membersLink.href = `https://eastlancstt.org.uk/result/${CURRENT_SEASON}/team/${teamSlugs[teamName] || "ksb-a"}`;
+  membersLink.href = `https://eastlancstt.org.uk/result/${CURRENT_SEASON}/team/${teamSlugForName(teamName) || "ksb-a"}`;
 }
 
 function ensureResultsShell(){const tabs=document.querySelector(".nav-tabs"),content=document.querySelector(".tab-content");if(!tabs||!content)return null;let button=document.getElementById("results-tab");if(!button){const item=document.createElement("li");item.className="nav-item";item.innerHTML=`<button class="nav-link" id="results-tab" data-bs-toggle="tab" data-bs-target="#results" type="button" role="tab">Results</button>`;const league=tabs.querySelector('[data-bs-target="#league"]')?.closest("li");league?tabs.insertBefore(item,league):tabs.appendChild(item);}let pane=document.getElementById("results");if(!pane){pane=document.createElement("div");pane.className="tab-pane fade";pane.id="results";pane.setAttribute("role","tabpanel");content.appendChild(pane);}if(!pane.innerHTML.trim())pane.innerHTML=`<div class="status-panel">Loading results...</div>`;return pane;}
@@ -219,7 +251,7 @@ async function initialiseTeamMembers() {
     if (!response.ok) throw new Error("Could not load master database");
     const database = await response.json();
     const opposition = oppositionResponse.ok ? await oppositionResponse.json() : {players:{}}; const leagueDatabase=leagueResponse.ok?await leagueResponse.json():{players:{}}; initialiseCurrentResults(database,opposition,leagueDatabase);
-    const slug = teamSlugs[teamName];
+    const slug = teamSlugForName(teamName);
     const year = database.coverage.currentSeason;
     const live = leagueDatabase.seasons?.[String(year)]?.teams?.[slug] || database.currentSeason.teams?.[slug];
     const historic = database.historic.seasons || {};
@@ -230,7 +262,7 @@ async function initialiseTeamMembers() {
       const stats = playerRecords[player.slug]?.seasons?.[String(year)]?.statistics || {};
       return `<tr><td class="text-start"><a href="${profileLink(player)}"><strong>${escapeHtml(player.name)}</strong></a></td><td>${player.rank ?? "-"}</td><td>${stats.played ?? 0}</td><td>${stats.wins ?? 0}</td><td>${stats.losses ?? 0}</td><td>${stats.winPercentage ?? 0}%</td><td>${stats.setsWon ?? 0}-${stats.setsLost ?? 0}</td></tr>`;
     };
-    const currentTable = live?.players?.length ? `<div class="ksb-roster-title"><h3>${escapeHtml(live.team?.name || teamName)}</h3><span>${live.players.length} players</span></div><div class="table-responsive"><table class="table table-dark table-striped table-hover align-middle current-player-stats-table"><thead><tr><th class="text-start">Player</th><th>Rank</th><th>Played</th><th>Wins</th><th>Losses</th><th>Win %</th><th>Sets W-L</th></tr></thead><tbody>${[...live.players].sort((a,b)=>(b.rank||0)-(a.rank||0)).map(currentRow).join("")}</tbody></table></div>` : `<div class="current-season-empty"><h3>${year} team not published</h3><p>The current roster will appear after the next data update.</p></div>`;
+    const currentTable = live?.players?.length ? `<div class="ksb-roster-title"><h3>${escapeHtml(normaliseKsbTeamName(live.team?.name || teamName))}</h3><span>${live.players.length} players</span></div><div class="table-responsive"><table class="table table-dark table-striped table-hover align-middle current-player-stats-table"><thead><tr><th class="text-start">Player</th><th>Rank</th><th>Played</th><th>Wins</th><th>Losses</th><th>Win %</th><th>Sets W-L</th></tr></thead><tbody>${[...live.players].sort((a,b)=>(b.rank||0)-(a.rank||0)).map(currentRow).join("")}</tbody></table></div>` : `<div class="current-season-empty"><h3>${year} team not published</h3><p>The current roster will appear after the next data update.</p></div>`;
     const historicGrid = (players, season) => `<div class="ksb-player-grid">${[...players].sort((a,b)=>(b.rank||0)-(a.rank||0)).map(player => `<a class="ksb-player-card" href="${profileLink(player)}"><span class="ksb-player-main"><strong>${escapeHtml(player.name)}</strong><small>${season}</small></span><span class="ksb-rank-block"><strong>${player.rank ?? "-"}</strong><small>${season} rank</small></span><span class="ksb-card-chevron">›</span></a>`).join("")}</div>`;
     host.className = "ksb-team-members";
     host.innerHTML = `<div class="ksb-member-tabs"><button class="active" data-member-tab="current">Current Team (${year})</button><button data-member-tab="history">Historic Team Members</button></div><section class="ksb-member-panel active" data-member-panel="current">${currentTable}</section><section class="ksb-member-panel" data-member-panel="history"><div class="ksb-history-controls"><label>Season<select id="historySeason" class="form-select">${historicYears.map(y=>`<option>${y}</option>`).join("")}</select></label></div><div id="historyRoster"></div></section>`;
@@ -243,9 +275,10 @@ async function initialiseTeamMembers() {
     const drawHistoric = () => {
       const season = select.value;
       const team = historic[season].teams[slug];
-      output.innerHTML = `<div class="ksb-roster-title"><h3>${escapeHtml(team.team.name)}</h3><span>${team.players.length} players</span></div>${historicGrid(team.players, season)}`;
+      output.innerHTML = `<div class="ksb-roster-title"><h3>${escapeHtml(normaliseKsbTeamName(team.team.name))}</h3><span>${team.players.length} players</span></div>${historicGrid(team.players, season)}`;
     };
     if (select) { select.onchange = drawHistoric; drawHistoric(); }
+    removeLegacyJuniorLabels(host);
   } catch (error) {
     host.className = "status-panel error";
     host.textContent = error.message;
@@ -283,7 +316,7 @@ function renderEncounterRows(encounters) {
   return `<div class="table-responsive"><table class="table table-dark table-striped align-middle team-result-breakdown-table"><thead><tr><th class="text-start">KSB player</th><th class="text-start">Opponent</th><th>Score</th><th>Result</th></tr></thead><tbody>${sorted.map(raw=>{const m=normaliseEncounter(raw);const opponent=m.opponentSlug?`<a href="player.html?id=${encodeURIComponent(m.opponentSlug)}&scope=league">${escapeHtml(m.opponent||"Opponent not recorded")}</a>`:escapeHtml(m.opponent||"Opponent not recorded");return `<tr><td class="text-start"><a href="player.html?id=${encodeURIComponent(m.playerSlug)}">${escapeHtml(m.player)}</a></td><td class="text-start">${opponent}</td><td>${m.playerScore??"-"}-${m.opponentScore??"-"}</td><td><span class="team-result-badge result-${String(m.result||"").toLowerCase()}">${escapeHtml(m.result||"-")}</span></td></tr>`;}).join("")}</tbody></table></div>`;
 }
 async function initialiseCurrentResults(database,opposition,leagueDatabase){
- const pane=ensureResultsShell();if(!pane)return;const season=Number(leagueDatabase.coverage?.currentSeason||database.coverage?.currentSeason||CURRENT_SEASON),teamSlug=teamSlugs[teamName];
+ const pane=ensureResultsShell();if(!pane)return;const season=Number(leagueDatabase.coverage?.currentSeason||database.coverage?.currentSeason||CURRENT_SEASON),teamSlug=teamSlugForName(teamName);
  const currentTeam=leagueDatabase.seasons?.[String(season)]?.teams?.[teamSlug]||database.currentSeason?.teams?.[teamSlug],completed=(currentTeam?.fixtures||[]).filter(f=>f.scoreLeft!=null&&f.scoreRight!=null),roster=currentTeam?.players||[];
  const encounters=roster.flatMap(p=>leagueDatabase.players?.[p.slug]?.seasons?.[String(season)]?.statistics?.encounters||database.players?.[p.slug]?.seasons?.[String(season)]?.statistics?.encounters||[]),playerTeam=slug=>leagueDatabase.players?.[slug]?.seasons?.[String(season)]?.team?.slug||(opposition.players?.[slug]?.teamHistory||[]).find(r=>Number(r.season)===season)?.team?.slug||"";
  const cards=[...completed].sort((a,b)=>Number(b.timeFulfilled||0)-Number(a.timeFulfilled||0)).map((f,i)=>{const home=f.teamLeftName||"Home",away=f.teamRightName||"Away",opposing=f.teamLeftSlug===teamSlug?f.teamRightSlug:f.teamLeftSlug,linked=[],seen=new Set();encounters.forEach(raw=>{const m=normaliseEncounter(raw);if(playerTeam(m.opponentSlug)!==opposing)return;const id=m.id!=null?`id:${m.id}`:`${m.playerSlug}|${m.opponentSlug}|${m.playerScore}|${m.opponentScore}`;if(!seen.has(id)){seen.add(id);linked.push(m);}});const date=f.timeFulfilled?new Date(Number(f.timeFulfilled)*1000).toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"}):"Date not recorded";return `<article class="team-result-card"><button class="team-result-summary" type="button" aria-expanded="false" aria-controls="result-detail-${i}"><span><small>${escapeHtml(date)}</small><strong>${escapeHtml(home)} ${f.scoreLeft} - ${f.scoreRight} ${escapeHtml(away)}</strong></span><span class="result-expand">View match details</span></button><div class="team-result-detail" id="result-detail-${i}" hidden>${renderEncounterRows(linked)}</div></article>`;}).join("");
@@ -320,6 +353,7 @@ async function loadLeagueHistory() {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
+  removeLegacyJuniorLabels();
   ensureResultsShell();
   initialiseMobileFixtureControls();
   loadFixtures();
@@ -335,7 +369,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const seasonSelect = document.getElementById("seasonSelect");
     const divisionSelect = document.getElementById("divisionSelect");
-    divisionSelect.value = teamDivisionForSeason(CURRENT_SEASON) || CURRENT_TEAM_DIVISIONS[teamName] || "premier";
+    divisionSelect.value = teamDivisionForSeason(CURRENT_SEASON) || CURRENT_TEAM_DIVISIONS[normaliseKsbTeamName(teamName)] || "premier";
 
     function refresh(autoChooseDivision = false) {
       const season = Number(seasonSelect.value);
