@@ -23,9 +23,9 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-11-09T17:31:19.710093+00:00",
+    "lastUpdated": "2026-11-10T01:33:33.393499+00:00",
     "livePlayerCount": 69,
-    "liveEncounterCount": 750
+    "liveEncounterCount": 768
   },
   "historic": {
     "seasons": {
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-11-09T17:31:18.120715+00:00",
+    "lastUpdated": "2026-11-10T01:33:30.123116+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -33347,12 +33347,12 @@
         "players": [
           {
             "name": "Daven Argile",
-            "rank": 2694,
+            "rank": 2710,
             "slug": "daven-argile"
           },
           {
             "name": "Brett Haslam",
-            "rank": 2630,
+            "rank": 2649,
             "slug": "brett-haslam"
           },
           {
@@ -33562,11 +33562,11 @@
             "venueName": "Hyndburn Leisure Centre",
             "venueSlug": "hyndburn-leisure-centre",
             "venueLocation": "https://maps.app.goo.gl/EwvviMzKi7HQpyom6",
-            "scoreLeft": null,
+            "scoreLeft": 11,
             "teamRightName": "KSB A",
             "teamRightSlug": "ksb-a",
-            "scoreRight": null,
-            "timeFulfilled": null,
+            "scoreRight": 27,
+            "timeFulfilled": 1794272912,
             "weekId": 9
           },
           {
@@ -33806,11 +33806,11 @@
                 "venueName": "Hyndburn Leisure Centre",
                 "venueSlug": "hyndburn-leisure-centre",
                 "venueLocation": "https://maps.app.goo.gl/EwvviMzKi7HQpyom6",
-                "scoreLeft": null,
+                "scoreLeft": 11,
                 "teamRightName": "KSB A",
                 "teamRightSlug": "ksb-a",
-                "scoreRight": null,
-                "timeFulfilled": null,
+                "scoreRight": 27,
+                "timeFulfilled": 1794272912,
                 "weekId": 9
               }
             ]
@@ -40460,7 +40460,7 @@
           },
           {
             "name": "Filip Ciolek",
-            "rank": 651,
+            "rank": 664,
             "slug": "filip-ciolek"
           },
           {
@@ -40470,12 +40470,12 @@
           },
           {
             "name": "Henry Wright",
-            "rank": 344,
+            "rank": 336,
             "slug": "henry-wright"
           },
           {
             "name": "Pawel Ciolek",
-            "rank": 342,
+            "rank": 334,
             "slug": "pawel-ciolek"
           },
           {
@@ -40548,11 +40548,11 @@
             "venueName": "Kay Street Baptist Church",
             "venueSlug": "kay-street-baptist-church",
             "venueLocation": "https://maps.app.goo.gl/8Ji4FG42vFkCKJiw6",
-            "scoreLeft": null,
+            "scoreLeft": 11,
             "teamRightName": "Whalley Merlins",
             "teamRightSlug": "whalley-merlins",
-            "scoreRight": null,
-            "timeFulfilled": null,
+            "scoreRight": 26,
+            "timeFulfilled": 1794273077,
             "weekId": 9
           },
           {
@@ -40904,11 +40904,11 @@
                 "venueName": "Kay Street Baptist Church",
                 "venueSlug": "kay-street-baptist-church",
                 "venueLocation": "https://maps.app.goo.gl/8Ji4FG42vFkCKJiw6",
-                "scoreLeft": null,
+                "scoreLeft": 11,
                 "teamRightName": "Whalley Merlins",
                 "teamRightSlug": "whalley-merlins",
-                "scoreRight": null,
-                "timeFulfilled": null,
+                "scoreRight": 26,
+                "timeFulfilled": 1794273077,
                 "weekId": 9
               }
             ]
@@ -46137,7 +46137,7 @@
           "id": 618,
           "name": "Brett Haslam",
           "slug": "brett-haslam",
-          "rank": 2630,
+          "rank": 2649,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 11,
@@ -46147,16 +46147,102 @@
         },
         "team": {},
         "statistics": {
-          "played": 0,
-          "wins": 0,
+          "played": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
-          "winPercentage": 0,
-          "setsWon": 0,
-          "setsLost": 0,
-          "setDifference": 0,
-          "opponents": [],
-          "encounters": []
+          "winPercentage": 100.0,
+          "setsWon": 9,
+          "setsLost": 4,
+          "setDifference": 5,
+          "opponents": [
+            {
+              "name": "Colin Hooper",
+              "slug": "colin-hooper",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
+              "name": "Dyfan Innes-Wilkin",
+              "slug": "dyfan-innes-wilkin",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
+              "name": "Noel Duffy",
+              "slug": "noel-duffy",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            }
+          ],
+          "encounters": [
+            {
+              "id": 44173,
+              "scoreLeft": 2,
+              "scoreRight": 3,
+              "playerLeftName": "Dyfan Innes-Wilkin",
+              "playerLeftSlug": "dyfan-innes-wilkin",
+              "playerRightName": "Brett Haslam",
+              "playerRightSlug": "brett-haslam",
+              "playerRankChangeLeft": -6,
+              "playerRankChangeRight": 9,
+              "player": "Brett Haslam",
+              "playerSlug": "brett-haslam",
+              "opponent": "Dyfan Innes-Wilkin",
+              "opponentSlug": "dyfan-innes-wilkin",
+              "playerScore": 3,
+              "opponentScore": 2,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44176,
+              "scoreLeft": 1,
+              "scoreRight": 3,
+              "playerLeftName": "Noel Duffy",
+              "playerLeftSlug": "noel-duffy",
+              "playerRightName": "Brett Haslam",
+              "playerRightSlug": "brett-haslam",
+              "playerRankChangeLeft": -3,
+              "playerRankChangeRight": 5,
+              "player": "Brett Haslam",
+              "playerSlug": "brett-haslam",
+              "opponent": "Noel Duffy",
+              "opponentSlug": "noel-duffy",
+              "playerScore": 3,
+              "opponentScore": 1,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44181,
+              "scoreLeft": 1,
+              "scoreRight": 3,
+              "playerLeftName": "Colin Hooper",
+              "playerLeftSlug": "colin-hooper",
+              "playerRightName": "Brett Haslam",
+              "playerRightSlug": "brett-haslam",
+              "playerRankChangeLeft": -3,
+              "playerRankChangeRight": 5,
+              "player": "Brett Haslam",
+              "playerSlug": "brett-haslam",
+              "opponent": "Colin Hooper",
+              "opponentSlug": "colin-hooper",
+              "playerScore": 3,
+              "opponentScore": 1,
+              "result": "W",
+              "fixtureKey": null
+            }
+          ]
         },
         "fixtures": [],
         "weeks": [],
@@ -48177,7 +48263,7 @@
           "id": 53,
           "name": "Daven Argile",
           "slug": "daven-argile",
-          "rank": 2694,
+          "rank": 2710,
           "phoneMobile": "07798713164",
           "phoneLandline": "",
           "teamId": 11,
@@ -48187,14 +48273,14 @@
         },
         "team": {},
         "statistics": {
-          "played": 15,
-          "wins": 12,
+          "played": 18,
+          "wins": 15,
           "draws": 0,
           "losses": 3,
-          "winPercentage": 80.0,
-          "setsWon": 39,
-          "setsLost": 17,
-          "setDifference": 22,
+          "winPercentage": 83.33,
+          "setsWon": 48,
+          "setsLost": 19,
+          "setDifference": 29,
           "opponents": [
             {
               "name": "Andrea Harrison",
@@ -48233,6 +48319,15 @@
               "winPercentage": 100.0
             },
             {
+              "name": "Colin Hooper",
+              "slug": "colin-hooper",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
               "name": "Dave Jefferson",
               "slug": "dave-jefferson",
               "played": 1,
@@ -48253,6 +48348,15 @@
             {
               "name": "Douglas Hodgson",
               "slug": "douglas_hodgson",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
+              "name": "Dyfan Innes-Wilkin",
+              "slug": "dyfan-innes-wilkin",
               "played": 1,
               "wins": 1,
               "draws": 0,
@@ -48303,6 +48407,15 @@
               "draws": 0,
               "losses": 1,
               "winPercentage": 0.0
+            },
+            {
+              "name": "Noel Duffy",
+              "slug": "noel-duffy",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
             },
             {
               "name": "Oliver Fox",
@@ -48558,6 +48671,63 @@
               "opponentSlug": "dave-jefferson",
               "playerScore": 3,
               "opponentScore": 1,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44175,
+              "scoreLeft": 2,
+              "scoreRight": 3,
+              "playerLeftName": "Colin Hooper",
+              "playerLeftSlug": "colin-hooper",
+              "playerRightName": "Daven Argile",
+              "playerRightSlug": "daven-argile",
+              "playerRankChangeLeft": -3,
+              "playerRankChangeRight": 5,
+              "player": "Daven Argile",
+              "playerSlug": "daven-argile",
+              "opponent": "Colin Hooper",
+              "opponentSlug": "colin-hooper",
+              "playerScore": 3,
+              "opponentScore": 2,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44177,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Dyfan Innes-Wilkin",
+              "playerLeftSlug": "dyfan-innes-wilkin",
+              "playerRightName": "Daven Argile",
+              "playerRightSlug": "daven-argile",
+              "playerRankChangeLeft": -5,
+              "playerRankChangeRight": 8,
+              "player": "Daven Argile",
+              "playerSlug": "daven-argile",
+              "opponent": "Dyfan Innes-Wilkin",
+              "opponentSlug": "dyfan-innes-wilkin",
+              "playerScore": 3,
+              "opponentScore": 0,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44180,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Noel Duffy",
+              "playerLeftSlug": "noel-duffy",
+              "playerRightName": "Daven Argile",
+              "playerRightSlug": "daven-argile",
+              "playerRankChangeLeft": -2,
+              "playerRankChangeRight": 3,
+              "player": "Daven Argile",
+              "playerSlug": "daven-argile",
+              "opponent": "Noel Duffy",
+              "opponentSlug": "noel-duffy",
+              "playerScore": 3,
+              "opponentScore": 0,
               "result": "W",
               "fixtureKey": null
             },
@@ -49542,7 +49712,7 @@
           "id": 660,
           "name": "Filip Ciolek",
           "slug": "filip-ciolek",
-          "rank": 651,
+          "rank": 664,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 93,
@@ -49552,14 +49722,14 @@
         },
         "team": {},
         "statistics": {
-          "played": 18,
-          "wins": 8,
+          "played": 21,
+          "wins": 10,
           "draws": 0,
-          "losses": 10,
-          "winPercentage": 44.44,
-          "setsWon": 28,
-          "setsLost": 35,
-          "setDifference": -7,
+          "losses": 11,
+          "winPercentage": 47.62,
+          "setsWon": 35,
+          "setsLost": 40,
+          "setDifference": -5,
           "opponents": [
             {
               "name": "Caroline Harris",
@@ -49643,6 +49813,15 @@
               "winPercentage": 100.0
             },
             {
+              "name": "Martin Astle",
+              "slug": "martin-astle",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
               "name": "Michael Rostron",
               "slug": "michael-rostron",
               "played": 1,
@@ -49706,6 +49885,15 @@
               "winPercentage": 0.0
             },
             {
+              "name": "Steve Axell",
+              "slug": "steve-axell",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
               "name": "Thomas Sheard",
               "slug": "thomas-sheard",
               "played": 1,
@@ -49713,6 +49901,15 @@
               "draws": 0,
               "losses": 1,
               "winPercentage": 0.0
+            },
+            {
+              "name": "Tyrone Morgan",
+              "slug": "tyrone-morgan",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
             },
             {
               "name": "Waliu Jayeola",
@@ -49894,6 +50091,63 @@
               "playerScore": 0,
               "opponentScore": 3,
               "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44183,
+              "scoreLeft": 3,
+              "scoreRight": 1,
+              "playerLeftName": "Filip Ciolek",
+              "playerLeftSlug": "filip-ciolek",
+              "playerRightName": "Tyrone Morgan",
+              "playerRightSlug": "tyrone-morgan",
+              "playerRankChangeLeft": 9,
+              "playerRankChangeRight": -6,
+              "player": "Filip Ciolek",
+              "playerSlug": "filip-ciolek",
+              "opponent": "Tyrone Morgan",
+              "opponentSlug": "tyrone-morgan",
+              "playerScore": 3,
+              "opponentScore": 1,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44187,
+              "scoreLeft": 1,
+              "scoreRight": 3,
+              "playerLeftName": "Filip Ciolek",
+              "playerLeftSlug": "filip-ciolek",
+              "playerRightName": "Martin Astle",
+              "playerRightSlug": "martin-astle",
+              "playerRankChangeLeft": -8,
+              "playerRankChangeRight": 12,
+              "player": "Filip Ciolek",
+              "playerSlug": "filip-ciolek",
+              "opponent": "Martin Astle",
+              "opponentSlug": "martin-astle",
+              "playerScore": 1,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44192,
+              "scoreLeft": 3,
+              "scoreRight": 1,
+              "playerLeftName": "Filip Ciolek",
+              "playerLeftSlug": "filip-ciolek",
+              "playerRightName": "Steve Axell",
+              "playerRightSlug": "steve-axell",
+              "playerRankChangeLeft": 12,
+              "playerRankChangeRight": -8,
+              "player": "Filip Ciolek",
+              "playerSlug": "filip-ciolek",
+              "opponent": "Steve Axell",
+              "opponentSlug": "steve-axell",
+              "playerScore": 3,
+              "opponentScore": 1,
+              "result": "W",
               "fixtureKey": null
             },
             {
@@ -51920,7 +52174,7 @@
           "id": 751,
           "name": "Henry Wright",
           "slug": "henry-wright",
-          "rank": 344,
+          "rank": 336,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 93,
@@ -51930,14 +52184,14 @@
         },
         "team": {},
         "statistics": {
-          "played": 15,
+          "played": 18,
           "wins": 8,
           "draws": 0,
-          "losses": 7,
-          "winPercentage": 53.33,
+          "losses": 10,
+          "winPercentage": 44.44,
           "setsWon": 26,
-          "setsLost": 28,
-          "setDifference": -2,
+          "setsLost": 37,
+          "setDifference": -11,
           "opponents": [
             {
               "name": "Adam Simcock",
@@ -52021,6 +52275,15 @@
               "winPercentage": 100.0
             },
             {
+              "name": "Martin Astle",
+              "slug": "martin-astle",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
               "name": "Olivia Sanders",
               "slug": "olivia-sanders",
               "played": 1,
@@ -52059,6 +52322,24 @@
             {
               "name": "Stephen Carpanini",
               "slug": "stephen_carpanina",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Steve Axell",
+              "slug": "steve-axell",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Tyrone Morgan",
+              "slug": "tyrone-morgan",
               "played": 1,
               "wins": 0,
               "draws": 0,
@@ -52131,6 +52412,63 @@
               "playerScore": 3,
               "opponentScore": 0,
               "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44184,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Henry Wright",
+              "playerLeftSlug": "henry-wright",
+              "playerRightName": "Steve Axell",
+              "playerRightSlug": "steve-axell",
+              "playerRankChangeLeft": -3,
+              "playerRankChangeRight": 5,
+              "player": "Henry Wright",
+              "playerSlug": "henry-wright",
+              "opponent": "Steve Axell",
+              "opponentSlug": "steve-axell",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44186,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Henry Wright",
+              "playerLeftSlug": "henry-wright",
+              "playerRightName": "Tyrone Morgan",
+              "playerRightSlug": "tyrone-morgan",
+              "playerRankChangeLeft": -3,
+              "playerRankChangeRight": 5,
+              "player": "Henry Wright",
+              "playerSlug": "henry-wright",
+              "opponent": "Tyrone Morgan",
+              "opponentSlug": "tyrone-morgan",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44190,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Henry Wright",
+              "playerLeftSlug": "henry-wright",
+              "playerRightName": "Martin Astle",
+              "playerRightSlug": "martin-astle",
+              "playerRankChangeLeft": -2,
+              "playerRankChangeRight": 3,
+              "player": "Henry Wright",
+              "playerSlug": "henry-wright",
+              "opponent": "Martin Astle",
+              "opponentSlug": "martin-astle",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
               "fixtureKey": null
             },
             {
@@ -59086,7 +59424,7 @@
           "id": 775,
           "name": "Pawel Ciolek",
           "slug": "pawel-ciolek",
-          "rank": 342,
+          "rank": 334,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 93,
@@ -59096,14 +59434,14 @@
         },
         "team": {},
         "statistics": {
-          "played": 6,
+          "played": 9,
           "wins": 4,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 66.67,
-          "setsWon": 12,
-          "setsLost": 6,
-          "setDifference": 6,
+          "losses": 5,
+          "winPercentage": 44.44,
+          "setsWon": 14,
+          "setsLost": 15,
+          "setDifference": -1,
           "opponents": [
             {
               "name": "Joe Mason",
@@ -59133,6 +59471,15 @@
               "winPercentage": 100.0
             },
             {
+              "name": "Martin Astle",
+              "slug": "martin-astle",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
               "name": "Peter Watson",
               "slug": "peter-watson",
               "played": 1,
@@ -59153,6 +59500,24 @@
             {
               "name": "Stephen Carpanini",
               "slug": "stephen_carpanina",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Steve Axell",
+              "slug": "steve-axell",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Tyrone Morgan",
+              "slug": "tyrone-morgan",
               "played": 1,
               "wins": 0,
               "draws": 0,
@@ -59216,6 +59581,63 @@
               "playerScore": 3,
               "opponentScore": 0,
               "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44185,
+              "scoreLeft": 2,
+              "scoreRight": 3,
+              "playerLeftName": "Pawel Ciolek",
+              "playerLeftSlug": "pawel-ciolek",
+              "playerRightName": "Martin Astle",
+              "playerRightSlug": "martin-astle",
+              "playerRankChangeLeft": -2,
+              "playerRankChangeRight": 3,
+              "player": "Pawel Ciolek",
+              "playerSlug": "pawel-ciolek",
+              "opponent": "Martin Astle",
+              "opponentSlug": "martin-astle",
+              "playerScore": 2,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44189,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Pawel Ciolek",
+              "playerLeftSlug": "pawel-ciolek",
+              "playerRightName": "Steve Axell",
+              "playerRightSlug": "steve-axell",
+              "playerRankChangeLeft": -3,
+              "playerRankChangeRight": 5,
+              "player": "Pawel Ciolek",
+              "playerSlug": "pawel-ciolek",
+              "opponent": "Steve Axell",
+              "opponentSlug": "steve-axell",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44191,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Pawel Ciolek",
+              "playerLeftSlug": "pawel-ciolek",
+              "playerRightName": "Tyrone Morgan",
+              "playerRightSlug": "tyrone-morgan",
+              "playerRankChangeLeft": -3,
+              "playerRankChangeRight": 5,
+              "player": "Pawel Ciolek",
+              "playerSlug": "pawel-ciolek",
+              "opponent": "Tyrone Morgan",
+              "opponentSlug": "tyrone-morgan",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
               "fixtureKey": null
             },
             {
@@ -59789,14 +60211,14 @@
         },
         "team": {},
         "statistics": {
-          "played": 15,
-          "wins": 13,
+          "played": 18,
+          "wins": 15,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 86.67,
-          "setsWon": 39,
-          "setsLost": 8,
-          "setDifference": 31,
+          "losses": 3,
+          "winPercentage": 83.33,
+          "setsWon": 45,
+          "setsLost": 12,
+          "setDifference": 33,
           "opponents": [
             {
               "name": "Alan Meltzer",
@@ -59835,6 +60257,15 @@
               "winPercentage": 100.0
             },
             {
+              "name": "Colin Hooper",
+              "slug": "colin-hooper",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
               "name": "Dave Jefferson",
               "slug": "dave-jefferson",
               "played": 1,
@@ -59842,6 +60273,15 @@
               "draws": 0,
               "losses": 0,
               "winPercentage": 100.0
+            },
+            {
+              "name": "Dyfan Innes-Wilkin",
+              "slug": "dyfan-innes-wilkin",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
             },
             {
               "name": "Fraser McEwen",
@@ -59900,6 +60340,15 @@
             {
               "name": "Matt Hodgkinson",
               "slug": "matt-hodgkinson",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
+              "name": "Noel Duffy",
+              "slug": "noel-duffy",
               "played": 1,
               "wins": 1,
               "draws": 0,
@@ -60161,6 +60610,63 @@
               "playerScore": 3,
               "opponentScore": 0,
               "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44174,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Noel Duffy",
+              "playerLeftSlug": "noel-duffy",
+              "playerRightName": "Rob Hall",
+              "playerRightSlug": "rob-hall",
+              "playerRankChangeLeft": -3,
+              "playerRankChangeRight": 5,
+              "player": "Rob Hall",
+              "playerSlug": "rob-hall",
+              "opponent": "Noel Duffy",
+              "opponentSlug": "noel-duffy",
+              "playerScore": 3,
+              "opponentScore": 0,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44179,
+              "scoreLeft": 1,
+              "scoreRight": 3,
+              "playerLeftName": "Colin Hooper",
+              "playerLeftSlug": "colin-hooper",
+              "playerRightName": "Rob Hall",
+              "playerRightSlug": "rob-hall",
+              "playerRankChangeLeft": -4,
+              "playerRankChangeRight": 6,
+              "player": "Rob Hall",
+              "playerSlug": "rob-hall",
+              "opponent": "Colin Hooper",
+              "opponentSlug": "colin-hooper",
+              "playerScore": 3,
+              "opponentScore": 1,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44182,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Dyfan Innes-Wilkin",
+              "playerLeftSlug": "dyfan-innes-wilkin",
+              "playerRightName": "Rob Hall",
+              "playerRightSlug": "rob-hall",
+              "playerRankChangeLeft": 17,
+              "playerRankChangeRight": -11,
+              "player": "Rob Hall",
+              "playerSlug": "rob-hall",
+              "opponent": "Dyfan Innes-Wilkin",
+              "opponentSlug": "dyfan-innes-wilkin",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
               "fixtureKey": null
             },
             {
@@ -68245,6 +68751,63 @@
         "fixtureKey": null
       },
       {
+        "id": 44173,
+        "scoreLeft": 2,
+        "scoreRight": 3,
+        "playerLeftName": "Dyfan Innes-Wilkin",
+        "playerLeftSlug": "dyfan-innes-wilkin",
+        "playerRightName": "Brett Haslam",
+        "playerRightSlug": "brett-haslam",
+        "playerRankChangeLeft": -6,
+        "playerRankChangeRight": 9,
+        "player": "Brett Haslam",
+        "playerSlug": "brett-haslam",
+        "opponent": "Dyfan Innes-Wilkin",
+        "opponentSlug": "dyfan-innes-wilkin",
+        "playerScore": 3,
+        "opponentScore": 2,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44176,
+        "scoreLeft": 1,
+        "scoreRight": 3,
+        "playerLeftName": "Noel Duffy",
+        "playerLeftSlug": "noel-duffy",
+        "playerRightName": "Brett Haslam",
+        "playerRightSlug": "brett-haslam",
+        "playerRankChangeLeft": -3,
+        "playerRankChangeRight": 5,
+        "player": "Brett Haslam",
+        "playerSlug": "brett-haslam",
+        "opponent": "Noel Duffy",
+        "opponentSlug": "noel-duffy",
+        "playerScore": 3,
+        "opponentScore": 1,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44181,
+        "scoreLeft": 1,
+        "scoreRight": 3,
+        "playerLeftName": "Colin Hooper",
+        "playerLeftSlug": "colin-hooper",
+        "playerRightName": "Brett Haslam",
+        "playerRightSlug": "brett-haslam",
+        "playerRankChangeLeft": -3,
+        "playerRankChangeRight": 5,
+        "player": "Brett Haslam",
+        "playerSlug": "brett-haslam",
+        "opponent": "Colin Hooper",
+        "opponentSlug": "colin-hooper",
+        "playerScore": 3,
+        "opponentScore": 1,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
         "id": 43613,
         "scoreLeft": 3,
         "scoreRight": 0,
@@ -69670,6 +70233,63 @@
         "fixtureKey": null
       },
       {
+        "id": 44175,
+        "scoreLeft": 2,
+        "scoreRight": 3,
+        "playerLeftName": "Colin Hooper",
+        "playerLeftSlug": "colin-hooper",
+        "playerRightName": "Daven Argile",
+        "playerRightSlug": "daven-argile",
+        "playerRankChangeLeft": -3,
+        "playerRankChangeRight": 5,
+        "player": "Daven Argile",
+        "playerSlug": "daven-argile",
+        "opponent": "Colin Hooper",
+        "opponentSlug": "colin-hooper",
+        "playerScore": 3,
+        "opponentScore": 2,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44177,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Dyfan Innes-Wilkin",
+        "playerLeftSlug": "dyfan-innes-wilkin",
+        "playerRightName": "Daven Argile",
+        "playerRightSlug": "daven-argile",
+        "playerRankChangeLeft": -5,
+        "playerRankChangeRight": 8,
+        "player": "Daven Argile",
+        "playerSlug": "daven-argile",
+        "opponent": "Dyfan Innes-Wilkin",
+        "opponentSlug": "dyfan-innes-wilkin",
+        "playerScore": 3,
+        "opponentScore": 0,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44180,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Noel Duffy",
+        "playerLeftSlug": "noel-duffy",
+        "playerRightName": "Daven Argile",
+        "playerRightSlug": "daven-argile",
+        "playerRankChangeLeft": -2,
+        "playerRankChangeRight": 3,
+        "player": "Daven Argile",
+        "playerSlug": "daven-argile",
+        "opponent": "Noel Duffy",
+        "opponentSlug": "noel-duffy",
+        "playerScore": 3,
+        "opponentScore": 0,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
         "id": 42965,
         "scoreLeft": 0,
         "scoreRight": 3,
@@ -70465,6 +71085,63 @@
         "playerScore": 0,
         "opponentScore": 3,
         "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44183,
+        "scoreLeft": 3,
+        "scoreRight": 1,
+        "playerLeftName": "Filip Ciolek",
+        "playerLeftSlug": "filip-ciolek",
+        "playerRightName": "Tyrone Morgan",
+        "playerRightSlug": "tyrone-morgan",
+        "playerRankChangeLeft": 9,
+        "playerRankChangeRight": -6,
+        "player": "Filip Ciolek",
+        "playerSlug": "filip-ciolek",
+        "opponent": "Tyrone Morgan",
+        "opponentSlug": "tyrone-morgan",
+        "playerScore": 3,
+        "opponentScore": 1,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44187,
+        "scoreLeft": 1,
+        "scoreRight": 3,
+        "playerLeftName": "Filip Ciolek",
+        "playerLeftSlug": "filip-ciolek",
+        "playerRightName": "Martin Astle",
+        "playerRightSlug": "martin-astle",
+        "playerRankChangeLeft": -8,
+        "playerRankChangeRight": 12,
+        "player": "Filip Ciolek",
+        "playerSlug": "filip-ciolek",
+        "opponent": "Martin Astle",
+        "opponentSlug": "martin-astle",
+        "playerScore": 1,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44192,
+        "scoreLeft": 3,
+        "scoreRight": 1,
+        "playerLeftName": "Filip Ciolek",
+        "playerLeftSlug": "filip-ciolek",
+        "playerRightName": "Steve Axell",
+        "playerRightSlug": "steve-axell",
+        "playerRankChangeLeft": 12,
+        "playerRankChangeRight": -8,
+        "player": "Filip Ciolek",
+        "playerSlug": "filip-ciolek",
+        "opponent": "Steve Axell",
+        "opponentSlug": "steve-axell",
+        "playerScore": 3,
+        "opponentScore": 1,
+        "result": "W",
         "fixtureKey": null
       },
       {
@@ -71776,6 +72453,63 @@
         "playerScore": 3,
         "opponentScore": 0,
         "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44184,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Henry Wright",
+        "playerLeftSlug": "henry-wright",
+        "playerRightName": "Steve Axell",
+        "playerRightSlug": "steve-axell",
+        "playerRankChangeLeft": -3,
+        "playerRankChangeRight": 5,
+        "player": "Henry Wright",
+        "playerSlug": "henry-wright",
+        "opponent": "Steve Axell",
+        "opponentSlug": "steve-axell",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44186,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Henry Wright",
+        "playerLeftSlug": "henry-wright",
+        "playerRightName": "Tyrone Morgan",
+        "playerRightSlug": "tyrone-morgan",
+        "playerRankChangeLeft": -3,
+        "playerRankChangeRight": 5,
+        "player": "Henry Wright",
+        "playerSlug": "henry-wright",
+        "opponent": "Tyrone Morgan",
+        "opponentSlug": "tyrone-morgan",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44190,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Henry Wright",
+        "playerLeftSlug": "henry-wright",
+        "playerRightName": "Martin Astle",
+        "playerRightSlug": "martin-astle",
+        "playerRankChangeLeft": -2,
+        "playerRankChangeRight": 3,
+        "player": "Henry Wright",
+        "playerSlug": "henry-wright",
+        "opponent": "Martin Astle",
+        "opponentSlug": "martin-astle",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
         "fixtureKey": null
       },
       {
@@ -76168,6 +76902,63 @@
         "fixtureKey": null
       },
       {
+        "id": 44185,
+        "scoreLeft": 2,
+        "scoreRight": 3,
+        "playerLeftName": "Pawel Ciolek",
+        "playerLeftSlug": "pawel-ciolek",
+        "playerRightName": "Martin Astle",
+        "playerRightSlug": "martin-astle",
+        "playerRankChangeLeft": -2,
+        "playerRankChangeRight": 3,
+        "player": "Pawel Ciolek",
+        "playerSlug": "pawel-ciolek",
+        "opponent": "Martin Astle",
+        "opponentSlug": "martin-astle",
+        "playerScore": 2,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44189,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Pawel Ciolek",
+        "playerLeftSlug": "pawel-ciolek",
+        "playerRightName": "Steve Axell",
+        "playerRightSlug": "steve-axell",
+        "playerRankChangeLeft": -3,
+        "playerRankChangeRight": 5,
+        "player": "Pawel Ciolek",
+        "playerSlug": "pawel-ciolek",
+        "opponent": "Steve Axell",
+        "opponentSlug": "steve-axell",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44191,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Pawel Ciolek",
+        "playerLeftSlug": "pawel-ciolek",
+        "playerRightName": "Tyrone Morgan",
+        "playerRightSlug": "tyrone-morgan",
+        "playerRankChangeLeft": -3,
+        "playerRankChangeRight": 5,
+        "player": "Pawel Ciolek",
+        "playerSlug": "pawel-ciolek",
+        "opponent": "Tyrone Morgan",
+        "opponentSlug": "tyrone-morgan",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
         "id": 43165,
         "scoreLeft": 3,
         "scoreRight": 0,
@@ -76735,6 +77526,63 @@
         "playerScore": 3,
         "opponentScore": 0,
         "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44174,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Noel Duffy",
+        "playerLeftSlug": "noel-duffy",
+        "playerRightName": "Rob Hall",
+        "playerRightSlug": "rob-hall",
+        "playerRankChangeLeft": -3,
+        "playerRankChangeRight": 5,
+        "player": "Rob Hall",
+        "playerSlug": "rob-hall",
+        "opponent": "Noel Duffy",
+        "opponentSlug": "noel-duffy",
+        "playerScore": 3,
+        "opponentScore": 0,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44179,
+        "scoreLeft": 1,
+        "scoreRight": 3,
+        "playerLeftName": "Colin Hooper",
+        "playerLeftSlug": "colin-hooper",
+        "playerRightName": "Rob Hall",
+        "playerRightSlug": "rob-hall",
+        "playerRankChangeLeft": -4,
+        "playerRankChangeRight": 6,
+        "player": "Rob Hall",
+        "playerSlug": "rob-hall",
+        "opponent": "Colin Hooper",
+        "opponentSlug": "colin-hooper",
+        "playerScore": 3,
+        "opponentScore": 1,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44182,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Dyfan Innes-Wilkin",
+        "playerLeftSlug": "dyfan-innes-wilkin",
+        "playerRightName": "Rob Hall",
+        "playerRightSlug": "rob-hall",
+        "playerRankChangeLeft": 17,
+        "playerRankChangeRight": -11,
+        "player": "Rob Hall",
+        "playerSlug": "rob-hall",
+        "opponent": "Dyfan Innes-Wilkin",
+        "opponentSlug": "dyfan-innes-wilkin",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
         "fixtureKey": null
       },
       {
@@ -80619,11 +81467,11 @@
         "venueName": "Hyndburn Leisure Centre",
         "venueSlug": "hyndburn-leisure-centre",
         "venueLocation": "https://maps.app.goo.gl/EwvviMzKi7HQpyom6",
-        "scoreLeft": null,
+        "scoreLeft": 11,
         "teamRightName": "KSB A",
         "teamRightSlug": "ksb-a",
-        "scoreRight": null,
-        "timeFulfilled": null,
+        "scoreRight": 27,
+        "timeFulfilled": 1794272912,
         "weekId": 9
       },
       {
@@ -82775,11 +83623,11 @@
         "venueName": "Kay Street Baptist Church",
         "venueSlug": "kay-street-baptist-church",
         "venueLocation": "https://maps.app.goo.gl/8Ji4FG42vFkCKJiw6",
-        "scoreLeft": null,
+        "scoreLeft": 11,
         "teamRightName": "Whalley Merlins",
         "teamRightSlug": "whalley-merlins",
-        "scoreRight": null,
-        "timeFulfilled": null,
+        "scoreRight": 26,
+        "timeFulfilled": 1794273077,
         "weekId": 9
       },
       {
@@ -83635,11 +84483,11 @@
             "venueName": "Hyndburn Leisure Centre",
             "venueSlug": "hyndburn-leisure-centre",
             "venueLocation": "https://maps.app.goo.gl/EwvviMzKi7HQpyom6",
-            "scoreLeft": null,
+            "scoreLeft": 11,
             "teamRightName": "KSB A",
             "teamRightSlug": "ksb-a",
-            "scoreRight": null,
-            "timeFulfilled": null,
+            "scoreRight": 27,
+            "timeFulfilled": 1794272912,
             "weekId": 9
           }
         ]
@@ -88009,11 +88857,11 @@
             "venueName": "Kay Street Baptist Church",
             "venueSlug": "kay-street-baptist-church",
             "venueLocation": "https://maps.app.goo.gl/8Ji4FG42vFkCKJiw6",
-            "scoreLeft": null,
+            "scoreLeft": 11,
             "teamRightName": "Whalley Merlins",
             "teamRightSlug": "whalley-merlins",
-            "scoreRight": null,
-            "timeFulfilled": null,
+            "scoreRight": 26,
+            "timeFulfilled": 1794273077,
             "weekId": 9
           }
         ]
@@ -89316,7 +90164,7 @@
       "premier": [
         {
           "p": 1,
-          "t": "Spartans",
+          "t": "KSB A",
           "w": 6,
           "d": 0,
           "l": 1,
@@ -89325,30 +90173,30 @@
         },
         {
           "p": 2,
-          "t": "KSB A",
-          "w": 5,
+          "t": "Spartans",
+          "w": 6,
           "d": 0,
           "l": 1,
-          "pl": 6,
-          "pts": 146
+          "pl": 7,
+          "pts": 173
         },
         {
           "p": 3,
+          "t": "Whalley Eagles",
+          "w": 5,
+          "d": 0,
+          "l": 2,
+          "pl": 7,
+          "pts": 136
+        },
+        {
+          "p": 4,
           "t": "Gladiators",
           "w": 4,
           "d": 0,
           "l": 3,
           "pl": 7,
           "pts": 128
-        },
-        {
-          "p": 4,
-          "t": "Whalley Eagles",
-          "w": 5,
-          "d": 0,
-          "l": 1,
-          "pl": 6,
-          "pts": 125
         },
         {
           "p": 5,
@@ -89554,30 +90402,30 @@
         },
         {
           "p": 7,
+          "t": "Burnley Bees",
+          "w": 3,
+          "d": 0,
+          "l": 4,
+          "pl": 7,
+          "pts": 125
+        },
+        {
+          "p": 8,
+          "t": "Whalley Hawks",
+          "w": 2,
+          "d": 0,
+          "l": 6,
+          "pl": 8,
+          "pts": 117
+        },
+        {
+          "p": 9,
           "t": "KSB G",
           "w": 3,
           "d": 0,
           "l": 4,
           "pl": 7,
           "pts": 109
-        },
-        {
-          "p": 8,
-          "t": "Burnley Bees",
-          "w": 2,
-          "d": 0,
-          "l": 4,
-          "pl": 6,
-          "pts": 103
-        },
-        {
-          "p": 9,
-          "t": "Whalley Hawks",
-          "w": 2,
-          "d": 0,
-          "l": 5,
-          "pl": 7,
-          "pts": 99
         },
         {
           "p": 10,
@@ -89619,6 +90467,15 @@
         },
         {
           "p": 4,
+          "t": "Whalley Merlins",
+          "w": 3,
+          "d": 0,
+          "l": 4,
+          "pl": 7,
+          "pts": 144
+        },
+        {
+          "p": 5,
           "t": "Burnley Scorpions",
           "w": 5,
           "d": 0,
@@ -89627,22 +90484,13 @@
           "pts": 130
         },
         {
-          "p": 5,
+          "p": 6,
           "t": "Whalley Harriers",
           "w": 3,
           "d": 0,
           "l": 3,
           "pl": 6,
           "pts": 119
-        },
-        {
-          "p": 6,
-          "t": "Whalley Merlins",
-          "w": 2,
-          "d": 0,
-          "l": 4,
-          "pl": 6,
-          "pts": 118
         },
         {
           "p": 7,
@@ -89658,9 +90506,9 @@
           "t": "KSB Pumas (Jun)",
           "w": 4,
           "d": 0,
-          "l": 3,
-          "pl": 7,
-          "pts": 102
+          "l": 4,
+          "pl": 8,
+          "pts": 113
         },
         {
           "p": 9,
@@ -165003,24 +165851,24 @@
         "setDifference": 213
       },
       "currentSeason": {
-        "played": 0,
-        "wins": 0,
+        "played": 3,
+        "wins": 3,
         "draws": 0,
         "losses": 0,
-        "winPercentage": 0,
-        "setsWon": 0,
-        "setsLost": 0,
-        "setDifference": 0
+        "winPercentage": 100.0,
+        "setsWon": 9,
+        "setsLost": 4,
+        "setDifference": 5
       },
       "career": {
-        "played": 108,
-        "wins": 93,
+        "played": 111,
+        "wins": 96,
         "draws": 0,
         "losses": 15,
-        "setsWon": 296,
-        "setsLost": 83,
-        "winPercentage": 86.11,
-        "setDifference": 213
+        "setsWon": 305,
+        "setsLost": 87,
+        "winPercentage": 86.49,
+        "setDifference": 218
       },
       "seasons": {
         "2022": {
@@ -169315,7 +170163,7 @@
             "id": 618,
             "name": "Brett Haslam",
             "slug": "brett-haslam",
-            "rank": 2630,
+            "rank": 2649,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 11,
@@ -169325,16 +170173,102 @@
           },
           "team": {},
           "statistics": {
-            "played": 0,
-            "wins": 0,
+            "played": 3,
+            "wins": 3,
             "draws": 0,
             "losses": 0,
-            "winPercentage": 0,
-            "setsWon": 0,
-            "setsLost": 0,
-            "setDifference": 0,
-            "opponents": [],
-            "encounters": []
+            "winPercentage": 100.0,
+            "setsWon": 9,
+            "setsLost": 4,
+            "setDifference": 5,
+            "opponents": [
+              {
+                "name": "Colin Hooper",
+                "slug": "colin-hooper",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
+                "name": "Dyfan Innes-Wilkin",
+                "slug": "dyfan-innes-wilkin",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
+                "name": "Noel Duffy",
+                "slug": "noel-duffy",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              }
+            ],
+            "encounters": [
+              {
+                "id": 44173,
+                "scoreLeft": 2,
+                "scoreRight": 3,
+                "playerLeftName": "Dyfan Innes-Wilkin",
+                "playerLeftSlug": "dyfan-innes-wilkin",
+                "playerRightName": "Brett Haslam",
+                "playerRightSlug": "brett-haslam",
+                "playerRankChangeLeft": -6,
+                "playerRankChangeRight": 9,
+                "player": "Brett Haslam",
+                "playerSlug": "brett-haslam",
+                "opponent": "Dyfan Innes-Wilkin",
+                "opponentSlug": "dyfan-innes-wilkin",
+                "playerScore": 3,
+                "opponentScore": 2,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44176,
+                "scoreLeft": 1,
+                "scoreRight": 3,
+                "playerLeftName": "Noel Duffy",
+                "playerLeftSlug": "noel-duffy",
+                "playerRightName": "Brett Haslam",
+                "playerRightSlug": "brett-haslam",
+                "playerRankChangeLeft": -3,
+                "playerRankChangeRight": 5,
+                "player": "Brett Haslam",
+                "playerSlug": "brett-haslam",
+                "opponent": "Noel Duffy",
+                "opponentSlug": "noel-duffy",
+                "playerScore": 3,
+                "opponentScore": 1,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44181,
+                "scoreLeft": 1,
+                "scoreRight": 3,
+                "playerLeftName": "Colin Hooper",
+                "playerLeftSlug": "colin-hooper",
+                "playerRightName": "Brett Haslam",
+                "playerRightSlug": "brett-haslam",
+                "playerRankChangeLeft": -3,
+                "playerRankChangeRight": 5,
+                "player": "Brett Haslam",
+                "playerSlug": "brett-haslam",
+                "opponent": "Colin Hooper",
+                "opponentSlug": "colin-hooper",
+                "playerScore": 3,
+                "opponentScore": 1,
+                "result": "W",
+                "fixtureKey": null
+              }
+            ]
           },
           "fixtures": [],
           "weeks": [],
@@ -247749,24 +248683,24 @@
         "setDifference": 767
       },
       "currentSeason": {
-        "played": 15,
-        "wins": 12,
+        "played": 18,
+        "wins": 15,
         "draws": 0,
         "losses": 3,
-        "winPercentage": 80.0,
-        "setsWon": 39,
-        "setsLost": 17,
-        "setDifference": 22
+        "winPercentage": 83.33,
+        "setsWon": 48,
+        "setsLost": 19,
+        "setDifference": 29
       },
       "career": {
-        "played": 480,
-        "wins": 387,
+        "played": 483,
+        "wins": 390,
         "draws": 0,
         "losses": 93,
-        "setsWon": 1262,
-        "setsLost": 473,
-        "winPercentage": 80.62,
-        "setDifference": 789
+        "setsWon": 1271,
+        "setsLost": 475,
+        "winPercentage": 80.75,
+        "setDifference": 796
       },
       "seasons": {
         "2013": {
@@ -262930,7 +263864,7 @@
             "id": 53,
             "name": "Daven Argile",
             "slug": "daven-argile",
-            "rank": 2694,
+            "rank": 2710,
             "phoneMobile": "07798713164",
             "phoneLandline": "",
             "teamId": 11,
@@ -262940,14 +263874,14 @@
           },
           "team": {},
           "statistics": {
-            "played": 15,
-            "wins": 12,
+            "played": 18,
+            "wins": 15,
             "draws": 0,
             "losses": 3,
-            "winPercentage": 80.0,
-            "setsWon": 39,
-            "setsLost": 17,
-            "setDifference": 22,
+            "winPercentage": 83.33,
+            "setsWon": 48,
+            "setsLost": 19,
+            "setDifference": 29,
             "opponents": [
               {
                 "name": "Andrea Harrison",
@@ -262986,6 +263920,15 @@
                 "winPercentage": 100.0
               },
               {
+                "name": "Colin Hooper",
+                "slug": "colin-hooper",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
                 "name": "Dave Jefferson",
                 "slug": "dave-jefferson",
                 "played": 1,
@@ -263006,6 +263949,15 @@
               {
                 "name": "Douglas Hodgson",
                 "slug": "douglas_hodgson",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
+                "name": "Dyfan Innes-Wilkin",
+                "slug": "dyfan-innes-wilkin",
                 "played": 1,
                 "wins": 1,
                 "draws": 0,
@@ -263056,6 +264008,15 @@
                 "draws": 0,
                 "losses": 1,
                 "winPercentage": 0.0
+              },
+              {
+                "name": "Noel Duffy",
+                "slug": "noel-duffy",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
               },
               {
                 "name": "Oliver Fox",
@@ -263311,6 +264272,63 @@
                 "opponentSlug": "dave-jefferson",
                 "playerScore": 3,
                 "opponentScore": 1,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44175,
+                "scoreLeft": 2,
+                "scoreRight": 3,
+                "playerLeftName": "Colin Hooper",
+                "playerLeftSlug": "colin-hooper",
+                "playerRightName": "Daven Argile",
+                "playerRightSlug": "daven-argile",
+                "playerRankChangeLeft": -3,
+                "playerRankChangeRight": 5,
+                "player": "Daven Argile",
+                "playerSlug": "daven-argile",
+                "opponent": "Colin Hooper",
+                "opponentSlug": "colin-hooper",
+                "playerScore": 3,
+                "opponentScore": 2,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44177,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Dyfan Innes-Wilkin",
+                "playerLeftSlug": "dyfan-innes-wilkin",
+                "playerRightName": "Daven Argile",
+                "playerRightSlug": "daven-argile",
+                "playerRankChangeLeft": -5,
+                "playerRankChangeRight": 8,
+                "player": "Daven Argile",
+                "playerSlug": "daven-argile",
+                "opponent": "Dyfan Innes-Wilkin",
+                "opponentSlug": "dyfan-innes-wilkin",
+                "playerScore": 3,
+                "opponentScore": 0,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44180,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Noel Duffy",
+                "playerLeftSlug": "noel-duffy",
+                "playerRightName": "Daven Argile",
+                "playerRightSlug": "daven-argile",
+                "playerRankChangeLeft": -2,
+                "playerRankChangeRight": 3,
+                "player": "Daven Argile",
+                "playerSlug": "daven-argile",
+                "opponent": "Noel Duffy",
+                "opponentSlug": "noel-duffy",
+                "playerScore": 3,
+                "opponentScore": 0,
                 "result": "W",
                 "fixtureKey": null
               },
@@ -298715,24 +299733,24 @@
         "setDifference": -115
       },
       "currentSeason": {
-        "played": 18,
-        "wins": 8,
+        "played": 21,
+        "wins": 10,
         "draws": 0,
-        "losses": 10,
-        "winPercentage": 44.44,
-        "setsWon": 28,
-        "setsLost": 35,
-        "setDifference": -7
+        "losses": 11,
+        "winPercentage": 47.62,
+        "setsWon": 35,
+        "setsLost": 40,
+        "setDifference": -5
       },
       "career": {
-        "played": 99,
-        "wins": 29,
+        "played": 102,
+        "wins": 31,
         "draws": 0,
-        "losses": 70,
-        "setsWon": 111,
-        "setsLost": 233,
-        "winPercentage": 29.29,
-        "setDifference": -122
+        "losses": 71,
+        "setsWon": 118,
+        "setsLost": 238,
+        "winPercentage": 30.39,
+        "setDifference": -120
       },
       "seasons": {
         "2023": {
@@ -302119,7 +303137,7 @@
             "id": 660,
             "name": "Filip Ciolek",
             "slug": "filip-ciolek",
-            "rank": 651,
+            "rank": 664,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 93,
@@ -302129,14 +303147,14 @@
           },
           "team": {},
           "statistics": {
-            "played": 18,
-            "wins": 8,
+            "played": 21,
+            "wins": 10,
             "draws": 0,
-            "losses": 10,
-            "winPercentage": 44.44,
-            "setsWon": 28,
-            "setsLost": 35,
-            "setDifference": -7,
+            "losses": 11,
+            "winPercentage": 47.62,
+            "setsWon": 35,
+            "setsLost": 40,
+            "setDifference": -5,
             "opponents": [
               {
                 "name": "Caroline Harris",
@@ -302220,6 +303238,15 @@
                 "winPercentage": 100.0
               },
               {
+                "name": "Martin Astle",
+                "slug": "martin-astle",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
                 "name": "Michael Rostron",
                 "slug": "michael-rostron",
                 "played": 1,
@@ -302283,6 +303310,15 @@
                 "winPercentage": 0.0
               },
               {
+                "name": "Steve Axell",
+                "slug": "steve-axell",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
                 "name": "Thomas Sheard",
                 "slug": "thomas-sheard",
                 "played": 1,
@@ -302290,6 +303326,15 @@
                 "draws": 0,
                 "losses": 1,
                 "winPercentage": 0.0
+              },
+              {
+                "name": "Tyrone Morgan",
+                "slug": "tyrone-morgan",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
               },
               {
                 "name": "Waliu Jayeola",
@@ -302471,6 +303516,63 @@
                 "playerScore": 0,
                 "opponentScore": 3,
                 "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44183,
+                "scoreLeft": 3,
+                "scoreRight": 1,
+                "playerLeftName": "Filip Ciolek",
+                "playerLeftSlug": "filip-ciolek",
+                "playerRightName": "Tyrone Morgan",
+                "playerRightSlug": "tyrone-morgan",
+                "playerRankChangeLeft": 9,
+                "playerRankChangeRight": -6,
+                "player": "Filip Ciolek",
+                "playerSlug": "filip-ciolek",
+                "opponent": "Tyrone Morgan",
+                "opponentSlug": "tyrone-morgan",
+                "playerScore": 3,
+                "opponentScore": 1,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44187,
+                "scoreLeft": 1,
+                "scoreRight": 3,
+                "playerLeftName": "Filip Ciolek",
+                "playerLeftSlug": "filip-ciolek",
+                "playerRightName": "Martin Astle",
+                "playerRightSlug": "martin-astle",
+                "playerRankChangeLeft": -8,
+                "playerRankChangeRight": 12,
+                "player": "Filip Ciolek",
+                "playerSlug": "filip-ciolek",
+                "opponent": "Martin Astle",
+                "opponentSlug": "martin-astle",
+                "playerScore": 1,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44192,
+                "scoreLeft": 3,
+                "scoreRight": 1,
+                "playerLeftName": "Filip Ciolek",
+                "playerLeftSlug": "filip-ciolek",
+                "playerRightName": "Steve Axell",
+                "playerRightSlug": "steve-axell",
+                "playerRankChangeLeft": 12,
+                "playerRankChangeRight": -8,
+                "player": "Filip Ciolek",
+                "playerSlug": "filip-ciolek",
+                "opponent": "Steve Axell",
+                "opponentSlug": "steve-axell",
+                "playerScore": 3,
+                "opponentScore": 1,
+                "result": "W",
                 "fixtureKey": null
               },
               {
@@ -333497,24 +334599,24 @@
         "setDifference": -61
       },
       "currentSeason": {
-        "played": 15,
+        "played": 18,
         "wins": 8,
         "draws": 0,
-        "losses": 7,
-        "winPercentage": 53.33,
+        "losses": 10,
+        "winPercentage": 44.44,
         "setsWon": 26,
-        "setsLost": 28,
-        "setDifference": -2
+        "setsLost": 37,
+        "setDifference": -11
       },
       "career": {
-        "played": 36,
+        "played": 39,
         "wins": 8,
         "draws": 0,
-        "losses": 28,
+        "losses": 31,
         "setsWon": 28,
-        "setsLost": 91,
-        "winPercentage": 22.22,
-        "setDifference": -63
+        "setsLost": 100,
+        "winPercentage": 20.51,
+        "setDifference": -72
       },
       "seasons": {
         "2025": {
@@ -334850,7 +335952,7 @@
             "id": 751,
             "name": "Henry Wright",
             "slug": "henry-wright",
-            "rank": 344,
+            "rank": 336,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 93,
@@ -334860,14 +335962,14 @@
           },
           "team": {},
           "statistics": {
-            "played": 15,
+            "played": 18,
             "wins": 8,
             "draws": 0,
-            "losses": 7,
-            "winPercentage": 53.33,
+            "losses": 10,
+            "winPercentage": 44.44,
             "setsWon": 26,
-            "setsLost": 28,
-            "setDifference": -2,
+            "setsLost": 37,
+            "setDifference": -11,
             "opponents": [
               {
                 "name": "Adam Simcock",
@@ -334951,6 +336053,15 @@
                 "winPercentage": 100.0
               },
               {
+                "name": "Martin Astle",
+                "slug": "martin-astle",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
                 "name": "Olivia Sanders",
                 "slug": "olivia-sanders",
                 "played": 1,
@@ -334989,6 +336100,24 @@
               {
                 "name": "Stephen Carpanini",
                 "slug": "stephen_carpanina",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Steve Axell",
+                "slug": "steve-axell",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Tyrone Morgan",
+                "slug": "tyrone-morgan",
                 "played": 1,
                 "wins": 0,
                 "draws": 0,
@@ -335061,6 +336190,63 @@
                 "playerScore": 3,
                 "opponentScore": 0,
                 "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44184,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Henry Wright",
+                "playerLeftSlug": "henry-wright",
+                "playerRightName": "Steve Axell",
+                "playerRightSlug": "steve-axell",
+                "playerRankChangeLeft": -3,
+                "playerRankChangeRight": 5,
+                "player": "Henry Wright",
+                "playerSlug": "henry-wright",
+                "opponent": "Steve Axell",
+                "opponentSlug": "steve-axell",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44186,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Henry Wright",
+                "playerLeftSlug": "henry-wright",
+                "playerRightName": "Tyrone Morgan",
+                "playerRightSlug": "tyrone-morgan",
+                "playerRankChangeLeft": -3,
+                "playerRankChangeRight": 5,
+                "player": "Henry Wright",
+                "playerSlug": "henry-wright",
+                "opponent": "Tyrone Morgan",
+                "opponentSlug": "tyrone-morgan",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44190,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Henry Wright",
+                "playerLeftSlug": "henry-wright",
+                "playerRightName": "Martin Astle",
+                "playerRightSlug": "martin-astle",
+                "playerRankChangeLeft": -2,
+                "playerRankChangeRight": 3,
+                "player": "Henry Wright",
+                "playerSlug": "henry-wright",
+                "opponent": "Martin Astle",
+                "opponentSlug": "martin-astle",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
                 "fixtureKey": null
               },
               {
@@ -524100,24 +525286,24 @@
         "setDifference": 9
       },
       "currentSeason": {
-        "played": 15,
-        "wins": 13,
-        "draws": 0,
-        "losses": 2,
-        "winPercentage": 86.67,
-        "setsWon": 39,
-        "setsLost": 8,
-        "setDifference": 31
-      },
-      "career": {
-        "played": 21,
-        "wins": 18,
+        "played": 18,
+        "wins": 15,
         "draws": 0,
         "losses": 3,
-        "setsWon": 54,
-        "setsLost": 14,
-        "winPercentage": 85.71,
-        "setDifference": 40
+        "winPercentage": 83.33,
+        "setsWon": 45,
+        "setsLost": 12,
+        "setDifference": 33
+      },
+      "career": {
+        "played": 24,
+        "wins": 20,
+        "draws": 0,
+        "losses": 4,
+        "setsWon": 60,
+        "setsLost": 18,
+        "winPercentage": 83.33,
+        "setDifference": 42
       },
       "seasons": {
         "2025": {
@@ -525085,14 +526271,14 @@
           },
           "team": {},
           "statistics": {
-            "played": 15,
-            "wins": 13,
+            "played": 18,
+            "wins": 15,
             "draws": 0,
-            "losses": 2,
-            "winPercentage": 86.67,
-            "setsWon": 39,
-            "setsLost": 8,
-            "setDifference": 31,
+            "losses": 3,
+            "winPercentage": 83.33,
+            "setsWon": 45,
+            "setsLost": 12,
+            "setDifference": 33,
             "opponents": [
               {
                 "name": "Alan Meltzer",
@@ -525131,6 +526317,15 @@
                 "winPercentage": 100.0
               },
               {
+                "name": "Colin Hooper",
+                "slug": "colin-hooper",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
                 "name": "Dave Jefferson",
                 "slug": "dave-jefferson",
                 "played": 1,
@@ -525138,6 +526333,15 @@
                 "draws": 0,
                 "losses": 0,
                 "winPercentage": 100.0
+              },
+              {
+                "name": "Dyfan Innes-Wilkin",
+                "slug": "dyfan-innes-wilkin",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
               },
               {
                 "name": "Fraser McEwen",
@@ -525196,6 +526400,15 @@
               {
                 "name": "Matt Hodgkinson",
                 "slug": "matt-hodgkinson",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
+                "name": "Noel Duffy",
+                "slug": "noel-duffy",
                 "played": 1,
                 "wins": 1,
                 "draws": 0,
@@ -525457,6 +526670,63 @@
                 "playerScore": 3,
                 "opponentScore": 0,
                 "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44174,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Noel Duffy",
+                "playerLeftSlug": "noel-duffy",
+                "playerRightName": "Rob Hall",
+                "playerRightSlug": "rob-hall",
+                "playerRankChangeLeft": -3,
+                "playerRankChangeRight": 5,
+                "player": "Rob Hall",
+                "playerSlug": "rob-hall",
+                "opponent": "Noel Duffy",
+                "opponentSlug": "noel-duffy",
+                "playerScore": 3,
+                "opponentScore": 0,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44179,
+                "scoreLeft": 1,
+                "scoreRight": 3,
+                "playerLeftName": "Colin Hooper",
+                "playerLeftSlug": "colin-hooper",
+                "playerRightName": "Rob Hall",
+                "playerRightSlug": "rob-hall",
+                "playerRankChangeLeft": -4,
+                "playerRankChangeRight": 6,
+                "player": "Rob Hall",
+                "playerSlug": "rob-hall",
+                "opponent": "Colin Hooper",
+                "opponentSlug": "colin-hooper",
+                "playerScore": 3,
+                "opponentScore": 1,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44182,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Dyfan Innes-Wilkin",
+                "playerLeftSlug": "dyfan-innes-wilkin",
+                "playerRightName": "Rob Hall",
+                "playerRightSlug": "rob-hall",
+                "playerRankChangeLeft": 17,
+                "playerRankChangeRight": -11,
+                "player": "Rob Hall",
+                "playerSlug": "rob-hall",
+                "opponent": "Dyfan Innes-Wilkin",
+                "opponentSlug": "dyfan-innes-wilkin",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
                 "fixtureKey": null
               },
               {
@@ -650994,24 +652264,24 @@
         "setDifference": 0
       },
       "currentSeason": {
-        "played": 6,
+        "played": 9,
         "wins": 4,
         "draws": 0,
-        "losses": 2,
-        "winPercentage": 66.67,
-        "setsWon": 12,
-        "setsLost": 6,
-        "setDifference": 6
+        "losses": 5,
+        "winPercentage": 44.44,
+        "setsWon": 14,
+        "setsLost": 15,
+        "setDifference": -1
       },
       "career": {
-        "played": 6,
+        "played": 9,
         "wins": 4,
         "draws": 0,
-        "losses": 2,
-        "setsWon": 12,
-        "setsLost": 6,
-        "winPercentage": 66.67,
-        "setDifference": 6
+        "losses": 5,
+        "setsWon": 14,
+        "setsLost": 15,
+        "winPercentage": 44.44,
+        "setDifference": -1
       },
       "seasons": {
         "2026": {
@@ -651020,7 +652290,7 @@
             "id": 775,
             "name": "Pawel Ciolek",
             "slug": "pawel-ciolek",
-            "rank": 342,
+            "rank": 334,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 93,
@@ -651030,14 +652300,14 @@
           },
           "team": {},
           "statistics": {
-            "played": 6,
+            "played": 9,
             "wins": 4,
             "draws": 0,
-            "losses": 2,
-            "winPercentage": 66.67,
-            "setsWon": 12,
-            "setsLost": 6,
-            "setDifference": 6,
+            "losses": 5,
+            "winPercentage": 44.44,
+            "setsWon": 14,
+            "setsLost": 15,
+            "setDifference": -1,
             "opponents": [
               {
                 "name": "Joe Mason",
@@ -651067,6 +652337,15 @@
                 "winPercentage": 100.0
               },
               {
+                "name": "Martin Astle",
+                "slug": "martin-astle",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
                 "name": "Peter Watson",
                 "slug": "peter-watson",
                 "played": 1,
@@ -651087,6 +652366,24 @@
               {
                 "name": "Stephen Carpanini",
                 "slug": "stephen_carpanina",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Steve Axell",
+                "slug": "steve-axell",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Tyrone Morgan",
+                "slug": "tyrone-morgan",
                 "played": 1,
                 "wins": 0,
                 "draws": 0,
@@ -651150,6 +652447,63 @@
                 "playerScore": 3,
                 "opponentScore": 0,
                 "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44185,
+                "scoreLeft": 2,
+                "scoreRight": 3,
+                "playerLeftName": "Pawel Ciolek",
+                "playerLeftSlug": "pawel-ciolek",
+                "playerRightName": "Martin Astle",
+                "playerRightSlug": "martin-astle",
+                "playerRankChangeLeft": -2,
+                "playerRankChangeRight": 3,
+                "player": "Pawel Ciolek",
+                "playerSlug": "pawel-ciolek",
+                "opponent": "Martin Astle",
+                "opponentSlug": "martin-astle",
+                "playerScore": 2,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44189,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Pawel Ciolek",
+                "playerLeftSlug": "pawel-ciolek",
+                "playerRightName": "Steve Axell",
+                "playerRightSlug": "steve-axell",
+                "playerRankChangeLeft": -3,
+                "playerRankChangeRight": 5,
+                "player": "Pawel Ciolek",
+                "playerSlug": "pawel-ciolek",
+                "opponent": "Steve Axell",
+                "opponentSlug": "steve-axell",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44191,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Pawel Ciolek",
+                "playerLeftSlug": "pawel-ciolek",
+                "playerRightName": "Tyrone Morgan",
+                "playerRightSlug": "tyrone-morgan",
+                "playerRankChangeLeft": -3,
+                "playerRankChangeRight": 5,
+                "player": "Pawel Ciolek",
+                "playerSlug": "pawel-ciolek",
+                "opponent": "Tyrone Morgan",
+                "opponentSlug": "tyrone-morgan",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
                 "fixtureKey": null
               },
               {

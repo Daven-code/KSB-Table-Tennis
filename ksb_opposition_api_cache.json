@@ -6954,5 +6954,9 @@
   "2026:tomasz-orzechowski": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/tomasz-orzechowski",
     "status": "success"
+  },
+  "2026:tyrone-morgan": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/tyrone-morgan",
+    "status": "success"
   }
 }
