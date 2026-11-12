@@ -6962,5 +6962,21 @@
   "2026:atamuno_atamuno": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/atamuno_atamuno",
     "status": "success"
+  },
+  "2026:david-borland": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/david-borland",
+    "status": "success"
+  },
+  "2026:frank-boldy": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/frank-boldy",
+    "status": "success"
+  },
+  "2026:iain-clements": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/iain-clements",
+    "status": "success"
+  },
+  "2026:ian-mason": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/ian-mason",
+    "status": "success"
   }
 }
