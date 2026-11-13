@@ -23,9 +23,9 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-11-13T07:59:50.382390+00:00",
-    "livePlayerCount": 69,
-    "liveEncounterCount": 837
+    "lastUpdated": "2026-11-13T16:26:34.051011+00:00",
+    "livePlayerCount": 70,
+    "liveEncounterCount": 849
   },
   "historic": {
     "seasons": {
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-11-13T07:59:48.218418+00:00",
+    "lastUpdated": "2026-11-13T16:26:31.409276+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -38099,7 +38099,7 @@
           },
           {
             "name": "Andy Cretney",
-            "rank": 1689,
+            "rank": 1766,
             "slug": "andy-cretney"
           },
           {
@@ -41246,6 +41246,11 @@
         },
         "players": [
           {
+            "name": "Paul Barker",
+            "rank": 168,
+            "slug": "paul-barker"
+          },
+          {
             "name": "Oliver Ingham",
             "rank": 69,
             "slug": "oliver-ingham"
@@ -41272,8 +41277,8 @@
           },
           {
             "name": "Paul Barker",
-            "rank": 168,
-            "slug": "paul-barker"
+            "rank": 128,
+            "slug": "paul-barker-2"
           },
           {
             "name": "Thomas Marlow",
@@ -41415,7 +41420,7 @@
             "teamRightName": "Burnley Scorpions",
             "teamRightSlug": "burnley-scorpions",
             "scoreRight": 25,
-            "timeFulfilled": 1794305951,
+            "timeFulfilled": 1794581453,
             "weekId": 9
           },
           {
@@ -41715,7 +41720,7 @@
                 "teamRightName": "Burnley Scorpions",
                 "teamRightSlug": "burnley-scorpions",
                 "scoreRight": 25,
-                "timeFulfilled": 1794305951,
+                "timeFulfilled": 1794581453,
                 "weekId": 9
               }
             ]
@@ -44450,7 +44455,7 @@
           "id": 694,
           "name": "Andy Cretney",
           "slug": "andy-cretney",
-          "rank": 1689,
+          "rank": 1766,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 98,
@@ -44460,14 +44465,14 @@
         },
         "team": {},
         "statistics": {
-          "played": 24,
-          "wins": 17,
+          "played": 27,
+          "wins": 19,
           "draws": 0,
-          "losses": 7,
-          "winPercentage": 70.83,
-          "setsWon": 54,
-          "setsLost": 30,
-          "setDifference": 24,
+          "losses": 8,
+          "winPercentage": 70.37,
+          "setsWon": 60,
+          "setsLost": 34,
+          "setDifference": 26,
           "opponents": [
             {
               "name": "Alex Gavin",
@@ -44499,6 +44504,15 @@
             {
               "name": "Dan Chamberlain",
               "slug": "dan-chamberlain",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Darren Wright",
+              "slug": "darren-wright",
               "played": 1,
               "wins": 0,
               "draws": 0,
@@ -44657,6 +44671,24 @@
               "draws": 0,
               "losses": 1,
               "winPercentage": 0.0
+            },
+            {
+              "name": "Rob Tokeley",
+              "slug": "rob-tokeley",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
+              "name": "Scott Fleming",
+              "slug": "scott-fleming",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
             },
             {
               "name": "Steve Horner",
@@ -44855,6 +44887,63 @@
               "opponentSlug": "steve-horner",
               "playerScore": 3,
               "opponentScore": 0,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44334,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Andy Cretney",
+              "playerLeftSlug": "andy-cretney",
+              "playerRightName": "Darren Wright",
+              "playerRightSlug": "darren-wright",
+              "playerRankChangeLeft": -1,
+              "playerRankChangeRight": 2,
+              "player": "Andy Cretney",
+              "playerSlug": "andy-cretney",
+              "opponent": "Darren Wright",
+              "opponentSlug": "darren-wright",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44336,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Andy Cretney",
+              "playerLeftSlug": "andy-cretney",
+              "playerRightName": "Rob Tokeley",
+              "playerRightSlug": "rob-tokeley",
+              "playerRankChangeLeft": 45,
+              "playerRankChangeRight": -30,
+              "player": "Andy Cretney",
+              "playerSlug": "andy-cretney",
+              "opponent": "Rob Tokeley",
+              "opponentSlug": "rob-tokeley",
+              "playerScore": 3,
+              "opponentScore": 0,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44340,
+              "scoreLeft": 3,
+              "scoreRight": 1,
+              "playerLeftName": "Andy Cretney",
+              "playerLeftSlug": "andy-cretney",
+              "playerRightName": "Scott Fleming",
+              "playerRightSlug": "scott-fleming",
+              "playerRankChangeLeft": 33,
+              "playerRankChangeRight": -22,
+              "player": "Andy Cretney",
+              "playerSlug": "andy-cretney",
+              "opponent": "Scott Fleming",
+              "opponentSlug": "scott-fleming",
+              "playerScore": 3,
+              "opponentScore": 1,
               "result": "W",
               "fixtureKey": null
             },
@@ -51741,7 +51830,7 @@
               "fixtureKey": null
             },
             {
-              "id": 44205,
+              "id": 44345,
               "scoreLeft": 1,
               "scoreRight": 3,
               "playerLeftName": "Freya Harter",
@@ -51760,7 +51849,7 @@
               "fixtureKey": null
             },
             {
-              "id": 44209,
+              "id": 44349,
               "scoreLeft": 0,
               "scoreRight": 3,
               "playerLeftName": "Freya Harter",
@@ -51779,7 +51868,7 @@
               "fixtureKey": null
             },
             {
-              "id": 44211,
+              "id": 44351,
               "scoreLeft": 0,
               "scoreRight": 3,
               "playerLeftName": "Freya Harter",
@@ -59909,13 +59998,13 @@
           "id": 541,
           "name": "Paul Barker",
           "slug": "paul-barker",
-          "rank": 125,
+          "rank": 168,
           "phoneMobile": "",
           "phoneLandline": "",
-          "teamId": 0,
-          "teamName": null,
-          "teamSlug": null,
-          "divisionId": null
+          "teamId": 86,
+          "teamName": "KSB Leopards (Jun)",
+          "teamSlug": "ksb-leopards-jun",
+          "divisionId": 4
         },
         "team": {},
         "statistics": {
@@ -59929,6 +60018,293 @@
           "setDifference": 0,
           "opponents": [],
           "encounters": []
+        },
+        "fixtures": [],
+        "weeks": [],
+        "api": {
+          "status": "success"
+        }
+      },
+      "paul-barker-2": {
+        "season": 2026,
+        "player": {
+          "id": 783,
+          "name": "Paul Barker",
+          "slug": "paul-barker-2",
+          "rank": 128,
+          "phoneMobile": "",
+          "phoneLandline": "",
+          "teamId": 86,
+          "teamName": "KSB Leopards (Jun)",
+          "teamSlug": "ksb-leopards-jun",
+          "divisionId": 4
+        },
+        "team": {},
+        "statistics": {
+          "played": 9,
+          "wins": 3,
+          "draws": 0,
+          "losses": 6,
+          "winPercentage": 33.33,
+          "setsWon": 13,
+          "setsLost": 21,
+          "setDifference": -8,
+          "opponents": [
+            {
+              "name": "Atamuno Atamuno",
+              "slug": "atamuno_atamuno",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Damian Savage",
+              "slug": "damian-savage",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Georgia Cockshott",
+              "slug": "georgia_cockshott",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Henry Wright",
+              "slug": "henry-wright",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Issy Sinkinson",
+              "slug": "issy-sinkinson",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
+              "name": "Mark Brandwood",
+              "slug": "mark_brandwood",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
+              "name": "Ryan  Feldwicke",
+              "slug": "ryan-feldwicke",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Ryan Halstead",
+              "slug": "ryan-halstead",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
+              "name": "Stephen Carpanini",
+              "slug": "stephen_carpanina",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            }
+          ],
+          "encounters": [
+            {
+              "id": 43375,
+              "scoreLeft": 2,
+              "scoreRight": 3,
+              "playerLeftName": "Paul Barker",
+              "playerLeftSlug": "paul-barker-2",
+              "playerRightName": "Henry Wright",
+              "playerRightSlug": "henry-wright",
+              "playerRankChangeLeft": -3,
+              "playerRankChangeRight": 5,
+              "player": "Paul Barker",
+              "playerSlug": "paul-barker-2",
+              "opponent": "Henry Wright",
+              "opponentSlug": "henry-wright",
+              "playerScore": 2,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 43379,
+              "scoreLeft": 3,
+              "scoreRight": 2,
+              "playerLeftName": "Paul Barker",
+              "playerLeftSlug": "paul-barker-2",
+              "playerRightName": "Issy Sinkinson",
+              "playerRightSlug": "issy-sinkinson",
+              "playerRankChangeLeft": 21,
+              "playerRankChangeRight": -14,
+              "player": "Paul Barker",
+              "playerSlug": "paul-barker-2",
+              "opponent": "Issy Sinkinson",
+              "opponentSlug": "issy-sinkinson",
+              "playerScore": 3,
+              "opponentScore": 2,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 43381,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Paul Barker",
+              "playerLeftSlug": "paul-barker-2",
+              "playerRightName": "Ryan Halstead",
+              "playerRightSlug": "ryan-halstead",
+              "playerRankChangeLeft": 11,
+              "playerRankChangeRight": -7,
+              "player": "Paul Barker",
+              "playerSlug": "paul-barker-2",
+              "opponent": "Ryan Halstead",
+              "opponentSlug": "ryan-halstead",
+              "playerScore": 3,
+              "opponentScore": 0,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44344,
+              "scoreLeft": 1,
+              "scoreRight": 3,
+              "playerLeftName": "Paul Barker",
+              "playerLeftSlug": "paul-barker-2",
+              "playerRightName": "Atamuno Atamuno",
+              "playerRightSlug": "atamuno_atamuno",
+              "playerRankChangeLeft": -2,
+              "playerRankChangeRight": 3,
+              "player": "Paul Barker",
+              "playerSlug": "paul-barker-2",
+              "opponent": "Atamuno Atamuno",
+              "opponentSlug": "atamuno_atamuno",
+              "playerScore": 1,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44346,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Paul Barker",
+              "playerLeftSlug": "paul-barker-2",
+              "playerRightName": "Stephen Carpanini",
+              "playerRightSlug": "stephen_carpanina",
+              "playerRankChangeLeft": -1,
+              "playerRankChangeRight": 2,
+              "player": "Paul Barker",
+              "playerSlug": "paul-barker-2",
+              "opponent": "Stephen Carpanini",
+              "opponentSlug": "stephen_carpanina",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44350,
+              "scoreLeft": 3,
+              "scoreRight": 1,
+              "playerLeftName": "Paul Barker",
+              "playerLeftSlug": "paul-barker-2",
+              "playerRightName": "Mark Brandwood",
+              "playerRightSlug": "mark_brandwood",
+              "playerRankChangeLeft": 11,
+              "playerRankChangeRight": -7,
+              "player": "Paul Barker",
+              "playerSlug": "paul-barker-2",
+              "opponent": "Mark Brandwood",
+              "opponentSlug": "mark_brandwood",
+              "playerScore": 3,
+              "opponentScore": 1,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 43574,
+              "scoreLeft": 3,
+              "scoreRight": 1,
+              "playerLeftName": "Damian Savage",
+              "playerLeftSlug": "damian-savage",
+              "playerRightName": "Paul Barker",
+              "playerRightSlug": "paul-barker-2",
+              "playerRankChangeLeft": 5,
+              "playerRankChangeRight": -3,
+              "player": "Paul Barker",
+              "playerSlug": "paul-barker-2",
+              "opponent": "Damian Savage",
+              "opponentSlug": "damian-savage",
+              "playerScore": 1,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 43579,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Ryan  Feldwicke",
+              "playerLeftSlug": "ryan-feldwicke",
+              "playerRightName": "Paul Barker",
+              "playerRightSlug": "paul-barker-2",
+              "playerRankChangeLeft": 17,
+              "playerRankChangeRight": -11,
+              "player": "Paul Barker",
+              "playerSlug": "paul-barker-2",
+              "opponent": "Ryan  Feldwicke",
+              "opponentSlug": "ryan-feldwicke",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 43582,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Georgia Cockshott",
+              "playerLeftSlug": "georgia_cockshott",
+              "playerRightName": "Paul Barker",
+              "playerRightSlug": "paul-barker-2",
+              "playerRankChangeLeft": 3,
+              "playerRankChangeRight": -2,
+              "player": "Paul Barker",
+              "playerSlug": "paul-barker-2",
+              "opponent": "Georgia Cockshott",
+              "opponentSlug": "georgia_cockshott",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            }
+          ]
         },
         "fixtures": [],
         "weeks": [],
@@ -67620,8 +67996,8 @@
           "draws": 0,
           "losses": 9,
           "winPercentage": 40.0,
-          "setsWon": 22,
-          "setsLost": 32,
+          "setsWon": 21,
+          "setsLost": 31,
           "setDifference": -10,
           "opponents": [
             {
@@ -67819,26 +68195,7 @@
               "fixtureKey": null
             },
             {
-              "id": 44204,
-              "scoreLeft": 1,
-              "scoreRight": 3,
-              "playerLeftName": "Thomas Marlow",
-              "playerLeftSlug": "thomas-marlow",
-              "playerRightName": "Atamuno Atamuno",
-              "playerRightSlug": "atamuno_atamuno",
-              "playerRankChangeLeft": -6,
-              "playerRankChangeRight": 9,
-              "player": "Thomas Marlow",
-              "playerSlug": "thomas-marlow",
-              "opponent": "Atamuno Atamuno",
-              "opponentSlug": "atamuno_atamuno",
-              "playerScore": 1,
-              "opponentScore": 3,
-              "result": "L",
-              "fixtureKey": null
-            },
-            {
-              "id": 44206,
+              "id": 44343,
               "scoreLeft": 0,
               "scoreRight": 3,
               "playerLeftName": "Thomas Marlow",
@@ -67857,9 +68214,9 @@
               "fixtureKey": null
             },
             {
-              "id": 44210,
+              "id": 44347,
               "scoreLeft": 3,
-              "scoreRight": 1,
+              "scoreRight": 0,
               "playerLeftName": "Thomas Marlow",
               "playerLeftSlug": "thomas-marlow",
               "playerRightName": "Mark Brandwood",
@@ -67871,8 +68228,27 @@
               "opponent": "Mark Brandwood",
               "opponentSlug": "mark_brandwood",
               "playerScore": 3,
-              "opponentScore": 1,
+              "opponentScore": 0,
               "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44352,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Thomas Marlow",
+              "playerLeftSlug": "thomas-marlow",
+              "playerRightName": "Atamuno Atamuno",
+              "playerRightSlug": "atamuno_atamuno",
+              "playerRankChangeLeft": -6,
+              "playerRankChangeRight": 9,
+              "player": "Thomas Marlow",
+              "playerSlug": "thomas-marlow",
+              "opponent": "Atamuno Atamuno",
+              "opponentSlug": "atamuno_atamuno",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
               "fixtureKey": null
             },
             {
@@ -69824,6 +70200,63 @@
         "opponentSlug": "steve-horner",
         "playerScore": 3,
         "opponentScore": 0,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44334,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Andy Cretney",
+        "playerLeftSlug": "andy-cretney",
+        "playerRightName": "Darren Wright",
+        "playerRightSlug": "darren-wright",
+        "playerRankChangeLeft": -1,
+        "playerRankChangeRight": 2,
+        "player": "Andy Cretney",
+        "playerSlug": "andy-cretney",
+        "opponent": "Darren Wright",
+        "opponentSlug": "darren-wright",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44336,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Andy Cretney",
+        "playerLeftSlug": "andy-cretney",
+        "playerRightName": "Rob Tokeley",
+        "playerRightSlug": "rob-tokeley",
+        "playerRankChangeLeft": 45,
+        "playerRankChangeRight": -30,
+        "player": "Andy Cretney",
+        "playerSlug": "andy-cretney",
+        "opponent": "Rob Tokeley",
+        "opponentSlug": "rob-tokeley",
+        "playerScore": 3,
+        "opponentScore": 0,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44340,
+        "scoreLeft": 3,
+        "scoreRight": 1,
+        "playerLeftName": "Andy Cretney",
+        "playerLeftSlug": "andy-cretney",
+        "playerRightName": "Scott Fleming",
+        "playerRightSlug": "scott-fleming",
+        "playerRankChangeLeft": 33,
+        "playerRankChangeRight": -22,
+        "player": "Andy Cretney",
+        "playerSlug": "andy-cretney",
+        "opponent": "Scott Fleming",
+        "opponentSlug": "scott-fleming",
+        "playerScore": 3,
+        "opponentScore": 1,
         "result": "W",
         "fixtureKey": null
       },
@@ -74103,7 +74536,7 @@
         "fixtureKey": null
       },
       {
-        "id": 44205,
+        "id": 44345,
         "scoreLeft": 1,
         "scoreRight": 3,
         "playerLeftName": "Freya Harter",
@@ -74122,7 +74555,7 @@
         "fixtureKey": null
       },
       {
-        "id": 44209,
+        "id": 44349,
         "scoreLeft": 0,
         "scoreRight": 3,
         "playerLeftName": "Freya Harter",
@@ -74141,7 +74574,7 @@
         "fixtureKey": null
       },
       {
-        "id": 44211,
+        "id": 44351,
         "scoreLeft": 0,
         "scoreRight": 3,
         "playerLeftName": "Freya Harter",
@@ -79176,6 +79609,177 @@
         "fixtureKey": null
       },
       {
+        "id": 43375,
+        "scoreLeft": 2,
+        "scoreRight": 3,
+        "playerLeftName": "Paul Barker",
+        "playerLeftSlug": "paul-barker-2",
+        "playerRightName": "Henry Wright",
+        "playerRightSlug": "henry-wright",
+        "playerRankChangeLeft": -3,
+        "playerRankChangeRight": 5,
+        "player": "Paul Barker",
+        "playerSlug": "paul-barker-2",
+        "opponent": "Henry Wright",
+        "opponentSlug": "henry-wright",
+        "playerScore": 2,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 43379,
+        "scoreLeft": 3,
+        "scoreRight": 2,
+        "playerLeftName": "Paul Barker",
+        "playerLeftSlug": "paul-barker-2",
+        "playerRightName": "Issy Sinkinson",
+        "playerRightSlug": "issy-sinkinson",
+        "playerRankChangeLeft": 21,
+        "playerRankChangeRight": -14,
+        "player": "Paul Barker",
+        "playerSlug": "paul-barker-2",
+        "opponent": "Issy Sinkinson",
+        "opponentSlug": "issy-sinkinson",
+        "playerScore": 3,
+        "opponentScore": 2,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 43381,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Paul Barker",
+        "playerLeftSlug": "paul-barker-2",
+        "playerRightName": "Ryan Halstead",
+        "playerRightSlug": "ryan-halstead",
+        "playerRankChangeLeft": 11,
+        "playerRankChangeRight": -7,
+        "player": "Paul Barker",
+        "playerSlug": "paul-barker-2",
+        "opponent": "Ryan Halstead",
+        "opponentSlug": "ryan-halstead",
+        "playerScore": 3,
+        "opponentScore": 0,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44344,
+        "scoreLeft": 1,
+        "scoreRight": 3,
+        "playerLeftName": "Paul Barker",
+        "playerLeftSlug": "paul-barker-2",
+        "playerRightName": "Atamuno Atamuno",
+        "playerRightSlug": "atamuno_atamuno",
+        "playerRankChangeLeft": -2,
+        "playerRankChangeRight": 3,
+        "player": "Paul Barker",
+        "playerSlug": "paul-barker-2",
+        "opponent": "Atamuno Atamuno",
+        "opponentSlug": "atamuno_atamuno",
+        "playerScore": 1,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44346,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Paul Barker",
+        "playerLeftSlug": "paul-barker-2",
+        "playerRightName": "Stephen Carpanini",
+        "playerRightSlug": "stephen_carpanina",
+        "playerRankChangeLeft": -1,
+        "playerRankChangeRight": 2,
+        "player": "Paul Barker",
+        "playerSlug": "paul-barker-2",
+        "opponent": "Stephen Carpanini",
+        "opponentSlug": "stephen_carpanina",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44350,
+        "scoreLeft": 3,
+        "scoreRight": 1,
+        "playerLeftName": "Paul Barker",
+        "playerLeftSlug": "paul-barker-2",
+        "playerRightName": "Mark Brandwood",
+        "playerRightSlug": "mark_brandwood",
+        "playerRankChangeLeft": 11,
+        "playerRankChangeRight": -7,
+        "player": "Paul Barker",
+        "playerSlug": "paul-barker-2",
+        "opponent": "Mark Brandwood",
+        "opponentSlug": "mark_brandwood",
+        "playerScore": 3,
+        "opponentScore": 1,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 43574,
+        "scoreLeft": 3,
+        "scoreRight": 1,
+        "playerLeftName": "Damian Savage",
+        "playerLeftSlug": "damian-savage",
+        "playerRightName": "Paul Barker",
+        "playerRightSlug": "paul-barker-2",
+        "playerRankChangeLeft": 5,
+        "playerRankChangeRight": -3,
+        "player": "Paul Barker",
+        "playerSlug": "paul-barker-2",
+        "opponent": "Damian Savage",
+        "opponentSlug": "damian-savage",
+        "playerScore": 1,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 43579,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Ryan  Feldwicke",
+        "playerLeftSlug": "ryan-feldwicke",
+        "playerRightName": "Paul Barker",
+        "playerRightSlug": "paul-barker-2",
+        "playerRankChangeLeft": 17,
+        "playerRankChangeRight": -11,
+        "player": "Paul Barker",
+        "playerSlug": "paul-barker-2",
+        "opponent": "Ryan  Feldwicke",
+        "opponentSlug": "ryan-feldwicke",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 43582,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Georgia Cockshott",
+        "playerLeftSlug": "georgia_cockshott",
+        "playerRightName": "Paul Barker",
+        "playerRightSlug": "paul-barker-2",
+        "playerRankChangeLeft": 3,
+        "playerRankChangeRight": -2,
+        "player": "Paul Barker",
+        "playerSlug": "paul-barker-2",
+        "opponent": "Georgia Cockshott",
+        "opponentSlug": "georgia_cockshott",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
         "id": 44055,
         "scoreLeft": 3,
         "scoreRight": 0,
@@ -83964,26 +84568,7 @@
         "fixtureKey": null
       },
       {
-        "id": 44204,
-        "scoreLeft": 1,
-        "scoreRight": 3,
-        "playerLeftName": "Thomas Marlow",
-        "playerLeftSlug": "thomas-marlow",
-        "playerRightName": "Atamuno Atamuno",
-        "playerRightSlug": "atamuno_atamuno",
-        "playerRankChangeLeft": -6,
-        "playerRankChangeRight": 9,
-        "player": "Thomas Marlow",
-        "playerSlug": "thomas-marlow",
-        "opponent": "Atamuno Atamuno",
-        "opponentSlug": "atamuno_atamuno",
-        "playerScore": 1,
-        "opponentScore": 3,
-        "result": "L",
-        "fixtureKey": null
-      },
-      {
-        "id": 44206,
+        "id": 44343,
         "scoreLeft": 0,
         "scoreRight": 3,
         "playerLeftName": "Thomas Marlow",
@@ -84002,9 +84587,9 @@
         "fixtureKey": null
       },
       {
-        "id": 44210,
+        "id": 44347,
         "scoreLeft": 3,
-        "scoreRight": 1,
+        "scoreRight": 0,
         "playerLeftName": "Thomas Marlow",
         "playerLeftSlug": "thomas-marlow",
         "playerRightName": "Mark Brandwood",
@@ -84016,8 +84601,27 @@
         "opponent": "Mark Brandwood",
         "opponentSlug": "mark_brandwood",
         "playerScore": 3,
-        "opponentScore": 1,
+        "opponentScore": 0,
         "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44352,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Thomas Marlow",
+        "playerLeftSlug": "thomas-marlow",
+        "playerRightName": "Atamuno Atamuno",
+        "playerRightSlug": "atamuno_atamuno",
+        "playerRankChangeLeft": -6,
+        "playerRankChangeRight": 9,
+        "player": "Thomas Marlow",
+        "playerSlug": "thomas-marlow",
+        "opponent": "Atamuno Atamuno",
+        "opponentSlug": "atamuno_atamuno",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
         "fixtureKey": null
       },
       {
@@ -87178,7 +87782,7 @@
         "teamRightName": "Burnley Scorpions",
         "teamRightSlug": "burnley-scorpions",
         "scoreRight": 25,
-        "timeFulfilled": 1794305951,
+        "timeFulfilled": 1794581453,
         "weekId": 9
       },
       {
@@ -92590,7 +93194,7 @@
             "teamRightName": "Burnley Scorpions",
             "teamRightSlug": "burnley-scorpions",
             "scoreRight": 25,
-            "timeFulfilled": 1794305951,
+            "timeFulfilled": 1794581453,
             "weekId": 9
           }
         ]
@@ -93396,7 +94000,7 @@
     ],
     "api": {
       "status": "partial",
-      "successfulPlayerRequests": 69,
+      "successfulPlayerRequests": 70,
       "failedPlayerRequests": 0,
       "failedTeamRequests": 1,
       "teamErrors": [
@@ -93425,6 +94029,15 @@
         },
         {
           "p": 3,
+          "t": "Gladiators",
+          "w": 5,
+          "d": 0,
+          "l": 3,
+          "pl": 8,
+          "pts": 154
+        },
+        {
+          "p": 4,
           "t": "Whalley Eagles",
           "w": 5,
           "d": 0,
@@ -93433,7 +94046,7 @@
           "pts": 136
         },
         {
-          "p": 4,
+          "p": 5,
           "t": "Rovers",
           "w": 3,
           "d": 0,
@@ -93442,22 +94055,13 @@
           "pts": 133
         },
         {
-          "p": 5,
+          "p": 6,
           "t": "KSB B",
           "w": 4,
           "d": 0,
           "l": 3,
           "pl": 7,
           "pts": 132
-        },
-        {
-          "p": 6,
-          "t": "Gladiators",
-          "w": 4,
-          "d": 0,
-          "l": 3,
-          "pl": 7,
-          "pts": 128
         },
         {
           "p": 7,
@@ -93482,9 +94086,9 @@
           "t": "Vanguard Raptors",
           "w": 1,
           "d": 0,
-          "l": 4,
-          "pl": 5,
-          "pts": 78
+          "l": 5,
+          "pl": 6,
+          "pts": 86
         },
         {
           "p": 10,
@@ -93500,11 +94104,11 @@
         {
           "p": 1,
           "t": "Vanguard Jets",
-          "w": 7,
+          "w": 8,
           "d": 0,
           "l": 0,
-          "pl": 7,
-          "pts": 178
+          "pl": 8,
+          "pts": 201
         },
         {
           "p": 2,
@@ -93517,6 +94121,15 @@
         },
         {
           "p": 3,
+          "t": "Burnley Hornets",
+          "w": 4,
+          "d": 0,
+          "l": 4,
+          "pl": 8,
+          "pts": 159
+        },
+        {
+          "p": 4,
           "t": "KSB D",
           "w": 4,
           "d": 0,
@@ -93525,7 +94138,7 @@
           "pts": 153
         },
         {
-          "p": 4,
+          "p": 5,
           "t": "KSB F",
           "w": 6,
           "d": 0,
@@ -93534,22 +94147,13 @@
           "pts": 152
         },
         {
-          "p": 5,
+          "p": 6,
           "t": "Vanguard Phantoms",
           "w": 5,
           "d": 0,
           "l": 2,
           "pl": 7,
           "pts": 150
-        },
-        {
-          "p": 6,
-          "t": "Burnley Hornets",
-          "w": 4,
-          "d": 0,
-          "l": 3,
-          "pl": 7,
-          "pts": 143
         },
         {
           "p": 7,
@@ -93701,21 +94305,21 @@
         },
         {
           "p": 3,
+          "t": "Hyndburn TTC B",
+          "w": 5,
+          "d": 0,
+          "l": 3,
+          "pl": 8,
+          "pts": 165
+        },
+        {
+          "p": 4,
           "t": "Burnley Scorpions",
           "w": 6,
           "d": 0,
           "l": 2,
           "pl": 8,
           "pts": 155
-        },
-        {
-          "p": 4,
-          "t": "Hyndburn TTC B",
-          "w": 5,
-          "d": 0,
-          "l": 2,
-          "pl": 7,
-          "pts": 148
         },
         {
           "p": 5,
@@ -93728,21 +94332,21 @@
         },
         {
           "p": 6,
+          "t": "Burnley Dragon Flies",
+          "w": 3,
+          "d": 0,
+          "l": 5,
+          "pl": 8,
+          "pts": 139
+        },
+        {
+          "p": 7,
           "t": "Whalley Harriers",
           "w": 3,
           "d": 0,
           "l": 4,
           "pl": 7,
           "pts": 132
-        },
-        {
-          "p": 7,
-          "t": "Burnley Dragon Flies",
-          "w": 2,
-          "d": 0,
-          "l": 5,
-          "pl": 7,
-          "pts": 118
         },
         {
           "p": 8,
@@ -109640,24 +110244,24 @@
         "setDifference": 124
       },
       "currentSeason": {
-        "played": 24,
-        "wins": 17,
+        "played": 27,
+        "wins": 19,
         "draws": 0,
-        "losses": 7,
-        "winPercentage": 70.83,
-        "setsWon": 54,
-        "setsLost": 30,
-        "setDifference": 24
+        "losses": 8,
+        "winPercentage": 70.37,
+        "setsWon": 60,
+        "setsLost": 34,
+        "setDifference": 26
       },
       "career": {
-        "played": 93,
-        "wins": 73,
+        "played": 96,
+        "wins": 75,
         "draws": 0,
-        "losses": 20,
-        "setsWon": 233,
-        "setsLost": 85,
-        "winPercentage": 78.49,
-        "setDifference": 148
+        "losses": 21,
+        "setsWon": 239,
+        "setsLost": 89,
+        "winPercentage": 78.12,
+        "setDifference": 150
       },
       "seasons": {
         "2024": {
@@ -112486,7 +113090,7 @@
             "id": 694,
             "name": "Andy Cretney",
             "slug": "andy-cretney",
-            "rank": 1689,
+            "rank": 1766,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 98,
@@ -112496,14 +113100,14 @@
           },
           "team": {},
           "statistics": {
-            "played": 24,
-            "wins": 17,
+            "played": 27,
+            "wins": 19,
             "draws": 0,
-            "losses": 7,
-            "winPercentage": 70.83,
-            "setsWon": 54,
-            "setsLost": 30,
-            "setDifference": 24,
+            "losses": 8,
+            "winPercentage": 70.37,
+            "setsWon": 60,
+            "setsLost": 34,
+            "setDifference": 26,
             "opponents": [
               {
                 "name": "Alex Gavin",
@@ -112535,6 +113139,15 @@
               {
                 "name": "Dan Chamberlain",
                 "slug": "dan-chamberlain",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Darren Wright",
+                "slug": "darren-wright",
                 "played": 1,
                 "wins": 0,
                 "draws": 0,
@@ -112693,6 +113306,24 @@
                 "draws": 0,
                 "losses": 1,
                 "winPercentage": 0.0
+              },
+              {
+                "name": "Rob Tokeley",
+                "slug": "rob-tokeley",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
+                "name": "Scott Fleming",
+                "slug": "scott-fleming",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
               },
               {
                 "name": "Steve Horner",
@@ -112891,6 +113522,63 @@
                 "opponentSlug": "steve-horner",
                 "playerScore": 3,
                 "opponentScore": 0,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44334,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Andy Cretney",
+                "playerLeftSlug": "andy-cretney",
+                "playerRightName": "Darren Wright",
+                "playerRightSlug": "darren-wright",
+                "playerRankChangeLeft": -1,
+                "playerRankChangeRight": 2,
+                "player": "Andy Cretney",
+                "playerSlug": "andy-cretney",
+                "opponent": "Darren Wright",
+                "opponentSlug": "darren-wright",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44336,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Andy Cretney",
+                "playerLeftSlug": "andy-cretney",
+                "playerRightName": "Rob Tokeley",
+                "playerRightSlug": "rob-tokeley",
+                "playerRankChangeLeft": 45,
+                "playerRankChangeRight": -30,
+                "player": "Andy Cretney",
+                "playerSlug": "andy-cretney",
+                "opponent": "Rob Tokeley",
+                "opponentSlug": "rob-tokeley",
+                "playerScore": 3,
+                "opponentScore": 0,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44340,
+                "scoreLeft": 3,
+                "scoreRight": 1,
+                "playerLeftName": "Andy Cretney",
+                "playerLeftSlug": "andy-cretney",
+                "playerRightName": "Scott Fleming",
+                "playerRightSlug": "scott-fleming",
+                "playerRankChangeLeft": 33,
+                "playerRankChangeRight": -22,
+                "player": "Andy Cretney",
+                "playerSlug": "andy-cretney",
+                "opponent": "Scott Fleming",
+                "opponentSlug": "scott-fleming",
+                "playerScore": 3,
+                "opponentScore": 1,
                 "result": "W",
                 "fixtureKey": null
               },
@@ -656511,7 +657199,7 @@
                 "fixtureKey": null
               },
               {
-                "id": 44205,
+                "id": 44345,
                 "scoreLeft": 1,
                 "scoreRight": 3,
                 "playerLeftName": "Freya Harter",
@@ -656530,7 +657218,7 @@
                 "fixtureKey": null
               },
               {
-                "id": 44209,
+                "id": 44349,
                 "scoreLeft": 0,
                 "scoreRight": 3,
                 "playerLeftName": "Freya Harter",
@@ -656549,7 +657237,7 @@
                 "fixtureKey": null
               },
               {
-                "id": 44211,
+                "id": 44351,
                 "scoreLeft": 0,
                 "scoreRight": 3,
                 "playerLeftName": "Freya Harter",
@@ -657227,13 +657915,13 @@
             "id": 541,
             "name": "Paul Barker",
             "slug": "paul-barker",
-            "rank": 125,
+            "rank": 168,
             "phoneMobile": "",
             "phoneLandline": "",
-            "teamId": 0,
-            "teamName": null,
-            "teamSlug": null,
-            "divisionId": null
+            "teamId": 86,
+            "teamName": "KSB Leopards (Jun)",
+            "teamSlug": "ksb-leopards-jun",
+            "divisionId": 4
           },
           "team": {},
           "statistics": {
@@ -659388,8 +660076,8 @@
         "draws": 0,
         "losses": 9,
         "winPercentage": 40.0,
-        "setsWon": 22,
-        "setsLost": 32,
+        "setsWon": 21,
+        "setsLost": 31,
         "setDifference": -10
       },
       "career": {
@@ -659397,8 +660085,8 @@
         "wins": 6,
         "draws": 0,
         "losses": 9,
-        "setsWon": 22,
-        "setsLost": 32,
+        "setsWon": 21,
+        "setsLost": 31,
         "winPercentage": 40.0,
         "setDifference": -10
       },
@@ -659424,8 +660112,8 @@
             "draws": 0,
             "losses": 9,
             "winPercentage": 40.0,
-            "setsWon": 22,
-            "setsLost": 32,
+            "setsWon": 21,
+            "setsLost": 31,
             "setDifference": -10,
             "opponents": [
               {
@@ -659623,26 +660311,7 @@
                 "fixtureKey": null
               },
               {
-                "id": 44204,
-                "scoreLeft": 1,
-                "scoreRight": 3,
-                "playerLeftName": "Thomas Marlow",
-                "playerLeftSlug": "thomas-marlow",
-                "playerRightName": "Atamuno Atamuno",
-                "playerRightSlug": "atamuno_atamuno",
-                "playerRankChangeLeft": -6,
-                "playerRankChangeRight": 9,
-                "player": "Thomas Marlow",
-                "playerSlug": "thomas-marlow",
-                "opponent": "Atamuno Atamuno",
-                "opponentSlug": "atamuno_atamuno",
-                "playerScore": 1,
-                "opponentScore": 3,
-                "result": "L",
-                "fixtureKey": null
-              },
-              {
-                "id": 44206,
+                "id": 44343,
                 "scoreLeft": 0,
                 "scoreRight": 3,
                 "playerLeftName": "Thomas Marlow",
@@ -659661,9 +660330,9 @@
                 "fixtureKey": null
               },
               {
-                "id": 44210,
+                "id": 44347,
                 "scoreLeft": 3,
-                "scoreRight": 1,
+                "scoreRight": 0,
                 "playerLeftName": "Thomas Marlow",
                 "playerLeftSlug": "thomas-marlow",
                 "playerRightName": "Mark Brandwood",
@@ -659675,8 +660344,27 @@
                 "opponent": "Mark Brandwood",
                 "opponentSlug": "mark_brandwood",
                 "playerScore": 3,
-                "opponentScore": 1,
+                "opponentScore": 0,
                 "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44352,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Thomas Marlow",
+                "playerLeftSlug": "thomas-marlow",
+                "playerRightName": "Atamuno Atamuno",
+                "playerRightSlug": "atamuno_atamuno",
+                "playerRankChangeLeft": -6,
+                "playerRankChangeRight": 9,
+                "player": "Thomas Marlow",
+                "playerSlug": "thomas-marlow",
+                "opponent": "Atamuno Atamuno",
+                "opponentSlug": "atamuno_atamuno",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
                 "fixtureKey": null
               },
               {
@@ -659848,6 +660536,330 @@
                 "playerScore": 3,
                 "opponentScore": 1,
                 "result": "W",
+                "fixtureKey": null
+              }
+            ]
+          },
+          "fixtures": [],
+          "weeks": [],
+          "api": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    "paul-barker-2": {
+      "name": "Paul Barker",
+      "slug": "paul-barker-2",
+      "historicThrough": 2025,
+      "historic": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "winPercentage": 0,
+        "setsWon": 0,
+        "setsLost": 0,
+        "setDifference": 0
+      },
+      "currentSeason": {
+        "played": 9,
+        "wins": 3,
+        "draws": 0,
+        "losses": 6,
+        "winPercentage": 33.33,
+        "setsWon": 13,
+        "setsLost": 21,
+        "setDifference": -8
+      },
+      "career": {
+        "played": 9,
+        "wins": 3,
+        "draws": 0,
+        "losses": 6,
+        "winPercentage": 33.33,
+        "setsWon": 13,
+        "setsLost": 21,
+        "setDifference": -8
+      },
+      "seasons": {
+        "2026": {
+          "season": 2026,
+          "player": {
+            "id": 783,
+            "name": "Paul Barker",
+            "slug": "paul-barker-2",
+            "rank": 128,
+            "phoneMobile": "",
+            "phoneLandline": "",
+            "teamId": 86,
+            "teamName": "KSB Leopards (Jun)",
+            "teamSlug": "ksb-leopards-jun",
+            "divisionId": 4
+          },
+          "team": {},
+          "statistics": {
+            "played": 9,
+            "wins": 3,
+            "draws": 0,
+            "losses": 6,
+            "winPercentage": 33.33,
+            "setsWon": 13,
+            "setsLost": 21,
+            "setDifference": -8,
+            "opponents": [
+              {
+                "name": "Atamuno Atamuno",
+                "slug": "atamuno_atamuno",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Damian Savage",
+                "slug": "damian-savage",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Georgia Cockshott",
+                "slug": "georgia_cockshott",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Henry Wright",
+                "slug": "henry-wright",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Issy Sinkinson",
+                "slug": "issy-sinkinson",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
+                "name": "Mark Brandwood",
+                "slug": "mark_brandwood",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
+                "name": "Ryan  Feldwicke",
+                "slug": "ryan-feldwicke",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Ryan Halstead",
+                "slug": "ryan-halstead",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
+                "name": "Stephen Carpanini",
+                "slug": "stephen_carpanina",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              }
+            ],
+            "encounters": [
+              {
+                "id": 43375,
+                "scoreLeft": 2,
+                "scoreRight": 3,
+                "playerLeftName": "Paul Barker",
+                "playerLeftSlug": "paul-barker-2",
+                "playerRightName": "Henry Wright",
+                "playerRightSlug": "henry-wright",
+                "playerRankChangeLeft": -3,
+                "playerRankChangeRight": 5,
+                "player": "Paul Barker",
+                "playerSlug": "paul-barker-2",
+                "opponent": "Henry Wright",
+                "opponentSlug": "henry-wright",
+                "playerScore": 2,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 43379,
+                "scoreLeft": 3,
+                "scoreRight": 2,
+                "playerLeftName": "Paul Barker",
+                "playerLeftSlug": "paul-barker-2",
+                "playerRightName": "Issy Sinkinson",
+                "playerRightSlug": "issy-sinkinson",
+                "playerRankChangeLeft": 21,
+                "playerRankChangeRight": -14,
+                "player": "Paul Barker",
+                "playerSlug": "paul-barker-2",
+                "opponent": "Issy Sinkinson",
+                "opponentSlug": "issy-sinkinson",
+                "playerScore": 3,
+                "opponentScore": 2,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 43381,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Paul Barker",
+                "playerLeftSlug": "paul-barker-2",
+                "playerRightName": "Ryan Halstead",
+                "playerRightSlug": "ryan-halstead",
+                "playerRankChangeLeft": 11,
+                "playerRankChangeRight": -7,
+                "player": "Paul Barker",
+                "playerSlug": "paul-barker-2",
+                "opponent": "Ryan Halstead",
+                "opponentSlug": "ryan-halstead",
+                "playerScore": 3,
+                "opponentScore": 0,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44344,
+                "scoreLeft": 1,
+                "scoreRight": 3,
+                "playerLeftName": "Paul Barker",
+                "playerLeftSlug": "paul-barker-2",
+                "playerRightName": "Atamuno Atamuno",
+                "playerRightSlug": "atamuno_atamuno",
+                "playerRankChangeLeft": -2,
+                "playerRankChangeRight": 3,
+                "player": "Paul Barker",
+                "playerSlug": "paul-barker-2",
+                "opponent": "Atamuno Atamuno",
+                "opponentSlug": "atamuno_atamuno",
+                "playerScore": 1,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44346,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Paul Barker",
+                "playerLeftSlug": "paul-barker-2",
+                "playerRightName": "Stephen Carpanini",
+                "playerRightSlug": "stephen_carpanina",
+                "playerRankChangeLeft": -1,
+                "playerRankChangeRight": 2,
+                "player": "Paul Barker",
+                "playerSlug": "paul-barker-2",
+                "opponent": "Stephen Carpanini",
+                "opponentSlug": "stephen_carpanina",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44350,
+                "scoreLeft": 3,
+                "scoreRight": 1,
+                "playerLeftName": "Paul Barker",
+                "playerLeftSlug": "paul-barker-2",
+                "playerRightName": "Mark Brandwood",
+                "playerRightSlug": "mark_brandwood",
+                "playerRankChangeLeft": 11,
+                "playerRankChangeRight": -7,
+                "player": "Paul Barker",
+                "playerSlug": "paul-barker-2",
+                "opponent": "Mark Brandwood",
+                "opponentSlug": "mark_brandwood",
+                "playerScore": 3,
+                "opponentScore": 1,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 43574,
+                "scoreLeft": 3,
+                "scoreRight": 1,
+                "playerLeftName": "Damian Savage",
+                "playerLeftSlug": "damian-savage",
+                "playerRightName": "Paul Barker",
+                "playerRightSlug": "paul-barker-2",
+                "playerRankChangeLeft": 5,
+                "playerRankChangeRight": -3,
+                "player": "Paul Barker",
+                "playerSlug": "paul-barker-2",
+                "opponent": "Damian Savage",
+                "opponentSlug": "damian-savage",
+                "playerScore": 1,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 43579,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Ryan  Feldwicke",
+                "playerLeftSlug": "ryan-feldwicke",
+                "playerRightName": "Paul Barker",
+                "playerRightSlug": "paul-barker-2",
+                "playerRankChangeLeft": 17,
+                "playerRankChangeRight": -11,
+                "player": "Paul Barker",
+                "playerSlug": "paul-barker-2",
+                "opponent": "Ryan  Feldwicke",
+                "opponentSlug": "ryan-feldwicke",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 43582,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Georgia Cockshott",
+                "playerLeftSlug": "georgia_cockshott",
+                "playerRightName": "Paul Barker",
+                "playerRightSlug": "paul-barker-2",
+                "playerRankChangeLeft": 3,
+                "playerRankChangeRight": -2,
+                "player": "Paul Barker",
+                "playerSlug": "paul-barker-2",
+                "opponent": "Georgia Cockshott",
+                "opponentSlug": "georgia_cockshott",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
                 "fixtureKey": null
               }
             ]
