@@ -23,7 +23,7 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-11-13T16:26:34.051011+00:00",
+    "lastUpdated": "2026-11-13T22:39:11.759962+00:00",
     "livePlayerCount": 70,
     "liveEncounterCount": 849
   },
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-11-13T16:26:31.409276+00:00",
+    "lastUpdated": "2026-11-13T22:39:10.386041+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -660577,9 +660577,9 @@
         "wins": 3,
         "draws": 0,
         "losses": 6,
-        "winPercentage": 33.33,
         "setsWon": 13,
         "setsLost": 21,
+        "winPercentage": 33.33,
         "setDifference": -8
       },
       "seasons": {
