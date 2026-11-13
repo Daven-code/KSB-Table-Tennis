@@ -23,9 +23,9 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-11-13T00:25:41.138630+00:00",
+    "lastUpdated": "2026-11-13T07:59:50.382390+00:00",
     "livePlayerCount": 69,
-    "liveEncounterCount": 828
+    "liveEncounterCount": 837
   },
   "historic": {
     "seasons": {
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-11-13T00:25:39.829099+00:00",
+    "lastUpdated": "2026-11-13T07:59:48.218418+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -39673,17 +39673,17 @@
         "players": [
           {
             "name": "Roman Mychajlshyn",
-            "rank": 1326,
+            "rank": 1321,
             "slug": "roman-mychajlshyn"
           },
           {
             "name": "Jacob Milnes",
-            "rank": 961,
+            "rank": 985,
             "slug": "jacob-milnes"
           },
           {
             "name": "Alex Gavin",
-            "rank": 1522,
+            "rank": 1547,
             "slug": "alex-gavin"
           },
           {
@@ -39728,11 +39728,11 @@
             "venueName": "Hyndburn Leisure Centre",
             "venueSlug": "hyndburn-leisure-centre",
             "venueLocation": "https://maps.app.goo.gl/EwvviMzKi7HQpyom6",
-            "scoreLeft": null,
+            "scoreLeft": 17,
             "teamRightName": "KSB Jaguars",
             "teamRightSlug": "ksb-jaguars",
-            "scoreRight": null,
-            "timeFulfilled": null,
+            "scoreRight": 20,
+            "timeFulfilled": 1794533119,
             "weekId": 9
           },
           {
@@ -40112,11 +40112,11 @@
                 "venueName": "Hyndburn Leisure Centre",
                 "venueSlug": "hyndburn-leisure-centre",
                 "venueLocation": "https://maps.app.goo.gl/EwvviMzKi7HQpyom6",
-                "scoreLeft": null,
+                "scoreLeft": 17,
                 "teamRightName": "KSB Jaguars",
                 "teamRightSlug": "ksb-jaguars",
-                "scoreRight": null,
-                "timeFulfilled": null,
+                "scoreRight": 20,
+                "timeFulfilled": 1794533119,
                 "weekId": 9
               }
             ]
@@ -43240,7 +43240,7 @@
           "id": 697,
           "name": "Alex Gavin",
           "slug": "alex-gavin",
-          "rank": 1522,
+          "rank": 1547,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 97,
@@ -43250,14 +43250,14 @@
         },
         "team": {},
         "statistics": {
-          "played": 33,
-          "wins": 28,
+          "played": 36,
+          "wins": 31,
           "draws": 0,
           "losses": 5,
-          "winPercentage": 84.85,
-          "setsWon": 89,
-          "setsLost": 39,
-          "setDifference": 50,
+          "winPercentage": 86.11,
+          "setsWon": 98,
+          "setsLost": 40,
+          "setDifference": 58,
           "opponents": [
             {
               "name": "Adam Hek",
@@ -43332,6 +43332,15 @@
               "winPercentage": 100.0
             },
             {
+              "name": "James Astle",
+              "slug": "james-astle",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
               "name": "John Hayhurst",
               "slug": "john-hayhurst",
               "played": 1,
@@ -43361,6 +43370,15 @@
             {
               "name": "Mark Hanson",
               "slug": "mark-hanson",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
+              "name": "Mark Rawson",
+              "slug": "mark-rawson",
               "played": 1,
               "wins": 1,
               "draws": 0,
@@ -43474,6 +43492,15 @@
               "draws": 0,
               "losses": 1,
               "winPercentage": 0.0
+            },
+            {
+              "name": "Phillip Austin",
+              "slug": "austin-phillip",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
             },
             {
               "name": "Sam Bradshaw",
@@ -43745,6 +43772,63 @@
               "playerSlug": "alex-gavin",
               "opponent": "Susan Crook",
               "opponentSlug": "susan_crook",
+              "playerScore": 3,
+              "opponentScore": 0,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44314,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Phillip Austin",
+              "playerLeftSlug": "austin-phillip",
+              "playerRightName": "Alex Gavin",
+              "playerRightSlug": "alex-gavin",
+              "playerRankChangeLeft": -2,
+              "playerRankChangeRight": 3,
+              "player": "Alex Gavin",
+              "playerSlug": "alex-gavin",
+              "opponent": "Phillip Austin",
+              "opponentSlug": "austin-phillip",
+              "playerScore": 3,
+              "opponentScore": 0,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44319,
+              "scoreLeft": 1,
+              "scoreRight": 3,
+              "playerLeftName": "Mark Rawson",
+              "playerLeftSlug": "mark-rawson",
+              "playerRightName": "Alex Gavin",
+              "playerRightSlug": "alex-gavin",
+              "playerRankChangeLeft": -3,
+              "playerRankChangeRight": 5,
+              "player": "Alex Gavin",
+              "playerSlug": "alex-gavin",
+              "opponent": "Mark Rawson",
+              "opponentSlug": "mark-rawson",
+              "playerScore": 3,
+              "opponentScore": 1,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44322,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "James Astle",
+              "playerLeftSlug": "james-astle",
+              "playerRightName": "Alex Gavin",
+              "playerRightSlug": "alex-gavin",
+              "playerRankChangeLeft": -11,
+              "playerRankChangeRight": 17,
+              "player": "Alex Gavin",
+              "playerSlug": "alex-gavin",
+              "opponent": "James Astle",
+              "opponentSlug": "james-astle",
               "playerScore": 3,
               "opponentScore": 0,
               "result": "W",
@@ -55408,7 +55492,7 @@
           "id": 695,
           "name": "Jacob Milnes",
           "slug": "jacob-milnes",
-          "rank": 961,
+          "rank": 985,
           "phoneMobile": "07834043694",
           "phoneLandline": "",
           "teamId": 97,
@@ -55418,14 +55502,14 @@
         },
         "team": {},
         "statistics": {
-          "played": 18,
-          "wins": 6,
+          "played": 21,
+          "wins": 7,
           "draws": 0,
-          "losses": 12,
+          "losses": 14,
           "winPercentage": 33.33,
-          "setsWon": 27,
-          "setsLost": 42,
-          "setDifference": -15,
+          "setsWon": 30,
+          "setsLost": 50,
+          "setDifference": -20,
           "opponents": [
             {
               "name": "Adam Hek",
@@ -55491,6 +55575,15 @@
               "winPercentage": 100.0
             },
             {
+              "name": "James Astle",
+              "slug": "james-astle",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
               "name": "John Hayhurst",
               "slug": "john-hayhurst",
               "played": 1,
@@ -55502,6 +55595,15 @@
             {
               "name": "Lee Ash",
               "slug": "lee-ash",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Mark Rawson",
+              "slug": "mark-rawson",
               "played": 1,
               "wins": 0,
               "draws": 0,
@@ -55543,6 +55645,15 @@
               "draws": 0,
               "losses": 1,
               "winPercentage": 0.0
+            },
+            {
+              "name": "Phillip Austin",
+              "slug": "austin-phillip",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
             },
             {
               "name": "Sam Bradshaw",
@@ -55591,6 +55702,63 @@
             }
           ],
           "encounters": [
+            {
+              "id": 44315,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Mark Rawson",
+              "playerLeftSlug": "mark-rawson",
+              "playerRightName": "Jacob Milnes",
+              "playerRightSlug": "jacob-milnes",
+              "playerRankChangeLeft": 3,
+              "playerRankChangeRight": -2,
+              "player": "Jacob Milnes",
+              "playerSlug": "jacob-milnes",
+              "opponent": "Mark Rawson",
+              "opponentSlug": "mark-rawson",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44317,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "James Astle",
+              "playerLeftSlug": "james-astle",
+              "playerRightName": "Jacob Milnes",
+              "playerRightSlug": "jacob-milnes",
+              "playerRankChangeLeft": 0,
+              "playerRankChangeRight": 0,
+              "player": "Jacob Milnes",
+              "playerSlug": "jacob-milnes",
+              "opponent": "James Astle",
+              "opponentSlug": "james-astle",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44320,
+              "scoreLeft": 2,
+              "scoreRight": 3,
+              "playerLeftName": "Phillip Austin",
+              "playerLeftSlug": "austin-phillip",
+              "playerRightName": "Jacob Milnes",
+              "playerRightSlug": "jacob-milnes",
+              "playerRankChangeLeft": -17,
+              "playerRankChangeRight": 26,
+              "player": "Jacob Milnes",
+              "playerSlug": "jacob-milnes",
+              "opponent": "Phillip Austin",
+              "opponentSlug": "austin-phillip",
+              "playerScore": 3,
+              "opponentScore": 2,
+              "result": "W",
+              "fixtureKey": null
+            },
             {
               "id": 43004,
               "scoreLeft": 3,
@@ -62119,7 +62287,7 @@
           "id": 227,
           "name": "Roman Mychajlshyn",
           "slug": "roman-mychajlshyn",
-          "rank": 1326,
+          "rank": 1321,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 97,
@@ -62129,14 +62297,14 @@
         },
         "team": {},
         "statistics": {
-          "played": 15,
-          "wins": 12,
+          "played": 18,
+          "wins": 13,
           "draws": 0,
-          "losses": 3,
-          "winPercentage": 80.0,
-          "setsWon": 39,
-          "setsLost": 20,
-          "setDifference": 19,
+          "losses": 5,
+          "winPercentage": 72.22,
+          "setsWon": 44,
+          "setsLost": 26,
+          "setDifference": 18,
           "opponents": [
             {
               "name": "Adam Hek",
@@ -62173,6 +62341,24 @@
               "draws": 0,
               "losses": 0,
               "winPercentage": 100.0
+            },
+            {
+              "name": "James Astle",
+              "slug": "james-astle",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Mark Rawson",
+              "slug": "mark-rawson",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
             },
             {
               "name": "Martin Fox",
@@ -62229,6 +62415,15 @@
               "winPercentage": 100.0
             },
             {
+              "name": "Phillip Austin",
+              "slug": "austin-phillip",
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 100.0
+            },
+            {
               "name": "Sam Bradshaw",
               "slug": "sam-bradshaw",
               "played": 1,
@@ -62275,6 +62470,63 @@
             }
           ],
           "encounters": [
+            {
+              "id": 44313,
+              "scoreLeft": 3,
+              "scoreRight": 2,
+              "playerLeftName": "James Astle",
+              "playerLeftSlug": "james-astle",
+              "playerRightName": "Roman Mychajlshyn",
+              "playerRightSlug": "roman-mychajlshyn",
+              "playerRankChangeLeft": 5,
+              "playerRankChangeRight": -3,
+              "player": "Roman Mychajlshyn",
+              "playerSlug": "roman-mychajlshyn",
+              "opponent": "James Astle",
+              "opponentSlug": "james-astle",
+              "playerScore": 2,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44316,
+              "scoreLeft": 0,
+              "scoreRight": 3,
+              "playerLeftName": "Phillip Austin",
+              "playerLeftSlug": "austin-phillip",
+              "playerRightName": "Roman Mychajlshyn",
+              "playerRightSlug": "roman-mychajlshyn",
+              "playerRankChangeLeft": -4,
+              "playerRankChangeRight": 6,
+              "player": "Roman Mychajlshyn",
+              "playerSlug": "roman-mychajlshyn",
+              "opponent": "Phillip Austin",
+              "opponentSlug": "austin-phillip",
+              "playerScore": 3,
+              "opponentScore": 0,
+              "result": "W",
+              "fixtureKey": null
+            },
+            {
+              "id": 44321,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Mark Rawson",
+              "playerLeftSlug": "mark-rawson",
+              "playerRightName": "Roman Mychajlshyn",
+              "playerRightSlug": "roman-mychajlshyn",
+              "playerRankChangeLeft": 12,
+              "playerRankChangeRight": -8,
+              "player": "Roman Mychajlshyn",
+              "playerSlug": "roman-mychajlshyn",
+              "opponent": "Mark Rawson",
+              "opponentSlug": "mark-rawson",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
             {
               "id": 43433,
               "scoreLeft": 1,
@@ -68829,6 +69081,63 @@
         "playerSlug": "alex-gavin",
         "opponent": "Susan Crook",
         "opponentSlug": "susan_crook",
+        "playerScore": 3,
+        "opponentScore": 0,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44314,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Phillip Austin",
+        "playerLeftSlug": "austin-phillip",
+        "playerRightName": "Alex Gavin",
+        "playerRightSlug": "alex-gavin",
+        "playerRankChangeLeft": -2,
+        "playerRankChangeRight": 3,
+        "player": "Alex Gavin",
+        "playerSlug": "alex-gavin",
+        "opponent": "Phillip Austin",
+        "opponentSlug": "austin-phillip",
+        "playerScore": 3,
+        "opponentScore": 0,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44319,
+        "scoreLeft": 1,
+        "scoreRight": 3,
+        "playerLeftName": "Mark Rawson",
+        "playerLeftSlug": "mark-rawson",
+        "playerRightName": "Alex Gavin",
+        "playerRightSlug": "alex-gavin",
+        "playerRankChangeLeft": -3,
+        "playerRankChangeRight": 5,
+        "player": "Alex Gavin",
+        "playerSlug": "alex-gavin",
+        "opponent": "Mark Rawson",
+        "opponentSlug": "mark-rawson",
+        "playerScore": 3,
+        "opponentScore": 1,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44322,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "James Astle",
+        "playerLeftSlug": "james-astle",
+        "playerRightName": "Alex Gavin",
+        "playerRightSlug": "alex-gavin",
+        "playerRankChangeLeft": -11,
+        "playerRankChangeRight": 17,
+        "player": "Alex Gavin",
+        "playerSlug": "alex-gavin",
+        "opponent": "James Astle",
+        "opponentSlug": "james-astle",
         "playerScore": 3,
         "opponentScore": 0,
         "result": "W",
@@ -76131,6 +76440,63 @@
         "fixtureKey": null
       },
       {
+        "id": 44315,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Mark Rawson",
+        "playerLeftSlug": "mark-rawson",
+        "playerRightName": "Jacob Milnes",
+        "playerRightSlug": "jacob-milnes",
+        "playerRankChangeLeft": 3,
+        "playerRankChangeRight": -2,
+        "player": "Jacob Milnes",
+        "playerSlug": "jacob-milnes",
+        "opponent": "Mark Rawson",
+        "opponentSlug": "mark-rawson",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44317,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "James Astle",
+        "playerLeftSlug": "james-astle",
+        "playerRightName": "Jacob Milnes",
+        "playerRightSlug": "jacob-milnes",
+        "playerRankChangeLeft": 0,
+        "playerRankChangeRight": 0,
+        "player": "Jacob Milnes",
+        "playerSlug": "jacob-milnes",
+        "opponent": "James Astle",
+        "opponentSlug": "james-astle",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44320,
+        "scoreLeft": 2,
+        "scoreRight": 3,
+        "playerLeftName": "Phillip Austin",
+        "playerLeftSlug": "austin-phillip",
+        "playerRightName": "Jacob Milnes",
+        "playerRightSlug": "jacob-milnes",
+        "playerRankChangeLeft": -17,
+        "playerRankChangeRight": 26,
+        "player": "Jacob Milnes",
+        "playerSlug": "jacob-milnes",
+        "opponent": "Phillip Austin",
+        "opponentSlug": "austin-phillip",
+        "playerScore": 3,
+        "opponentScore": 2,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
         "id": 43004,
         "scoreLeft": 3,
         "scoreRight": 2,
@@ -80229,6 +80595,63 @@
         "playerSlug": "robyn-west",
         "opponent": "Stuart Oliver",
         "opponentSlug": "stuart_oliver",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44313,
+        "scoreLeft": 3,
+        "scoreRight": 2,
+        "playerLeftName": "James Astle",
+        "playerLeftSlug": "james-astle",
+        "playerRightName": "Roman Mychajlshyn",
+        "playerRightSlug": "roman-mychajlshyn",
+        "playerRankChangeLeft": 5,
+        "playerRankChangeRight": -3,
+        "player": "Roman Mychajlshyn",
+        "playerSlug": "roman-mychajlshyn",
+        "opponent": "James Astle",
+        "opponentSlug": "james-astle",
+        "playerScore": 2,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44316,
+        "scoreLeft": 0,
+        "scoreRight": 3,
+        "playerLeftName": "Phillip Austin",
+        "playerLeftSlug": "austin-phillip",
+        "playerRightName": "Roman Mychajlshyn",
+        "playerRightSlug": "roman-mychajlshyn",
+        "playerRankChangeLeft": -4,
+        "playerRankChangeRight": 6,
+        "player": "Roman Mychajlshyn",
+        "playerSlug": "roman-mychajlshyn",
+        "opponent": "Phillip Austin",
+        "opponentSlug": "austin-phillip",
+        "playerScore": 3,
+        "opponentScore": 0,
+        "result": "W",
+        "fixtureKey": null
+      },
+      {
+        "id": 44321,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Mark Rawson",
+        "playerLeftSlug": "mark-rawson",
+        "playerRightName": "Roman Mychajlshyn",
+        "playerRightSlug": "roman-mychajlshyn",
+        "playerRankChangeLeft": 12,
+        "playerRankChangeRight": -8,
+        "player": "Roman Mychajlshyn",
+        "playerSlug": "roman-mychajlshyn",
+        "opponent": "Mark Rawson",
+        "opponentSlug": "mark-rawson",
         "playerScore": 0,
         "opponentScore": 3,
         "result": "L",
@@ -86163,11 +86586,11 @@
         "venueName": "Hyndburn Leisure Centre",
         "venueSlug": "hyndburn-leisure-centre",
         "venueLocation": "https://maps.app.goo.gl/EwvviMzKi7HQpyom6",
-        "scoreLeft": null,
+        "scoreLeft": 17,
         "teamRightName": "KSB Jaguars",
         "teamRightSlug": "ksb-jaguars",
-        "scoreRight": null,
-        "timeFulfilled": null,
+        "scoreRight": 20,
+        "timeFulfilled": 1794533119,
         "weekId": 9
       },
       {
@@ -91191,11 +91614,11 @@
             "venueName": "Hyndburn Leisure Centre",
             "venueSlug": "hyndburn-leisure-centre",
             "venueLocation": "https://maps.app.goo.gl/EwvviMzKi7HQpyom6",
-            "scoreLeft": null,
+            "scoreLeft": 17,
             "teamRightName": "KSB Jaguars",
             "teamRightSlug": "ksb-jaguars",
-            "scoreRight": null,
-            "timeFulfilled": null,
+            "scoreRight": 20,
+            "timeFulfilled": 1794533119,
             "weekId": 9
           }
         ]
@@ -93171,27 +93594,27 @@
           "t": "Whalley Ospreys",
           "w": 7,
           "d": 0,
-          "l": 0,
-          "pl": 7,
-          "pts": 172
+          "l": 1,
+          "pl": 8,
+          "pts": 189
         },
         {
           "p": 2,
+          "t": "KSB Jaguars",
+          "w": 6,
+          "d": 0,
+          "l": 2,
+          "pl": 8,
+          "pts": 183
+        },
+        {
+          "p": 3,
           "t": "Hyndburn TTC A",
           "w": 4,
           "d": 0,
           "l": 4,
           "pl": 8,
           "pts": 166
-        },
-        {
-          "p": 3,
-          "t": "KSB Jaguars",
-          "w": 5,
-          "d": 0,
-          "l": 2,
-          "pl": 7,
-          "pts": 163
         },
         {
           "p": 4,
@@ -104975,24 +105398,24 @@
         "setDifference": 127
       },
       "currentSeason": {
-        "played": 33,
-        "wins": 28,
+        "played": 36,
+        "wins": 31,
         "draws": 0,
         "losses": 5,
-        "winPercentage": 84.85,
-        "setsWon": 89,
-        "setsLost": 39,
-        "setDifference": 50
+        "winPercentage": 86.11,
+        "setsWon": 98,
+        "setsLost": 40,
+        "setDifference": 58
       },
       "career": {
-        "played": 105,
-        "wins": 87,
+        "played": 108,
+        "wins": 90,
         "draws": 0,
         "losses": 18,
-        "setsWon": 276,
-        "setsLost": 99,
-        "winPercentage": 82.86,
-        "setDifference": 177
+        "setsWon": 285,
+        "setsLost": 100,
+        "winPercentage": 83.33,
+        "setDifference": 185
       },
       "seasons": {
         "2024": {
@@ -107848,7 +108271,7 @@
             "id": 697,
             "name": "Alex Gavin",
             "slug": "alex-gavin",
-            "rank": 1522,
+            "rank": 1547,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 97,
@@ -107858,14 +108281,14 @@
           },
           "team": {},
           "statistics": {
-            "played": 33,
-            "wins": 28,
+            "played": 36,
+            "wins": 31,
             "draws": 0,
             "losses": 5,
-            "winPercentage": 84.85,
-            "setsWon": 89,
-            "setsLost": 39,
-            "setDifference": 50,
+            "winPercentage": 86.11,
+            "setsWon": 98,
+            "setsLost": 40,
+            "setDifference": 58,
             "opponents": [
               {
                 "name": "Adam Hek",
@@ -107940,6 +108363,15 @@
                 "winPercentage": 100.0
               },
               {
+                "name": "James Astle",
+                "slug": "james-astle",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
                 "name": "John Hayhurst",
                 "slug": "john-hayhurst",
                 "played": 1,
@@ -107969,6 +108401,15 @@
               {
                 "name": "Mark Hanson",
                 "slug": "mark-hanson",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
+                "name": "Mark Rawson",
+                "slug": "mark-rawson",
                 "played": 1,
                 "wins": 1,
                 "draws": 0,
@@ -108082,6 +108523,15 @@
                 "draws": 0,
                 "losses": 1,
                 "winPercentage": 0.0
+              },
+              {
+                "name": "Phillip Austin",
+                "slug": "austin-phillip",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
               },
               {
                 "name": "Sam Bradshaw",
@@ -108353,6 +108803,63 @@
                 "playerSlug": "alex-gavin",
                 "opponent": "Susan Crook",
                 "opponentSlug": "susan_crook",
+                "playerScore": 3,
+                "opponentScore": 0,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44314,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Phillip Austin",
+                "playerLeftSlug": "austin-phillip",
+                "playerRightName": "Alex Gavin",
+                "playerRightSlug": "alex-gavin",
+                "playerRankChangeLeft": -2,
+                "playerRankChangeRight": 3,
+                "player": "Alex Gavin",
+                "playerSlug": "alex-gavin",
+                "opponent": "Phillip Austin",
+                "opponentSlug": "austin-phillip",
+                "playerScore": 3,
+                "opponentScore": 0,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44319,
+                "scoreLeft": 1,
+                "scoreRight": 3,
+                "playerLeftName": "Mark Rawson",
+                "playerLeftSlug": "mark-rawson",
+                "playerRightName": "Alex Gavin",
+                "playerRightSlug": "alex-gavin",
+                "playerRankChangeLeft": -3,
+                "playerRankChangeRight": 5,
+                "player": "Alex Gavin",
+                "playerSlug": "alex-gavin",
+                "opponent": "Mark Rawson",
+                "opponentSlug": "mark-rawson",
+                "playerScore": 3,
+                "opponentScore": 1,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44322,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "James Astle",
+                "playerLeftSlug": "james-astle",
+                "playerRightName": "Alex Gavin",
+                "playerRightSlug": "alex-gavin",
+                "playerRankChangeLeft": -11,
+                "playerRankChangeRight": 17,
+                "player": "Alex Gavin",
+                "playerSlug": "alex-gavin",
+                "opponent": "James Astle",
+                "opponentSlug": "james-astle",
                 "playerScore": 3,
                 "opponentScore": 0,
                 "result": "W",
@@ -358051,24 +358558,24 @@
         "setDifference": 55
       },
       "currentSeason": {
-        "played": 18,
-        "wins": 6,
+        "played": 21,
+        "wins": 7,
         "draws": 0,
-        "losses": 12,
+        "losses": 14,
         "winPercentage": 33.33,
-        "setsWon": 27,
-        "setsLost": 42,
-        "setDifference": -15
+        "setsWon": 30,
+        "setsLost": 50,
+        "setDifference": -20
       },
       "career": {
-        "played": 99,
-        "wins": 56,
+        "played": 102,
+        "wins": 57,
         "draws": 0,
-        "losses": 43,
-        "setsWon": 202,
-        "setsLost": 162,
-        "winPercentage": 56.57,
-        "setDifference": 40
+        "losses": 45,
+        "setsWon": 205,
+        "setsLost": 170,
+        "winPercentage": 55.88,
+        "setDifference": 35
       },
       "seasons": {
         "2024": {
@@ -361122,7 +361629,7 @@
             "id": 695,
             "name": "Jacob Milnes",
             "slug": "jacob-milnes",
-            "rank": 961,
+            "rank": 985,
             "phoneMobile": "07834043694",
             "phoneLandline": "",
             "teamId": 97,
@@ -361132,14 +361639,14 @@
           },
           "team": {},
           "statistics": {
-            "played": 18,
-            "wins": 6,
+            "played": 21,
+            "wins": 7,
             "draws": 0,
-            "losses": 12,
+            "losses": 14,
             "winPercentage": 33.33,
-            "setsWon": 27,
-            "setsLost": 42,
-            "setDifference": -15,
+            "setsWon": 30,
+            "setsLost": 50,
+            "setDifference": -20,
             "opponents": [
               {
                 "name": "Adam Hek",
@@ -361205,6 +361712,15 @@
                 "winPercentage": 100.0
               },
               {
+                "name": "James Astle",
+                "slug": "james-astle",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
                 "name": "John Hayhurst",
                 "slug": "john-hayhurst",
                 "played": 1,
@@ -361216,6 +361732,15 @@
               {
                 "name": "Lee Ash",
                 "slug": "lee-ash",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Mark Rawson",
+                "slug": "mark-rawson",
                 "played": 1,
                 "wins": 0,
                 "draws": 0,
@@ -361257,6 +361782,15 @@
                 "draws": 0,
                 "losses": 1,
                 "winPercentage": 0.0
+              },
+              {
+                "name": "Phillip Austin",
+                "slug": "austin-phillip",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
               },
               {
                 "name": "Sam Bradshaw",
@@ -361305,6 +361839,63 @@
               }
             ],
             "encounters": [
+              {
+                "id": 44315,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Mark Rawson",
+                "playerLeftSlug": "mark-rawson",
+                "playerRightName": "Jacob Milnes",
+                "playerRightSlug": "jacob-milnes",
+                "playerRankChangeLeft": 3,
+                "playerRankChangeRight": -2,
+                "player": "Jacob Milnes",
+                "playerSlug": "jacob-milnes",
+                "opponent": "Mark Rawson",
+                "opponentSlug": "mark-rawson",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44317,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "James Astle",
+                "playerLeftSlug": "james-astle",
+                "playerRightName": "Jacob Milnes",
+                "playerRightSlug": "jacob-milnes",
+                "playerRankChangeLeft": 0,
+                "playerRankChangeRight": 0,
+                "player": "Jacob Milnes",
+                "playerSlug": "jacob-milnes",
+                "opponent": "James Astle",
+                "opponentSlug": "james-astle",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44320,
+                "scoreLeft": 2,
+                "scoreRight": 3,
+                "playerLeftName": "Phillip Austin",
+                "playerLeftSlug": "austin-phillip",
+                "playerRightName": "Jacob Milnes",
+                "playerRightSlug": "jacob-milnes",
+                "playerRankChangeLeft": -17,
+                "playerRankChangeRight": 26,
+                "player": "Jacob Milnes",
+                "playerSlug": "jacob-milnes",
+                "opponent": "Phillip Austin",
+                "opponentSlug": "austin-phillip",
+                "playerScore": 3,
+                "opponentScore": 2,
+                "result": "W",
+                "fixtureKey": null
+              },
               {
                 "id": 43004,
                 "scoreLeft": 3,
@@ -657568,24 +658159,24 @@
         "setDifference": 0
       },
       "currentSeason": {
-        "played": 15,
-        "wins": 12,
+        "played": 18,
+        "wins": 13,
         "draws": 0,
-        "losses": 3,
-        "winPercentage": 80.0,
-        "setsWon": 39,
-        "setsLost": 20,
-        "setDifference": 19
+        "losses": 5,
+        "winPercentage": 72.22,
+        "setsWon": 44,
+        "setsLost": 26,
+        "setDifference": 18
       },
       "career": {
-        "played": 15,
-        "wins": 12,
+        "played": 18,
+        "wins": 13,
         "draws": 0,
-        "losses": 3,
-        "setsWon": 39,
-        "setsLost": 20,
-        "winPercentage": 80.0,
-        "setDifference": 19
+        "losses": 5,
+        "setsWon": 44,
+        "setsLost": 26,
+        "winPercentage": 72.22,
+        "setDifference": 18
       },
       "seasons": {
         "2026": {
@@ -657594,7 +658185,7 @@
             "id": 227,
             "name": "Roman Mychajlshyn",
             "slug": "roman-mychajlshyn",
-            "rank": 1326,
+            "rank": 1321,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 97,
@@ -657604,14 +658195,14 @@
           },
           "team": {},
           "statistics": {
-            "played": 15,
-            "wins": 12,
+            "played": 18,
+            "wins": 13,
             "draws": 0,
-            "losses": 3,
-            "winPercentage": 80.0,
-            "setsWon": 39,
-            "setsLost": 20,
-            "setDifference": 19,
+            "losses": 5,
+            "winPercentage": 72.22,
+            "setsWon": 44,
+            "setsLost": 26,
+            "setDifference": 18,
             "opponents": [
               {
                 "name": "Adam Hek",
@@ -657648,6 +658239,24 @@
                 "draws": 0,
                 "losses": 0,
                 "winPercentage": 100.0
+              },
+              {
+                "name": "James Astle",
+                "slug": "james-astle",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Mark Rawson",
+                "slug": "mark-rawson",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
               },
               {
                 "name": "Martin Fox",
@@ -657704,6 +658313,15 @@
                 "winPercentage": 100.0
               },
               {
+                "name": "Phillip Austin",
+                "slug": "austin-phillip",
+                "played": 1,
+                "wins": 1,
+                "draws": 0,
+                "losses": 0,
+                "winPercentage": 100.0
+              },
+              {
                 "name": "Sam Bradshaw",
                 "slug": "sam-bradshaw",
                 "played": 1,
@@ -657750,6 +658368,63 @@
               }
             ],
             "encounters": [
+              {
+                "id": 44313,
+                "scoreLeft": 3,
+                "scoreRight": 2,
+                "playerLeftName": "James Astle",
+                "playerLeftSlug": "james-astle",
+                "playerRightName": "Roman Mychajlshyn",
+                "playerRightSlug": "roman-mychajlshyn",
+                "playerRankChangeLeft": 5,
+                "playerRankChangeRight": -3,
+                "player": "Roman Mychajlshyn",
+                "playerSlug": "roman-mychajlshyn",
+                "opponent": "James Astle",
+                "opponentSlug": "james-astle",
+                "playerScore": 2,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44316,
+                "scoreLeft": 0,
+                "scoreRight": 3,
+                "playerLeftName": "Phillip Austin",
+                "playerLeftSlug": "austin-phillip",
+                "playerRightName": "Roman Mychajlshyn",
+                "playerRightSlug": "roman-mychajlshyn",
+                "playerRankChangeLeft": -4,
+                "playerRankChangeRight": 6,
+                "player": "Roman Mychajlshyn",
+                "playerSlug": "roman-mychajlshyn",
+                "opponent": "Phillip Austin",
+                "opponentSlug": "austin-phillip",
+                "playerScore": 3,
+                "opponentScore": 0,
+                "result": "W",
+                "fixtureKey": null
+              },
+              {
+                "id": 44321,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Mark Rawson",
+                "playerLeftSlug": "mark-rawson",
+                "playerRightName": "Roman Mychajlshyn",
+                "playerRightSlug": "roman-mychajlshyn",
+                "playerRankChangeLeft": 12,
+                "playerRankChangeRight": -8,
+                "player": "Roman Mychajlshyn",
+                "playerSlug": "roman-mychajlshyn",
+                "opponent": "Mark Rawson",
+                "opponentSlug": "mark-rawson",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
               {
                 "id": 43433,
                 "scoreLeft": 1,
