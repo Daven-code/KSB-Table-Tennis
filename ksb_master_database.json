@@ -23,7 +23,7 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-11-17T22:25:38.308136+00:00",
+    "lastUpdated": "2026-11-18T04:23:02.398062+00:00",
     "livePlayerCount": 70,
     "liveEncounterCount": 849
   },
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-11-17T22:25:36.419205+00:00",
+    "lastUpdated": "2026-11-18T04:22:59.925305+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -94029,21 +94029,21 @@
         },
         {
           "p": 3,
+          "t": "Whalley Eagles",
+          "w": 6,
+          "d": 0,
+          "l": 2,
+          "pl": 8,
+          "pts": 158
+        },
+        {
+          "p": 4,
           "t": "Gladiators",
           "w": 5,
           "d": 0,
           "l": 3,
           "pl": 8,
           "pts": 154
-        },
-        {
-          "p": 4,
-          "t": "Whalley Eagles",
-          "w": 5,
-          "d": 0,
-          "l": 2,
-          "pl": 7,
-          "pts": 136
         },
         {
           "p": 5,
@@ -94083,21 +94083,21 @@
         },
         {
           "p": 9,
+          "t": "Whalley Kestrels",
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "pl": 6,
+          "pts": 92
+        },
+        {
+          "p": 10,
           "t": "Vanguard Raptors",
           "w": 1,
           "d": 0,
           "l": 5,
           "pl": 6,
           "pts": 86
-        },
-        {
-          "p": 10,
-          "t": "Whalley Kestrels",
-          "w": 0,
-          "d": 0,
-          "l": 5,
-          "pl": 5,
-          "pts": 71
         }
       ],
       "first": [
