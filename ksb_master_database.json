@@ -23,7 +23,7 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-11-23T09:06:24.548870+00:00",
+    "lastUpdated": "2026-11-23T21:26:28.602956+00:00",
     "livePlayerCount": 70,
     "liveEncounterCount": 849
   },
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-11-23T09:06:23.510923+00:00",
+    "lastUpdated": "2026-11-23T21:26:26.132266+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -34024,6 +34024,12 @@
                 "weekId": 24
               }
             ]
+          },
+          {
+            "id": 39,
+            "timeStart": 1803171600,
+            "type": 11,
+            "fixtures": []
           },
           {
             "id": 25,
@@ -34818,6 +34824,12 @@
             ]
           },
           {
+            "id": 39,
+            "timeStart": 1803171600,
+            "type": 11,
+            "fixtures": []
+          },
+          {
             "id": 25,
             "timeStart": 1803772800,
             "type": 1,
@@ -35605,6 +35617,12 @@
             ]
           },
           {
+            "id": 39,
+            "timeStart": 1803171600,
+            "type": 11,
+            "fixtures": []
+          },
+          {
             "id": 25,
             "timeStart": 1803772800,
             "type": 1,
@@ -36385,6 +36403,12 @@
                 "weekId": 24
               }
             ]
+          },
+          {
+            "id": 39,
+            "timeStart": 1803171600,
+            "type": 11,
+            "fixtures": []
           },
           {
             "id": 25,
@@ -37179,6 +37203,12 @@
             ]
           },
           {
+            "id": 39,
+            "timeStart": 1803171600,
+            "type": 11,
+            "fixtures": []
+          },
+          {
             "id": 25,
             "timeStart": 1803772800,
             "type": 1,
@@ -37964,6 +37994,12 @@
                 "weekId": 24
               }
             ]
+          },
+          {
+            "id": 39,
+            "timeStart": 1803171600,
+            "type": 11,
+            "fixtures": []
           },
           {
             "id": 25,
@@ -38753,6 +38789,12 @@
             ]
           },
           {
+            "id": 39,
+            "timeStart": 1803171600,
+            "type": 11,
+            "fixtures": []
+          },
+          {
             "id": 25,
             "timeStart": 1803772800,
             "type": 1,
@@ -39538,6 +39580,12 @@
                 "weekId": 24
               }
             ]
+          },
+          {
+            "id": 39,
+            "timeStart": 1803171600,
+            "type": 11,
+            "fixtures": []
           },
           {
             "id": 25,
@@ -40332,6 +40380,12 @@
             ]
           },
           {
+            "id": 39,
+            "timeStart": 1803171600,
+            "type": 11,
+            "fixtures": []
+          },
+          {
             "id": 25,
             "timeStart": 1803772800,
             "type": 1,
@@ -41122,6 +41176,12 @@
                 "weekId": 24
               }
             ]
+          },
+          {
+            "id": 39,
+            "timeStart": 1803171600,
+            "type": 11,
+            "fixtures": []
           },
           {
             "id": 25,
@@ -41936,6 +41996,12 @@
             ]
           },
           {
+            "id": 39,
+            "timeStart": 1803171600,
+            "type": 11,
+            "fixtures": []
+          },
+          {
             "id": 25,
             "timeStart": 1803772800,
             "type": 1,
@@ -42726,6 +42792,12 @@
                 "weekId": 24
               }
             ]
+          },
+          {
+            "id": 39,
+            "timeStart": 1803171600,
+            "type": 11,
+            "fixtures": []
           },
           {
             "id": 25,
@@ -88550,6 +88622,12 @@
         ]
       },
       {
+        "id": 39,
+        "timeStart": 1803171600,
+        "type": 11,
+        "fixtures": []
+      },
+      {
         "id": 25,
         "timeStart": 1803772800,
         "type": 1,
@@ -89034,6 +89112,12 @@
             "weekId": 24
           }
         ]
+      },
+      {
+        "id": 39,
+        "timeStart": 1803171600,
+        "type": 11,
+        "fixtures": []
       },
       {
         "id": 25,
@@ -89522,6 +89606,12 @@
         ]
       },
       {
+        "id": 39,
+        "timeStart": 1803171600,
+        "type": 11,
+        "fixtures": []
+      },
+      {
         "id": 25,
         "timeStart": 1803772800,
         "type": 1,
@@ -90006,6 +90096,12 @@
             "weekId": 24
           }
         ]
+      },
+      {
+        "id": 39,
+        "timeStart": 1803171600,
+        "type": 11,
+        "fixtures": []
       },
       {
         "id": 25,
@@ -90494,6 +90590,12 @@
         ]
       },
       {
+        "id": 39,
+        "timeStart": 1803171600,
+        "type": 11,
+        "fixtures": []
+      },
+      {
         "id": 25,
         "timeStart": 1803772800,
         "type": 1,
@@ -90978,6 +91080,12 @@
             "weekId": 24
           }
         ]
+      },
+      {
+        "id": 39,
+        "timeStart": 1803171600,
+        "type": 11,
+        "fixtures": []
       },
       {
         "id": 25,
@@ -91466,6 +91574,12 @@
         ]
       },
       {
+        "id": 39,
+        "timeStart": 1803171600,
+        "type": 11,
+        "fixtures": []
+      },
+      {
         "id": 25,
         "timeStart": 1803772800,
         "type": 1,
@@ -91950,6 +92064,12 @@
             "weekId": 24
           }
         ]
+      },
+      {
+        "id": 39,
+        "timeStart": 1803171600,
+        "type": 11,
+        "fixtures": []
       },
       {
         "id": 25,
@@ -92438,6 +92558,12 @@
         ]
       },
       {
+        "id": 39,
+        "timeStart": 1803171600,
+        "type": 11,
+        "fixtures": []
+      },
+      {
         "id": 25,
         "timeStart": 1803772800,
         "type": 1,
@@ -92922,6 +93048,12 @@
             "weekId": 24
           }
         ]
+      },
+      {
+        "id": 39,
+        "timeStart": 1803171600,
+        "type": 11,
+        "fixtures": []
       },
       {
         "id": 25,
@@ -93410,6 +93542,12 @@
         ]
       },
       {
+        "id": 39,
+        "timeStart": 1803171600,
+        "type": 11,
+        "fixtures": []
+      },
+      {
         "id": 25,
         "timeStart": 1803772800,
         "type": 1,
@@ -93894,6 +94032,12 @@
             "weekId": 24
           }
         ]
+      },
+      {
+        "id": 39,
+        "timeStart": 1803171600,
+        "type": 11,
+        "fixtures": []
       },
       {
         "id": 25,
