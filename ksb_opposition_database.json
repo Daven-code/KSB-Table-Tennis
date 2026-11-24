@@ -23,13 +23,13 @@
     "historicStartSeason": 2013,
     "historicEndSeason": 2025,
     "currentSeason": 2026,
-    "oppositionPlayerCount": 485,
+    "oppositionPlayerCount": 484,
     "oppositionTeamCount": 111,
-    "ksbEncounterCount": 13285,
-    "enrichedEncounterCount": 13285,
-    "successfulApiLookupsThisRun": 0,
+    "ksbEncounterCount": 13294,
+    "enrichedEncounterCount": 13294,
+    "successfulApiLookupsThisRun": 1,
     "failedApiLookupsThisRun": 0,
-    "lastUpdated": "2026-11-24T06:04:56.503941+00:00"
+    "lastUpdated": "2026-11-24T17:47:25.565785+00:00"
   },
   "players": {
     "aamir-gondal": {
@@ -317244,7 +317244,7 @@
       "name": "Matt Innes-Wilkin",
       "slug": "matt-innes-wilkin",
       "firstKnownKSBSeason": 2022,
-      "lastKnownKSBSeason": 2025,
+      "lastKnownKSBSeason": 2026,
       "teamHistory": [
         {
           "season": 2022,
@@ -317329,23 +317329,45 @@
             "url": "https://eastlancstt.org.uk/api/result/2025/player/matt-innes-wilkin",
             "status": "success"
           }
+        },
+        {
+          "season": 2026,
+          "player": {
+            "id": 611,
+            "name": "Matt Innes-Wilkin",
+            "slug": "matt-innes-wilkin",
+            "rank": 385
+          },
+          "team": {
+            "id": 43,
+            "name": "Whalley Merlins",
+            "slug": "whalley-merlins",
+            "divisionId": 4,
+            "division": null,
+            "rank": 385
+          },
+          "api": {
+            "url": "https://eastlancstt.org.uk/api/result/2026/player/matt-innes-wilkin",
+            "status": "success"
+          }
         }
       ],
       "ksbSeasons": [
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "ksbCareer": {
-        "played": 20,
+        "played": 23,
         "wins": 13,
         "draws": 0,
-        "losses": 7,
-        "winPercentage": 65.0,
+        "losses": 10,
+        "winPercentage": 56.52,
         "setsWon": 45,
-        "setsLost": 25,
-        "setDifference": 20
+        "setsLost": 34,
+        "setDifference": 11
       },
       "ksbBySeason": {
         "2022": {
@@ -317387,6 +317409,16 @@
           "setsWon": 10,
           "setsLost": 6,
           "setDifference": 4
+        },
+        "2026": {
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "winPercentage": 0.0,
+          "setsWon": 0,
+          "setsLost": 9,
+          "setDifference": -9
         }
       },
       "ksbByTeam": {
@@ -317461,6 +317493,18 @@
           "setsWon": 4,
           "setsLost": 3,
           "setDifference": 1
+        },
+        "unknown": {
+          "name": "unknown",
+          "slug": "unknown",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "winPercentage": 0.0,
+          "setsWon": 0,
+          "setsLost": 9,
+          "setDifference": -9
         }
       },
       "ksbEncounters": [
@@ -318009,6 +318053,38 @@
           "opponentRank": 439
         },
         {
+          "id": 44404,
+          "season": 2026,
+          "ksbPlayer": "Oliver Ingham",
+          "ksbPlayerSlug": "oliver-ingham",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Matt Innes-Wilkin",
+          "playerLeftSlug": "matt-innes-wilkin",
+          "playerRightName": "Oliver Ingham",
+          "playerRightSlug": "oliver-ingham",
+          "playerRankChangeLeft": 3,
+          "playerRankChangeRight": -2,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Matt Innes-Wilkin",
+          "opponentSlug": "matt-innes-wilkin",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 43,
+            "name": "Whalley Merlins",
+            "slug": "whalley-merlins",
+            "divisionId": 4,
+            "division": null,
+            "rank": 385
+          },
+          "opponentDivision": null,
+          "opponentRank": 385
+        },
+        {
           "id": 37435,
           "season": 2024,
           "ksbPlayer": "Sam Bradshaw",
@@ -318103,6 +318179,70 @@
           },
           "opponentDivision": null,
           "opponentRank": 439
+        },
+        {
+          "id": 44406,
+          "season": 2026,
+          "ksbPlayer": "Lydia Blackburn",
+          "ksbPlayerSlug": "lydia-blackburn",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Matt Innes-Wilkin",
+          "playerLeftSlug": "matt-innes-wilkin",
+          "playerRightName": "Lydia Blackburn",
+          "playerRightSlug": "lydia-blackburn",
+          "playerRankChangeLeft": 3,
+          "playerRankChangeRight": -2,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Matt Innes-Wilkin",
+          "opponentSlug": "matt-innes-wilkin",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 43,
+            "name": "Whalley Merlins",
+            "slug": "whalley-merlins",
+            "divisionId": 4,
+            "division": null,
+            "rank": 385
+          },
+          "opponentDivision": null,
+          "opponentRank": 385
+        },
+        {
+          "id": 44410,
+          "season": 2026,
+          "ksbPlayer": "Olivia Sanders",
+          "ksbPlayerSlug": "olivia-sanders",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Matt Innes-Wilkin",
+          "playerLeftSlug": "matt-innes-wilkin",
+          "playerRightName": "Olivia Sanders",
+          "playerRightSlug": "olivia-sanders",
+          "playerRankChangeLeft": 3,
+          "playerRankChangeRight": -2,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Matt Innes-Wilkin",
+          "opponentSlug": "matt-innes-wilkin",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 43,
+            "name": "Whalley Merlins",
+            "slug": "whalley-merlins",
+            "divisionId": 4,
+            "division": null,
+            "rank": 385
+          },
+          "opponentDivision": null,
+          "opponentRank": 385
         }
       ],
       "apiStatus": "success",
@@ -385358,99 +385498,6 @@
       "apiStatus": "success",
       "teamHistoryComplete": true
     },
-    "paulina_gauweda": {
-      "name": "Paulina Gauweda",
-      "slug": "paulina_gauweda",
-      "firstKnownKSBSeason": 2026,
-      "lastKnownKSBSeason": 2026,
-      "teamHistory": [
-        {
-          "season": 2026,
-          "player": {
-            "name": "Paulina Gauweda",
-            "slug": "paulina_gauweda"
-          },
-          "team": {
-            "name": "Burnley Dragon Flies",
-            "slug": "burnley-dragon-flies"
-          },
-          "api": {
-            "status": "derived-from-exact-fixture"
-          }
-        }
-      ],
-      "ksbSeasons": [
-        2026
-      ],
-      "ksbCareer": {
-        "played": 1,
-        "wins": 0,
-        "draws": 0,
-        "losses": 1,
-        "winPercentage": 0.0,
-        "setsWon": 0,
-        "setsLost": 3,
-        "setDifference": -3
-      },
-      "ksbBySeason": {
-        "2026": {
-          "played": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "winPercentage": 0.0,
-          "setsWon": 0,
-          "setsLost": 3,
-          "setDifference": -3
-        }
-      },
-      "ksbByTeam": {
-        "unknown": {
-          "name": "unknown",
-          "slug": "unknown",
-          "played": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "winPercentage": 0.0,
-          "setsWon": 0,
-          "setsLost": 3,
-          "setDifference": -3
-        }
-      },
-      "ksbEncounters": [
-        {
-          "id": 43181,
-          "season": 2026,
-          "ksbPlayer": "Oliver Ingham",
-          "ksbPlayerSlug": "oliver-ingham",
-          "ksbTeam": null,
-          "ksbTeamSlug": null,
-          "scoreLeft": 3,
-          "scoreRight": 0,
-          "playerLeftName": "Paulina Gauweda",
-          "playerLeftSlug": "paulina_gauweda",
-          "playerRightName": "Oliver Ingham",
-          "playerRightSlug": "oliver-ingham",
-          "playerRankChangeLeft": 8,
-          "playerRankChangeRight": -5,
-          "ksbPlayerScore": 0,
-          "opponentScore": 3,
-          "resultForKSBPlayer": "L",
-          "opponent": "Paulina Gauweda",
-          "opponentSlug": "paulina_gauweda",
-          "fixtureKey": null,
-          "opponentTeam": {
-            "name": "Burnley Dragon Flies",
-            "slug": "burnley-dragon-flies"
-          },
-          "opponentDivision": null,
-          "opponentRank": null
-        }
-      ],
-      "apiStatus": "success",
-      "teamHistoryComplete": true
-    },
     "paulina_gaweda": {
       "name": "Paulina Gaweda",
       "slug": "paulina_gaweda",
@@ -385483,39 +385530,39 @@
         2026
       ],
       "ksbCareer": {
-        "played": 5,
+        "played": 6,
         "wins": 0,
         "draws": 0,
-        "losses": 5,
+        "losses": 6,
         "winPercentage": 0.0,
         "setsWon": 0,
-        "setsLost": 15,
-        "setDifference": -15
+        "setsLost": 18,
+        "setDifference": -18
       },
       "ksbBySeason": {
         "2026": {
-          "played": 5,
+          "played": 6,
           "wins": 0,
           "draws": 0,
-          "losses": 5,
+          "losses": 6,
           "winPercentage": 0.0,
           "setsWon": 0,
-          "setsLost": 15,
-          "setDifference": -15
+          "setsLost": 18,
+          "setDifference": -18
         }
       },
       "ksbByTeam": {
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 5,
+          "played": 6,
           "wins": 0,
           "draws": 0,
-          "losses": 5,
+          "losses": 6,
           "winPercentage": 0.0,
           "setsWon": 0,
-          "setsLost": 15,
-          "setDifference": -15
+          "setsLost": 18,
+          "setDifference": -18
         }
       },
       "ksbEncounters": [
@@ -385566,6 +385613,38 @@
           "playerRightSlug": "paulina_gaweda",
           "playerRankChangeLeft": -3,
           "playerRankChangeRight": 5,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Paulina Gaweda",
+          "opponentSlug": "paulina_gaweda",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 105,
+            "name": "Burnley Dragon Flies",
+            "slug": "burnley-dragon-flies",
+            "divisionId": 4,
+            "division": null,
+            "rank": 513
+          },
+          "opponentDivision": null,
+          "opponentRank": 513
+        },
+        {
+          "id": 43181,
+          "season": 2026,
+          "ksbPlayer": "Oliver Ingham",
+          "ksbPlayerSlug": "oliver-ingham",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Paulina Gaweda",
+          "playerLeftSlug": "paulina_gaweda",
+          "playerRightName": "Oliver Ingham",
+          "playerRightSlug": "oliver-ingham",
+          "playerRankChangeLeft": 8,
+          "playerRankChangeRight": -5,
           "ksbPlayerScore": 0,
           "opponentScore": 3,
           "resultForKSBPlayer": "L",
@@ -448341,14 +448420,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 57,
+        "played": 60,
         "wins": 32,
         "draws": 0,
-        "losses": 25,
-        "winPercentage": 56.14,
+        "losses": 28,
+        "winPercentage": 53.33,
         "setsWon": 117,
-        "setsLost": 85,
-        "setDifference": 32
+        "setsLost": 94,
+        "setDifference": 23
       },
       "ksbBySeason": {
         "2024": {
@@ -448372,14 +448451,14 @@
           "setDifference": 12
         },
         "2026": {
-          "played": 3,
+          "played": 6,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 6,
           "winPercentage": 0.0,
           "setsWon": 0,
-          "setsLost": 9,
-          "setDifference": -9
+          "setsLost": 18,
+          "setDifference": -18
         }
       },
       "ksbByTeam": {
@@ -448506,14 +448585,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
+          "played": 6,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 6,
           "winPercentage": 0.0,
           "setsWon": 0,
-          "setsLost": 9,
-          "setDifference": -9
+          "setsLost": 18,
+          "setDifference": -18
         }
       },
       "ksbEncounters": [
@@ -450078,6 +450157,34 @@
           "opponentRank": 447
         },
         {
+          "id": 44412,
+          "season": 2026,
+          "ksbPlayer": "Oliver Ingham",
+          "ksbPlayerSlug": "oliver-ingham",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Sam Bell",
+          "playerLeftSlug": "sam-bell",
+          "playerRightName": "Oliver Ingham",
+          "playerRightSlug": "oliver-ingham",
+          "playerRankChangeLeft": 2,
+          "playerRankChangeRight": -1,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Sam Bell",
+          "opponentSlug": "sam-bell",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Merlins",
+            "slug": "whalley-merlins"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
           "id": 36084,
           "season": 2024,
           "ksbPlayer": "Rosie Bacon",
@@ -450316,6 +450423,62 @@
           "playerRightSlug": "alice-hodgkinson",
           "playerRankChangeLeft": 3,
           "playerRankChangeRight": -2,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Sam Bell",
+          "opponentSlug": "sam-bell",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Merlins",
+            "slug": "whalley-merlins"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 44403,
+          "season": 2026,
+          "ksbPlayer": "Lydia Blackburn",
+          "ksbPlayerSlug": "lydia-blackburn",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Sam Bell",
+          "playerLeftSlug": "sam-bell",
+          "playerRightName": "Lydia Blackburn",
+          "playerRightSlug": "lydia-blackburn",
+          "playerRankChangeLeft": 2,
+          "playerRankChangeRight": -1,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Sam Bell",
+          "opponentSlug": "sam-bell",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "name": "Whalley Merlins",
+            "slug": "whalley-merlins"
+          },
+          "opponentDivision": null,
+          "opponentRank": null
+        },
+        {
+          "id": 44407,
+          "season": 2026,
+          "ksbPlayer": "Olivia Sanders",
+          "ksbPlayerSlug": "olivia-sanders",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Sam Bell",
+          "playerLeftSlug": "sam-bell",
+          "playerRightName": "Olivia Sanders",
+          "playerRightSlug": "olivia-sanders",
+          "playerRankChangeLeft": 2,
+          "playerRankChangeRight": -1,
           "ksbPlayerScore": 0,
           "opponentScore": 3,
           "resultForKSBPlayer": "L",
@@ -507911,14 +508074,14 @@
         2026
       ],
       "ksbCareer": {
-        "played": 75,
+        "played": 78,
         "wins": 43,
         "draws": 0,
-        "losses": 32,
-        "winPercentage": 57.33,
+        "losses": 35,
+        "winPercentage": 55.13,
         "setsWon": 148,
-        "setsLost": 115,
-        "setDifference": 33
+        "setsLost": 124,
+        "setDifference": 24
       },
       "ksbBySeason": {
         "2018": {
@@ -507992,14 +508155,14 @@
           "setDifference": -4
         },
         "2026": {
-          "played": 3,
+          "played": 6,
           "wins": 1,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 33.33,
+          "losses": 5,
+          "winPercentage": 16.67,
           "setsWon": 3,
-          "setsLost": 7,
-          "setDifference": -4
+          "setsLost": 16,
+          "setDifference": -13
         }
       },
       "ksbByTeam": {
@@ -508150,14 +508313,14 @@
         "unknown": {
           "name": "unknown",
           "slug": "unknown",
-          "played": 3,
+          "played": 6,
           "wins": 1,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 33.33,
+          "losses": 5,
+          "winPercentage": 16.67,
           "setsWon": 3,
-          "setsLost": 7,
-          "setDifference": -4
+          "setsLost": 16,
+          "setDifference": -13
         }
       },
       "ksbEncounters": [
@@ -509890,6 +510053,38 @@
           "opponentRank": 954
         },
         {
+          "id": 44409,
+          "season": 2026,
+          "ksbPlayer": "Oliver Ingham",
+          "ksbPlayerSlug": "oliver-ingham",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Tyrone Morgan",
+          "playerLeftSlug": "tyrone-morgan",
+          "playerRightName": "Oliver Ingham",
+          "playerRightSlug": "oliver-ingham",
+          "playerRankChangeLeft": 2,
+          "playerRankChangeRight": -1,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Tyrone Morgan",
+          "opponentSlug": "tyrone-morgan",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 43,
+            "name": "Whalley Merlins",
+            "slug": "whalley-merlins",
+            "divisionId": 4,
+            "division": null,
+            "rank": 583
+          },
+          "opponentDivision": null,
+          "opponentRank": 583
+        },
+        {
           "id": 42173,
           "season": 2025,
           "ksbPlayer": "Rosie Bacon",
@@ -510528,6 +510723,70 @@
           },
           "opponentDivision": null,
           "opponentRank": 770
+        },
+        {
+          "id": 44411,
+          "season": 2026,
+          "ksbPlayer": "Lydia Blackburn",
+          "ksbPlayerSlug": "lydia-blackburn",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Tyrone Morgan",
+          "playerLeftSlug": "tyrone-morgan",
+          "playerRightName": "Lydia Blackburn",
+          "playerRightSlug": "lydia-blackburn",
+          "playerRankChangeLeft": 2,
+          "playerRankChangeRight": -1,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Tyrone Morgan",
+          "opponentSlug": "tyrone-morgan",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 43,
+            "name": "Whalley Merlins",
+            "slug": "whalley-merlins",
+            "divisionId": 4,
+            "division": null,
+            "rank": 583
+          },
+          "opponentDivision": null,
+          "opponentRank": 583
+        },
+        {
+          "id": 44405,
+          "season": 2026,
+          "ksbPlayer": "Olivia Sanders",
+          "ksbPlayerSlug": "olivia-sanders",
+          "ksbTeam": null,
+          "ksbTeamSlug": null,
+          "scoreLeft": 3,
+          "scoreRight": 0,
+          "playerLeftName": "Tyrone Morgan",
+          "playerLeftSlug": "tyrone-morgan",
+          "playerRightName": "Olivia Sanders",
+          "playerRightSlug": "olivia-sanders",
+          "playerRankChangeLeft": 2,
+          "playerRankChangeRight": -1,
+          "ksbPlayerScore": 0,
+          "opponentScore": 3,
+          "resultForKSBPlayer": "L",
+          "opponent": "Tyrone Morgan",
+          "opponentSlug": "tyrone-morgan",
+          "fixtureKey": null,
+          "opponentTeam": {
+            "id": 43,
+            "name": "Whalley Merlins",
+            "slug": "whalley-merlins",
+            "divisionId": 4,
+            "division": null,
+            "rank": 583
+          },
+          "opponentDivision": null,
+          "opponentRank": 583
         },
         {
           "id": 44191,
@@ -520945,27 +521204,16 @@
           "setsLost": 7,
           "setDifference": -4
         },
-        "paulina_gauweda": {
-          "name": "Paulina Gauweda",
-          "played": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "winPercentage": 0.0,
-          "setsWon": 0,
-          "setsLost": 3,
-          "setDifference": -3
-        },
         "paulina_gaweda": {
           "name": "Paulina Gaweda",
-          "played": 5,
+          "played": 6,
           "wins": 0,
           "draws": 0,
-          "losses": 5,
+          "losses": 6,
           "winPercentage": 0.0,
           "setsWon": 0,
-          "setsLost": 15,
-          "setDifference": -15
+          "setsLost": 18,
+          "setDifference": -18
         }
       },
       "winPercentage": 11.11,
@@ -552230,15 +552478,15 @@
         "2017": 54,
         "2018": 48,
         "2013": 36,
-        "2026": 18,
+        "2026": 27,
         "2025": 105
       },
-      "played": 600,
+      "played": 609,
       "wins": 338,
       "draws": 0,
-      "losses": 262,
+      "losses": 271,
       "setsWon": 1184,
-      "setsLost": 943,
+      "setsLost": 970,
       "ksbPlayers": {
         "abby-sinkinson": {
           "name": "Abby Sinkinson",
@@ -552867,6 +553115,17 @@
           "setsLost": 4,
           "setDifference": 4
         },
+        "lydia-blackburn": {
+          "name": "Lydia Blackburn",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "winPercentage": 0.0,
+          "setsWon": 0,
+          "setsLost": 9,
+          "setDifference": -9
+        },
         "mahatru-thoppae": {
           "name": "Mahatru Thoppae",
           "played": 6,
@@ -552968,6 +553227,17 @@
         },
         "oliver-ingham": {
           "name": "Oliver Ingham",
+          "played": 6,
+          "wins": 0,
+          "draws": 0,
+          "losses": 6,
+          "winPercentage": 0.0,
+          "setsWon": 0,
+          "setsLost": 18,
+          "setDifference": -18
+        },
+        "olivia-sanders": {
+          "name": "Olivia Sanders",
           "played": 3,
           "wins": 0,
           "draws": 0,
@@ -553465,14 +553735,14 @@
         },
         "matt-innes-wilkin": {
           "name": "Matt Innes-Wilkin",
-          "played": 14,
+          "played": 17,
           "wins": 12,
           "draws": 0,
-          "losses": 2,
-          "winPercentage": 85.71,
+          "losses": 5,
+          "winPercentage": 70.59,
           "setsWon": 37,
-          "setsLost": 10,
-          "setDifference": 27
+          "setsLost": 19,
+          "setDifference": 18
         },
         "matt-large": {
           "name": "Matt Large",
@@ -553564,14 +553834,14 @@
         },
         "sam-bell": {
           "name": "Sam Bell",
-          "played": 57,
+          "played": 60,
           "wins": 32,
           "draws": 0,
-          "losses": 25,
-          "winPercentage": 56.14,
+          "losses": 28,
+          "winPercentage": 53.33,
           "setsWon": 117,
-          "setsLost": 85,
-          "setDifference": 32
+          "setsLost": 94,
+          "setDifference": 23
         },
         "sam-haworth": {
           "name": "Sam Haworth",
@@ -553608,14 +553878,14 @@
         },
         "tyrone-morgan": {
           "name": "Tyrone Morgan",
-          "played": 9,
+          "played": 12,
           "wins": 4,
           "draws": 0,
-          "losses": 5,
-          "winPercentage": 44.44,
+          "losses": 8,
+          "winPercentage": 33.33,
           "setsWon": 13,
-          "setsLost": 18,
-          "setDifference": -5
+          "setsLost": 27,
+          "setDifference": -14
         },
         "zac-van-der-heiden": {
           "name": "Zac Van Der Heiden",
@@ -553629,8 +553899,8 @@
           "setDifference": -7
         }
       },
-      "winPercentage": 56.33,
-      "setDifference": 241
+      "winPercentage": 55.5,
+      "setDifference": 214
     },
     "whalley-ospreys": {
       "name": "Whalley Ospreys",
@@ -554573,7 +554843,7 @@
     }
   },
   "provenance": {
-    "generatedAt": "2026-11-24T06:04:56.504131+00:00",
+    "generatedAt": "2026-11-24T17:47:25.565968+00:00",
     "ksbMasterDatabase": "ksb_master_database.json",
     "api": "https://eastlancstt.org.uk"
   }

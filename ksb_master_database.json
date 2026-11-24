@@ -23,9 +23,9 @@
     "currentSeason": 2026,
     "historicalPlayerCount": 138,
     "generatedAt": "2026-09-06T13:18:20.772313+00:00",
-    "lastUpdated": "2026-11-24T06:04:55.358180+00:00",
+    "lastUpdated": "2026-11-24T17:47:22.677035+00:00",
     "livePlayerCount": 70,
-    "liveEncounterCount": 849
+    "liveEncounterCount": 858
   },
   "historic": {
     "seasons": {
@@ -33325,7 +33325,7 @@
   "currentSeason": {
     "season": 2026,
     "status": "live",
-    "lastUpdated": "2026-11-24T06:04:53.872437+00:00",
+    "lastUpdated": "2026-11-24T17:47:19.107076+00:00",
     "teams": {
       "ksb-a": {
         "source": "https://eastlancstt.org.uk/api/result/2026/team/ksb-a",
@@ -41312,12 +41312,12 @@
           },
           {
             "name": "Oliver Ingham",
-            "rank": 69,
+            "rank": 65,
             "slug": "oliver-ingham"
           },
           {
             "name": "Lydia Blackburn",
-            "rank": 76,
+            "rank": 72,
             "slug": "lydia-blackburn"
           },
           {
@@ -41347,7 +41347,7 @@
           },
           {
             "name": "Olivia Sanders",
-            "rank": 66,
+            "rank": 62,
             "slug": "olivia-sanders"
           },
           {
@@ -41378,11 +41378,11 @@
             "venueName": "Whalley Village Hall",
             "venueSlug": "whalley-village-hall",
             "venueLocation": "https://maps.app.goo.gl/rHDBaPdMv6SjTar16",
-            "scoreLeft": null,
+            "scoreLeft": 30,
             "teamRightName": "KSB Leopards (Jun)",
             "teamRightSlug": "ksb-leopards-jun",
-            "scoreRight": null,
-            "timeFulfilled": null,
+            "scoreRight": 0,
+            "timeFulfilled": 1795518392,
             "weekId": 11
           },
           {
@@ -41803,11 +41803,11 @@
                 "venueName": "Whalley Village Hall",
                 "venueSlug": "whalley-village-hall",
                 "venueLocation": "https://maps.app.goo.gl/rHDBaPdMv6SjTar16",
-                "scoreLeft": null,
+                "scoreLeft": 30,
                 "teamRightName": "KSB Leopards (Jun)",
                 "teamRightSlug": "ksb-leopards-jun",
-                "scoreRight": null,
-                "timeFulfilled": null,
+                "scoreRight": 0,
+                "timeFulfilled": 1795518392,
                 "weekId": 11
               }
             ]
@@ -58131,7 +58131,7 @@
           "id": 779,
           "name": "Lydia Blackburn",
           "slug": "lydia-blackburn",
-          "rank": 76,
+          "rank": 72,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 86,
@@ -58141,14 +58141,14 @@
         },
         "team": {},
         "statistics": {
-          "played": 3,
+          "played": 6,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 6,
           "winPercentage": 0.0,
           "setsWon": 1,
-          "setsLost": 9,
-          "setDifference": -8,
+          "setsLost": 18,
+          "setDifference": -17,
           "opponents": [
             {
               "name": "Chris Wilkinson",
@@ -58169,8 +58169,35 @@
               "winPercentage": 0.0
             },
             {
+              "name": "Matt Innes-Wilkin",
+              "slug": "matt-innes-wilkin",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Sam Bell",
+              "slug": "sam-bell",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
               "name": "Stuart Oliver",
               "slug": "stuart_oliver",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Tyrone Morgan",
+              "slug": "tyrone-morgan",
               "played": 1,
               "wins": 0,
               "draws": 0,
@@ -58179,6 +58206,63 @@
             }
           ],
           "encounters": [
+            {
+              "id": 44403,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Sam Bell",
+              "playerLeftSlug": "sam-bell",
+              "playerRightName": "Lydia Blackburn",
+              "playerRightSlug": "lydia-blackburn",
+              "playerRankChangeLeft": 2,
+              "playerRankChangeRight": -1,
+              "player": "Lydia Blackburn",
+              "playerSlug": "lydia-blackburn",
+              "opponent": "Sam Bell",
+              "opponentSlug": "sam-bell",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44406,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Matt Innes-Wilkin",
+              "playerLeftSlug": "matt-innes-wilkin",
+              "playerRightName": "Lydia Blackburn",
+              "playerRightSlug": "lydia-blackburn",
+              "playerRankChangeLeft": 3,
+              "playerRankChangeRight": -2,
+              "player": "Lydia Blackburn",
+              "playerSlug": "lydia-blackburn",
+              "opponent": "Matt Innes-Wilkin",
+              "opponentSlug": "matt-innes-wilkin",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44411,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Tyrone Morgan",
+              "playerLeftSlug": "tyrone-morgan",
+              "playerRightName": "Lydia Blackburn",
+              "playerRightSlug": "lydia-blackburn",
+              "playerRankChangeLeft": 2,
+              "playerRankChangeRight": -1,
+              "player": "Lydia Blackburn",
+              "playerSlug": "lydia-blackburn",
+              "opponent": "Tyrone Morgan",
+              "opponentSlug": "tyrone-morgan",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
             {
               "id": 43015,
               "scoreLeft": 1,
@@ -59664,7 +59748,7 @@
           "id": 752,
           "name": "Oliver Ingham",
           "slug": "oliver-ingham",
-          "rank": 69,
+          "rank": 65,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 86,
@@ -59674,14 +59758,14 @@
         },
         "team": {},
         "statistics": {
-          "played": 9,
+          "played": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 9,
+          "losses": 12,
           "winPercentage": 0.0,
           "setsWon": 3,
-          "setsLost": 27,
-          "setDifference": -24,
+          "setsLost": 36,
+          "setDifference": -33,
           "opponents": [
             {
               "name": "Alice Hodgkinson",
@@ -59729,6 +59813,15 @@
               "winPercentage": 0.0
             },
             {
+              "name": "Matt Innes-Wilkin",
+              "slug": "matt-innes-wilkin",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
               "name": "Neil Graham",
               "slug": "neil-graham",
               "played": 1,
@@ -59738,8 +59831,8 @@
               "winPercentage": 0.0
             },
             {
-              "name": "Paulina Gauweda",
-              "slug": "paulina_gauweda",
+              "name": "Paulina Gaweda",
+              "slug": "paulina_gaweda",
               "played": 1,
               "wins": 0,
               "draws": 0,
@@ -59758,6 +59851,24 @@
             {
               "name": "Rosie Bacon",
               "slug": "rosie-bacon",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Sam Bell",
+              "slug": "sam-bell",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Tyrone Morgan",
+              "slug": "tyrone-morgan",
               "played": 1,
               "wins": 0,
               "draws": 0,
@@ -59818,6 +59929,63 @@
               "playerSlug": "oliver-ingham",
               "opponent": "Rory Wilson-Tidswell",
               "opponentSlug": "rory-wilson-tidswell",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44404,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Matt Innes-Wilkin",
+              "playerLeftSlug": "matt-innes-wilkin",
+              "playerRightName": "Oliver Ingham",
+              "playerRightSlug": "oliver-ingham",
+              "playerRankChangeLeft": 3,
+              "playerRankChangeRight": -2,
+              "player": "Oliver Ingham",
+              "playerSlug": "oliver-ingham",
+              "opponent": "Matt Innes-Wilkin",
+              "opponentSlug": "matt-innes-wilkin",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44409,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Tyrone Morgan",
+              "playerLeftSlug": "tyrone-morgan",
+              "playerRightName": "Oliver Ingham",
+              "playerRightSlug": "oliver-ingham",
+              "playerRankChangeLeft": 2,
+              "playerRankChangeRight": -1,
+              "player": "Oliver Ingham",
+              "playerSlug": "oliver-ingham",
+              "opponent": "Tyrone Morgan",
+              "opponentSlug": "tyrone-morgan",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44412,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Sam Bell",
+              "playerLeftSlug": "sam-bell",
+              "playerRightName": "Oliver Ingham",
+              "playerRightSlug": "oliver-ingham",
+              "playerRankChangeLeft": 2,
+              "playerRankChangeRight": -1,
+              "player": "Oliver Ingham",
+              "playerSlug": "oliver-ingham",
+              "opponent": "Sam Bell",
+              "opponentSlug": "sam-bell",
               "playerScore": 0,
               "opponentScore": 3,
               "result": "L",
@@ -59922,16 +60090,16 @@
               "id": 43181,
               "scoreLeft": 3,
               "scoreRight": 0,
-              "playerLeftName": "Paulina Gauweda",
-              "playerLeftSlug": "paulina_gauweda",
+              "playerLeftName": "Paulina Gaweda",
+              "playerLeftSlug": "paulina_gaweda",
               "playerRightName": "Oliver Ingham",
               "playerRightSlug": "oliver-ingham",
               "playerRankChangeLeft": 8,
               "playerRankChangeRight": -5,
               "player": "Oliver Ingham",
               "playerSlug": "oliver-ingham",
-              "opponent": "Paulina Gauweda",
-              "opponentSlug": "paulina_gauweda",
+              "opponent": "Paulina Gaweda",
+              "opponentSlug": "paulina_gaweda",
               "playerScore": 0,
               "opponentScore": 3,
               "result": "L",
@@ -59951,7 +60119,7 @@
           "id": 785,
           "name": "Olivia Sanders",
           "slug": "olivia-sanders",
-          "rank": 66,
+          "rank": 62,
           "phoneMobile": "",
           "phoneLandline": "",
           "teamId": 86,
@@ -59961,14 +60129,14 @@
         },
         "team": {},
         "statistics": {
-          "played": 3,
+          "played": 6,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 6,
           "winPercentage": 0.0,
           "setsWon": 0,
-          "setsLost": 9,
-          "setDifference": -9,
+          "setsLost": 18,
+          "setDifference": -18,
           "opponents": [
             {
               "name": "Henry Wright",
@@ -59989,8 +60157,35 @@
               "winPercentage": 0.0
             },
             {
+              "name": "Matt Innes-Wilkin",
+              "slug": "matt-innes-wilkin",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
               "name": "Ryan Halstead",
               "slug": "ryan-halstead",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Sam Bell",
+              "slug": "sam-bell",
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "winPercentage": 0.0
+            },
+            {
+              "name": "Tyrone Morgan",
+              "slug": "tyrone-morgan",
               "played": 1,
               "wins": 0,
               "draws": 0,
@@ -59999,6 +60194,63 @@
             }
           ],
           "encounters": [
+            {
+              "id": 44405,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Tyrone Morgan",
+              "playerLeftSlug": "tyrone-morgan",
+              "playerRightName": "Olivia Sanders",
+              "playerRightSlug": "olivia-sanders",
+              "playerRankChangeLeft": 2,
+              "playerRankChangeRight": -1,
+              "player": "Olivia Sanders",
+              "playerSlug": "olivia-sanders",
+              "opponent": "Tyrone Morgan",
+              "opponentSlug": "tyrone-morgan",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44407,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Sam Bell",
+              "playerLeftSlug": "sam-bell",
+              "playerRightName": "Olivia Sanders",
+              "playerRightSlug": "olivia-sanders",
+              "playerRankChangeLeft": 2,
+              "playerRankChangeRight": -1,
+              "player": "Olivia Sanders",
+              "playerSlug": "olivia-sanders",
+              "opponent": "Sam Bell",
+              "opponentSlug": "sam-bell",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
+            {
+              "id": 44410,
+              "scoreLeft": 3,
+              "scoreRight": 0,
+              "playerLeftName": "Matt Innes-Wilkin",
+              "playerLeftSlug": "matt-innes-wilkin",
+              "playerRightName": "Olivia Sanders",
+              "playerRightSlug": "olivia-sanders",
+              "playerRankChangeLeft": 3,
+              "playerRankChangeRight": -2,
+              "player": "Olivia Sanders",
+              "playerSlug": "olivia-sanders",
+              "opponent": "Matt Innes-Wilkin",
+              "opponentSlug": "matt-innes-wilkin",
+              "playerScore": 0,
+              "opponentScore": 3,
+              "result": "L",
+              "fixtureKey": null
+            },
             {
               "id": 43374,
               "scoreLeft": 0,
@@ -78484,6 +78736,63 @@
         "fixtureKey": null
       },
       {
+        "id": 44403,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Sam Bell",
+        "playerLeftSlug": "sam-bell",
+        "playerRightName": "Lydia Blackburn",
+        "playerRightSlug": "lydia-blackburn",
+        "playerRankChangeLeft": 2,
+        "playerRankChangeRight": -1,
+        "player": "Lydia Blackburn",
+        "playerSlug": "lydia-blackburn",
+        "opponent": "Sam Bell",
+        "opponentSlug": "sam-bell",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44406,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Matt Innes-Wilkin",
+        "playerLeftSlug": "matt-innes-wilkin",
+        "playerRightName": "Lydia Blackburn",
+        "playerRightSlug": "lydia-blackburn",
+        "playerRankChangeLeft": 3,
+        "playerRankChangeRight": -2,
+        "player": "Lydia Blackburn",
+        "playerSlug": "lydia-blackburn",
+        "opponent": "Matt Innes-Wilkin",
+        "opponentSlug": "matt-innes-wilkin",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44411,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Tyrone Morgan",
+        "playerLeftSlug": "tyrone-morgan",
+        "playerRightName": "Lydia Blackburn",
+        "playerRightSlug": "lydia-blackburn",
+        "playerRankChangeLeft": 2,
+        "playerRankChangeRight": -1,
+        "player": "Lydia Blackburn",
+        "playerSlug": "lydia-blackburn",
+        "opponent": "Tyrone Morgan",
+        "opponentSlug": "tyrone-morgan",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
         "id": 43015,
         "scoreLeft": 1,
         "scoreRight": 3,
@@ -79510,6 +79819,63 @@
         "fixtureKey": null
       },
       {
+        "id": 44404,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Matt Innes-Wilkin",
+        "playerLeftSlug": "matt-innes-wilkin",
+        "playerRightName": "Oliver Ingham",
+        "playerRightSlug": "oliver-ingham",
+        "playerRankChangeLeft": 3,
+        "playerRankChangeRight": -2,
+        "player": "Oliver Ingham",
+        "playerSlug": "oliver-ingham",
+        "opponent": "Matt Innes-Wilkin",
+        "opponentSlug": "matt-innes-wilkin",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44409,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Tyrone Morgan",
+        "playerLeftSlug": "tyrone-morgan",
+        "playerRightName": "Oliver Ingham",
+        "playerRightSlug": "oliver-ingham",
+        "playerRankChangeLeft": 2,
+        "playerRankChangeRight": -1,
+        "player": "Oliver Ingham",
+        "playerSlug": "oliver-ingham",
+        "opponent": "Tyrone Morgan",
+        "opponentSlug": "tyrone-morgan",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44412,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Sam Bell",
+        "playerLeftSlug": "sam-bell",
+        "playerRightName": "Oliver Ingham",
+        "playerRightSlug": "oliver-ingham",
+        "playerRankChangeLeft": 2,
+        "playerRankChangeRight": -1,
+        "player": "Oliver Ingham",
+        "playerSlug": "oliver-ingham",
+        "opponent": "Sam Bell",
+        "opponentSlug": "sam-bell",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
         "id": 43783,
         "scoreLeft": 0,
         "scoreRight": 3,
@@ -79608,16 +79974,73 @@
         "id": 43181,
         "scoreLeft": 3,
         "scoreRight": 0,
-        "playerLeftName": "Paulina Gauweda",
-        "playerLeftSlug": "paulina_gauweda",
+        "playerLeftName": "Paulina Gaweda",
+        "playerLeftSlug": "paulina_gaweda",
         "playerRightName": "Oliver Ingham",
         "playerRightSlug": "oliver-ingham",
         "playerRankChangeLeft": 8,
         "playerRankChangeRight": -5,
         "player": "Oliver Ingham",
         "playerSlug": "oliver-ingham",
-        "opponent": "Paulina Gauweda",
-        "opponentSlug": "paulina_gauweda",
+        "opponent": "Paulina Gaweda",
+        "opponentSlug": "paulina_gaweda",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44405,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Tyrone Morgan",
+        "playerLeftSlug": "tyrone-morgan",
+        "playerRightName": "Olivia Sanders",
+        "playerRightSlug": "olivia-sanders",
+        "playerRankChangeLeft": 2,
+        "playerRankChangeRight": -1,
+        "player": "Olivia Sanders",
+        "playerSlug": "olivia-sanders",
+        "opponent": "Tyrone Morgan",
+        "opponentSlug": "tyrone-morgan",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44407,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Sam Bell",
+        "playerLeftSlug": "sam-bell",
+        "playerRightName": "Olivia Sanders",
+        "playerRightSlug": "olivia-sanders",
+        "playerRankChangeLeft": 2,
+        "playerRankChangeRight": -1,
+        "player": "Olivia Sanders",
+        "playerSlug": "olivia-sanders",
+        "opponent": "Sam Bell",
+        "opponentSlug": "sam-bell",
+        "playerScore": 0,
+        "opponentScore": 3,
+        "result": "L",
+        "fixtureKey": null
+      },
+      {
+        "id": 44410,
+        "scoreLeft": 3,
+        "scoreRight": 0,
+        "playerLeftName": "Matt Innes-Wilkin",
+        "playerLeftSlug": "matt-innes-wilkin",
+        "playerRightName": "Olivia Sanders",
+        "playerRightSlug": "olivia-sanders",
+        "playerRankChangeLeft": 3,
+        "playerRankChangeRight": -2,
+        "player": "Olivia Sanders",
+        "playerSlug": "olivia-sanders",
+        "opponent": "Matt Innes-Wilkin",
+        "opponentSlug": "matt-innes-wilkin",
         "playerScore": 0,
         "opponentScore": 3,
         "result": "L",
@@ -87752,11 +88175,11 @@
         "venueName": "Whalley Village Hall",
         "venueSlug": "whalley-village-hall",
         "venueLocation": "https://maps.app.goo.gl/rHDBaPdMv6SjTar16",
-        "scoreLeft": null,
+        "scoreLeft": 30,
         "teamRightName": "KSB Leopards (Jun)",
         "teamRightSlug": "ksb-leopards-jun",
-        "scoreRight": null,
-        "timeFulfilled": null,
+        "scoreRight": 0,
+        "timeFulfilled": 1795518392,
         "weekId": 11
       },
       {
@@ -93349,11 +93772,11 @@
             "venueName": "Whalley Village Hall",
             "venueSlug": "whalley-village-hall",
             "venueLocation": "https://maps.app.goo.gl/rHDBaPdMv6SjTar16",
-            "scoreLeft": null,
+            "scoreLeft": 30,
             "teamRightName": "KSB Leopards (Jun)",
             "teamRightSlug": "ksb-leopards-jun",
-            "scoreRight": null,
-            "timeFulfilled": null,
+            "scoreRight": 0,
+            "timeFulfilled": 1795518392,
             "weekId": 11
           }
         ]
@@ -94164,6 +94587,15 @@
         },
         {
           "p": 2,
+          "t": "Whalley Eagles",
+          "w": 6,
+          "d": 0,
+          "l": 3,
+          "pl": 9,
+          "pts": 176
+        },
+        {
+          "p": 3,
           "t": "KSB A",
           "w": 6,
           "d": 0,
@@ -94172,31 +94604,22 @@
           "pts": 173
         },
         {
-          "p": 3,
-          "t": "Whalley Eagles",
-          "w": 6,
+          "p": 4,
+          "t": "Rovers",
+          "w": 4,
           "d": 0,
-          "l": 2,
-          "pl": 8,
-          "pts": 158
+          "l": 5,
+          "pl": 9,
+          "pts": 155
         },
         {
-          "p": 4,
+          "p": 5,
           "t": "Gladiators",
           "w": 5,
           "d": 0,
           "l": 3,
           "pl": 8,
           "pts": 154
-        },
-        {
-          "p": 5,
-          "t": "Rovers",
-          "w": 3,
-          "d": 0,
-          "l": 5,
-          "pl": 8,
-          "pts": 133
         },
         {
           "p": 6,
@@ -94340,11 +94763,11 @@
         {
           "p": 1,
           "t": "Whalley Ospreys",
-          "w": 7,
+          "w": 8,
           "d": 0,
           "l": 1,
-          "pl": 8,
-          "pts": 189
+          "pl": 9,
+          "pts": 211
         },
         {
           "p": 2,
@@ -94357,6 +94780,15 @@
         },
         {
           "p": 3,
+          "t": "KSB Tigers",
+          "w": 4,
+          "d": 0,
+          "l": 5,
+          "pl": 9,
+          "pts": 176
+        },
+        {
+          "p": 4,
           "t": "Hyndburn TTC A",
           "w": 4,
           "d": 0,
@@ -94365,22 +94797,13 @@
           "pts": 166
         },
         {
-          "p": 4,
+          "p": 5,
           "t": "KSB Lions",
           "w": 5,
           "d": 0,
           "l": 3,
           "pl": 8,
           "pts": 162
-        },
-        {
-          "p": 5,
-          "t": "KSB Tigers",
-          "w": 4,
-          "d": 0,
-          "l": 4,
-          "pl": 8,
-          "pts": 159
         },
         {
           "p": 6,
@@ -94449,6 +94872,24 @@
         },
         {
           "p": 3,
+          "t": "Burnley Scorpions",
+          "w": 7,
+          "d": 0,
+          "l": 2,
+          "pl": 9,
+          "pts": 178
+        },
+        {
+          "p": 4,
+          "t": "Whalley Merlins",
+          "w": 4,
+          "d": 0,
+          "l": 4,
+          "pl": 8,
+          "pts": 174
+        },
+        {
+          "p": 5,
           "t": "Hyndburn TTC B",
           "w": 5,
           "d": 0,
@@ -94457,40 +94898,22 @@
           "pts": 165
         },
         {
-          "p": 4,
-          "t": "Burnley Scorpions",
-          "w": 6,
-          "d": 0,
-          "l": 2,
-          "pl": 8,
-          "pts": 155
-        },
-        {
-          "p": 5,
-          "t": "Whalley Merlins",
+          "p": 6,
+          "t": "Whalley Harriers",
           "w": 3,
           "d": 0,
-          "l": 4,
-          "pl": 7,
-          "pts": 144
+          "l": 5,
+          "pl": 8,
+          "pts": 147
         },
         {
-          "p": 6,
+          "p": 7,
           "t": "Burnley Dragon Flies",
           "w": 3,
           "d": 0,
           "l": 5,
           "pl": 8,
           "pts": 139
-        },
-        {
-          "p": 7,
-          "t": "Whalley Harriers",
-          "w": 3,
-          "d": 0,
-          "l": 4,
-          "pl": 7,
-          "pts": 132
         },
         {
           "p": 8,
@@ -94515,8 +94938,8 @@
           "t": "KSB Leopards (Jun)",
           "w": 0,
           "d": 0,
-          "l": 8,
-          "pl": 8,
+          "l": 9,
+          "pl": 9,
           "pts": 51
         }
       ]
@@ -502402,24 +502825,24 @@
         "setDifference": -27
       },
       "currentSeason": {
-        "played": 9,
+        "played": 12,
         "wins": 0,
         "draws": 0,
-        "losses": 9,
+        "losses": 12,
         "winPercentage": 0.0,
         "setsWon": 3,
-        "setsLost": 27,
-        "setDifference": -24
+        "setsLost": 36,
+        "setDifference": -33
       },
       "career": {
-        "played": 18,
+        "played": 21,
         "wins": 0,
         "draws": 0,
-        "losses": 18,
+        "losses": 21,
         "setsWon": 3,
-        "setsLost": 54,
+        "setsLost": 63,
         "winPercentage": 0.0,
-        "setDifference": -51
+        "setDifference": -60
       },
       "seasons": {
         "2025": {
@@ -503458,7 +503881,7 @@
             "id": 752,
             "name": "Oliver Ingham",
             "slug": "oliver-ingham",
-            "rank": 69,
+            "rank": 65,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 86,
@@ -503468,14 +503891,14 @@
           },
           "team": {},
           "statistics": {
-            "played": 9,
+            "played": 12,
             "wins": 0,
             "draws": 0,
-            "losses": 9,
+            "losses": 12,
             "winPercentage": 0.0,
             "setsWon": 3,
-            "setsLost": 27,
-            "setDifference": -24,
+            "setsLost": 36,
+            "setDifference": -33,
             "opponents": [
               {
                 "name": "Alice Hodgkinson",
@@ -503523,6 +503946,15 @@
                 "winPercentage": 0.0
               },
               {
+                "name": "Matt Innes-Wilkin",
+                "slug": "matt-innes-wilkin",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
                 "name": "Neil Graham",
                 "slug": "neil-graham",
                 "played": 1,
@@ -503532,8 +503964,8 @@
                 "winPercentage": 0.0
               },
               {
-                "name": "Paulina Gauweda",
-                "slug": "paulina_gauweda",
+                "name": "Paulina Gaweda",
+                "slug": "paulina_gaweda",
                 "played": 1,
                 "wins": 0,
                 "draws": 0,
@@ -503552,6 +503984,24 @@
               {
                 "name": "Rosie Bacon",
                 "slug": "rosie-bacon",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Sam Bell",
+                "slug": "sam-bell",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Tyrone Morgan",
+                "slug": "tyrone-morgan",
                 "played": 1,
                 "wins": 0,
                 "draws": 0,
@@ -503612,6 +504062,63 @@
                 "playerSlug": "oliver-ingham",
                 "opponent": "Rory Wilson-Tidswell",
                 "opponentSlug": "rory-wilson-tidswell",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44404,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Matt Innes-Wilkin",
+                "playerLeftSlug": "matt-innes-wilkin",
+                "playerRightName": "Oliver Ingham",
+                "playerRightSlug": "oliver-ingham",
+                "playerRankChangeLeft": 3,
+                "playerRankChangeRight": -2,
+                "player": "Oliver Ingham",
+                "playerSlug": "oliver-ingham",
+                "opponent": "Matt Innes-Wilkin",
+                "opponentSlug": "matt-innes-wilkin",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44409,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Tyrone Morgan",
+                "playerLeftSlug": "tyrone-morgan",
+                "playerRightName": "Oliver Ingham",
+                "playerRightSlug": "oliver-ingham",
+                "playerRankChangeLeft": 2,
+                "playerRankChangeRight": -1,
+                "player": "Oliver Ingham",
+                "playerSlug": "oliver-ingham",
+                "opponent": "Tyrone Morgan",
+                "opponentSlug": "tyrone-morgan",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44412,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Sam Bell",
+                "playerLeftSlug": "sam-bell",
+                "playerRightName": "Oliver Ingham",
+                "playerRightSlug": "oliver-ingham",
+                "playerRankChangeLeft": 2,
+                "playerRankChangeRight": -1,
+                "player": "Oliver Ingham",
+                "playerSlug": "oliver-ingham",
+                "opponent": "Sam Bell",
+                "opponentSlug": "sam-bell",
                 "playerScore": 0,
                 "opponentScore": 3,
                 "result": "L",
@@ -503716,16 +504223,16 @@
                 "id": 43181,
                 "scoreLeft": 3,
                 "scoreRight": 0,
-                "playerLeftName": "Paulina Gauweda",
-                "playerLeftSlug": "paulina_gauweda",
+                "playerLeftName": "Paulina Gaweda",
+                "playerLeftSlug": "paulina_gaweda",
                 "playerRightName": "Oliver Ingham",
                 "playerRightSlug": "oliver-ingham",
                 "playerRankChangeLeft": 8,
                 "playerRankChangeRight": -5,
                 "player": "Oliver Ingham",
                 "playerSlug": "oliver-ingham",
-                "opponent": "Paulina Gauweda",
-                "opponentSlug": "paulina_gauweda",
+                "opponent": "Paulina Gaweda",
+                "opponentSlug": "paulina_gaweda",
                 "playerScore": 0,
                 "opponentScore": 3,
                 "result": "L",
@@ -657721,24 +658228,24 @@
         "setDifference": 0
       },
       "currentSeason": {
-        "played": 3,
+        "played": 6,
         "wins": 0,
         "draws": 0,
-        "losses": 3,
+        "losses": 6,
         "winPercentage": 0.0,
         "setsWon": 1,
-        "setsLost": 9,
-        "setDifference": -8
+        "setsLost": 18,
+        "setDifference": -17
       },
       "career": {
-        "played": 3,
+        "played": 6,
         "wins": 0,
         "draws": 0,
-        "losses": 3,
+        "losses": 6,
         "setsWon": 1,
-        "setsLost": 9,
+        "setsLost": 18,
         "winPercentage": 0.0,
-        "setDifference": -8
+        "setDifference": -17
       },
       "seasons": {
         "2026": {
@@ -657747,7 +658254,7 @@
             "id": 779,
             "name": "Lydia Blackburn",
             "slug": "lydia-blackburn",
-            "rank": 76,
+            "rank": 72,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 86,
@@ -657757,14 +658264,14 @@
           },
           "team": {},
           "statistics": {
-            "played": 3,
+            "played": 6,
             "wins": 0,
             "draws": 0,
-            "losses": 3,
+            "losses": 6,
             "winPercentage": 0.0,
             "setsWon": 1,
-            "setsLost": 9,
-            "setDifference": -8,
+            "setsLost": 18,
+            "setDifference": -17,
             "opponents": [
               {
                 "name": "Chris Wilkinson",
@@ -657785,8 +658292,35 @@
                 "winPercentage": 0.0
               },
               {
+                "name": "Matt Innes-Wilkin",
+                "slug": "matt-innes-wilkin",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Sam Bell",
+                "slug": "sam-bell",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
                 "name": "Stuart Oliver",
                 "slug": "stuart_oliver",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Tyrone Morgan",
+                "slug": "tyrone-morgan",
                 "played": 1,
                 "wins": 0,
                 "draws": 0,
@@ -657795,6 +658329,63 @@
               }
             ],
             "encounters": [
+              {
+                "id": 44403,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Sam Bell",
+                "playerLeftSlug": "sam-bell",
+                "playerRightName": "Lydia Blackburn",
+                "playerRightSlug": "lydia-blackburn",
+                "playerRankChangeLeft": 2,
+                "playerRankChangeRight": -1,
+                "player": "Lydia Blackburn",
+                "playerSlug": "lydia-blackburn",
+                "opponent": "Sam Bell",
+                "opponentSlug": "sam-bell",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44406,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Matt Innes-Wilkin",
+                "playerLeftSlug": "matt-innes-wilkin",
+                "playerRightName": "Lydia Blackburn",
+                "playerRightSlug": "lydia-blackburn",
+                "playerRankChangeLeft": 3,
+                "playerRankChangeRight": -2,
+                "player": "Lydia Blackburn",
+                "playerSlug": "lydia-blackburn",
+                "opponent": "Matt Innes-Wilkin",
+                "opponentSlug": "matt-innes-wilkin",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44411,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Tyrone Morgan",
+                "playerLeftSlug": "tyrone-morgan",
+                "playerRightName": "Lydia Blackburn",
+                "playerRightSlug": "lydia-blackburn",
+                "playerRankChangeLeft": 2,
+                "playerRankChangeRight": -1,
+                "player": "Lydia Blackburn",
+                "playerSlug": "lydia-blackburn",
+                "opponent": "Tyrone Morgan",
+                "opponentSlug": "tyrone-morgan",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
               {
                 "id": 43015,
                 "scoreLeft": 1,
@@ -657877,24 +658468,24 @@
         "setDifference": 0
       },
       "currentSeason": {
-        "played": 3,
+        "played": 6,
         "wins": 0,
         "draws": 0,
-        "losses": 3,
+        "losses": 6,
         "winPercentage": 0.0,
         "setsWon": 0,
-        "setsLost": 9,
-        "setDifference": -9
+        "setsLost": 18,
+        "setDifference": -18
       },
       "career": {
-        "played": 3,
+        "played": 6,
         "wins": 0,
         "draws": 0,
-        "losses": 3,
+        "losses": 6,
         "setsWon": 0,
-        "setsLost": 9,
+        "setsLost": 18,
         "winPercentage": 0.0,
-        "setDifference": -9
+        "setDifference": -18
       },
       "seasons": {
         "2026": {
@@ -657903,7 +658494,7 @@
             "id": 785,
             "name": "Olivia Sanders",
             "slug": "olivia-sanders",
-            "rank": 66,
+            "rank": 62,
             "phoneMobile": "",
             "phoneLandline": "",
             "teamId": 86,
@@ -657913,14 +658504,14 @@
           },
           "team": {},
           "statistics": {
-            "played": 3,
+            "played": 6,
             "wins": 0,
             "draws": 0,
-            "losses": 3,
+            "losses": 6,
             "winPercentage": 0.0,
             "setsWon": 0,
-            "setsLost": 9,
-            "setDifference": -9,
+            "setsLost": 18,
+            "setDifference": -18,
             "opponents": [
               {
                 "name": "Henry Wright",
@@ -657941,8 +658532,35 @@
                 "winPercentage": 0.0
               },
               {
+                "name": "Matt Innes-Wilkin",
+                "slug": "matt-innes-wilkin",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
                 "name": "Ryan Halstead",
                 "slug": "ryan-halstead",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Sam Bell",
+                "slug": "sam-bell",
+                "played": 1,
+                "wins": 0,
+                "draws": 0,
+                "losses": 1,
+                "winPercentage": 0.0
+              },
+              {
+                "name": "Tyrone Morgan",
+                "slug": "tyrone-morgan",
                 "played": 1,
                 "wins": 0,
                 "draws": 0,
@@ -657951,6 +658569,63 @@
               }
             ],
             "encounters": [
+              {
+                "id": 44405,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Tyrone Morgan",
+                "playerLeftSlug": "tyrone-morgan",
+                "playerRightName": "Olivia Sanders",
+                "playerRightSlug": "olivia-sanders",
+                "playerRankChangeLeft": 2,
+                "playerRankChangeRight": -1,
+                "player": "Olivia Sanders",
+                "playerSlug": "olivia-sanders",
+                "opponent": "Tyrone Morgan",
+                "opponentSlug": "tyrone-morgan",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44407,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Sam Bell",
+                "playerLeftSlug": "sam-bell",
+                "playerRightName": "Olivia Sanders",
+                "playerRightSlug": "olivia-sanders",
+                "playerRankChangeLeft": 2,
+                "playerRankChangeRight": -1,
+                "player": "Olivia Sanders",
+                "playerSlug": "olivia-sanders",
+                "opponent": "Sam Bell",
+                "opponentSlug": "sam-bell",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
+              {
+                "id": 44410,
+                "scoreLeft": 3,
+                "scoreRight": 0,
+                "playerLeftName": "Matt Innes-Wilkin",
+                "playerLeftSlug": "matt-innes-wilkin",
+                "playerRightName": "Olivia Sanders",
+                "playerRightSlug": "olivia-sanders",
+                "playerRankChangeLeft": 3,
+                "playerRankChangeRight": -2,
+                "player": "Olivia Sanders",
+                "playerSlug": "olivia-sanders",
+                "opponent": "Matt Innes-Wilkin",
+                "opponentSlug": "matt-innes-wilkin",
+                "playerScore": 0,
+                "opponentScore": 3,
+                "result": "L",
+                "fixtureKey": null
+              },
               {
                 "id": 43374,
                 "scoreLeft": 0,
