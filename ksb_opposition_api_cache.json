@@ -6982,5 +6982,29 @@
   "2026:matt-innes-wilkin": {
     "url": "https://eastlancstt.org.uk/api/result/2026/player/matt-innes-wilkin",
     "status": "success"
+  },
+  "2026:alan-prudden": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/alan-prudden",
+    "status": "success"
+  },
+  "2026:bob-bennett": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/bob-bennett",
+    "status": "success"
+  },
+  "2026:harry-pilkington": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/harry-pilkington",
+    "status": "success"
+  },
+  "2026:leo-lawson": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/leo-lawson",
+    "status": "success"
+  },
+  "2026:paul-barker-2": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/paul-barker-2",
+    "status": "success"
+  },
+  "2026:tariq-mahmood": {
+    "url": "https://eastlancstt.org.uk/api/result/2026/player/tariq-mahmood",
+    "status": "success"
   }
 }
